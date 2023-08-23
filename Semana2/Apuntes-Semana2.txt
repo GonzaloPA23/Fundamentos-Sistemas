@@ -1,0 +1,13 @@
+Apuntes sin cuaderno:
+- Array name = Array.CreateInstance(typeof(Int32),30) -> 
+	Array nombre = Array.CreateInstance(typeof(tipo_de_dato),unidimensional,bidimensional) 
+- getLowerBound(<dimension>) -> Return el primer indice
+- getUpperBound(<dimension>) -> Return el ultimo indice
+- <nombre_arreglo>.SetValue(<valor>,<indice>) -> Para insertar un nuevo elemento en mi arreglo
+- <nombre_arreglo>.GetValue(<indice>) -> Retorna el elemento en la posición (indice)
+- foreach(Int32 mi_variable in arr)
+- Nombre_del_Arreglo.GetLength(dimension) -> Retorna la cantidad total de elementos, asignarlo a una variable
+- Array.Find((tipo_dato[])nombre_arreglo,método_comparacion)
+- Array.FindAll(tipo_dato)(nombreArreglo,comparacion(
+- Array.Exists((TipoDato)nombreArreglo,metodoComparacion) ->Existencia de un elemento
+- Array.Sort(nombreArreglo,objeto_de_Clase_que_implementa_Compare)
