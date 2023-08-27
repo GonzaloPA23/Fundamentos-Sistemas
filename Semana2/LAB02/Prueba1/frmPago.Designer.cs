@@ -37,14 +37,14 @@ namespace Prueba1
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.comboBoxCategoria = new System.Windows.Forms.ComboBox();
-            this.textBoxMinutosTardanza = new System.Windows.Forms.TextBox();
-            this.textBoxLlamadasAtencion = new System.Windows.Forms.TextBox();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.comboBoxCategoria = new System.Windows.Forms.ComboBox();
+            this.textBoxMinutosTardanza = new System.Windows.Forms.TextBox();
+            this.textBoxLlamadasAtencion = new System.Windows.Forms.TextBox();
             this.labelTotal = new System.Windows.Forms.Label();
             this.lbTotal = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -129,6 +129,32 @@ namespace Prueba1
             this.listView1.TabIndex = 7;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Nombres";
+            this.columnHeader1.Width = 104;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Categoria";
+            this.columnHeader2.Width = 126;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Minutos Tardanza";
+            this.columnHeader3.Width = 147;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Llamadas de Atención";
+            this.columnHeader4.Width = 171;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Pago";
+            this.columnHeader5.Width = 92;
             // 
             // comboBoxCategoria
             // 
@@ -156,26 +182,6 @@ namespace Prueba1
             this.textBoxLlamadasAtencion.Name = "textBoxLlamadasAtencion";
             this.textBoxLlamadasAtencion.Size = new System.Drawing.Size(125, 22);
             this.textBoxLlamadasAtencion.TabIndex = 10;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Nombres";
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Categoria";
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Minutos Tardanza";
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Llamadas de Atención";
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Pago";
             // 
             // labelTotal
             // 
@@ -214,6 +220,7 @@ namespace Prueba1
             this.Controls.Add(this.label1);
             this.Name = "frmPago";
             this.Text = "frmPago";
+            this.Load += new System.EventHandler(this.frmPago_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

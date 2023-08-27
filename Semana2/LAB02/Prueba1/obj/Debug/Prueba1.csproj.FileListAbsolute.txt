@@ -9,3 +9,14 @@ D:\FUNDA\Prueba1\Prueba1\obj\Debug\Prueba1.csproj.GenerateResource.cache
 D:\FUNDA\Prueba1\Prueba1\obj\Debug\Prueba1.csproj.CoreCompileInputs.cache
 D:\FUNDA\Prueba1\Prueba1\obj\Debug\Prueba1.exe
 D:\FUNDA\Prueba1\Prueba1\obj\Debug\Prueba1.pdb
+D:\Fundamentos-Sistemas\Semana2\LAB02\Prueba1\bin\Debug\Prueba1.exe.config
+D:\Fundamentos-Sistemas\Semana2\LAB02\Prueba1\bin\Debug\Prueba1.exe
+D:\Fundamentos-Sistemas\Semana2\LAB02\Prueba1\bin\Debug\Prueba1.pdb
+D:\Fundamentos-Sistemas\Semana2\LAB02\Prueba1\obj\Debug\Prueba1.csproj.AssemblyReference.cache
+D:\Fundamentos-Sistemas\Semana2\LAB02\Prueba1\obj\Debug\Prueba1.Form1.resources
+D:\Fundamentos-Sistemas\Semana2\LAB02\Prueba1\obj\Debug\Prueba1.frmPago.resources
+D:\Fundamentos-Sistemas\Semana2\LAB02\Prueba1\obj\Debug\Prueba1.Properties.Resources.resources
+D:\Fundamentos-Sistemas\Semana2\LAB02\Prueba1\obj\Debug\Prueba1.csproj.GenerateResource.cache
+D:\Fundamentos-Sistemas\Semana2\LAB02\Prueba1\obj\Debug\Prueba1.csproj.CoreCompileInputs.cache
+D:\Fundamentos-Sistemas\Semana2\LAB02\Prueba1\obj\Debug\Prueba1.exe
+D:\Fundamentos-Sistemas\Semana2\LAB02\Prueba1\obj\Debug\Prueba1.pdb

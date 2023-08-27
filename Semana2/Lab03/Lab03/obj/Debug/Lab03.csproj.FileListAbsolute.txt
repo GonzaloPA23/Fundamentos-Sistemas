@@ -1,0 +1,10 @@
+D:\Fundamentos-Sistemas\Semana2\Lab03\Lab03\bin\Debug\Lab03.exe.config
+D:\Fundamentos-Sistemas\Semana2\Lab03\Lab03\bin\Debug\Lab03.exe
+D:\Fundamentos-Sistemas\Semana2\Lab03\Lab03\bin\Debug\Lab03.pdb
+D:\Fundamentos-Sistemas\Semana2\Lab03\Lab03\obj\Debug\Lab03.csproj.AssemblyReference.cache
+D:\Fundamentos-Sistemas\Semana2\Lab03\Lab03\obj\Debug\Lab03.Form1.resources
+D:\Fundamentos-Sistemas\Semana2\Lab03\Lab03\obj\Debug\Lab03.Properties.Resources.resources
+D:\Fundamentos-Sistemas\Semana2\Lab03\Lab03\obj\Debug\Lab03.csproj.GenerateResource.cache
+D:\Fundamentos-Sistemas\Semana2\Lab03\Lab03\obj\Debug\Lab03.csproj.CoreCompileInputs.cache
+D:\Fundamentos-Sistemas\Semana2\Lab03\Lab03\obj\Debug\Lab03.exe
+D:\Fundamentos-Sistemas\Semana2\Lab03\Lab03\obj\Debug\Lab03.pdb

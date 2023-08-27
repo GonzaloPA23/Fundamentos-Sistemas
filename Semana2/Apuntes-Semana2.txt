@@ -11,3 +11,7 @@ Apuntes sin cuaderno:
 - Array.FindAll(tipo_dato)(nombreArreglo,comparacion(
 - Array.Exists((TipoDato)nombreArreglo,metodoComparacion) ->Existencia de un elemento
 - Array.Sort(nombreArreglo,objeto_de_Clase_que_implementa_Compare)
+
+___________________________________
+ListViewItem -> esto es como las filas -> clase que recibe como parametro un string (primera 
+subItems -> es un metodo que coloca un valor a cada celda
