@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.cmbTypeService = new System.Windows.Forms.ComboBox();
             this.cmbTypeCar = new System.Windows.Forms.ComboBox();
@@ -43,14 +42,14 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
-            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.cmbTypeService);
             this.panel1.Controls.Add(this.cmbTypeCar);
             this.panel1.Controls.Add(this.txtNameClient);
@@ -64,30 +63,17 @@
             this.panel1.Size = new System.Drawing.Size(607, 471);
             this.panel1.TabIndex = 0;
             // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(146)))), ((int)(((byte)(174)))));
-            this.button4.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(333, 337);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(177, 69);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "Cancelar";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(146)))), ((int)(((byte)(174)))));
             this.button3.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(112, 337);
+            this.button3.Location = new System.Drawing.Point(35, 348);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(177, 69);
+            this.button3.Size = new System.Drawing.Size(132, 61);
             this.button3.TabIndex = 9;
-            this.button3.Text = "Registrar";
+            this.button3.Text = "Agregar";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -169,10 +155,10 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(146)))), ((int)(((byte)(174)))));
             this.button2.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(37, 400);
+            this.button2.Location = new System.Drawing.Point(401, 348);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(244, 58);
+            this.button2.Size = new System.Drawing.Size(166, 58);
             this.button2.TabIndex = 9;
             this.button2.Text = "Ver estadistica";
             this.button2.UseVisualStyleBackColor = false;
@@ -182,12 +168,12 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(146)))), ((int)(((byte)(174)))));
             this.button1.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(37, 11);
+            this.button1.Location = new System.Drawing.Point(187, 348);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(244, 68);
+            this.button1.Size = new System.Drawing.Size(192, 61);
             this.button1.TabIndex = 8;
-            this.button1.Text = "Tabla de Servicios Atendidos";
+            this.button1.Text = "Mostrar Tabla de Servicios Atendidos";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -196,8 +182,6 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(247)))), ((int)(((byte)(251)))));
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
             this.panel2.Location = new System.Drawing.Point(639, 53);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
@@ -212,14 +196,15 @@
             this.ClientSize = new System.Drawing.Size(991, 571);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -237,7 +222,6 @@
         private System.Windows.Forms.ComboBox cmbTypeService;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
     }
 }

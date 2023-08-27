@@ -22,9 +22,15 @@ namespace Ejercicio_Arreglos
 
         }
 
+        // Propiedad para acceder al ListView desde el Form1
         public ListView listView
         {
             get { return listView1; }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
