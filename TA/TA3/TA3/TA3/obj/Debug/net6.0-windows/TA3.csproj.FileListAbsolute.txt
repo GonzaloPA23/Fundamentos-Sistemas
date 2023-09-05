@@ -1,0 +1,17 @@
+D:\Fundamentos-Sistemas\TA\TA3\TA3\TA3\bin\Debug\net6.0-windows\TA3.exe
+D:\Fundamentos-Sistemas\TA\TA3\TA3\TA3\bin\Debug\net6.0-windows\TA3.deps.json
+D:\Fundamentos-Sistemas\TA\TA3\TA3\TA3\bin\Debug\net6.0-windows\TA3.runtimeconfig.json
+D:\Fundamentos-Sistemas\TA\TA3\TA3\TA3\bin\Debug\net6.0-windows\TA3.dll
+D:\Fundamentos-Sistemas\TA\TA3\TA3\TA3\bin\Debug\net6.0-windows\TA3.pdb
+D:\Fundamentos-Sistemas\TA\TA3\TA3\TA3\obj\Debug\net6.0-windows\TA3.Form1.resources
+D:\Fundamentos-Sistemas\TA\TA3\TA3\TA3\obj\Debug\net6.0-windows\TA3.csproj.GenerateResource.cache
+D:\Fundamentos-Sistemas\TA\TA3\TA3\TA3\obj\Debug\net6.0-windows\TA3.GeneratedMSBuildEditorConfig.editorconfig
+D:\Fundamentos-Sistemas\TA\TA3\TA3\TA3\obj\Debug\net6.0-windows\TA3.AssemblyInfoInputs.cache
+D:\Fundamentos-Sistemas\TA\TA3\TA3\TA3\obj\Debug\net6.0-windows\TA3.AssemblyInfo.cs
+D:\Fundamentos-Sistemas\TA\TA3\TA3\TA3\obj\Debug\net6.0-windows\TA3.csproj.CoreCompileInputs.cache
+D:\Fundamentos-Sistemas\TA\TA3\TA3\TA3\obj\Debug\net6.0-windows\TA3.dll
+D:\Fundamentos-Sistemas\TA\TA3\TA3\TA3\obj\Debug\net6.0-windows\refint\TA3.dll
+D:\Fundamentos-Sistemas\TA\TA3\TA3\TA3\obj\Debug\net6.0-windows\TA3.pdb
+D:\Fundamentos-Sistemas\TA\TA3\TA3\TA3\obj\Debug\net6.0-windows\TA3.genruntimeconfig.cache
+D:\Fundamentos-Sistemas\TA\TA3\TA3\TA3\obj\Debug\net6.0-windows\ref\TA3.dll
+D:\Fundamentos-Sistemas\TA\TA3\TA3\TA3\obj\Debug\net6.0-windows\TA3.Properties.Resources.resources
