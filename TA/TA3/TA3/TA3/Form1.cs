@@ -123,5 +123,23 @@ namespace TA3
             ShowMovies(movieTemp);
             labelTotalSearches.Text = movieTemp.Count.ToString();
         }
+
+        private void buttonReplaceName_Click(object sender, EventArgs e)
+        {
+            if(textBoxNameForReplace.Text == "" || textBoxNameReplaced.Text == "")
+            {
+                MessageBox.Show("Por favor, rellena los campos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            // Replace the name
+            movies.ForEach(element =>
+            {
+                if (element.Name.Equals(textBoxNameForReplace.Text))
+                {
+                    element.Name = textBoxNameReplaced.Text;
+                }
+            }); 
+            ShowMovies(movies);
+        }
     }
 }

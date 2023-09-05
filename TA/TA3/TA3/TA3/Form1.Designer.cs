@@ -35,6 +35,7 @@
             buttonDeleteAll = new Button();
             buttonDelete = new Button();
             panel2 = new Panel();
+            buttonReplaceName = new Button();
             panel4 = new Panel();
             label15 = new Label();
             label14 = new Label();
@@ -43,10 +44,14 @@
             label13 = new Label();
             label12 = new Label();
             label2 = new Label();
+            textBoxNameReplaced = new TextBox();
+            textBoxNameForReplace = new TextBox();
             textBoxSearchName = new TextBox();
             buttonClear = new Button();
             buttonSearch = new Button();
             label11 = new Label();
+            label18 = new Label();
+            label17 = new Label();
             label10 = new Label();
             labelTotalSearches = new Label();
             panel3 = new Panel();
@@ -147,18 +152,35 @@
             panel2.BackgroundImage = (Image)resources.GetObject("panel2.BackgroundImage");
             panel2.BackgroundImageLayout = ImageLayout.Stretch;
             panel2.BorderStyle = BorderStyle.Fixed3D;
+            panel2.Controls.Add(buttonReplaceName);
             panel2.Controls.Add(panel4);
             panel2.Controls.Add(label2);
+            panel2.Controls.Add(textBoxNameReplaced);
+            panel2.Controls.Add(textBoxNameForReplace);
             panel2.Controls.Add(textBoxSearchName);
             panel2.Controls.Add(buttonClear);
             panel2.Controls.Add(buttonSearch);
             panel2.Controls.Add(label11);
+            panel2.Controls.Add(label18);
+            panel2.Controls.Add(label17);
             panel2.Controls.Add(label10);
             panel2.Location = new Point(1318, 29);
             panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
             panel2.Size = new Size(348, 464);
             panel2.TabIndex = 1;
+            // 
+            // buttonReplaceName
+            // 
+            buttonReplaceName.BackColor = Color.FromArgb(229, 62, 62);
+            buttonReplaceName.Font = new Font("Comic Sans MS", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            buttonReplaceName.Location = new Point(112, 275);
+            buttonReplaceName.Name = "buttonReplaceName";
+            buttonReplaceName.Size = new Size(141, 40);
+            buttonReplaceName.TabIndex = 6;
+            buttonReplaceName.Text = "Reemplazar";
+            buttonReplaceName.UseVisualStyleBackColor = false;
+            buttonReplaceName.Click += buttonReplaceName_Click;
             // 
             // panel4
             // 
@@ -169,9 +191,9 @@
             panel4.Controls.Add(labelTotalRecords);
             panel4.Controls.Add(label13);
             panel4.Controls.Add(label12);
-            panel4.Location = new Point(39, 254);
+            panel4.Location = new Point(39, 324);
             panel4.Name = "panel4";
-            panel4.Size = new Size(283, 146);
+            panel4.Size = new Size(283, 133);
             panel4.TabIndex = 5;
             // 
             // label15
@@ -243,9 +265,23 @@
             label2.Size = new Size(0, 32);
             label2.TabIndex = 2;
             // 
+            // textBoxNameReplaced
+            // 
+            textBoxNameReplaced.Location = new Point(36, 238);
+            textBoxNameReplaced.Name = "textBoxNameReplaced";
+            textBoxNameReplaced.Size = new Size(286, 27);
+            textBoxNameReplaced.TabIndex = 4;
+            // 
+            // textBoxNameForReplace
+            // 
+            textBoxNameForReplace.Location = new Point(36, 163);
+            textBoxNameForReplace.Name = "textBoxNameForReplace";
+            textBoxNameForReplace.Size = new Size(286, 27);
+            textBoxNameForReplace.TabIndex = 4;
+            // 
             // textBoxSearchName
             // 
-            textBoxSearchName.Location = new Point(36, 123);
+            textBoxSearchName.Location = new Point(36, 41);
             textBoxSearchName.Name = "textBoxSearchName";
             textBoxSearchName.Size = new Size(286, 27);
             textBoxSearchName.TabIndex = 4;
@@ -254,7 +290,7 @@
             // 
             buttonClear.BackColor = Color.FromArgb(229, 62, 62);
             buttonClear.Font = new Font("Comic Sans MS", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            buttonClear.Location = new Point(193, 175);
+            buttonClear.Location = new Point(193, 71);
             buttonClear.Name = "buttonClear";
             buttonClear.Size = new Size(129, 39);
             buttonClear.TabIndex = 0;
@@ -266,7 +302,7 @@
             // 
             buttonSearch.BackColor = Color.FromArgb(229, 62, 62);
             buttonSearch.Font = new Font("Comic Sans MS", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            buttonSearch.Location = new Point(36, 175);
+            buttonSearch.Location = new Point(36, 71);
             buttonSearch.Name = "buttonSearch";
             buttonSearch.Size = new Size(129, 39);
             buttonSearch.TabIndex = 0;
@@ -284,11 +320,31 @@
             label11.TabIndex = 3;
             label11.Text = "Buscar por nombre:";
             // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Font = new Font("Comic Sans MS", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label18.Location = new Point(36, 201);
+            label18.Name = "label18";
+            label18.Size = new Size(54, 29);
+            label18.TabIndex = 3;
+            label18.Text = "Por:";
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Font = new Font("Comic Sans MS", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label17.Location = new Point(36, 122);
+            label17.Name = "label17";
+            label17.Size = new Size(217, 29);
+            label17.TabIndex = 3;
+            label17.Text = "Reemplazar Nombre:";
+            // 
             // label10
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Comic Sans MS", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.Location = new Point(36, 67);
+            label10.Location = new Point(36, 6);
             label10.Name = "label10";
             label10.Size = new Size(206, 29);
             label10.TabIndex = 3;
@@ -585,5 +641,10 @@
         private ColumnHeader columnHeader5;
         private ColumnHeader columnHeader6;
         private Label label16;
+        private TextBox textBoxNameReplaced;
+        private TextBox textBoxNameForReplace;
+        private Label label18;
+        private Label label17;
+        private Button buttonReplaceName;
     }
 }
