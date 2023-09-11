@@ -1,0 +1,16 @@
+D:\Fundamentos-Sistemas\TA\TA4\TA4\bin\Debug\net6.0-windows\TA4.exe
+D:\Fundamentos-Sistemas\TA\TA4\TA4\bin\Debug\net6.0-windows\TA4.deps.json
+D:\Fundamentos-Sistemas\TA\TA4\TA4\bin\Debug\net6.0-windows\TA4.runtimeconfig.json
+D:\Fundamentos-Sistemas\TA\TA4\TA4\bin\Debug\net6.0-windows\TA4.dll
+D:\Fundamentos-Sistemas\TA\TA4\TA4\bin\Debug\net6.0-windows\TA4.pdb
+D:\Fundamentos-Sistemas\TA\TA4\TA4\obj\Debug\net6.0-windows\TA4.Form1.resources
+D:\Fundamentos-Sistemas\TA\TA4\TA4\obj\Debug\net6.0-windows\TA4.csproj.GenerateResource.cache
+D:\Fundamentos-Sistemas\TA\TA4\TA4\obj\Debug\net6.0-windows\TA4.GeneratedMSBuildEditorConfig.editorconfig
+D:\Fundamentos-Sistemas\TA\TA4\TA4\obj\Debug\net6.0-windows\TA4.AssemblyInfoInputs.cache
+D:\Fundamentos-Sistemas\TA\TA4\TA4\obj\Debug\net6.0-windows\TA4.AssemblyInfo.cs
+D:\Fundamentos-Sistemas\TA\TA4\TA4\obj\Debug\net6.0-windows\TA4.csproj.CoreCompileInputs.cache
+D:\Fundamentos-Sistemas\TA\TA4\TA4\obj\Debug\net6.0-windows\TA4.dll
+D:\Fundamentos-Sistemas\TA\TA4\TA4\obj\Debug\net6.0-windows\refint\TA4.dll
+D:\Fundamentos-Sistemas\TA\TA4\TA4\obj\Debug\net6.0-windows\TA4.pdb
+D:\Fundamentos-Sistemas\TA\TA4\TA4\obj\Debug\net6.0-windows\TA4.genruntimeconfig.cache
+D:\Fundamentos-Sistemas\TA\TA4\TA4\obj\Debug\net6.0-windows\ref\TA4.dll

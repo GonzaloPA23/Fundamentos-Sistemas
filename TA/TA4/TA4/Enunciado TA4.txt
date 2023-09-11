@@ -1,0 +1,25 @@
+Registro de información de Peliculas
+
+Se requiere una aplicación en C# para realizar el registro de la información de los detalles de los personajes en una lista de películas.
+Por lo tanto, se solicita implementar las siguientes funcionalidades:
+
+• Registrar los datos de una película. Una película puede realizar muchos personajes. 
+• Registrar los datos de un personaje. Un personaje solo puede pertenecer a una sola película.
+• Listar la información de las películas que pertenecen a un determinado género especificado por el usuario.
+• Listar la información de los personajes que tiene como código uno especificado por el usuario dependiendo la pelicula y 
+tenga más de 40 minutos de aparición en pantalla.
+• Listar la información de la película que tiene la menor cantidad de personajes de Sexo Femenino.
+
+La información que se necesita es la siguiente: 
+
+• Película: Código de película, País de Creación, Nombre, Género, Duraci ón en minutos. 
+• Personaje: Código del personaje, Nombre Personaje, Nombre Actor, Sexo, Minutos de aparición en pantalla.
+
+
+Considere que los géneros de una película pueden ser: Comedia, Drama, Ciencia Ficción, Terror, Anime.
+Considere que el sexo: Hombre, Mujer, No Definido.
+
+Tomar en cuenta lo siguiente: 
+
+• El código de una película es único. No se debe permitir el registro de dos o más películas con el mismo código.
+• El código de personaje único. No se debe permitir el registro de dos o más personajes con el mismo código.
