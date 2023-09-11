@@ -1,0 +1,16 @@
+D:\Fundamentos-Sistemas\Semana4\Lab08\Lab08\bin\Debug\net6.0-windows\Lab08.exe
+D:\Fundamentos-Sistemas\Semana4\Lab08\Lab08\bin\Debug\net6.0-windows\Lab08.deps.json
+D:\Fundamentos-Sistemas\Semana4\Lab08\Lab08\bin\Debug\net6.0-windows\Lab08.runtimeconfig.json
+D:\Fundamentos-Sistemas\Semana4\Lab08\Lab08\bin\Debug\net6.0-windows\Lab08.dll
+D:\Fundamentos-Sistemas\Semana4\Lab08\Lab08\bin\Debug\net6.0-windows\Lab08.pdb
+D:\Fundamentos-Sistemas\Semana4\Lab08\Lab08\obj\Debug\net6.0-windows\Lab08.Form1.resources
+D:\Fundamentos-Sistemas\Semana4\Lab08\Lab08\obj\Debug\net6.0-windows\Lab08.csproj.GenerateResource.cache
+D:\Fundamentos-Sistemas\Semana4\Lab08\Lab08\obj\Debug\net6.0-windows\Lab08.GeneratedMSBuildEditorConfig.editorconfig
+D:\Fundamentos-Sistemas\Semana4\Lab08\Lab08\obj\Debug\net6.0-windows\Lab08.AssemblyInfoInputs.cache
+D:\Fundamentos-Sistemas\Semana4\Lab08\Lab08\obj\Debug\net6.0-windows\Lab08.AssemblyInfo.cs
+D:\Fundamentos-Sistemas\Semana4\Lab08\Lab08\obj\Debug\net6.0-windows\Lab08.csproj.CoreCompileInputs.cache
+D:\Fundamentos-Sistemas\Semana4\Lab08\Lab08\obj\Debug\net6.0-windows\Lab08.dll
+D:\Fundamentos-Sistemas\Semana4\Lab08\Lab08\obj\Debug\net6.0-windows\refint\Lab08.dll
+D:\Fundamentos-Sistemas\Semana4\Lab08\Lab08\obj\Debug\net6.0-windows\Lab08.pdb
+D:\Fundamentos-Sistemas\Semana4\Lab08\Lab08\obj\Debug\net6.0-windows\Lab08.genruntimeconfig.cache
+D:\Fundamentos-Sistemas\Semana4\Lab08\Lab08\obj\Debug\net6.0-windows\ref\Lab08.dll
