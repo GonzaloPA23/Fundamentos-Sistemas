@@ -12,12 +12,12 @@ tenga más de 40 minutos de aparición en pantalla.
 
 La información que se necesita es la siguiente: 
 
-• Película: Código de película, País de Creación, Nombre, Género, Duraci ón en minutos. 
+• Película: Código de película, País de Creación, Nombre, Género, Duración en minutos. 
 • Personaje: Código del personaje, Nombre Personaje, Nombre Actor, Sexo, Minutos de aparición en pantalla.
 
 
 Considere que los géneros de una película pueden ser: Comedia, Drama, Ciencia Ficción, Terror, Anime.
-Considere que el sexo: Hombre, Mujer, No Definido.
+Considere que el sexo: Masculino, Femenino, No Definido.
 
 Tomar en cuenta lo siguiente: 
 
