@@ -221,6 +221,7 @@
             Controls.Add(listViewEntrenador);
             Name = "FormEntrenador";
             Text = "FormEntrenador";
+            Load += FormEntrenador_Load;
             ResumeLayout(false);
             PerformLayout();
         }

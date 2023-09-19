@@ -85,5 +85,10 @@ namespace Lab09
             // Mostrar en el ListView
             Mostrar(eS.ListarTodo());
         }
+
+        private void FormEntrenador_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

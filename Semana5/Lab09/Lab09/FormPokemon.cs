@@ -35,7 +35,6 @@ namespace Lab09
         private void Mostrar(List<Pokemon> lista)
         {
             listViewPokemones.Items.Clear();
-            int totalPs = 0;
             int totalPuntoSalud = 0;
             foreach (Pokemon pokemon in lista)
             {
