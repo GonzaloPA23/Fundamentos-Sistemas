@@ -75,5 +75,11 @@ namespace TA5
             }
             Mostrar(personajeService.ListarTodo());
         }
+
+        private void btnVerReporte_Click(object sender, EventArgs e)
+        {
+            FormReportePersonaje formReportePersonaje = new FormReportePersonaje();
+            formReportePersonaje.ShowDialog();
+        }
     }
 }

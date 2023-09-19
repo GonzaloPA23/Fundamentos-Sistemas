@@ -1,6 +1,6 @@
 ﻿namespace TA5
 {
-    partial class FormReporte
+    partial class FormReportePelicula
     {
         /// <summary>
         /// Required designer variable.
@@ -36,12 +36,12 @@
             tbBuscarXNombreActor = new TextBox();
             cbBuscarXGeneroPelicula = new ComboBox();
             label2 = new Label();
-            listView1 = new ListView();
             columnHeader1 = new ColumnHeader();
             columnHeader2 = new ColumnHeader();
             columnHeader3 = new ColumnHeader();
             columnHeader4 = new ColumnHeader();
             columnHeader5 = new ColumnHeader();
+            listView1 = new ListView();
             label8 = new Label();
             label7 = new Label();
             panel1.SuspendLayout();
@@ -133,7 +133,7 @@
             // cbBuscarXGeneroPelicula
             // 
             cbBuscarXGeneroPelicula.FormattingEnabled = true;
-            cbBuscarXGeneroPelicula.Items.AddRange(new object[] { "Comedia", "Drama", "Ciencia Ficción", "Terror", "Anime" });
+            cbBuscarXGeneroPelicula.Items.AddRange(new object[] { "Comedia", "Drama", "Ciencia Ficcion", "Terror", "Anime" });
             cbBuscarXGeneroPelicula.Location = new Point(80, 111);
             cbBuscarXGeneroPelicula.Name = "cbBuscarXGeneroPelicula";
             cbBuscarXGeneroPelicula.Size = new Size(327, 28);
@@ -148,17 +148,6 @@
             label2.Size = new Size(336, 31);
             label2.TabIndex = 7;
             label2.Text = "Buscar por género de película:";
-            // 
-            // listView1
-            // 
-            listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5 });
-            listView1.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            listView1.Location = new Point(549, 45);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(689, 647);
-            listView1.TabIndex = 1;
-            listView1.UseCompatibleStateImageBehavior = false;
-            listView1.View = View.Details;
             // 
             // columnHeader1
             // 
@@ -185,6 +174,17 @@
             columnHeader5.Text = "Duración en minutos";
             columnHeader5.Width = 160;
             // 
+            // listView1
+            // 
+            listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5 });
+            listView1.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            listView1.Location = new Point(549, 45);
+            listView1.Name = "listView1";
+            listView1.Size = new Size(689, 647);
+            listView1.TabIndex = 1;
+            listView1.UseCompatibleStateImageBehavior = false;
+            listView1.View = View.Details;
+            // 
             // label8
             // 
             label8.AutoSize = true;
@@ -207,7 +207,7 @@
             label7.TabIndex = 3;
             label7.Text = "Total de Peliculas:";
             // 
-            // FormReporte
+            // FormReportePelicula
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -219,9 +219,10 @@
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
-            Name = "FormReporte";
+            Name = "FormReportePelicula";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormReporte";
+            Load += FormReportePelicula_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
@@ -234,16 +235,16 @@
         private TextBox tbBuscarXNombreActor;
         private ComboBox cbBuscarXGeneroPelicula;
         private Label label2;
-        private Button btnBuscarMenorCantidadPersonajesFemenino;
         private Button btnBuscarXNombreActor;
         private Label label1;
         private Button btnBuscarXGeneroPelicula;
-        private ListView listView1;
+        private Button btnBuscarMenorCantidadPersonajesFemenino;
         private ColumnHeader columnHeader1;
         private ColumnHeader columnHeader2;
         private ColumnHeader columnHeader3;
         private ColumnHeader columnHeader4;
         private ColumnHeader columnHeader5;
+        private ListView listView1;
         private Label label8;
         private Label label7;
     }

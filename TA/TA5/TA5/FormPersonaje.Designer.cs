@@ -51,6 +51,7 @@
             label1 = new Label();
             lblTotalPersonajes = new Label();
             label7 = new Label();
+            btnVerReporte = new Button();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)nudMinutosAparicion).BeginInit();
@@ -97,6 +98,7 @@
             panel2.BackColor = Color.White;
             panel2.BackgroundImage = Properties.Resources.Shrek;
             panel2.BackgroundImageLayout = ImageLayout.Stretch;
+            panel2.Controls.Add(btnVerReporte);
             panel2.Controls.Add(button4);
             panel2.Location = new Point(823, 41);
             panel2.Name = "panel2";
@@ -279,6 +281,23 @@
             label7.TabIndex = 5;
             label7.Text = "Total de Personajes:";
             // 
+            // btnVerReporte
+            // 
+            btnVerReporte.BackColor = Color.FromArgb(229, 62, 62);
+            btnVerReporte.FlatAppearance.BorderSize = 0;
+            btnVerReporte.FlatAppearance.MouseDownBackColor = Color.FromArgb(64, 0, 0);
+            btnVerReporte.FlatAppearance.MouseOverBackColor = Color.FromArgb(192, 0, 0);
+            btnVerReporte.FlatStyle = FlatStyle.Flat;
+            btnVerReporte.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            btnVerReporte.ForeColor = Color.Transparent;
+            btnVerReporte.Location = new Point(0, 0);
+            btnVerReporte.Name = "btnVerReporte";
+            btnVerReporte.Size = new Size(389, 54);
+            btnVerReporte.TabIndex = 6;
+            btnVerReporte.Text = "Ver Reporte";
+            btnVerReporte.UseVisualStyleBackColor = false;
+            btnVerReporte.Click += btnVerReporte_Click;
+            // 
             // FormPersonaje
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -328,5 +347,6 @@
         private Label label1;
         private Label lblTotalPersonajes;
         private Label label7;
+        private Button btnVerReporte;
     }
 }

@@ -17,6 +17,7 @@ namespace TA5.services
         {
             this.codigoPelicula = codigoPelicula;
         }
+        public PersonajeService() { }
 
         public bool InsertarPersonaje(Personaje personaje)
         {
@@ -34,6 +35,16 @@ namespace TA5.services
         public List<Personaje> ListarTodo()
         {
             return personajeRepository.ListarTodo(codigoPelicula);
+        }
+
+        public List<Personaje> ListarPorCodigoPeliculaMasDe40Minutos()
+        {
+            return personajeRepository.ListarPorCodigoPeliculaMasDe40Minutos(codigoPelicula);
+        }
+
+        public List<Personaje> ListarPorGeneroPersonaje(String genero)
+        {
+            return personajeRepository.ListarPorGeneroPersonaje(genero);
         }
     }
 }

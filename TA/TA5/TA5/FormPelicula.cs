@@ -44,7 +44,7 @@ namespace TA5
         private void button2_Click(object sender, EventArgs e)
         {
             // Validación de campos
-            if(listViewPeliculas.SelectedItems.Count == 0)
+            if (listViewPeliculas.SelectedItems.Count == 0)
             {
                 MessageBox.Show("Debe seleccionar una película", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -55,7 +55,7 @@ namespace TA5
 
         private void button3_Click(object sender, EventArgs e)
         {
-            FormReporte formReporte = new FormReporte();
+            FormReportePelicula formReporte = new FormReportePelicula();
             formReporte.ShowDialog();
         }
 
@@ -88,8 +88,8 @@ namespace TA5
             };
             // Insertar el objeto en la lista
             bool insertado = peliculaService.InsertarPelicula(pelicula);
-            if (!insertado) 
-            {                 
+            if (!insertado)
+            {
                 MessageBox.Show("El código de la película ya existe", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }

@@ -38,5 +38,23 @@ namespace TA5.repositories
             if (pelicula != null) { return pelicula.Personajes; }
             else { return new List<Personaje>(); }
         }
+        // Buscar personajes por el codigo de pelicula que tengan más de 40 minutos de aparaición
+
+        public List<Personaje> ListarPorCodigoPeliculaMasDe40Minutos(String codigoPelicula)
+        {
+            Pelicula? pelicula = PeliculaRepository.ListarTodo().Find(pelicula => pelicula.Codigo.Equals(codigoPelicula));
+            if (pelicula != null)
+            {
+               List<Personaje> personajesTemp = pelicula.Personajes.FindAll(personaje => personaje.MinutosAparicion > 40);
+               if (personajesTemp.Count > 0) { return personajesTemp; }
+               else { return new List<Personaje>(); }
+            }else { return new List<Personaje>(); }
+        }
+
+        // Buscar por género de personaje
+        public List<Personaje> ListarPorGeneroPersonaje(String genero)
+        {
+            return PeliculaRepository.ListarTodo().SelectMany(pelicula => pelicula.Personajes).Where(personaje => personaje.Genero.Equals(genero)).ToList();
+        }
     }
 }

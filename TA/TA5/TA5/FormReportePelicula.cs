@@ -12,10 +12,10 @@ using TA5.services;
 
 namespace TA5
 {
-    public partial class FormReporte : Form
+    public partial class FormReportePelicula : Form
     {
         private PeliculaService peliculaService = new();
-        public FormReporte()
+        public FormReportePelicula()
         {
             InitializeComponent();
         }
@@ -59,6 +59,11 @@ namespace TA5
         private void btnBuscarMenorCantidadPersonajesFemenino_Click(object sender, EventArgs e)
         {
             Mostrar(peliculaService.ListarPorMenosPersonajesFemeninos());
+        }
+
+        private void FormReportePelicula_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

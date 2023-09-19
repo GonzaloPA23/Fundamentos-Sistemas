@@ -170,7 +170,7 @@
             // cbGenero
             // 
             cbGenero.FormattingEnabled = true;
-            cbGenero.Items.AddRange(new object[] { "Comedia", "Drama", "Ciencia Ficción", "Terror", "Anime" });
+            cbGenero.Items.AddRange(new object[] { "Comedia", "Drama", "Ciencia Ficcion", "Terror", "Anime" });
             cbGenero.Location = new Point(237, 259);
             cbGenero.Name = "cbGenero";
             cbGenero.Size = new Size(327, 28);
