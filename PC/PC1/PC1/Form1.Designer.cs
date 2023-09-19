@@ -29,58 +29,52 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            numericUpDown1 = new NumericUpDown();
-            comboBox1 = new ComboBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            dtpFechaRegresoViaje = new DateTimePicker();
+            dtpFechaSalidaViaje = new DateTimePicker();
+            tbCodigoViaje = new TextBox();
+            tbPrecioViaje = new TextBox();
+            tbDestinoViaje = new TextBox();
             label6 = new Label();
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            button1 = new Button();
-            button2 = new Button();
+            btnLimpiarViaje = new Button();
+            btnAgregarViaje = new Button();
             panel2 = new Panel();
-            numericUpDown2 = new NumericUpDown();
-            comboBox2 = new ComboBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            label7 = new Label();
+            tbCodigoCliente = new TextBox();
+            tbNombreCliente = new TextBox();
+            tbNumeroTelefonoCliente = new TextBox();
+            tbCorreoCliente = new TextBox();
             label8 = new Label();
             label9 = new Label();
             label10 = new Label();
             label11 = new Label();
             label12 = new Label();
-            button3 = new Button();
-            button4 = new Button();
-            listView1 = new ListView();
+            btnLimpiarCliente = new Button();
+            btnAgregarCliente = new Button();
+            listViewDatabaseViajes = new ListView();
             columnHeader1 = new ColumnHeader();
             columnHeader2 = new ColumnHeader();
             columnHeader3 = new ColumnHeader();
             columnHeader4 = new ColumnHeader();
             columnHeader5 = new ColumnHeader();
-            columnHeader6 = new ColumnHeader();
-            listView2 = new ListView();
+            listViewDatabaseClientes = new ListView();
             columnHeader7 = new ColumnHeader();
             columnHeader8 = new ColumnHeader();
             columnHeader9 = new ColumnHeader();
             columnHeader10 = new ColumnHeader();
-            columnHeader11 = new ColumnHeader();
             panel3 = new Panel();
-            textBox7 = new TextBox();
+            tbBuscarDestino = new TextBox();
             label13 = new Label();
-            button5 = new Button();
+            btnBuscarViajesXDestino = new Button();
             panel4 = new Panel();
-            textBox8 = new TextBox();
+            tbBuscarClienteXCorreo = new TextBox();
             label14 = new Label();
             button6 = new Button();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
             SuspendLayout();
@@ -88,105 +82,104 @@
             // panel1
             // 
             panel1.BackColor = Color.White;
-            panel1.Controls.Add(numericUpDown1);
-            panel1.Controls.Add(comboBox1);
-            panel1.Controls.Add(textBox3);
-            panel1.Controls.Add(textBox2);
-            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(dtpFechaRegresoViaje);
+            panel1.Controls.Add(dtpFechaSalidaViaje);
+            panel1.Controls.Add(tbCodigoViaje);
+            panel1.Controls.Add(tbPrecioViaje);
+            panel1.Controls.Add(tbDestinoViaje);
             panel1.Controls.Add(label6);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(button2);
+            panel1.Controls.Add(btnLimpiarViaje);
+            panel1.Controls.Add(btnAgregarViaje);
             panel1.Location = new Point(12, 12);
             panel1.Name = "panel1";
             panel1.Size = new Size(600, 398);
             panel1.TabIndex = 0;
             // 
-            // numericUpDown1
+            // dtpFechaRegresoViaje
             // 
-            numericUpDown1.Location = new Point(223, 291);
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(211, 27);
-            numericUpDown1.TabIndex = 4;
+            dtpFechaRegresoViaje.Location = new Point(267, 243);
+            dtpFechaRegresoViaje.Name = "dtpFechaRegresoViaje";
+            dtpFechaRegresoViaje.Size = new Size(250, 27);
+            dtpFechaRegresoViaje.TabIndex = 5;
             // 
-            // comboBox1
+            // dtpFechaSalidaViaje
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(223, 236);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(211, 28);
-            comboBox1.TabIndex = 3;
+            dtpFechaSalidaViaje.Location = new Point(269, 197);
+            dtpFechaSalidaViaje.Name = "dtpFechaSalidaViaje";
+            dtpFechaSalidaViaje.Size = new Size(250, 27);
+            dtpFechaSalidaViaje.TabIndex = 5;
             // 
-            // textBox3
+            // tbCodigoViaje
             // 
-            textBox3.Location = new Point(223, 89);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(211, 27);
-            textBox3.TabIndex = 2;
+            tbCodigoViaje.Location = new Point(269, 92);
+            tbCodigoViaje.Name = "tbCodigoViaje";
+            tbCodigoViaje.Size = new Size(248, 27);
+            tbCodigoViaje.TabIndex = 2;
             // 
-            // textBox2
+            // tbPrecioViaje
             // 
-            textBox2.Location = new Point(223, 145);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(211, 27);
-            textBox2.TabIndex = 2;
+            tbPrecioViaje.Location = new Point(267, 295);
+            tbPrecioViaje.Name = "tbPrecioViaje";
+            tbPrecioViaje.Size = new Size(248, 27);
+            tbPrecioViaje.TabIndex = 2;
             // 
-            // textBox1
+            // tbDestinoViaje
             // 
-            textBox1.Location = new Point(223, 188);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(211, 27);
-            textBox1.TabIndex = 2;
+            tbDestinoViaje.Location = new Point(269, 148);
+            tbDestinoViaje.Name = "tbDestinoViaje";
+            tbDestinoViaje.Size = new Size(248, 27);
+            tbDestinoViaje.TabIndex = 2;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Comic Sans MS", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(119, 287);
+            label6.Location = new Point(99, 294);
             label6.Name = "label6";
-            label6.Size = new Size(81, 28);
+            label6.Size = new Size(164, 28);
             label6.TabIndex = 1;
-            label6.Text = "Código:";
+            label6.Text = "Precio del Viaje:";
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Comic Sans MS", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(119, 236);
+            label5.Location = new Point(79, 239);
             label5.Name = "label5";
-            label5.Size = new Size(81, 28);
+            label5.Size = new Size(182, 28);
             label5.TabIndex = 1;
-            label5.Text = "Código:";
+            label5.Text = "Fecha de regreso:";
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Comic Sans MS", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(119, 188);
+            label4.Location = new Point(99, 196);
             label4.Name = "label4";
-            label4.Size = new Size(81, 28);
+            label4.Size = new Size(161, 28);
             label4.TabIndex = 1;
-            label4.Text = "Código:";
+            label4.Text = "Fecha de salida:";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Comic Sans MS", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(119, 135);
+            label3.Location = new Point(79, 145);
             label3.Name = "label3";
-            label3.Size = new Size(81, 28);
+            label3.Size = new Size(171, 28);
             label3.TabIndex = 1;
-            label3.Text = "Código:";
+            label3.Text = "Destino de Viaje:";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Comic Sans MS", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(119, 86);
+            label2.Location = new Point(180, 89);
             label2.Name = "label2";
             label2.Size = new Size(81, 28);
             label2.TabIndex = 1;
@@ -196,144 +189,126 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(238, 16);
+            label1.Location = new Point(189, 17);
             label1.Name = "label1";
-            label1.Size = new Size(102, 39);
+            label1.Size = new Size(269, 39);
             label1.TabIndex = 1;
-            label1.Text = "TItulo";
+            label1.Text = "Registro de Viajes";
             // 
-            // button1
+            // btnLimpiarViaje
             // 
-            button1.BackColor = Color.MediumBlue;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseDownBackColor = Color.DarkSlateBlue;
-            button1.FlatAppearance.MouseOverBackColor = Color.Navy;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(301, 337);
-            button1.Name = "button1";
-            button1.Size = new Size(133, 39);
-            button1.TabIndex = 0;
-            button1.Text = "Limpiar";
-            button1.UseVisualStyleBackColor = false;
+            btnLimpiarViaje.BackColor = Color.MediumBlue;
+            btnLimpiarViaje.FlatAppearance.BorderSize = 0;
+            btnLimpiarViaje.FlatAppearance.MouseDownBackColor = Color.DarkSlateBlue;
+            btnLimpiarViaje.FlatAppearance.MouseOverBackColor = Color.Navy;
+            btnLimpiarViaje.FlatStyle = FlatStyle.Flat;
+            btnLimpiarViaje.ForeColor = Color.White;
+            btnLimpiarViaje.Location = new Point(325, 344);
+            btnLimpiarViaje.Name = "btnLimpiarViaje";
+            btnLimpiarViaje.Size = new Size(133, 39);
+            btnLimpiarViaje.TabIndex = 0;
+            btnLimpiarViaje.Text = "Limpiar";
+            btnLimpiarViaje.UseVisualStyleBackColor = false;
+            btnLimpiarViaje.Click += btnLimpiarViaje_Click;
             // 
-            // button2
+            // btnAgregarViaje
             // 
-            button2.BackColor = Color.MediumBlue;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatAppearance.MouseDownBackColor = Color.DarkSlateBlue;
-            button2.FlatAppearance.MouseOverBackColor = Color.Navy;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(119, 337);
-            button2.Name = "button2";
-            button2.Size = new Size(133, 39);
-            button2.TabIndex = 0;
-            button2.Text = "Agregar";
-            button2.UseVisualStyleBackColor = false;
+            btnAgregarViaje.BackColor = Color.MediumBlue;
+            btnAgregarViaje.FlatAppearance.BorderSize = 0;
+            btnAgregarViaje.FlatAppearance.MouseDownBackColor = Color.DarkSlateBlue;
+            btnAgregarViaje.FlatAppearance.MouseOverBackColor = Color.Navy;
+            btnAgregarViaje.FlatStyle = FlatStyle.Flat;
+            btnAgregarViaje.ForeColor = Color.White;
+            btnAgregarViaje.Location = new Point(143, 344);
+            btnAgregarViaje.Name = "btnAgregarViaje";
+            btnAgregarViaje.Size = new Size(133, 39);
+            btnAgregarViaje.TabIndex = 0;
+            btnAgregarViaje.Text = "Agregar";
+            btnAgregarViaje.UseVisualStyleBackColor = false;
+            btnAgregarViaje.Click += btnAgregarViaje_Click;
             // 
             // panel2
             // 
             panel2.BackColor = Color.White;
-            panel2.Controls.Add(numericUpDown2);
-            panel2.Controls.Add(comboBox2);
-            panel2.Controls.Add(textBox4);
-            panel2.Controls.Add(textBox5);
-            panel2.Controls.Add(textBox6);
-            panel2.Controls.Add(label7);
+            panel2.Controls.Add(tbCodigoCliente);
+            panel2.Controls.Add(tbNombreCliente);
+            panel2.Controls.Add(tbNumeroTelefonoCliente);
+            panel2.Controls.Add(tbCorreoCliente);
             panel2.Controls.Add(label8);
             panel2.Controls.Add(label9);
             panel2.Controls.Add(label10);
             panel2.Controls.Add(label11);
             panel2.Controls.Add(label12);
-            panel2.Controls.Add(button3);
-            panel2.Controls.Add(button4);
+            panel2.Controls.Add(btnLimpiarCliente);
+            panel2.Controls.Add(btnAgregarCliente);
             panel2.Location = new Point(12, 434);
             panel2.Name = "panel2";
             panel2.Size = new Size(600, 415);
             panel2.TabIndex = 0;
             // 
-            // numericUpDown2
+            // tbCodigoCliente
             // 
-            numericUpDown2.Location = new Point(247, 302);
-            numericUpDown2.Name = "numericUpDown2";
-            numericUpDown2.Size = new Size(211, 27);
-            numericUpDown2.TabIndex = 17;
+            tbCodigoCliente.Location = new Point(288, 103);
+            tbCodigoCliente.Name = "tbCodigoCliente";
+            tbCodigoCliente.Size = new Size(211, 27);
+            tbCodigoCliente.TabIndex = 13;
             // 
-            // comboBox2
+            // tbNombreCliente
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(247, 247);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(211, 28);
-            comboBox2.TabIndex = 16;
+            tbNombreCliente.Location = new Point(288, 159);
+            tbNombreCliente.Name = "tbNombreCliente";
+            tbNombreCliente.Size = new Size(211, 27);
+            tbNombreCliente.TabIndex = 14;
             // 
-            // textBox4
+            // tbNumeroTelefonoCliente
             // 
-            textBox4.Location = new Point(247, 100);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(211, 27);
-            textBox4.TabIndex = 13;
+            tbNumeroTelefonoCliente.Location = new Point(288, 250);
+            tbNumeroTelefonoCliente.Name = "tbNumeroTelefonoCliente";
+            tbNumeroTelefonoCliente.Size = new Size(211, 27);
+            tbNumeroTelefonoCliente.TabIndex = 15;
             // 
-            // textBox5
+            // tbCorreoCliente
             // 
-            textBox5.Location = new Point(247, 156);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(211, 27);
-            textBox5.TabIndex = 14;
-            // 
-            // textBox6
-            // 
-            textBox6.Location = new Point(247, 199);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(211, 27);
-            textBox6.TabIndex = 15;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Comic Sans MS", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(143, 298);
-            label7.Name = "label7";
-            label7.Size = new Size(81, 28);
-            label7.TabIndex = 7;
-            label7.Text = "Código:";
+            tbCorreoCliente.Location = new Point(288, 202);
+            tbCorreoCliente.Name = "tbCorreoCliente";
+            tbCorreoCliente.Size = new Size(211, 27);
+            tbCorreoCliente.TabIndex = 15;
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Comic Sans MS", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(143, 247);
+            label8.Location = new Point(62, 250);
             label8.Name = "label8";
-            label8.Size = new Size(81, 28);
+            label8.Size = new Size(203, 28);
             label8.TabIndex = 8;
-            label8.Text = "Código:";
+            label8.Text = "Número de teléfono:";
             // 
             // label9
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Comic Sans MS", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.Location = new Point(143, 199);
+            label9.Location = new Point(73, 202);
             label9.Name = "label9";
-            label9.Size = new Size(81, 28);
+            label9.Size = new Size(192, 28);
             label9.TabIndex = 9;
-            label9.Text = "Código:";
+            label9.Text = "Correo electrónico:";
             // 
             // label10
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Comic Sans MS", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.Location = new Point(143, 146);
+            label10.Location = new Point(172, 156);
             label10.Name = "label10";
-            label10.Size = new Size(81, 28);
+            label10.Size = new Size(93, 28);
             label10.TabIndex = 10;
-            label10.Text = "Código:";
+            label10.Text = "Nombre:";
             // 
             // label11
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Comic Sans MS", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.Location = new Point(143, 97);
+            label11.Location = new Point(184, 100);
             label11.Name = "label11";
             label11.Size = new Size(81, 28);
             label11.TabIndex = 11;
@@ -343,153 +318,158 @@
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label12.Location = new Point(262, 27);
+            label12.Location = new Point(188, 38);
             label12.Name = "label12";
-            label12.Size = new Size(102, 39);
+            label12.Size = new Size(292, 39);
             label12.TabIndex = 12;
-            label12.Text = "TItulo";
+            label12.Text = "Registro de Clientes";
             // 
-            // button3
+            // btnLimpiarCliente
             // 
-            button3.BackColor = Color.MediumBlue;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatAppearance.MouseDownBackColor = Color.DarkSlateBlue;
-            button3.FlatAppearance.MouseOverBackColor = Color.Navy;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(325, 348);
-            button3.Name = "button3";
-            button3.Size = new Size(133, 39);
-            button3.TabIndex = 5;
-            button3.Text = "Limpiar";
-            button3.UseVisualStyleBackColor = false;
+            btnLimpiarCliente.BackColor = Color.MediumBlue;
+            btnLimpiarCliente.FlatAppearance.BorderSize = 0;
+            btnLimpiarCliente.FlatAppearance.MouseDownBackColor = Color.DarkSlateBlue;
+            btnLimpiarCliente.FlatAppearance.MouseOverBackColor = Color.Navy;
+            btnLimpiarCliente.FlatStyle = FlatStyle.Flat;
+            btnLimpiarCliente.ForeColor = Color.White;
+            btnLimpiarCliente.Location = new Point(325, 321);
+            btnLimpiarCliente.Name = "btnLimpiarCliente";
+            btnLimpiarCliente.Size = new Size(133, 39);
+            btnLimpiarCliente.TabIndex = 5;
+            btnLimpiarCliente.Text = "Limpiar";
+            btnLimpiarCliente.UseVisualStyleBackColor = false;
+            btnLimpiarCliente.Click += btnLimpiarCliente_Click;
             // 
-            // button4
+            // btnAgregarCliente
             // 
-            button4.BackColor = Color.MediumBlue;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatAppearance.MouseDownBackColor = Color.DarkSlateBlue;
-            button4.FlatAppearance.MouseOverBackColor = Color.Navy;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(143, 348);
-            button4.Name = "button4";
-            button4.Size = new Size(133, 39);
-            button4.TabIndex = 6;
-            button4.Text = "Agregar";
-            button4.UseVisualStyleBackColor = false;
+            btnAgregarCliente.BackColor = Color.MediumBlue;
+            btnAgregarCliente.FlatAppearance.BorderSize = 0;
+            btnAgregarCliente.FlatAppearance.MouseDownBackColor = Color.DarkSlateBlue;
+            btnAgregarCliente.FlatAppearance.MouseOverBackColor = Color.Navy;
+            btnAgregarCliente.FlatStyle = FlatStyle.Flat;
+            btnAgregarCliente.ForeColor = Color.White;
+            btnAgregarCliente.Location = new Point(143, 321);
+            btnAgregarCliente.Name = "btnAgregarCliente";
+            btnAgregarCliente.Size = new Size(133, 39);
+            btnAgregarCliente.TabIndex = 6;
+            btnAgregarCliente.Text = "Agregar";
+            btnAgregarCliente.UseVisualStyleBackColor = false;
+            btnAgregarCliente.Click += btnAgregarCliente_Click;
             // 
-            // listView1
+            // listViewDatabaseViajes
             // 
-            listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5, columnHeader6 });
-            listView1.Location = new Point(627, 12);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(650, 398);
-            listView1.TabIndex = 1;
-            listView1.UseCompatibleStateImageBehavior = false;
-            listView1.View = View.Details;
+            listViewDatabaseViajes.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5 });
+            listViewDatabaseViajes.Location = new Point(627, 12);
+            listViewDatabaseViajes.Name = "listViewDatabaseViajes";
+            listViewDatabaseViajes.Size = new Size(650, 398);
+            listViewDatabaseViajes.TabIndex = 1;
+            listViewDatabaseViajes.UseCompatibleStateImageBehavior = false;
+            listViewDatabaseViajes.View = View.Details;
+            listViewDatabaseViajes.SelectedIndexChanged += listViewDatabaseViajes_SelectedIndexChanged;
             // 
             // columnHeader1
             // 
+            columnHeader1.Text = "Código";
             columnHeader1.Width = 100;
             // 
             // columnHeader2
             // 
+            columnHeader2.Text = "Destino de Viaje";
             columnHeader2.Width = 100;
             // 
             // columnHeader3
             // 
-            columnHeader3.Width = 100;
+            columnHeader3.Text = "Fecha de salida";
+            columnHeader3.Width = 120;
             // 
             // columnHeader4
             // 
-            columnHeader4.Width = 100;
+            columnHeader4.Text = "Fecha de regreso";
+            columnHeader4.Width = 120;
             // 
             // columnHeader5
             // 
+            columnHeader5.Text = "Precio";
             columnHeader5.Width = 100;
             // 
-            // columnHeader6
+            // listViewDatabaseClientes
             // 
-            columnHeader6.Width = 100;
-            // 
-            // listView2
-            // 
-            listView2.Columns.AddRange(new ColumnHeader[] { columnHeader7, columnHeader8, columnHeader9, columnHeader10, columnHeader11 });
-            listView2.Location = new Point(627, 434);
-            listView2.Name = "listView2";
-            listView2.Size = new Size(646, 415);
-            listView2.TabIndex = 1;
-            listView2.UseCompatibleStateImageBehavior = false;
-            listView2.View = View.Details;
+            listViewDatabaseClientes.Columns.AddRange(new ColumnHeader[] { columnHeader7, columnHeader8, columnHeader9, columnHeader10 });
+            listViewDatabaseClientes.Location = new Point(627, 434);
+            listViewDatabaseClientes.Name = "listViewDatabaseClientes";
+            listViewDatabaseClientes.Size = new Size(646, 415);
+            listViewDatabaseClientes.TabIndex = 1;
+            listViewDatabaseClientes.UseCompatibleStateImageBehavior = false;
+            listViewDatabaseClientes.View = View.Details;
             // 
             // columnHeader7
             // 
+            columnHeader7.Text = "Código";
             columnHeader7.Width = 100;
             // 
             // columnHeader8
             // 
+            columnHeader8.Text = "Nombre";
             columnHeader8.Width = 100;
             // 
             // columnHeader9
             // 
-            columnHeader9.Width = 100;
+            columnHeader9.Text = "Correo electrónico";
+            columnHeader9.Width = 140;
             // 
             // columnHeader10
             // 
-            columnHeader10.Width = 100;
-            // 
-            // columnHeader11
-            // 
-            columnHeader11.Width = 100;
+            columnHeader10.Text = "Número de teléfono";
+            columnHeader10.Width = 150;
             // 
             // panel3
             // 
             panel3.BackColor = Color.White;
-            panel3.Controls.Add(textBox7);
+            panel3.Controls.Add(tbBuscarDestino);
             panel3.Controls.Add(label13);
-            panel3.Controls.Add(button5);
+            panel3.Controls.Add(btnBuscarViajesXDestino);
             panel3.Location = new Point(1294, 12);
             panel3.Name = "panel3";
             panel3.Size = new Size(416, 398);
             panel3.TabIndex = 0;
             // 
-            // textBox7
+            // tbBuscarDestino
             // 
-            textBox7.Location = new Point(35, 68);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(337, 27);
-            textBox7.TabIndex = 5;
+            tbBuscarDestino.Location = new Point(35, 188);
+            tbBuscarDestino.Name = "tbBuscarDestino";
+            tbBuscarDestino.Size = new Size(337, 27);
+            tbBuscarDestino.TabIndex = 5;
             // 
             // label13
             // 
             label13.AutoSize = true;
             label13.Font = new Font("Comic Sans MS", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label13.Location = new Point(35, 25);
+            label13.Location = new Point(35, 145);
             label13.Name = "label13";
-            label13.Size = new Size(113, 28);
+            label13.Size = new Size(276, 56);
             label13.TabIndex = 3;
-            label13.Text = "Buscar por";
+            label13.Text = "Buscar por destino de Viaje:\r\n\r\n";
             // 
-            // button5
+            // btnBuscarViajesXDestino
             // 
-            button5.BackColor = Color.MediumBlue;
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatAppearance.MouseDownBackColor = Color.DarkSlateBlue;
-            button5.FlatAppearance.MouseOverBackColor = Color.Navy;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.ForeColor = Color.White;
-            button5.Location = new Point(154, 101);
-            button5.Name = "button5";
-            button5.Size = new Size(133, 39);
-            button5.TabIndex = 0;
-            button5.Text = "Buscar";
-            button5.UseVisualStyleBackColor = false;
+            btnBuscarViajesXDestino.BackColor = Color.MediumBlue;
+            btnBuscarViajesXDestino.FlatAppearance.BorderSize = 0;
+            btnBuscarViajesXDestino.FlatAppearance.MouseDownBackColor = Color.DarkSlateBlue;
+            btnBuscarViajesXDestino.FlatAppearance.MouseOverBackColor = Color.Navy;
+            btnBuscarViajesXDestino.FlatStyle = FlatStyle.Flat;
+            btnBuscarViajesXDestino.ForeColor = Color.White;
+            btnBuscarViajesXDestino.Location = new Point(154, 221);
+            btnBuscarViajesXDestino.Name = "btnBuscarViajesXDestino";
+            btnBuscarViajesXDestino.Size = new Size(133, 39);
+            btnBuscarViajesXDestino.TabIndex = 0;
+            btnBuscarViajesXDestino.Text = "Buscar";
+            btnBuscarViajesXDestino.UseVisualStyleBackColor = false;
+            btnBuscarViajesXDestino.Click += btnBuscarViajesXDestino_Click;
             // 
             // panel4
             // 
             panel4.BackColor = Color.White;
-            panel4.Controls.Add(textBox8);
+            panel4.Controls.Add(tbBuscarClienteXCorreo);
             panel4.Controls.Add(label14);
             panel4.Controls.Add(button6);
             panel4.Location = new Point(1294, 434);
@@ -497,22 +477,22 @@
             panel4.Size = new Size(416, 415);
             panel4.TabIndex = 0;
             // 
-            // textBox8
+            // tbBuscarClienteXCorreo
             // 
-            textBox8.Location = new Point(35, 81);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(337, 27);
-            textBox8.TabIndex = 8;
+            tbBuscarClienteXCorreo.Location = new Point(35, 178);
+            tbBuscarClienteXCorreo.Name = "tbBuscarClienteXCorreo";
+            tbBuscarClienteXCorreo.Size = new Size(337, 27);
+            tbBuscarClienteXCorreo.TabIndex = 8;
             // 
             // label14
             // 
             label14.AutoSize = true;
             label14.Font = new Font("Comic Sans MS", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label14.Location = new Point(35, 38);
+            label14.Location = new Point(35, 133);
             label14.Name = "label14";
-            label14.Size = new Size(113, 28);
+            label14.Size = new Size(297, 28);
             label14.TabIndex = 7;
-            label14.Text = "Buscar por";
+            label14.Text = "Buscar por correo electrónico:";
             // 
             // button6
             // 
@@ -522,12 +502,13 @@
             button6.FlatAppearance.MouseOverBackColor = Color.Navy;
             button6.FlatStyle = FlatStyle.Flat;
             button6.ForeColor = Color.White;
-            button6.Location = new Point(154, 114);
+            button6.Location = new Point(154, 226);
             button6.Name = "button6";
             button6.Size = new Size(133, 39);
             button6.TabIndex = 6;
             button6.Text = "Buscar";
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // Form1
             // 
@@ -535,8 +516,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PowderBlue;
             ClientSize = new Size(1722, 861);
-            Controls.Add(listView2);
-            Controls.Add(listView1);
+            Controls.Add(listViewDatabaseClientes);
+            Controls.Add(listViewDatabaseViajes);
             Controls.Add(panel2);
             Controls.Add(panel4);
             Controls.Add(panel3);
@@ -546,13 +527,10 @@
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
-            Load += Form1_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown2).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             panel4.ResumeLayout(false);
@@ -564,52 +542,48 @@
 
         private Panel panel1;
         private Panel panel2;
-        private ListView listView1;
-        private ListView listView2;
+        private ListView listViewDatabaseViajes;
+        private ListView listViewDatabaseClientes;
         private Panel panel3;
         private Panel panel4;
-        private NumericUpDown numericUpDown1;
-        private ComboBox comboBox1;
-        private TextBox textBox1;
         private Label label1;
-        private TextBox textBox3;
-        private TextBox textBox2;
+        private TextBox tbCodigoViaje;
+        private TextBox tbDestinoViaje;
         private Label label6;
         private Label label5;
         private Label label4;
         private Label label3;
         private Label label2;
-        private Button button2;
-        private Button button1;
-        private NumericUpDown numericUpDown2;
-        private ComboBox comboBox2;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private Label label7;
+        private Button btnAgregarViaje;
+        private Button btnLimpiarViaje;
+        private TextBox tbCodigoCliente;
+        private TextBox tbNombreCliente;
+        private TextBox tbCorreoCliente;
         private Label label8;
         private Label label9;
         private Label label10;
         private Label label11;
         private Label label12;
-        private Button button3;
-        private Button button4;
+        private Button btnLimpiarCliente;
+        private Button btnAgregarCliente;
         private ColumnHeader columnHeader1;
         private ColumnHeader columnHeader2;
         private ColumnHeader columnHeader3;
         private ColumnHeader columnHeader4;
         private ColumnHeader columnHeader5;
-        private ColumnHeader columnHeader6;
         private ColumnHeader columnHeader7;
         private ColumnHeader columnHeader8;
         private ColumnHeader columnHeader9;
         private ColumnHeader columnHeader10;
-        private ColumnHeader columnHeader11;
-        private TextBox textBox7;
+        private TextBox tbBuscarDestino;
         private Label label13;
-        private Button button5;
-        private TextBox textBox8;
+        private Button btnBuscarViajesXDestino;
+        private TextBox tbBuscarClienteXCorreo;
         private Label label14;
         private Button button6;
+        private DateTimePicker dtpFechaRegresoViaje;
+        private DateTimePicker dtpFechaSalidaViaje;
+        private TextBox tbNumeroTelefonoCliente;
+        private TextBox tbPrecioViaje;
     }
 }
