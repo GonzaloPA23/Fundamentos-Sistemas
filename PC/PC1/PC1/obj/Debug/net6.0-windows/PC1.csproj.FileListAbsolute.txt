@@ -1,0 +1,16 @@
+D:\Fundamentos-Sistemas\PC\PC1\PC1\bin\Debug\net6.0-windows\PC1.exe
+D:\Fundamentos-Sistemas\PC\PC1\PC1\bin\Debug\net6.0-windows\PC1.deps.json
+D:\Fundamentos-Sistemas\PC\PC1\PC1\bin\Debug\net6.0-windows\PC1.runtimeconfig.json
+D:\Fundamentos-Sistemas\PC\PC1\PC1\bin\Debug\net6.0-windows\PC1.dll
+D:\Fundamentos-Sistemas\PC\PC1\PC1\bin\Debug\net6.0-windows\PC1.pdb
+D:\Fundamentos-Sistemas\PC\PC1\PC1\obj\Debug\net6.0-windows\PC1.Form1.resources
+D:\Fundamentos-Sistemas\PC\PC1\PC1\obj\Debug\net6.0-windows\PC1.csproj.GenerateResource.cache
+D:\Fundamentos-Sistemas\PC\PC1\PC1\obj\Debug\net6.0-windows\PC1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Fundamentos-Sistemas\PC\PC1\PC1\obj\Debug\net6.0-windows\PC1.AssemblyInfoInputs.cache
+D:\Fundamentos-Sistemas\PC\PC1\PC1\obj\Debug\net6.0-windows\PC1.AssemblyInfo.cs
+D:\Fundamentos-Sistemas\PC\PC1\PC1\obj\Debug\net6.0-windows\PC1.csproj.CoreCompileInputs.cache
+D:\Fundamentos-Sistemas\PC\PC1\PC1\obj\Debug\net6.0-windows\PC1.dll
+D:\Fundamentos-Sistemas\PC\PC1\PC1\obj\Debug\net6.0-windows\refint\PC1.dll
+D:\Fundamentos-Sistemas\PC\PC1\PC1\obj\Debug\net6.0-windows\PC1.pdb
+D:\Fundamentos-Sistemas\PC\PC1\PC1\obj\Debug\net6.0-windows\PC1.genruntimeconfig.cache
+D:\Fundamentos-Sistemas\PC\PC1\PC1\obj\Debug\net6.0-windows\ref\PC1.dll
