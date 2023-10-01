@@ -17,3 +17,5 @@ D:\Fundamentos-Sistemas\TP\TP\TP\obj\Debug\net6.0-windows\ref\CapaPresentacion.d
 D:\Fundamentos-Sistemas\TP\TP\TP\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
 D:\Fundamentos-Sistemas\TP\TP\TP\obj\Debug\net6.0-windows\CapaPresentacion.csproj.AssemblyReference.cache
 D:\Fundamentos-Sistemas\TP\TP\TP\obj\Debug\net6.0-windows\CapaPresentacion.csproj.CopyComplete
+D:\Fundamentos-Sistemas\TP\TP\TP\obj\Debug\net6.0-windows\CapaPresentacion.frmMenuPrincipal.resources
+D:\Fundamentos-Sistemas\TP\TP\TP\obj\Debug\net6.0-windows\CapaPresentacion.Properties.Resources.resources

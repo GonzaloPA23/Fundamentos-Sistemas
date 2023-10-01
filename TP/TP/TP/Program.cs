@@ -1,3 +1,5 @@
+using CapaPresentacion;
+
 namespace TP
 {
     internal static class Program
@@ -11,7 +13,7 @@ namespace TP
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new frmInicio());
+            Application.Run(new frmMenuPrincipal());
         }
     }
 }
