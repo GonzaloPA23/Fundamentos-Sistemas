@@ -19,3 +19,4 @@ D:\Fundamentos-Sistemas\TP\TP\TP\obj\Debug\net6.0-windows\CapaPresentacion.cspro
 D:\Fundamentos-Sistemas\TP\TP\TP\obj\Debug\net6.0-windows\CapaPresentacion.csproj.CopyComplete
 D:\Fundamentos-Sistemas\TP\TP\TP\obj\Debug\net6.0-windows\CapaPresentacion.frmMenuPrincipal.resources
 D:\Fundamentos-Sistemas\TP\TP\TP\obj\Debug\net6.0-windows\CapaPresentacion.Properties.Resources.resources
+D:\Fundamentos-Sistemas\TP\TP\TP\obj\Debug\net6.0-windows\CapaPresentacion.frmRegistro.resources
