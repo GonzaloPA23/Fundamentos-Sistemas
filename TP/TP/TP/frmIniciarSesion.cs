@@ -7,20 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TP;
 
 namespace CapaPresentacion
 {
-    public partial class frmRegistro : Form
+    public partial class frmIniciarSesion : Form
     {
-        public frmRegistro()
+        public frmIniciarSesion()
         {
             InitializeComponent();
         }
 
         private void label8_Click(object sender, EventArgs e)
         {
-            frmIniciarSesion frmIniciarSesion = new frmIniciarSesion();
-            frmIniciarSesion.ShowDialog();
+            frmRegistro frmRegistro = new frmRegistro();
+            frmRegistro.ShowDialog();
+        }
+
+        private void btnIniciarSesion_Click(object sender, EventArgs e)
+        {
+            frmInicio frmInicio = new frmInicio();
+            frmInicio.ShowDialog();
         }
     }
 }

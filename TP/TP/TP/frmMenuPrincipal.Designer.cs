@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
+            btnRegistrarseMP = new Button();
+            btnIniciarSesionMP = new Button();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
@@ -39,43 +39,45 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // btnRegistrarseMP
             // 
-            button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button1.AutoEllipsis = true;
-            button1.BackColor = Color.FromArgb(182, 113, 137);
-            button1.Cursor = Cursors.Hand;
-            button1.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 0, 0);
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(169, 100, 122);
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(164, 709);
-            button1.Name = "button1";
-            button1.Size = new Size(345, 58);
-            button1.TabIndex = 8;
-            button1.Text = "Registrarse";
-            button1.UseVisualStyleBackColor = false;
+            btnRegistrarseMP.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnRegistrarseMP.AutoEllipsis = true;
+            btnRegistrarseMP.BackColor = Color.FromArgb(182, 113, 137);
+            btnRegistrarseMP.Cursor = Cursors.Hand;
+            btnRegistrarseMP.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 0, 0);
+            btnRegistrarseMP.FlatAppearance.BorderSize = 0;
+            btnRegistrarseMP.FlatAppearance.MouseOverBackColor = Color.FromArgb(169, 100, 122);
+            btnRegistrarseMP.FlatStyle = FlatStyle.Flat;
+            btnRegistrarseMP.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRegistrarseMP.ForeColor = Color.White;
+            btnRegistrarseMP.Location = new Point(164, 709);
+            btnRegistrarseMP.Name = "btnRegistrarseMP";
+            btnRegistrarseMP.Size = new Size(345, 58);
+            btnRegistrarseMP.TabIndex = 8;
+            btnRegistrarseMP.Text = "Registrarse";
+            btnRegistrarseMP.UseVisualStyleBackColor = false;
+            btnRegistrarseMP.Click += btnRegistrarse_Click;
             // 
-            // button2
+            // btnIniciarSesionMP
             // 
-            button2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button2.AutoEllipsis = true;
-            button2.BackColor = Color.FromArgb(222, 108, 148);
-            button2.Cursor = Cursors.Hand;
-            button2.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 0, 0);
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatAppearance.MouseDownBackColor = Color.FromArgb(206, 113, 142);
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(164, 630);
-            button2.Name = "button2";
-            button2.Size = new Size(345, 60);
-            button2.TabIndex = 9;
-            button2.Text = "Iniciar sesión";
-            button2.UseVisualStyleBackColor = false;
+            btnIniciarSesionMP.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnIniciarSesionMP.AutoEllipsis = true;
+            btnIniciarSesionMP.BackColor = Color.FromArgb(222, 108, 148);
+            btnIniciarSesionMP.Cursor = Cursors.Hand;
+            btnIniciarSesionMP.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 0, 0);
+            btnIniciarSesionMP.FlatAppearance.BorderSize = 0;
+            btnIniciarSesionMP.FlatAppearance.MouseDownBackColor = Color.FromArgb(206, 113, 142);
+            btnIniciarSesionMP.FlatStyle = FlatStyle.Flat;
+            btnIniciarSesionMP.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnIniciarSesionMP.ForeColor = Color.White;
+            btnIniciarSesionMP.Location = new Point(164, 630);
+            btnIniciarSesionMP.Name = "btnIniciarSesionMP";
+            btnIniciarSesionMP.Size = new Size(345, 60);
+            btnIniciarSesionMP.TabIndex = 9;
+            btnIniciarSesionMP.Text = "Iniciar sesión";
+            btnIniciarSesionMP.UseVisualStyleBackColor = false;
+            btnIniciarSesionMP.Click += btnIniciarSesion_Click;
             // 
             // label3
             // 
@@ -136,8 +138,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(235, 235, 233);
             ClientSize = new Size(691, 836);
-            Controls.Add(button1);
-            Controls.Add(button2);
+            Controls.Add(btnRegistrarseMP);
+            Controls.Add(btnIniciarSesionMP);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -157,8 +159,8 @@
 
         #endregion
 
-        private Button button1;
-        private Button button2;
+        private Button btnRegistrarseMP;
+        private Button btnIniciarSesionMP;
         private Label label3;
         private Label label2;
         private Label label1;

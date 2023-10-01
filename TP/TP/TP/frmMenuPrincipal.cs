@@ -16,5 +16,17 @@ namespace CapaPresentacion
         {
             InitializeComponent();
         }
+
+        private void btnIniciarSesion_Click(object sender, EventArgs e)
+        {
+            frmIniciarSesion frmIniciarSesion = new frmIniciarSesion();
+            frmIniciarSesion.ShowDialog();
+        }
+
+        private void btnRegistrarse_Click(object sender, EventArgs e)
+        {
+            frmRegistro frmRegistro = new frmRegistro();
+            frmRegistro.ShowDialog();
+        }
     }
 }

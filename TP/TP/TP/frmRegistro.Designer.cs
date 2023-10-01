@@ -41,7 +41,7 @@
             label6 = new Label();
             label7 = new Label();
             label8 = new Label();
-            button2 = new Button();
+            btnRegistrarse = new Button();
             SuspendLayout();
             // 
             // label1
@@ -165,38 +165,40 @@
             // label8
             // 
             label8.AutoSize = true;
+            label8.Cursor = Cursors.Hand;
             label8.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label8.Location = new Point(284, 726);
             label8.Name = "label8";
             label8.Size = new Size(135, 28);
             label8.TabIndex = 17;
             label8.Text = "Iniciar sesión";
+            label8.Click += label8_Click;
             // 
-            // button2
+            // btnRegistrarse
             // 
-            button2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button2.AutoEllipsis = true;
-            button2.BackColor = Color.FromArgb(222, 108, 148);
-            button2.Cursor = Cursors.Hand;
-            button2.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 0, 0);
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatAppearance.MouseDownBackColor = Color.FromArgb(206, 113, 142);
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(201, 602);
-            button2.Name = "button2";
-            button2.Size = new Size(306, 60);
-            button2.TabIndex = 19;
-            button2.Text = "Registrarse";
-            button2.UseVisualStyleBackColor = false;
+            btnRegistrarse.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnRegistrarse.AutoEllipsis = true;
+            btnRegistrarse.BackColor = Color.FromArgb(222, 108, 148);
+            btnRegistrarse.Cursor = Cursors.Hand;
+            btnRegistrarse.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 0, 0);
+            btnRegistrarse.FlatAppearance.BorderSize = 0;
+            btnRegistrarse.FlatAppearance.MouseDownBackColor = Color.FromArgb(206, 113, 142);
+            btnRegistrarse.FlatStyle = FlatStyle.Flat;
+            btnRegistrarse.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRegistrarse.ForeColor = Color.White;
+            btnRegistrarse.Location = new Point(201, 602);
+            btnRegistrarse.Name = "btnRegistrarse";
+            btnRegistrarse.Size = new Size(306, 60);
+            btnRegistrarse.TabIndex = 19;
+            btnRegistrarse.Text = "Registrarse";
+            btnRegistrarse.UseVisualStyleBackColor = false;
             // 
             // frmRegistro
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(691, 836);
-            Controls.Add(button2);
+            Controls.Add(btnRegistrarse);
             Controls.Add(textBox5);
             Controls.Add(label8);
             Controls.Add(label7);
@@ -234,6 +236,6 @@
         private Label label6;
         private Label label7;
         private Label label8;
-        private Button button2;
+        private Button btnRegistrarse;
     }
 }
