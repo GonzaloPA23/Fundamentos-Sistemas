@@ -47,7 +47,7 @@
             // label1
             // 
             label1.BackColor = Color.FromArgb(222, 108, 148);
-            label1.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
             label1.Location = new Point(23, 14);
             label1.Name = "label1";
@@ -70,7 +70,7 @@
             // label2
             // 
             label2.BackColor = Color.FromArgb(222, 108, 148);
-            label2.Font = new Font("Comic Sans MS", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
             label2.Location = new Point(973, 13);
             label2.Name = "label2";
@@ -81,7 +81,7 @@
             // label3
             // 
             label3.BackColor = Color.FromArgb(222, 108, 148);
-            label3.Font = new Font("Comic Sans MS", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.White;
             label3.Location = new Point(1067, 13);
             label3.Name = "label3";
