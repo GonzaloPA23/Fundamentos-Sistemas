@@ -180,7 +180,7 @@ namespace PC1
         private void button6_Click(object sender, EventArgs e) // Buscqueda de filtrar los clientes por su dirección de correo electronico
         {
             // Validación de campo
-            if(tbBuscarClienteXCorreo.Text == "")
+            if (tbBuscarClienteXCorreo.Text == "")
             {
                 MessageBox.Show("Por favor, ingrese un correo electrónico", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;

@@ -109,6 +109,7 @@
             // 
             // dtpFechaSalidaViaje
             // 
+            dtpFechaSalidaViaje.Format = DateTimePickerFormat.Time;
             dtpFechaSalidaViaje.Location = new Point(269, 197);
             dtpFechaSalidaViaje.Name = "dtpFechaSalidaViaje";
             dtpFechaSalidaViaje.Size = new Size(250, 27);
@@ -118,6 +119,7 @@
             // 
             tbCodigoViaje.Location = new Point(269, 92);
             tbCodigoViaje.Name = "tbCodigoViaje";
+            tbCodigoViaje.PlaceholderText = "gnsd";
             tbCodigoViaje.Size = new Size(248, 27);
             tbCodigoViaje.TabIndex = 2;
             // 
