@@ -20,7 +20,24 @@ namespace CapaPresentacion
         private void label8_Click(object sender, EventArgs e)
         {
             frmIniciarSesion frmIniciarSesion = new frmIniciarSesion();
-            frmIniciarSesion.ShowDialog();
+            frmIniciarSesion.Show();
+            this.Hide();
+            frmIniciarSesion.FormClosing += Form_Closing;
+        }
+
+        private void btnRegistrarse_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form_Closing(object sender, FormClosingEventArgs e)
+        {
+            txtNombre.Text = "";
+            txtApellido.Text = "";
+            txtClave.Text = "";
+            txtCorreo.Text = "";
+            txtDni.Text = "";
+            this.Show();
         }
     }
 }

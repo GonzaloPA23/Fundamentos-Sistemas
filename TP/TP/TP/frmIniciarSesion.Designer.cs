@@ -30,9 +30,9 @@
         {
             label1 = new Label();
             label3 = new Label();
-            textBox3 = new TextBox();
+            txtDni = new TextBox();
             label4 = new Label();
-            textBox5 = new TextBox();
+            txtClave = new TextBox();
             label6 = new Label();
             btnIniciarSesion = new Button();
             label8 = new Label();
@@ -65,14 +65,14 @@
             label3.Text = "¡Ingrese a la plataforma exclusiva para \r\nnuestros usuarios!";
             label3.TextAlign = ContentAlignment.TopCenter;
             // 
-            // textBox3
+            // txtDni
             // 
-            textBox3.Cursor = Cursors.IBeam;
-            textBox3.Location = new Point(105, 317);
-            textBox3.Name = "textBox3";
-            textBox3.PlaceholderText = "     73837288";
-            textBox3.Size = new Size(465, 27);
-            textBox3.TabIndex = 16;
+            txtDni.Cursor = Cursors.IBeam;
+            txtDni.Location = new Point(105, 317);
+            txtDni.Name = "txtDni";
+            txtDni.PlaceholderText = "     73837288";
+            txtDni.Size = new Size(465, 27);
+            txtDni.TabIndex = 16;
             // 
             // label4
             // 
@@ -84,15 +84,15 @@
             label4.TabIndex = 15;
             label4.Text = "DNI";
             // 
-            // textBox5
+            // txtClave
             // 
-            textBox5.Cursor = Cursors.IBeam;
-            textBox5.Location = new Point(105, 424);
-            textBox5.Name = "textBox5";
-            textBox5.PasswordChar = '*';
-            textBox5.PlaceholderText = "     ***********";
-            textBox5.Size = new Size(465, 27);
-            textBox5.TabIndex = 20;
+            txtClave.Cursor = Cursors.IBeam;
+            txtClave.Location = new Point(105, 424);
+            txtClave.Name = "txtClave";
+            txtClave.PasswordChar = '*';
+            txtClave.PlaceholderText = "     ***********";
+            txtClave.Size = new Size(465, 27);
+            txtClave.TabIndex = 20;
             // 
             // label6
             // 
@@ -178,9 +178,9 @@
             Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(btnIniciarSesion);
-            Controls.Add(textBox5);
+            Controls.Add(txtClave);
             Controls.Add(label6);
-            Controls.Add(textBox3);
+            Controls.Add(txtDni);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label1);
@@ -199,9 +199,9 @@
 
         private Label label1;
         private Label label3;
-        private TextBox textBox3;
+        private TextBox txtDni;
         private Label label4;
-        private TextBox textBox5;
+        private TextBox txtClave;
         private Label label6;
         private Button btnIniciarSesion;
         private Label label8;

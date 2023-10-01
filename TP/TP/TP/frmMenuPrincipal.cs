@@ -20,13 +20,22 @@ namespace CapaPresentacion
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
             frmIniciarSesion frmIniciarSesion = new frmIniciarSesion();
-            frmIniciarSesion.ShowDialog();
+            frmIniciarSesion.Show();
+            this.Hide();
+            frmIniciarSesion.FormClosing += FrmClosing;
         }
 
         private void btnRegistrarse_Click(object sender, EventArgs e)
         {
             frmRegistro frmRegistro = new frmRegistro();
-            frmRegistro.ShowDialog();
+            frmRegistro.Show();
+            this.Hide();
+            frmRegistro.FormClosing += FrmClosing;
+        }
+
+        private void FrmClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Show();
         }
     }
 }

@@ -30,14 +30,14 @@
         {
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtNombre = new TextBox();
+            txtApellido = new TextBox();
             label3 = new Label();
-            textBox3 = new TextBox();
+            txtDni = new TextBox();
             label4 = new Label();
-            textBox4 = new TextBox();
+            txtCorreo = new TextBox();
             label5 = new Label();
-            textBox5 = new TextBox();
+            txtClave = new TextBox();
             label6 = new Label();
             label7 = new Label();
             label8 = new Label();
@@ -65,24 +65,24 @@
             label2.TabIndex = 9;
             label2.Text = "Nombre";
             // 
-            // textBox1
+            // txtNombre
             // 
-            textBox1.Cursor = Cursors.IBeam;
-            textBox1.Location = new Point(105, 183);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "     Myke";
-            textBox1.Size = new Size(465, 27);
-            textBox1.TabIndex = 10;
-            textBox1.Tag = "";
+            txtNombre.Cursor = Cursors.IBeam;
+            txtNombre.Location = new Point(105, 183);
+            txtNombre.Name = "txtNombre";
+            txtNombre.PlaceholderText = "     Myke";
+            txtNombre.Size = new Size(465, 27);
+            txtNombre.TabIndex = 10;
+            txtNombre.Tag = "";
             // 
-            // textBox2
+            // txtApellido
             // 
-            textBox2.Cursor = Cursors.IBeam;
-            textBox2.Location = new Point(105, 267);
-            textBox2.Name = "textBox2";
-            textBox2.PlaceholderText = "     Towers";
-            textBox2.Size = new Size(465, 27);
-            textBox2.TabIndex = 12;
+            txtApellido.Cursor = Cursors.IBeam;
+            txtApellido.Location = new Point(105, 267);
+            txtApellido.Name = "txtApellido";
+            txtApellido.PlaceholderText = "     Towers";
+            txtApellido.Size = new Size(465, 27);
+            txtApellido.TabIndex = 12;
             // 
             // label3
             // 
@@ -94,14 +94,14 @@
             label3.TabIndex = 11;
             label3.Text = "Apellido";
             // 
-            // textBox3
+            // txtDni
             // 
-            textBox3.Cursor = Cursors.IBeam;
-            textBox3.Location = new Point(105, 353);
-            textBox3.Name = "textBox3";
-            textBox3.PlaceholderText = "     73837288";
-            textBox3.Size = new Size(465, 27);
-            textBox3.TabIndex = 14;
+            txtDni.Cursor = Cursors.IBeam;
+            txtDni.Location = new Point(105, 353);
+            txtDni.Name = "txtDni";
+            txtDni.PlaceholderText = "     73837288";
+            txtDni.Size = new Size(465, 27);
+            txtDni.TabIndex = 14;
             // 
             // label4
             // 
@@ -113,14 +113,14 @@
             label4.TabIndex = 13;
             label4.Text = "DNI";
             // 
-            // textBox4
+            // txtCorreo
             // 
-            textBox4.Cursor = Cursors.IBeam;
-            textBox4.Location = new Point(105, 438);
-            textBox4.Name = "textBox4";
-            textBox4.PlaceholderText = "     myke23t@gmail.com";
-            textBox4.Size = new Size(465, 27);
-            textBox4.TabIndex = 16;
+            txtCorreo.Cursor = Cursors.IBeam;
+            txtCorreo.Location = new Point(105, 438);
+            txtCorreo.Name = "txtCorreo";
+            txtCorreo.PlaceholderText = "     myke23t@gmail.com";
+            txtCorreo.Size = new Size(465, 27);
+            txtCorreo.TabIndex = 16;
             // 
             // label5
             // 
@@ -132,15 +132,15 @@
             label5.TabIndex = 15;
             label5.Text = "Correo";
             // 
-            // textBox5
+            // txtClave
             // 
-            textBox5.Cursor = Cursors.IBeam;
-            textBox5.Location = new Point(105, 529);
-            textBox5.Name = "textBox5";
-            textBox5.PasswordChar = '*';
-            textBox5.PlaceholderText = "     ***********";
-            textBox5.Size = new Size(465, 27);
-            textBox5.TabIndex = 18;
+            txtClave.Cursor = Cursors.IBeam;
+            txtClave.Location = new Point(105, 529);
+            txtClave.Name = "txtClave";
+            txtClave.PasswordChar = '*';
+            txtClave.PlaceholderText = "     ***********";
+            txtClave.Size = new Size(465, 27);
+            txtClave.TabIndex = 18;
             // 
             // label6
             // 
@@ -192,6 +192,7 @@
             btnRegistrarse.TabIndex = 19;
             btnRegistrarse.Text = "Registrarse";
             btnRegistrarse.UseVisualStyleBackColor = false;
+            btnRegistrarse.Click += btnRegistrarse_Click;
             // 
             // frmRegistro
             // 
@@ -199,17 +200,17 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(691, 836);
             Controls.Add(btnRegistrarse);
-            Controls.Add(textBox5);
+            Controls.Add(txtClave);
             Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(label6);
-            Controls.Add(textBox4);
+            Controls.Add(txtCorreo);
             Controls.Add(label5);
-            Controls.Add(textBox3);
+            Controls.Add(txtDni);
             Controls.Add(label4);
-            Controls.Add(textBox2);
+            Controls.Add(txtApellido);
             Controls.Add(label3);
-            Controls.Add(textBox1);
+            Controls.Add(txtNombre);
             Controls.Add(label2);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
@@ -225,14 +226,14 @@
 
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtNombre;
+        private TextBox txtApellido;
         private Label label3;
-        private TextBox textBox3;
+        private TextBox txtDni;
         private Label label4;
-        private TextBox textBox4;
+        private TextBox txtCorreo;
         private Label label5;
-        private TextBox textBox5;
+        private TextBox txtClave;
         private Label label6;
         private Label label7;
         private Label label8;
