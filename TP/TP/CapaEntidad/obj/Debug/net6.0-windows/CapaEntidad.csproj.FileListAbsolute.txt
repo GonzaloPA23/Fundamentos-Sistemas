@@ -1,0 +1,12 @@
+D:\Fundamentos-Sistemas\TP\TP\CapaEntidad\bin\Debug\net6.0-windows\CapaEntidad.deps.json
+D:\Fundamentos-Sistemas\TP\TP\CapaEntidad\bin\Debug\net6.0-windows\CapaEntidad.dll
+D:\Fundamentos-Sistemas\TP\TP\CapaEntidad\bin\Debug\net6.0-windows\CapaEntidad.pdb
+D:\Fundamentos-Sistemas\TP\TP\CapaEntidad\obj\Debug\net6.0-windows\CapaEntidad.csproj.AssemblyReference.cache
+D:\Fundamentos-Sistemas\TP\TP\CapaEntidad\obj\Debug\net6.0-windows\CapaEntidad.GeneratedMSBuildEditorConfig.editorconfig
+D:\Fundamentos-Sistemas\TP\TP\CapaEntidad\obj\Debug\net6.0-windows\CapaEntidad.AssemblyInfoInputs.cache
+D:\Fundamentos-Sistemas\TP\TP\CapaEntidad\obj\Debug\net6.0-windows\CapaEntidad.AssemblyInfo.cs
+D:\Fundamentos-Sistemas\TP\TP\CapaEntidad\obj\Debug\net6.0-windows\CapaEntidad.csproj.CoreCompileInputs.cache
+D:\Fundamentos-Sistemas\TP\TP\CapaEntidad\obj\Debug\net6.0-windows\CapaEntidad.dll
+D:\Fundamentos-Sistemas\TP\TP\CapaEntidad\obj\Debug\net6.0-windows\refint\CapaEntidad.dll
+D:\Fundamentos-Sistemas\TP\TP\CapaEntidad\obj\Debug\net6.0-windows\CapaEntidad.pdb
+D:\Fundamentos-Sistemas\TP\TP\CapaEntidad\obj\Debug\net6.0-windows\ref\CapaEntidad.dll

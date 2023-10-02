@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace CapaDatos
 {
-    internal class Conexion
+    public class Conexion
     {
-        public static string cadenaConexion = "Data Source=localhost;Initial Catalog=DB_PERMISOS01;Integrated Security=True";
+        public static string cadenaConexion = "Data Source=localhost;Initial Catalog=DB_PerlaAltomayo;Integrated Security=True";
     }
 }

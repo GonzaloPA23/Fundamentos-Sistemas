@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TP;
+using CapaNegocio;
+using CapaEntidad;
 
 namespace CapaPresentacion
 {
@@ -28,10 +30,20 @@ namespace CapaPresentacion
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
-            frmInicio frmInicio = new frmInicio();
-            frmInicio.Show();
-            this.Hide();
-            frmInicio.FormClosing += FrmClosing;
+            List<Usuario> test = new UsuarioCapaNegocio().ListarUsuarios();
+            Usuario? usuario = new UsuarioCapaNegocio().ListarUsuarios().Where(u => u.Dni == txtDni.Text && u.Clave == txtClave.Text).FirstOrDefault();
+
+           if (usuario != null)
+            {
+                frmInicio frmInicio = new frmInicio(usuario);
+                frmInicio.Show();
+                this.Hide();
+                frmInicio.FormClosing += FrmClosing;
+            }
+            else
+            {
+                MessageBox.Show("Credenciales incorrectas, Por favor, Ingrese los datos correctamente","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
 
         }
 

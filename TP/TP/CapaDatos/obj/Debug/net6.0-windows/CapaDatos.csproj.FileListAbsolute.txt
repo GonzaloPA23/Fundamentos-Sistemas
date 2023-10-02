@@ -1,0 +1,15 @@
+D:\Fundamentos-Sistemas\TP\TP\CapaDatos\bin\Debug\net6.0-windows\CapaDatos.deps.json
+D:\Fundamentos-Sistemas\TP\TP\CapaDatos\bin\Debug\net6.0-windows\CapaDatos.dll
+D:\Fundamentos-Sistemas\TP\TP\CapaDatos\bin\Debug\net6.0-windows\CapaDatos.pdb
+D:\Fundamentos-Sistemas\TP\TP\CapaDatos\bin\Debug\net6.0-windows\CapaEntidad.dll
+D:\Fundamentos-Sistemas\TP\TP\CapaDatos\bin\Debug\net6.0-windows\CapaEntidad.pdb
+D:\Fundamentos-Sistemas\TP\TP\CapaDatos\obj\Debug\net6.0-windows\CapaDatos.csproj.AssemblyReference.cache
+D:\Fundamentos-Sistemas\TP\TP\CapaDatos\obj\Debug\net6.0-windows\CapaDatos.GeneratedMSBuildEditorConfig.editorconfig
+D:\Fundamentos-Sistemas\TP\TP\CapaDatos\obj\Debug\net6.0-windows\CapaDatos.AssemblyInfoInputs.cache
+D:\Fundamentos-Sistemas\TP\TP\CapaDatos\obj\Debug\net6.0-windows\CapaDatos.AssemblyInfo.cs
+D:\Fundamentos-Sistemas\TP\TP\CapaDatos\obj\Debug\net6.0-windows\CapaDatos.csproj.CoreCompileInputs.cache
+D:\Fundamentos-Sistemas\TP\TP\CapaDatos\obj\Debug\net6.0-windows\CapaDatos.csproj.CopyComplete
+D:\Fundamentos-Sistemas\TP\TP\CapaDatos\obj\Debug\net6.0-windows\CapaDatos.dll
+D:\Fundamentos-Sistemas\TP\TP\CapaDatos\obj\Debug\net6.0-windows\refint\CapaDatos.dll
+D:\Fundamentos-Sistemas\TP\TP\CapaDatos\obj\Debug\net6.0-windows\CapaDatos.pdb
+D:\Fundamentos-Sistemas\TP\TP\CapaDatos\obj\Debug\net6.0-windows\ref\CapaDatos.dll

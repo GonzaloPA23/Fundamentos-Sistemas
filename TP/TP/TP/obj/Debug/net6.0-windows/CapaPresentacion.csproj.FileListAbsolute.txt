@@ -21,3 +21,15 @@ D:\Fundamentos-Sistemas\TP\TP\TP\obj\Debug\net6.0-windows\CapaPresentacion.frmMe
 D:\Fundamentos-Sistemas\TP\TP\TP\obj\Debug\net6.0-windows\CapaPresentacion.Properties.Resources.resources
 D:\Fundamentos-Sistemas\TP\TP\TP\obj\Debug\net6.0-windows\CapaPresentacion.frmRegistro.resources
 D:\Fundamentos-Sistemas\TP\TP\TP\obj\Debug\net6.0-windows\CapaPresentacion.frmIniciarSesion.resources
+D:\Fundamentos-Sistemas\TP\TP\TP\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+D:\Fundamentos-Sistemas\TP\TP\TP\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+D:\Fundamentos-Sistemas\TP\TP\TP\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+D:\Fundamentos-Sistemas\TP\TP\TP\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+D:\Fundamentos-Sistemas\TP\TP\TP\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Fundamentos-Sistemas\TP\TP\TP\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Fundamentos-Sistemas\TP\TP\TP\bin\Debug\net6.0-windows\CapaDatos.dll
+D:\Fundamentos-Sistemas\TP\TP\TP\bin\Debug\net6.0-windows\CapaEntidad.dll
+D:\Fundamentos-Sistemas\TP\TP\TP\bin\Debug\net6.0-windows\CapaNegocio.dll
+D:\Fundamentos-Sistemas\TP\TP\TP\bin\Debug\net6.0-windows\CapaEntidad.pdb
+D:\Fundamentos-Sistemas\TP\TP\TP\bin\Debug\net6.0-windows\CapaNegocio.pdb
+D:\Fundamentos-Sistemas\TP\TP\TP\bin\Debug\net6.0-windows\CapaDatos.pdb

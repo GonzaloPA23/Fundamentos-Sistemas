@@ -31,7 +31,7 @@
             label1 = new Label();
             menuTitulo = new MenuStrip();
             label2 = new Label();
-            label3 = new Label();
+            lblNombreUsuarioIngresado = new Label();
             menuStrip1 = new MenuStrip();
             menuchoferes = new FontAwesome.Sharp.IconMenuItem();
             menubuses = new FontAwesome.Sharp.IconMenuItem();
@@ -78,16 +78,16 @@
             label2.TabIndex = 4;
             label2.Text = "Usuario:";
             // 
-            // label3
+            // lblNombreUsuarioIngresado
             // 
-            label3.BackColor = Color.FromArgb(222, 108, 148);
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(1067, 13);
-            label3.Name = "label3";
-            label3.Size = new Size(179, 31);
-            label3.TabIndex = 5;
-            label3.Text = "Javier Mendoza";
+            lblNombreUsuarioIngresado.BackColor = Color.FromArgb(222, 108, 148);
+            lblNombreUsuarioIngresado.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblNombreUsuarioIngresado.ForeColor = Color.White;
+            lblNombreUsuarioIngresado.Location = new Point(1067, 13);
+            lblNombreUsuarioIngresado.Name = "lblNombreUsuarioIngresado";
+            lblNombreUsuarioIngresado.Size = new Size(179, 31);
+            lblNombreUsuarioIngresado.TabIndex = 5;
+            lblNombreUsuarioIngresado.Text = "Javier Mendoza";
             // 
             // menuStrip1
             // 
@@ -191,7 +191,7 @@
             BackColor = Color.FromArgb(235, 235, 233);
             ClientSize = new Size(1311, 708);
             Controls.Add(panel1);
-            Controls.Add(label3);
+            Controls.Add(lblNombreUsuarioIngresado);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(menuStrip1);
@@ -201,6 +201,7 @@
             Name = "frmInicio";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "/";
+            Load += frmInicio_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -211,7 +212,7 @@
         private Label label1;
         private MenuStrip menuTitulo;
         private Label label2;
-        private Label label3;
+        private Label lblNombreUsuarioIngresado;
         private MenuStrip menuStrip1;
         private FontAwesome.Sharp.IconMenuItem menuchoferes;
         private FontAwesome.Sharp.IconMenuItem menubuses;
