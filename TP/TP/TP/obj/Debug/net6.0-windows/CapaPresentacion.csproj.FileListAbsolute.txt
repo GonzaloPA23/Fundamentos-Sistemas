@@ -33,3 +33,9 @@ D:\Fundamentos-Sistemas\TP\TP\TP\bin\Debug\net6.0-windows\CapaNegocio.dll
 D:\Fundamentos-Sistemas\TP\TP\TP\bin\Debug\net6.0-windows\CapaEntidad.pdb
 D:\Fundamentos-Sistemas\TP\TP\TP\bin\Debug\net6.0-windows\CapaNegocio.pdb
 D:\Fundamentos-Sistemas\TP\TP\TP\bin\Debug\net6.0-windows\CapaDatos.pdb
+D:\Fundamentos-Sistemas\TP\TP\TP\obj\Debug\net6.0-windows\CapaPresentacion.frmBus.resources
+D:\Fundamentos-Sistemas\TP\TP\TP\obj\Debug\net6.0-windows\CapaPresentacion.frmChofer.resources
+D:\Fundamentos-Sistemas\TP\TP\TP\obj\Debug\net6.0-windows\CapaPresentacion.frmEncomienda.resources
+D:\Fundamentos-Sistemas\TP\TP\TP\obj\Debug\net6.0-windows\CapaPresentacion.frmHistorialEncomienda.resources
+D:\Fundamentos-Sistemas\TP\TP\TP\obj\Debug\net6.0-windows\CapaPresentacion.frmHistorialPasaje.resources
+D:\Fundamentos-Sistemas\TP\TP\TP\obj\Debug\net6.0-windows\CapaPresentacion.frmPasaje.resources

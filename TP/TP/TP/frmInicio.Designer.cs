@@ -40,7 +40,7 @@
             menureportes = new FontAwesome.Sharp.IconMenuItem();
             historialDePasajesToolStripMenuItem = new ToolStripMenuItem();
             historialDeEncomiendasToolStripMenuItem = new ToolStripMenuItem();
-            panel1 = new Panel();
+            panelContenedor = new Panel();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -112,6 +112,7 @@
             menuchoferes.Size = new Size(120, 85);
             menuchoferes.Text = "Choferes";
             menuchoferes.TextImageRelation = TextImageRelation.ImageAboveText;
+            menuchoferes.Click += menuchoferes_Click;
             // 
             // menubuses
             // 
@@ -176,13 +177,13 @@
             historialDeEncomiendasToolStripMenuItem.Size = new Size(261, 26);
             historialDeEncomiendasToolStripMenuItem.Text = "Historial de encomiendas";
             // 
-            // panel1
+            // panelContenedor
             // 
-            panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 158);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1311, 550);
-            panel1.TabIndex = 7;
+            panelContenedor.Dock = DockStyle.Fill;
+            panelContenedor.Location = new Point(0, 158);
+            panelContenedor.Name = "panelContenedor";
+            panelContenedor.Size = new Size(1311, 550);
+            panelContenedor.TabIndex = 7;
             // 
             // frmInicio
             // 
@@ -190,7 +191,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(235, 235, 233);
             ClientSize = new Size(1311, 708);
-            Controls.Add(panel1);
+            Controls.Add(panelContenedor);
             Controls.Add(lblNombreUsuarioIngresado);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -221,6 +222,6 @@
         private FontAwesome.Sharp.IconMenuItem menureportes;
         private ToolStripMenuItem historialDePasajesToolStripMenuItem;
         private ToolStripMenuItem historialDeEncomiendasToolStripMenuItem;
-        private Panel panel1;
+        private Panel panelContenedor;
     }
 }
