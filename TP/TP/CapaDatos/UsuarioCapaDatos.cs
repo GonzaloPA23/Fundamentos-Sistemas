@@ -37,7 +37,7 @@ namespace CapaDatos
                             usuarios.Add(usuario);
                         }
                     }
-                }catch (Exception e)
+                }catch 
                 {
                     usuarios = new List<Usuario>();
                 }

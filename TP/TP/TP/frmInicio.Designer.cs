@@ -38,9 +38,10 @@
             menupasajes = new FontAwesome.Sharp.IconMenuItem();
             menuencomiendas = new FontAwesome.Sharp.IconMenuItem();
             menureportes = new FontAwesome.Sharp.IconMenuItem();
-            historialDePasajesToolStripMenuItem = new ToolStripMenuItem();
-            historialDeEncomiendasToolStripMenuItem = new ToolStripMenuItem();
+            subMenuHistorialPasajes = new ToolStripMenuItem();
+            subMenuHistorialEncomiendas = new ToolStripMenuItem();
             panelContenedor = new Panel();
+            btnSalir = new FontAwesome.Sharp.IconButton();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -49,7 +50,7 @@
             label1.BackColor = Color.FromArgb(222, 108, 148);
             label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(23, 14);
+            label1.Location = new Point(23, 23);
             label1.Name = "label1";
             label1.Size = new Size(293, 31);
             label1.TabIndex = 2;
@@ -63,7 +64,7 @@
             menuTitulo.Location = new Point(0, 0);
             menuTitulo.Name = "menuTitulo";
             menuTitulo.RightToLeft = RightToLeft.Yes;
-            menuTitulo.Size = new Size(1311, 59);
+            menuTitulo.Size = new Size(1311, 81);
             menuTitulo.TabIndex = 3;
             menuTitulo.Text = "menuStrip1";
             // 
@@ -72,7 +73,7 @@
             label2.BackColor = Color.FromArgb(222, 108, 148);
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(973, 13);
+            label2.Location = new Point(828, 25);
             label2.Name = "label2";
             label2.Size = new Size(107, 31);
             label2.TabIndex = 4;
@@ -83,7 +84,7 @@
             lblNombreUsuarioIngresado.BackColor = Color.FromArgb(222, 108, 148);
             lblNombreUsuarioIngresado.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblNombreUsuarioIngresado.ForeColor = Color.White;
-            lblNombreUsuarioIngresado.Location = new Point(1067, 13);
+            lblNombreUsuarioIngresado.Location = new Point(915, 24);
             lblNombreUsuarioIngresado.Name = "lblNombreUsuarioIngresado";
             lblNombreUsuarioIngresado.Size = new Size(179, 31);
             lblNombreUsuarioIngresado.TabIndex = 5;
@@ -91,9 +92,10 @@
             // 
             // menuStrip1
             // 
+            menuStrip1.BackColor = Color.White;
             menuStrip1.ImageScalingSize = new Size(20, 20);
             menuStrip1.Items.AddRange(new ToolStripItem[] { menuchoferes, menubuses, menupasajes, menuencomiendas, menureportes });
-            menuStrip1.Location = new Point(0, 59);
+            menuStrip1.Location = new Point(0, 81);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(1311, 99);
             menuStrip1.TabIndex = 6;
@@ -125,6 +127,7 @@
             menubuses.Size = new Size(120, 85);
             menubuses.Text = "Buses";
             menubuses.TextImageRelation = TextImageRelation.ImageAboveText;
+            menubuses.Click += menubuses_Click;
             // 
             // menupasajes
             // 
@@ -137,6 +140,7 @@
             menupasajes.Size = new Size(120, 85);
             menupasajes.Text = "Pasajes";
             menupasajes.TextImageRelation = TextImageRelation.ImageAboveText;
+            menupasajes.Click += menupasajes_Click;
             // 
             // menuencomiendas
             // 
@@ -150,11 +154,12 @@
             menuencomiendas.Size = new Size(120, 85);
             menuencomiendas.Text = "Encomiendas";
             menuencomiendas.TextImageRelation = TextImageRelation.ImageAboveText;
+            menuencomiendas.Click += menuencomiendas_Click;
             // 
             // menureportes
             // 
             menureportes.AutoSize = false;
-            menureportes.DropDownItems.AddRange(new ToolStripItem[] { historialDePasajesToolStripMenuItem, historialDeEncomiendasToolStripMenuItem });
+            menureportes.DropDownItems.AddRange(new ToolStripItem[] { subMenuHistorialPasajes, subMenuHistorialEncomiendas });
             menureportes.IconChar = FontAwesome.Sharp.IconChar.ClockRotateLeft;
             menureportes.IconColor = Color.Black;
             menureportes.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -165,32 +170,55 @@
             menureportes.Text = "Reportes";
             menureportes.TextImageRelation = TextImageRelation.ImageAboveText;
             // 
-            // historialDePasajesToolStripMenuItem
+            // subMenuHistorialPasajes
             // 
-            historialDePasajesToolStripMenuItem.Name = "historialDePasajesToolStripMenuItem";
-            historialDePasajesToolStripMenuItem.Size = new Size(261, 26);
-            historialDePasajesToolStripMenuItem.Text = "Historial de pasajes";
+            subMenuHistorialPasajes.Name = "subMenuHistorialPasajes";
+            subMenuHistorialPasajes.Size = new Size(261, 26);
+            subMenuHistorialPasajes.Text = "Historial de pasajes";
+            subMenuHistorialPasajes.Click += subMenuHistorialPasajes_Click;
             // 
-            // historialDeEncomiendasToolStripMenuItem
+            // subMenuHistorialEncomiendas
             // 
-            historialDeEncomiendasToolStripMenuItem.Name = "historialDeEncomiendasToolStripMenuItem";
-            historialDeEncomiendasToolStripMenuItem.Size = new Size(261, 26);
-            historialDeEncomiendasToolStripMenuItem.Text = "Historial de encomiendas";
+            subMenuHistorialEncomiendas.Name = "subMenuHistorialEncomiendas";
+            subMenuHistorialEncomiendas.Size = new Size(261, 26);
+            subMenuHistorialEncomiendas.Text = "Historial de encomiendas";
+            subMenuHistorialEncomiendas.Click += subMenuHistorialEncomiendas_Click;
             // 
             // panelContenedor
             // 
+            panelContenedor.BackColor = Color.FromArgb(235, 235, 233);
             panelContenedor.Dock = DockStyle.Fill;
-            panelContenedor.Location = new Point(0, 158);
+            panelContenedor.Location = new Point(0, 180);
             panelContenedor.Name = "panelContenedor";
-            panelContenedor.Size = new Size(1311, 550);
+            panelContenedor.Size = new Size(1311, 610);
             panelContenedor.TabIndex = 7;
+            // 
+            // btnSalir
+            // 
+            btnSalir.BackColor = Color.FromArgb(222, 108, 148);
+            btnSalir.Cursor = Cursors.Hand;
+            btnSalir.FlatAppearance.BorderColor = Color.White;
+            btnSalir.FlatAppearance.MouseDownBackColor = Color.FromArgb(206, 113, 142);
+            btnSalir.FlatStyle = FlatStyle.Flat;
+            btnSalir.ForeColor = Color.White;
+            btnSalir.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
+            btnSalir.IconColor = Color.White;
+            btnSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnSalir.IconSize = 55;
+            btnSalir.Location = new Point(1174, 6);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(87, 70);
+            btnSalir.TabIndex = 0;
+            btnSalir.UseVisualStyleBackColor = false;
+            btnSalir.Click += btnSalir_Click;
             // 
             // frmInicio
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(235, 235, 233);
-            ClientSize = new Size(1311, 708);
+            ClientSize = new Size(1311, 790);
+            Controls.Add(btnSalir);
             Controls.Add(panelContenedor);
             Controls.Add(lblNombreUsuarioIngresado);
             Controls.Add(label2);
@@ -220,8 +248,9 @@
         private FontAwesome.Sharp.IconMenuItem menupasajes;
         private FontAwesome.Sharp.IconMenuItem menuencomiendas;
         private FontAwesome.Sharp.IconMenuItem menureportes;
-        private ToolStripMenuItem historialDePasajesToolStripMenuItem;
-        private ToolStripMenuItem historialDeEncomiendasToolStripMenuItem;
+        private ToolStripMenuItem subMenuHistorialPasajes;
+        private ToolStripMenuItem subMenuHistorialEncomiendas;
         private Panel panelContenedor;
+        private FontAwesome.Sharp.IconButton btnSalir;
     }
 }
