@@ -39,7 +39,9 @@
             columnHeader6 = new ColumnHeader();
             panel1 = new Panel();
             dateTimePicker1 = new DateTimePicker();
+            button3 = new Button();
             textBox6 = new TextBox();
+            button1 = new Button();
             textBox5 = new TextBox();
             textBox4 = new TextBox();
             textBox3 = new TextBox();
@@ -53,18 +55,29 @@
             label3 = new Label();
             textBox1 = new TextBox();
             label2 = new Label();
-            iconButton1 = new FontAwesome.Sharp.IconButton();
             button2 = new Button();
-            button1 = new Button();
-            button3 = new Button();
+            button4 = new Button();
+            label10 = new Label();
+            label11 = new Label();
+            panel2 = new Panel();
+            textBox7 = new TextBox();
+            button6 = new Button();
+            textBox8 = new TextBox();
+            label13 = new Label();
+            label14 = new Label();
+            label12 = new Label();
+            label15 = new Label();
+            button5 = new Button();
+            label16 = new Label();
             panel1.SuspendLayout();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(23, 25);
+            label1.Location = new Point(22, 9);
             label1.Name = "label1";
             label1.Size = new Size(165, 28);
             label1.TabIndex = 0;
@@ -74,8 +87,8 @@
             // 
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "DNI" });
-            comboBox1.Location = new Point(161, 79);
+            comboBox1.Items.AddRange(new object[] { "DNI", "Nombre", "Apellido", "Celular", "Correo" });
+            comboBox1.Location = new Point(137, 62);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(162, 28);
             comboBox1.TabIndex = 1;
@@ -83,9 +96,9 @@
             // listView1
             // 
             listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5, columnHeader6 });
-            listView1.Location = new Point(23, 132);
+            listView1.Location = new Point(22, 116);
             listView1.Name = "listView1";
-            listView1.Size = new Size(759, 465);
+            listView1.Size = new Size(768, 590);
             listView1.TabIndex = 2;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.View = View.Details;
@@ -124,7 +137,9 @@
             // 
             panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(dateTimePicker1);
+            panel1.Controls.Add(button3);
             panel1.Controls.Add(textBox6);
+            panel1.Controls.Add(button1);
             panel1.Controls.Add(textBox5);
             panel1.Controls.Add(textBox4);
             panel1.Controls.Add(textBox3);
@@ -136,9 +151,9 @@
             panel1.Controls.Add(label5);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label3);
-            panel1.Location = new Point(818, 25);
+            panel1.Location = new Point(817, 9);
             panel1.Name = "panel1";
-            panel1.Size = new Size(421, 382);
+            panel1.Size = new Size(436, 435);
             panel1.TabIndex = 3;
             // 
             // dateTimePicker1
@@ -148,6 +163,20 @@
             dateTimePicker1.Size = new Size(251, 27);
             dateTimePicker1.TabIndex = 6;
             // 
+            // button3
+            // 
+            button3.BackColor = Color.FromArgb(222, 108, 148);
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button3.ForeColor = Color.White;
+            button3.Location = new Point(218, 373);
+            button3.Name = "button3";
+            button3.Size = new Size(200, 37);
+            button3.TabIndex = 4;
+            button3.Text = "Registrar chofer";
+            button3.UseVisualStyleBackColor = false;
+            // 
             // textBox6
             // 
             textBox6.Location = new Point(137, 175);
@@ -155,6 +184,20 @@
             textBox6.PlaceholderText = "    Ruiz";
             textBox6.Size = new Size(251, 27);
             textBox6.TabIndex = 5;
+            // 
+            // button1
+            // 
+            button1.BackColor = SystemColors.ControlDarkDark;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(13, 374);
+            button1.Name = "button1";
+            button1.Size = new Size(198, 37);
+            button1.TabIndex = 4;
+            button1.Text = "Cancelar chofer";
+            button1.UseVisualStyleBackColor = false;
             // 
             // textBox5
             // 
@@ -260,7 +303,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(339, 79);
+            textBox1.Location = new Point(318, 63);
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "    5933929";
             textBox1.Size = new Size(230, 27);
@@ -270,85 +313,195 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(56, 81);
+            label2.Location = new Point(36, 64);
             label2.Name = "label2";
             label2.Size = new Size(95, 23);
             label2.TabIndex = 0;
             label2.Text = "Buscar por:";
-            // 
-            // iconButton1
-            // 
-            iconButton1.BackColor = Color.FromArgb(206, 113, 142);
-            iconButton1.FlatAppearance.BorderSize = 0;
-            iconButton1.FlatStyle = FlatStyle.Flat;
-            iconButton1.IconChar = FontAwesome.Sharp.IconChar.Searchengin;
-            iconButton1.IconColor = Color.White;
-            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton1.IconSize = 25;
-            iconButton1.Location = new Point(583, 77);
-            iconButton1.Name = "iconButton1";
-            iconButton1.Size = new Size(45, 29);
-            iconButton1.TabIndex = 6;
-            iconButton1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
             button2.BackColor = SystemColors.ControlDarkDark;
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(638, 76);
+            button2.Location = new Point(680, 63);
             button2.Name = "button2";
             button2.Size = new Size(100, 30);
             button2.TabIndex = 4;
             button2.Text = "Limpiar";
             button2.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // button4
             // 
-            button1.BackColor = SystemColors.ControlDarkDark;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(818, 430);
-            button1.Name = "button1";
-            button1.Size = new Size(198, 37);
-            button1.TabIndex = 4;
-            button1.Text = "Cancelar chofer";
-            button1.UseVisualStyleBackColor = false;
+            button4.BackColor = Color.FromArgb(222, 108, 148);
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button4.ForeColor = Color.White;
+            button4.Location = new Point(567, 62);
+            button4.Name = "button4";
+            button4.Size = new Size(100, 30);
+            button4.TabIndex = 4;
+            button4.Text = "Buscar";
+            button4.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // label10
             // 
-            button3.BackColor = Color.FromArgb(206, 113, 142);
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(1039, 430);
-            button3.Name = "button3";
-            button3.Size = new Size(200, 37);
-            button3.TabIndex = 4;
-            button3.Text = "Registrar chofer";
-            button3.UseVisualStyleBackColor = false;
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label10.Location = new Point(607, 24);
+            label10.Name = "label10";
+            label10.Size = new Size(130, 20);
+            label10.TabIndex = 0;
+            label10.Text = "Total de choferes: ";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label11.Location = new Point(743, 24);
+            label11.Name = "label11";
+            label11.Size = new Size(17, 20);
+            label11.TabIndex = 0;
+            label11.Text = "0";
+            // 
+            // panel2
+            // 
+            panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(textBox7);
+            panel2.Controls.Add(button6);
+            panel2.Controls.Add(textBox8);
+            panel2.Controls.Add(label13);
+            panel2.Controls.Add(label14);
+            panel2.Controls.Add(label12);
+            panel2.Controls.Add(label15);
+            panel2.Location = new Point(817, 456);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(436, 193);
+            panel2.TabIndex = 6;
+            // 
+            // textBox7
+            // 
+            textBox7.Location = new Point(134, 47);
+            textBox7.Name = "textBox7";
+            textBox7.PlaceholderText = "    999345283";
+            textBox7.Size = new Size(251, 27);
+            textBox7.TabIndex = 8;
+            // 
+            // button6
+            // 
+            button6.BackColor = Color.FromArgb(222, 108, 148);
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button6.ForeColor = Color.White;
+            button6.Location = new Point(138, 142);
+            button6.Name = "button6";
+            button6.Size = new Size(200, 37);
+            button6.TabIndex = 4;
+            button6.Text = "Actualizar";
+            button6.UseVisualStyleBackColor = false;
+            // 
+            // textBox8
+            // 
+            textBox8.Location = new Point(134, 93);
+            textBox8.Name = "textBox8";
+            textBox8.PlaceholderText = "    rafael.ruiz@gmail.com";
+            textBox8.Size = new Size(251, 27);
+            textBox8.TabIndex = 9;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label13.Location = new Point(55, 94);
+            label13.Name = "label13";
+            label13.Size = new Size(54, 20);
+            label13.TabIndex = 6;
+            label13.Text = "Correo";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label14.Location = new Point(52, 50);
+            label14.Name = "label14";
+            label14.Size = new Size(55, 20);
+            label14.TabIndex = 7;
+            label14.Text = "Celular";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label12.Location = new Point(14, 9);
+            label12.Name = "label12";
+            label12.Size = new Size(241, 25);
+            label12.TabIndex = 0;
+            label12.Text = "Actualizar datos de contacto:";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label15.ForeColor = SystemColors.ButtonShadow;
+            label15.Location = new Point(284, 15);
+            label15.Name = "label15";
+            label15.Size = new Size(135, 17);
+            label15.TabIndex = 0;
+            label15.Text = "Elija el dni del chofer*";
+            // 
+            // button5
+            // 
+            button5.BackColor = Color.FromArgb(182, 113, 137);
+            button5.FlatAppearance.BorderSize = 0;
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button5.ForeColor = Color.White;
+            button5.Location = new Point(844, 669);
+            button5.Name = "button5";
+            button5.Size = new Size(200, 37);
+            button5.TabIndex = 4;
+            button5.Text = "Eliminar chofer";
+            button5.UseVisualStyleBackColor = false;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label16.ForeColor = SystemColors.ButtonShadow;
+            label16.Location = new Point(1080, 670);
+            label16.Name = "label16";
+            label16.Size = new Size(144, 34);
+            label16.TabIndex = 0;
+            label16.Text = "Elija el dni del chofer y \r\nconfirme su acción *";
             // 
             // frmChofer
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1293, 632);
-            Controls.Add(iconButton1);
+            ClientSize = new Size(1293, 726);
+            Controls.Add(button5);
+            Controls.Add(panel2);
             Controls.Add(textBox1);
-            Controls.Add(button3);
-            Controls.Add(button1);
+            Controls.Add(button4);
             Controls.Add(button2);
             Controls.Add(panel1);
+            Controls.Add(label16);
             Controls.Add(listView1);
             Controls.Add(comboBox1);
+            Controls.Add(label11);
+            Controls.Add(label10);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "frmChofer";
             Text = "frmChofer";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -361,7 +514,6 @@
         private Panel panel1;
         private TextBox textBox1;
         private Label label2;
-        private FontAwesome.Sharp.IconButton iconButton1;
         private Button button2;
         private DateTimePicker dateTimePicker1;
         private TextBox textBox6;
@@ -384,5 +536,18 @@
         private ColumnHeader columnHeader6;
         private Button button1;
         private Button button3;
+        private Button button4;
+        private Label label10;
+        private Label label11;
+        private Panel panel2;
+        private Button button5;
+        private TextBox textBox7;
+        private Button button6;
+        private TextBox textBox8;
+        private Label label13;
+        private Label label14;
+        private Label label12;
+        private Label label15;
+        private Label label16;
     }
 }

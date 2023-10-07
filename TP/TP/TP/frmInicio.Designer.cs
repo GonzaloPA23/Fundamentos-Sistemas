@@ -50,7 +50,7 @@
             label1.BackColor = Color.FromArgb(222, 108, 148);
             label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(23, 23);
+            label1.Location = new Point(23, 17);
             label1.Name = "label1";
             label1.Size = new Size(293, 31);
             label1.TabIndex = 2;
@@ -64,7 +64,7 @@
             menuTitulo.Location = new Point(0, 0);
             menuTitulo.Name = "menuTitulo";
             menuTitulo.RightToLeft = RightToLeft.Yes;
-            menuTitulo.Size = new Size(1311, 81);
+            menuTitulo.Size = new Size(1321, 70);
             menuTitulo.TabIndex = 3;
             menuTitulo.Text = "menuStrip1";
             // 
@@ -73,7 +73,7 @@
             label2.BackColor = Color.FromArgb(222, 108, 148);
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(828, 25);
+            label2.Location = new Point(828, 17);
             label2.Name = "label2";
             label2.Size = new Size(107, 31);
             label2.TabIndex = 4;
@@ -84,7 +84,7 @@
             lblNombreUsuarioIngresado.BackColor = Color.FromArgb(222, 108, 148);
             lblNombreUsuarioIngresado.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblNombreUsuarioIngresado.ForeColor = Color.White;
-            lblNombreUsuarioIngresado.Location = new Point(915, 24);
+            lblNombreUsuarioIngresado.Location = new Point(915, 18);
             lblNombreUsuarioIngresado.Name = "lblNombreUsuarioIngresado";
             lblNombreUsuarioIngresado.Size = new Size(179, 31);
             lblNombreUsuarioIngresado.TabIndex = 5;
@@ -95,9 +95,9 @@
             menuStrip1.BackColor = Color.White;
             menuStrip1.ImageScalingSize = new Size(20, 20);
             menuStrip1.Items.AddRange(new ToolStripItem[] { menuchoferes, menubuses, menupasajes, menuencomiendas, menureportes });
-            menuStrip1.Location = new Point(0, 81);
+            menuStrip1.Location = new Point(0, 70);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1311, 99);
+            menuStrip1.Size = new Size(1321, 99);
             menuStrip1.TabIndex = 6;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -188,9 +188,9 @@
             // 
             panelContenedor.BackColor = Color.FromArgb(235, 235, 233);
             panelContenedor.Dock = DockStyle.Fill;
-            panelContenedor.Location = new Point(0, 180);
+            panelContenedor.Location = new Point(0, 169);
             panelContenedor.Name = "panelContenedor";
-            panelContenedor.Size = new Size(1311, 610);
+            panelContenedor.Size = new Size(1321, 721);
             panelContenedor.TabIndex = 7;
             // 
             // btnSalir
@@ -205,9 +205,9 @@
             btnSalir.IconColor = Color.White;
             btnSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnSalir.IconSize = 55;
-            btnSalir.Location = new Point(1174, 6);
+            btnSalir.Location = new Point(1175, 8);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(87, 70);
+            btnSalir.Size = new Size(78, 52);
             btnSalir.TabIndex = 0;
             btnSalir.UseVisualStyleBackColor = false;
             btnSalir.Click += btnSalir_Click;
@@ -217,7 +217,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(235, 235, 233);
-            ClientSize = new Size(1311, 790);
+            ClientSize = new Size(1321, 890);
             Controls.Add(btnSalir);
             Controls.Add(panelContenedor);
             Controls.Add(lblNombreUsuarioIngresado);
