@@ -77,7 +77,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(22, 9);
+            label1.Location = new Point(26, 22);
             label1.Name = "label1";
             label1.Size = new Size(165, 28);
             label1.TabIndex = 0;
@@ -88,9 +88,9 @@
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "DNI", "Nombre", "Apellido", "Celular", "Correo" });
-            comboBox1.Location = new Point(137, 62);
+            comboBox1.Location = new Point(158, 75);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(162, 28);
+            comboBox1.Size = new Size(195, 28);
             comboBox1.TabIndex = 1;
             // 
             // listView1
@@ -98,7 +98,7 @@
             listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5, columnHeader6 });
             listView1.Location = new Point(22, 116);
             listView1.Name = "listView1";
-            listView1.Size = new Size(768, 590);
+            listView1.Size = new Size(868, 590);
             listView1.TabIndex = 2;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.View = View.Details;
@@ -106,27 +106,27 @@
             // columnHeader1
             // 
             columnHeader1.Text = "DNI";
-            columnHeader1.Width = 100;
+            columnHeader1.Width = 120;
             // 
             // columnHeader2
             // 
             columnHeader2.Text = "Nombre";
-            columnHeader2.Width = 100;
+            columnHeader2.Width = 120;
             // 
             // columnHeader3
             // 
             columnHeader3.Text = "Apellido";
-            columnHeader3.Width = 100;
+            columnHeader3.Width = 120;
             // 
             // columnHeader4
             // 
             columnHeader4.Text = "Celular";
-            columnHeader4.Width = 100;
+            columnHeader4.Width = 120;
             // 
             // columnHeader5
             // 
             columnHeader5.Text = "Correo";
-            columnHeader5.Width = 100;
+            columnHeader5.Width = 120;
             // 
             // columnHeader6
             // 
@@ -151,7 +151,7 @@
             panel1.Controls.Add(label5);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label3);
-            panel1.Location = new Point(817, 9);
+            panel1.Location = new Point(935, 12);
             panel1.Name = "panel1";
             panel1.Size = new Size(436, 435);
             panel1.TabIndex = 3;
@@ -303,17 +303,17 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(318, 63);
+            textBox1.Location = new Point(373, 76);
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "    5933929";
-            textBox1.Size = new Size(230, 27);
+            textBox1.Size = new Size(256, 27);
             textBox1.TabIndex = 5;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(36, 64);
+            label2.Location = new Point(50, 77);
             label2.Name = "label2";
             label2.Size = new Size(95, 23);
             label2.TabIndex = 0;
@@ -326,7 +326,7 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(680, 63);
+            button2.Location = new Point(770, 76);
             button2.Name = "button2";
             button2.Size = new Size(100, 30);
             button2.TabIndex = 4;
@@ -340,7 +340,7 @@
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button4.ForeColor = Color.White;
-            button4.Location = new Point(567, 62);
+            button4.Location = new Point(657, 75);
             button4.Name = "button4";
             button4.Size = new Size(100, 30);
             button4.TabIndex = 4;
@@ -351,7 +351,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.Location = new Point(607, 24);
+            label10.Location = new Point(697, 37);
             label10.Name = "label10";
             label10.Size = new Size(130, 20);
             label10.TabIndex = 0;
@@ -361,7 +361,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.Location = new Point(743, 24);
+            label11.Location = new Point(833, 37);
             label11.Name = "label11";
             label11.Size = new Size(17, 20);
             label11.TabIndex = 0;
@@ -377,7 +377,7 @@
             panel2.Controls.Add(label14);
             panel2.Controls.Add(label12);
             panel2.Controls.Add(label15);
-            panel2.Location = new Point(817, 456);
+            panel2.Location = new Point(935, 459);
             panel2.Name = "panel2";
             panel2.Size = new Size(436, 193);
             panel2.TabIndex = 6;
@@ -460,7 +460,7 @@
             button5.FlatStyle = FlatStyle.Flat;
             button5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button5.ForeColor = Color.White;
-            button5.Location = new Point(844, 669);
+            button5.Location = new Point(962, 672);
             button5.Name = "button5";
             button5.Size = new Size(200, 37);
             button5.TabIndex = 4;
@@ -472,7 +472,7 @@
             label16.AutoSize = true;
             label16.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
             label16.ForeColor = SystemColors.ButtonShadow;
-            label16.Location = new Point(1080, 670);
+            label16.Location = new Point(1198, 673);
             label16.Name = "label16";
             label16.Size = new Size(144, 34);
             label16.TabIndex = 0;
@@ -482,7 +482,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1293, 726);
+            ClientSize = new Size(1400, 726);
             Controls.Add(button5);
             Controls.Add(panel2);
             Controls.Add(textBox1);
