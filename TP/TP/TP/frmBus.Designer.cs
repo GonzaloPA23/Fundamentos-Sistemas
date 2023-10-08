@@ -65,14 +65,14 @@
             columnHeader10 = new ColumnHeader();
             columnHeader11 = new ColumnHeader();
             columnHeader12 = new ColumnHeader();
+            columnHeader13 = new ColumnHeader();
+            columnHeader14 = new ColumnHeader();
             label13 = new Label();
             label14 = new Label();
             label15 = new Label();
             label16 = new Label();
             button5 = new Button();
             label17 = new Label();
-            columnHeader13 = new ColumnHeader();
-            columnHeader14 = new ColumnHeader();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
@@ -98,7 +98,7 @@
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label3);
-            panel1.Location = new Point(924, 27);
+            panel1.Location = new Point(929, 27);
             panel1.Name = "panel1";
             panel1.Size = new Size(436, 453);
             panel1.TabIndex = 14;
@@ -107,7 +107,7 @@
             // 
             comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox3.FormattingEnabled = true;
-            comboBox3.Items.AddRange(new object[] { "Economico", "Vip", "Primera Clase", "Negocio" });
+            comboBox3.Items.AddRange(new object[] { "Chiclayo", "Tumbes", "Piura" });
             comboBox3.Location = new Point(153, 306);
             comboBox3.Name = "comboBox3";
             comboBox3.Size = new Size(251, 28);
@@ -300,6 +300,7 @@
             // 
             listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5, columnHeader6 });
             listView1.Location = new Point(21, 63);
+            listView1.MultiSelect = false;
             listView1.Name = "listView1";
             listView1.Size = new Size(882, 270);
             listView1.TabIndex = 13;
@@ -370,6 +371,7 @@
             // 
             listView2.Columns.AddRange(new ColumnHeader[] { columnHeader7, columnHeader8, columnHeader9, columnHeader10, columnHeader11, columnHeader12, columnHeader13, columnHeader14 });
             listView2.Location = new Point(21, 391);
+            listView2.MultiSelect = false;
             listView2.Name = "listView2";
             listView2.Size = new Size(882, 313);
             listView2.TabIndex = 18;
@@ -405,6 +407,16 @@
             // 
             columnHeader12.Text = "Destino";
             columnHeader12.Width = 90;
+            // 
+            // columnHeader13
+            // 
+            columnHeader13.Text = "Fecha de llegada";
+            columnHeader13.Width = 130;
+            // 
+            // columnHeader14
+            // 
+            columnHeader14.Text = "Precio";
+            columnHeader14.Width = 70;
             // 
             // label13
             // 
@@ -454,7 +466,7 @@
             button5.FlatStyle = FlatStyle.Flat;
             button5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button5.ForeColor = Color.White;
-            button5.Location = new Point(1040, 637);
+            button5.Location = new Point(1058, 639);
             button5.Name = "button5";
             button5.Size = new Size(200, 37);
             button5.TabIndex = 20;
@@ -471,16 +483,6 @@
             label17.Size = new Size(281, 17);
             label17.TabIndex = 19;
             label17.Text = "Elija la matricula del bus y confirme su acción *";
-            // 
-            // columnHeader13
-            // 
-            columnHeader13.Text = "Fecha de llegada";
-            columnHeader13.Width = 130;
-            // 
-            // columnHeader14
-            // 
-            columnHeader14.Text = "Precio";
-            columnHeader14.Width = 70;
             // 
             // frmBus
             // 

@@ -118,19 +118,34 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="bus-menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\bus-menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="palmeras-inicio-sesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenes\palmeras-inicio-sesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bus-principal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\imagenes\bus-principal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logo_perla-del-altomayo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenes\logo_perla-del-altomayo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="entrega-encomiendas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\imagenes\entrega-encomiendas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="encomienda-fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\encomienda-fondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bus-principal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\bus-principal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bus-menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenes\bus-menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bus-principal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\bus-principal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="encomienda-fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\encomienda-fondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_perla-del-altomayo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\logo_perla-del-altomayo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="palmeras-inicio-sesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\palmeras-inicio-sesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

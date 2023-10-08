@@ -97,6 +97,7 @@
             // 
             listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5, columnHeader6 });
             listView1.Location = new Point(22, 116);
+            listView1.MultiSelect = false;
             listView1.Name = "listView1";
             listView1.Size = new Size(868, 590);
             listView1.TabIndex = 2;

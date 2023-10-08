@@ -83,9 +83,9 @@ namespace CapaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap entrega_encomiendas {
+        internal static System.Drawing.Bitmap encomienda_fondo {
             get {
-                object obj = ResourceManager.GetObject("entrega-encomiendas", resourceCulture);
+                object obj = ResourceManager.GetObject("encomienda-fondo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
