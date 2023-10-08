@@ -85,6 +85,7 @@
             // 
             // comboBox1
             // 
+            comboBox1.Cursor = Cursors.Hand;
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "DNI", "Nombre", "Apellido", "Celular", "Correo" });
