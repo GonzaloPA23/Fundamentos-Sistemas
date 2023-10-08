@@ -72,7 +72,7 @@ namespace TP
 
         private void subMenuHistorialPasajes_Click(object sender, EventArgs e)
         {
-            AbrirFormularioHijo(menureportes, new frmHistorialEncomienda());
+            AbrirFormularioHijo(menureportes, new frmHistorialPasaje());
         }
 
         private void subMenuHistorialEncomiendas_Click(object sender, EventArgs e)
