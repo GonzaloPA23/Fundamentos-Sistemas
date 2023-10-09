@@ -77,5 +77,10 @@ namespace CapaPresentacion
             }
             else MessageBox.Show(mensaje, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            MostrarChoferes(choferCapaNegocio.ListarChoferes());
+        }
     }
 }

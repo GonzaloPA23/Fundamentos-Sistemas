@@ -79,7 +79,7 @@
             label1.Font = new Font("Comic Sans MS", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label1.Location = new Point(26, 22);
             label1.Name = "label1";
-            label1.Size = new Size(165, 28);
+            label1.Size = new Size(189, 28);
             label1.TabIndex = 0;
             label1.Text = "Lista de choferes: ";
             // 
@@ -250,7 +250,7 @@
             label9.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label9.Location = new Point(26, 309);
             label9.Name = "label9";
-            label9.Size = new Size(86, 40);
+            label9.Size = new Size(87, 40);
             label9.TabIndex = 0;
             label9.Text = "    Fecha de\r\nNacimiento";
             // 
@@ -260,7 +260,7 @@
             label8.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label8.Location = new Point(58, 267);
             label8.Name = "label8";
-            label8.Size = new Size(54, 20);
+            label8.Size = new Size(56, 20);
             label8.TabIndex = 0;
             label8.Text = "Correo";
             // 
@@ -270,7 +270,7 @@
             label7.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label7.Location = new Point(55, 223);
             label7.Name = "label7";
-            label7.Size = new Size(55, 20);
+            label7.Size = new Size(57, 20);
             label7.TabIndex = 0;
             label7.Text = "Celular";
             // 
@@ -280,7 +280,7 @@
             label6.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label6.Location = new Point(46, 177);
             label6.Name = "label6";
-            label6.Size = new Size(66, 20);
+            label6.Size = new Size(65, 20);
             label6.TabIndex = 0;
             label6.Text = "Apellido";
             // 
@@ -300,7 +300,7 @@
             label4.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label4.Location = new Point(77, 76);
             label4.Name = "label4";
-            label4.Size = new Size(35, 20);
+            label4.Size = new Size(40, 20);
             label4.TabIndex = 0;
             label4.Text = "DNI";
             // 
@@ -310,7 +310,7 @@
             label3.Font = new Font("Comic Sans MS", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             label3.Location = new Point(16, 24);
             label3.Name = "label3";
-            label3.Size = new Size(162, 25);
+            label3.Size = new Size(175, 24);
             label3.TabIndex = 0;
             label3.Text = "Detalles del chofer:";
             // 
@@ -328,7 +328,7 @@
             label2.Font = new Font("Comic Sans MS", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             label2.Location = new Point(50, 77);
             label2.Name = "label2";
-            label2.Size = new Size(95, 23);
+            label2.Size = new Size(101, 24);
             label2.TabIndex = 0;
             label2.Text = "Buscar por:";
             // 
@@ -345,6 +345,7 @@
             btnLimpiar.TabIndex = 4;
             btnLimpiar.Text = "Limpiar";
             btnLimpiar.UseVisualStyleBackColor = false;
+            btnLimpiar.Click += btnLimpiar_Click;
             // 
             // btnBuscar
             // 
@@ -366,7 +367,7 @@
             label10.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label10.Location = new Point(697, 37);
             label10.Name = "label10";
-            label10.Size = new Size(130, 20);
+            label10.Size = new Size(141, 20);
             label10.TabIndex = 0;
             label10.Text = "Total de choferes: ";
             // 
@@ -376,7 +377,7 @@
             lblTotalChoferes.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
             lblTotalChoferes.Location = new Point(833, 37);
             lblTotalChoferes.Name = "lblTotalChoferes";
-            lblTotalChoferes.Size = new Size(17, 20);
+            lblTotalChoferes.Size = new Size(18, 20);
             lblTotalChoferes.TabIndex = 0;
             lblTotalChoferes.Text = "0";
             // 
@@ -431,7 +432,7 @@
             label13.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label13.Location = new Point(55, 94);
             label13.Name = "label13";
-            label13.Size = new Size(54, 20);
+            label13.Size = new Size(56, 20);
             label13.TabIndex = 6;
             label13.Text = "Correo";
             // 
@@ -441,7 +442,7 @@
             label14.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label14.Location = new Point(52, 50);
             label14.Name = "label14";
-            label14.Size = new Size(55, 20);
+            label14.Size = new Size(57, 20);
             label14.TabIndex = 7;
             label14.Text = "Celular";
             // 
@@ -451,7 +452,7 @@
             label12.Font = new Font("Comic Sans MS", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             label12.Location = new Point(14, 9);
             label12.Name = "label12";
-            label12.Size = new Size(241, 25);
+            label12.Size = new Size(252, 24);
             label12.TabIndex = 0;
             label12.Text = "Actualizar datos de contacto:";
             // 
@@ -462,7 +463,7 @@
             label15.ForeColor = SystemColors.ButtonShadow;
             label15.Location = new Point(284, 15);
             label15.Name = "label15";
-            label15.Size = new Size(135, 17);
+            label15.Size = new Size(149, 18);
             label15.TabIndex = 0;
             label15.Text = "Elija el dni del chofer*";
             // 
@@ -487,7 +488,7 @@
             label16.ForeColor = SystemColors.ButtonShadow;
             label16.Location = new Point(1198, 673);
             label16.Name = "label16";
-            label16.Size = new Size(144, 34);
+            label16.Size = new Size(157, 36);
             label16.TabIndex = 0;
             label16.Text = "Elija el dni del chofer y \r\nconfirme su acción *";
             // 
