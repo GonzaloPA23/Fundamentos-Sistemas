@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            comboBox1 = new ComboBox();
-            listView1 = new ListView();
+            cbBusqueda = new ComboBox();
+            listViewChoferes = new ListView();
             columnHeader1 = new ColumnHeader();
             columnHeader2 = new ColumnHeader();
             columnHeader3 = new ColumnHeader();
@@ -38,14 +38,14 @@
             columnHeader5 = new ColumnHeader();
             columnHeader6 = new ColumnHeader();
             panel1 = new Panel();
-            dateTimePicker1 = new DateTimePicker();
-            button3 = new Button();
-            textBox6 = new TextBox();
-            button1 = new Button();
-            textBox5 = new TextBox();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
+            dtpFechaNacimiento = new DateTimePicker();
+            btnRegistrarChofer = new Button();
+            txtApellido = new TextBox();
+            btnCancelarChofer = new Button();
+            txtCelular = new TextBox();
+            txtCorreo = new TextBox();
+            txtNombre = new TextBox();
+            txtDni = new TextBox();
             label9 = new Label();
             label8 = new Label();
             label7 = new Label();
@@ -53,21 +53,21 @@
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
-            textBox1 = new TextBox();
+            txtBusqueda = new TextBox();
             label2 = new Label();
-            button2 = new Button();
-            button4 = new Button();
+            btnLimpiar = new Button();
+            btnBuscar = new Button();
             label10 = new Label();
-            label11 = new Label();
+            lblTotalChoferes = new Label();
             panel2 = new Panel();
-            textBox7 = new TextBox();
-            button6 = new Button();
-            textBox8 = new TextBox();
+            txtActualizarCelular = new TextBox();
+            btnActualizar = new Button();
+            txtActualizarCorreo = new TextBox();
             label13 = new Label();
             label14 = new Label();
             label12 = new Label();
             label15 = new Label();
-            button5 = new Button();
+            btnEliminarChofer = new Button();
             label16 = new Label();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -76,34 +76,36 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Comic Sans MS", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label1.Location = new Point(26, 22);
             label1.Name = "label1";
             label1.Size = new Size(165, 28);
             label1.TabIndex = 0;
             label1.Text = "Lista de choferes: ";
             // 
-            // comboBox1
+            // cbBusqueda
             // 
-            comboBox1.Cursor = Cursors.Hand;
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "DNI", "Nombre", "Apellido", "Celular", "Correo" });
-            comboBox1.Location = new Point(158, 75);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(195, 28);
-            comboBox1.TabIndex = 1;
+            cbBusqueda.Cursor = Cursors.Hand;
+            cbBusqueda.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbBusqueda.FormattingEnabled = true;
+            cbBusqueda.Items.AddRange(new object[] { "DNI", "Nombre", "Apellido", "Celular", "Correo" });
+            cbBusqueda.Location = new Point(158, 75);
+            cbBusqueda.Name = "cbBusqueda";
+            cbBusqueda.Size = new Size(195, 28);
+            cbBusqueda.TabIndex = 1;
+            cbBusqueda.SelectedIndex = 0;
             // 
-            // listView1
+            // listViewChoferes
             // 
-            listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5, columnHeader6 });
-            listView1.Location = new Point(22, 116);
-            listView1.MultiSelect = false;
-            listView1.Name = "listView1";
-            listView1.Size = new Size(868, 590);
-            listView1.TabIndex = 2;
-            listView1.UseCompatibleStateImageBehavior = false;
-            listView1.View = View.Details;
+            listViewChoferes.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5, columnHeader6 });
+            listViewChoferes.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            listViewChoferes.Location = new Point(22, 116);
+            listViewChoferes.MultiSelect = false;
+            listViewChoferes.Name = "listViewChoferes";
+            listViewChoferes.Size = new Size(868, 590);
+            listViewChoferes.TabIndex = 2;
+            listViewChoferes.UseCompatibleStateImageBehavior = false;
+            listViewChoferes.View = View.Details;
             // 
             // columnHeader1
             // 
@@ -113,39 +115,44 @@
             // columnHeader2
             // 
             columnHeader2.Text = "Nombre";
+            columnHeader2.TextAlign = HorizontalAlignment.Center;
             columnHeader2.Width = 120;
             // 
             // columnHeader3
             // 
             columnHeader3.Text = "Apellido";
+            columnHeader3.TextAlign = HorizontalAlignment.Center;
             columnHeader3.Width = 120;
             // 
             // columnHeader4
             // 
             columnHeader4.Text = "Celular";
+            columnHeader4.TextAlign = HorizontalAlignment.Center;
             columnHeader4.Width = 120;
             // 
             // columnHeader5
             // 
             columnHeader5.Text = "Correo";
-            columnHeader5.Width = 120;
+            columnHeader5.TextAlign = HorizontalAlignment.Center;
+            columnHeader5.Width = 180;
             // 
             // columnHeader6
             // 
             columnHeader6.Text = "Fecha de Nacimiento";
+            columnHeader6.TextAlign = HorizontalAlignment.Center;
             columnHeader6.Width = 170;
             // 
             // panel1
             // 
             panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Controls.Add(dateTimePicker1);
-            panel1.Controls.Add(button3);
-            panel1.Controls.Add(textBox6);
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(textBox5);
-            panel1.Controls.Add(textBox4);
-            panel1.Controls.Add(textBox3);
-            panel1.Controls.Add(textBox2);
+            panel1.Controls.Add(dtpFechaNacimiento);
+            panel1.Controls.Add(btnRegistrarChofer);
+            panel1.Controls.Add(txtApellido);
+            panel1.Controls.Add(btnCancelarChofer);
+            panel1.Controls.Add(txtCelular);
+            panel1.Controls.Add(txtCorreo);
+            panel1.Controls.Add(txtNombre);
+            panel1.Controls.Add(txtDni);
             panel1.Controls.Add(label9);
             panel1.Controls.Add(label8);
             panel1.Controls.Add(label7);
@@ -158,85 +165,89 @@
             panel1.Size = new Size(436, 435);
             panel1.TabIndex = 3;
             // 
-            // dateTimePicker1
+            // dtpFechaNacimiento
             // 
-            dateTimePicker1.Location = new Point(137, 317);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(251, 27);
-            dateTimePicker1.TabIndex = 6;
+            dtpFechaNacimiento.CustomFormat = "dd/MM/yyyy";
+            dtpFechaNacimiento.Format = DateTimePickerFormat.Custom;
+            dtpFechaNacimiento.Location = new Point(137, 317);
+            dtpFechaNacimiento.Name = "dtpFechaNacimiento";
+            dtpFechaNacimiento.Size = new Size(251, 27);
+            dtpFechaNacimiento.TabIndex = 6;
             // 
-            // button3
+            // btnRegistrarChofer
             // 
-            button3.BackColor = Color.FromArgb(222, 108, 148);
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(218, 373);
-            button3.Name = "button3";
-            button3.Size = new Size(200, 37);
-            button3.TabIndex = 4;
-            button3.Text = "Registrar chofer";
-            button3.UseVisualStyleBackColor = false;
+            btnRegistrarChofer.BackColor = Color.FromArgb(222, 108, 148);
+            btnRegistrarChofer.FlatAppearance.BorderSize = 0;
+            btnRegistrarChofer.FlatStyle = FlatStyle.Flat;
+            btnRegistrarChofer.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btnRegistrarChofer.ForeColor = Color.White;
+            btnRegistrarChofer.Location = new Point(218, 373);
+            btnRegistrarChofer.Name = "btnRegistrarChofer";
+            btnRegistrarChofer.Size = new Size(200, 37);
+            btnRegistrarChofer.TabIndex = 4;
+            btnRegistrarChofer.Text = "Registrar chofer";
+            btnRegistrarChofer.UseVisualStyleBackColor = false;
+            btnRegistrarChofer.Click += btnRegistrarChofer_Click;
             // 
-            // textBox6
+            // txtApellido
             // 
-            textBox6.Location = new Point(137, 175);
-            textBox6.Name = "textBox6";
-            textBox6.PlaceholderText = "    Ruiz";
-            textBox6.Size = new Size(251, 27);
-            textBox6.TabIndex = 5;
+            txtApellido.Location = new Point(137, 175);
+            txtApellido.Name = "txtApellido";
+            txtApellido.PlaceholderText = "    Ruiz";
+            txtApellido.Size = new Size(251, 27);
+            txtApellido.TabIndex = 5;
             // 
-            // button1
+            // btnCancelarChofer
             // 
-            button1.BackColor = SystemColors.ControlDarkDark;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(13, 374);
-            button1.Name = "button1";
-            button1.Size = new Size(198, 37);
-            button1.TabIndex = 4;
-            button1.Text = "Cancelar chofer";
-            button1.UseVisualStyleBackColor = false;
+            btnCancelarChofer.BackColor = SystemColors.ControlDarkDark;
+            btnCancelarChofer.FlatAppearance.BorderSize = 0;
+            btnCancelarChofer.FlatStyle = FlatStyle.Flat;
+            btnCancelarChofer.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnCancelarChofer.ForeColor = Color.White;
+            btnCancelarChofer.Location = new Point(13, 374);
+            btnCancelarChofer.Name = "btnCancelarChofer";
+            btnCancelarChofer.Size = new Size(198, 37);
+            btnCancelarChofer.TabIndex = 4;
+            btnCancelarChofer.Text = "Cancelar chofer";
+            btnCancelarChofer.UseVisualStyleBackColor = false;
+            btnCancelarChofer.Click += btnCancelarChofer_Click;
             // 
-            // textBox5
+            // txtCelular
             // 
-            textBox5.Location = new Point(137, 220);
-            textBox5.Name = "textBox5";
-            textBox5.PlaceholderText = "    999345283";
-            textBox5.Size = new Size(251, 27);
-            textBox5.TabIndex = 5;
+            txtCelular.Location = new Point(137, 220);
+            txtCelular.Name = "txtCelular";
+            txtCelular.PlaceholderText = "    999345283";
+            txtCelular.Size = new Size(251, 27);
+            txtCelular.TabIndex = 5;
             // 
-            // textBox4
+            // txtCorreo
             // 
-            textBox4.Location = new Point(137, 266);
-            textBox4.Name = "textBox4";
-            textBox4.PlaceholderText = "    rafael.ruiz@gmail.com";
-            textBox4.Size = new Size(251, 27);
-            textBox4.TabIndex = 5;
+            txtCorreo.Location = new Point(137, 266);
+            txtCorreo.Name = "txtCorreo";
+            txtCorreo.PlaceholderText = "    rafael.ruiz@gmail.com";
+            txtCorreo.Size = new Size(251, 27);
+            txtCorreo.TabIndex = 5;
             // 
-            // textBox3
+            // txtNombre
             // 
-            textBox3.Location = new Point(137, 127);
-            textBox3.Name = "textBox3";
-            textBox3.PlaceholderText = "    Rafael";
-            textBox3.Size = new Size(251, 27);
-            textBox3.TabIndex = 5;
+            txtNombre.Location = new Point(137, 127);
+            txtNombre.Name = "txtNombre";
+            txtNombre.PlaceholderText = "    Rafael";
+            txtNombre.Size = new Size(251, 27);
+            txtNombre.TabIndex = 5;
             // 
-            // textBox2
+            // txtDni
             // 
-            textBox2.Location = new Point(137, 76);
-            textBox2.Name = "textBox2";
-            textBox2.PlaceholderText = "    5933929";
-            textBox2.Size = new Size(251, 27);
-            textBox2.TabIndex = 5;
+            txtDni.Location = new Point(137, 76);
+            txtDni.Name = "txtDni";
+            txtDni.PlaceholderText = "    5933929";
+            txtDni.Size = new Size(251, 27);
+            txtDni.TabIndex = 5;
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label9.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label9.Location = new Point(26, 309);
             label9.Name = "label9";
             label9.Size = new Size(86, 40);
@@ -246,7 +257,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label8.Location = new Point(58, 267);
             label8.Name = "label8";
             label8.Size = new Size(54, 20);
@@ -256,7 +267,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label7.Location = new Point(55, 223);
             label7.Name = "label7";
             label7.Size = new Size(55, 20);
@@ -266,7 +277,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label6.Location = new Point(46, 177);
             label6.Name = "label6";
             label6.Size = new Size(66, 20);
@@ -276,7 +287,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label5.Location = new Point(48, 127);
             label5.Name = "label5";
             label5.Size = new Size(64, 20);
@@ -286,7 +297,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label4.Location = new Point(77, 76);
             label4.Name = "label4";
             label4.Size = new Size(35, 20);
@@ -296,85 +307,85 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Font = new Font("Comic Sans MS", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             label3.Location = new Point(16, 24);
             label3.Name = "label3";
             label3.Size = new Size(162, 25);
             label3.TabIndex = 0;
             label3.Text = "Detalles del chofer:";
             // 
-            // textBox1
+            // txtBusqueda
             // 
-            textBox1.Location = new Point(373, 76);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "    5933929";
-            textBox1.Size = new Size(256, 27);
-            textBox1.TabIndex = 5;
+            txtBusqueda.Location = new Point(373, 76);
+            txtBusqueda.Name = "txtBusqueda";
+            txtBusqueda.PlaceholderText = "    5933929";
+            txtBusqueda.Size = new Size(256, 27);
+            txtBusqueda.TabIndex = 5;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Comic Sans MS", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             label2.Location = new Point(50, 77);
             label2.Name = "label2";
             label2.Size = new Size(95, 23);
             label2.TabIndex = 0;
             label2.Text = "Buscar por:";
             // 
-            // button2
+            // btnLimpiar
             // 
-            button2.BackColor = SystemColors.ControlDarkDark;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(770, 76);
-            button2.Name = "button2";
-            button2.Size = new Size(100, 30);
-            button2.TabIndex = 4;
-            button2.Text = "Limpiar";
-            button2.UseVisualStyleBackColor = false;
+            btnLimpiar.BackColor = SystemColors.ControlDarkDark;
+            btnLimpiar.FlatAppearance.BorderSize = 0;
+            btnLimpiar.FlatStyle = FlatStyle.Flat;
+            btnLimpiar.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnLimpiar.ForeColor = Color.White;
+            btnLimpiar.Location = new Point(770, 76);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.Size = new Size(100, 30);
+            btnLimpiar.TabIndex = 4;
+            btnLimpiar.Text = "Limpiar";
+            btnLimpiar.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnBuscar
             // 
-            button4.BackColor = Color.FromArgb(222, 108, 148);
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(657, 75);
-            button4.Name = "button4";
-            button4.Size = new Size(100, 30);
-            button4.TabIndex = 4;
-            button4.Text = "Buscar";
-            button4.UseVisualStyleBackColor = false;
+            btnBuscar.BackColor = Color.FromArgb(222, 108, 148);
+            btnBuscar.FlatAppearance.BorderSize = 0;
+            btnBuscar.FlatStyle = FlatStyle.Flat;
+            btnBuscar.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnBuscar.ForeColor = Color.White;
+            btnBuscar.Location = new Point(657, 75);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(100, 30);
+            btnBuscar.TabIndex = 4;
+            btnBuscar.Text = "Buscar";
+            btnBuscar.UseVisualStyleBackColor = false;
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label10.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label10.Location = new Point(697, 37);
             label10.Name = "label10";
             label10.Size = new Size(130, 20);
             label10.TabIndex = 0;
             label10.Text = "Total de choferes: ";
             // 
-            // label11
+            // lblTotalChoferes
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.Location = new Point(833, 37);
-            label11.Name = "label11";
-            label11.Size = new Size(17, 20);
-            label11.TabIndex = 0;
-            label11.Text = "0";
+            lblTotalChoferes.AutoSize = true;
+            lblTotalChoferes.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTotalChoferes.Location = new Point(833, 37);
+            lblTotalChoferes.Name = "lblTotalChoferes";
+            lblTotalChoferes.Size = new Size(17, 20);
+            lblTotalChoferes.TabIndex = 0;
+            lblTotalChoferes.Text = "0";
             // 
             // panel2
             // 
             panel2.BorderStyle = BorderStyle.FixedSingle;
-            panel2.Controls.Add(textBox7);
-            panel2.Controls.Add(button6);
-            panel2.Controls.Add(textBox8);
+            panel2.Controls.Add(txtActualizarCelular);
+            panel2.Controls.Add(btnActualizar);
+            panel2.Controls.Add(txtActualizarCorreo);
             panel2.Controls.Add(label13);
             panel2.Controls.Add(label14);
             panel2.Controls.Add(label12);
@@ -384,40 +395,40 @@
             panel2.Size = new Size(436, 193);
             panel2.TabIndex = 6;
             // 
-            // textBox7
+            // txtActualizarCelular
             // 
-            textBox7.Location = new Point(134, 47);
-            textBox7.Name = "textBox7";
-            textBox7.PlaceholderText = "    999345283";
-            textBox7.Size = new Size(251, 27);
-            textBox7.TabIndex = 8;
+            txtActualizarCelular.Location = new Point(134, 47);
+            txtActualizarCelular.Name = "txtActualizarCelular";
+            txtActualizarCelular.PlaceholderText = "    999345283";
+            txtActualizarCelular.Size = new Size(251, 27);
+            txtActualizarCelular.TabIndex = 8;
             // 
-            // button6
+            // btnActualizar
             // 
-            button6.BackColor = Color.FromArgb(222, 108, 148);
-            button6.FlatAppearance.BorderSize = 0;
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button6.ForeColor = Color.White;
-            button6.Location = new Point(138, 142);
-            button6.Name = "button6";
-            button6.Size = new Size(200, 37);
-            button6.TabIndex = 4;
-            button6.Text = "Actualizar";
-            button6.UseVisualStyleBackColor = false;
+            btnActualizar.BackColor = Color.FromArgb(222, 108, 148);
+            btnActualizar.FlatAppearance.BorderSize = 0;
+            btnActualizar.FlatStyle = FlatStyle.Flat;
+            btnActualizar.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnActualizar.ForeColor = Color.White;
+            btnActualizar.Location = new Point(138, 142);
+            btnActualizar.Name = "btnActualizar";
+            btnActualizar.Size = new Size(200, 37);
+            btnActualizar.TabIndex = 4;
+            btnActualizar.Text = "Actualizar";
+            btnActualizar.UseVisualStyleBackColor = false;
             // 
-            // textBox8
+            // txtActualizarCorreo
             // 
-            textBox8.Location = new Point(134, 93);
-            textBox8.Name = "textBox8";
-            textBox8.PlaceholderText = "    rafael.ruiz@gmail.com";
-            textBox8.Size = new Size(251, 27);
-            textBox8.TabIndex = 9;
+            txtActualizarCorreo.Location = new Point(134, 93);
+            txtActualizarCorreo.Name = "txtActualizarCorreo";
+            txtActualizarCorreo.PlaceholderText = "    rafael.ruiz@gmail.com";
+            txtActualizarCorreo.Size = new Size(251, 27);
+            txtActualizarCorreo.TabIndex = 9;
             // 
             // label13
             // 
             label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label13.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label13.Location = new Point(55, 94);
             label13.Name = "label13";
             label13.Size = new Size(54, 20);
@@ -427,7 +438,7 @@
             // label14
             // 
             label14.AutoSize = true;
-            label14.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label14.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label14.Location = new Point(52, 50);
             label14.Name = "label14";
             label14.Size = new Size(55, 20);
@@ -437,7 +448,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label12.Font = new Font("Comic Sans MS", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             label12.Location = new Point(14, 9);
             label12.Name = "label12";
             label12.Size = new Size(241, 25);
@@ -447,7 +458,7 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label15.Font = new Font("Comic Sans MS", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
             label15.ForeColor = SystemColors.ButtonShadow;
             label15.Location = new Point(284, 15);
             label15.Name = "label15";
@@ -455,24 +466,24 @@
             label15.TabIndex = 0;
             label15.Text = "Elija el dni del chofer*";
             // 
-            // button5
+            // btnEliminarChofer
             // 
-            button5.BackColor = Color.FromArgb(182, 113, 137);
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button5.ForeColor = Color.White;
-            button5.Location = new Point(962, 672);
-            button5.Name = "button5";
-            button5.Size = new Size(200, 37);
-            button5.TabIndex = 4;
-            button5.Text = "Eliminar chofer";
-            button5.UseVisualStyleBackColor = false;
+            btnEliminarChofer.BackColor = Color.FromArgb(182, 113, 137);
+            btnEliminarChofer.FlatAppearance.BorderSize = 0;
+            btnEliminarChofer.FlatStyle = FlatStyle.Flat;
+            btnEliminarChofer.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnEliminarChofer.ForeColor = Color.White;
+            btnEliminarChofer.Location = new Point(962, 672);
+            btnEliminarChofer.Name = "btnEliminarChofer";
+            btnEliminarChofer.Size = new Size(200, 37);
+            btnEliminarChofer.TabIndex = 4;
+            btnEliminarChofer.Text = "Eliminar chofer";
+            btnEliminarChofer.UseVisualStyleBackColor = false;
             // 
             // label16
             // 
             label16.AutoSize = true;
-            label16.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label16.Font = new Font("Comic Sans MS", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
             label16.ForeColor = SystemColors.ButtonShadow;
             label16.Location = new Point(1198, 673);
             label16.Name = "label16";
@@ -485,16 +496,16 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1400, 726);
-            Controls.Add(button5);
+            Controls.Add(btnEliminarChofer);
             Controls.Add(panel2);
-            Controls.Add(textBox1);
-            Controls.Add(button4);
-            Controls.Add(button2);
+            Controls.Add(txtBusqueda);
+            Controls.Add(btnBuscar);
+            Controls.Add(btnLimpiar);
             Controls.Add(panel1);
             Controls.Add(label16);
-            Controls.Add(listView1);
-            Controls.Add(comboBox1);
-            Controls.Add(label11);
+            Controls.Add(listViewChoferes);
+            Controls.Add(cbBusqueda);
+            Controls.Add(lblTotalChoferes);
             Controls.Add(label10);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -511,18 +522,18 @@
         #endregion
 
         private Label label1;
-        private ComboBox comboBox1;
-        private ListView listView1;
+        private ComboBox cbBusqueda;
+        private ListView listViewChoferes;
         private Panel panel1;
-        private TextBox textBox1;
+        private TextBox txtBusqueda;
         private Label label2;
-        private Button button2;
-        private DateTimePicker dateTimePicker1;
-        private TextBox textBox6;
-        private TextBox textBox5;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
+        private Button btnLimpiar;
+        private DateTimePicker dtpFechaNacimiento;
+        private TextBox txtApellido;
+        private TextBox txtCelular;
+        private TextBox txtCorreo;
+        private TextBox txtNombre;
+        private TextBox txtDni;
         private Label label9;
         private Label label8;
         private Label label7;
@@ -536,16 +547,16 @@
         private ColumnHeader columnHeader4;
         private ColumnHeader columnHeader5;
         private ColumnHeader columnHeader6;
-        private Button button1;
-        private Button button3;
-        private Button button4;
+        private Button btnCancelarChofer;
+        private Button btnRegistrarChofer;
+        private Button btnBuscar;
         private Label label10;
-        private Label label11;
+        private Label lblTotalChoferes;
         private Panel panel2;
-        private Button button5;
-        private TextBox textBox7;
-        private Button button6;
-        private TextBox textBox8;
+        private Button btnEliminarChofer;
+        private TextBox txtActualizarCelular;
+        private Button btnActualizar;
+        private TextBox txtActualizarCorreo;
         private Label label13;
         private Label label14;
         private Label label12;

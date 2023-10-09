@@ -16,7 +16,7 @@ namespace CapaNegocio
         {
             return usuarioCapaDatos.ListarUsuarios();
         }
-        public int Registrar(Usuario usuario, out string mensaje)
+        public int RegistrarUsuario(Usuario usuario, out string mensaje)
         {
             mensaje = string.Empty;
             // Validación de campos vacíos

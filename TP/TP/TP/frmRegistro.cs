@@ -41,7 +41,7 @@ namespace CapaPresentacion
                 ObjRol = new Rol()
             };
 
-            int idusuariogenerado = new UsuarioCapaNegocio().Registrar(usuario, out mensaje);
+            int idusuariogenerado = new UsuarioCapaNegocio().RegistrarUsuario(usuario, out mensaje);
             if (idusuariogenerado != 0)
             {
                 MessageBox.Show("Usuario registrado correctamente","Éxito",MessageBoxButtons.OK,MessageBoxIcon.Information);

@@ -48,13 +48,6 @@
             label3 = new Label();
             button3 = new Button();
             button1 = new Button();
-            listView1 = new ListView();
-            columnHeader1 = new ColumnHeader();
-            columnHeader2 = new ColumnHeader();
-            columnHeader3 = new ColumnHeader();
-            columnHeader4 = new ColumnHeader();
-            columnHeader5 = new ColumnHeader();
-            columnHeader6 = new ColumnHeader();
             label11 = new Label();
             label10 = new Label();
             label1 = new Label();
@@ -73,6 +66,13 @@
             label16 = new Label();
             button5 = new Button();
             label17 = new Label();
+            listViewChoferes = new ListView();
+            columnHeader1 = new ColumnHeader();
+            columnHeader2 = new ColumnHeader();
+            columnHeader3 = new ColumnHeader();
+            columnHeader4 = new ColumnHeader();
+            columnHeader5 = new ColumnHeader();
+            columnHeader6 = new ColumnHeader();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
@@ -296,47 +296,6 @@
             button1.Text = "Cancelar bus";
             button1.UseVisualStyleBackColor = false;
             // 
-            // listView1
-            // 
-            listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5, columnHeader6 });
-            listView1.Location = new Point(21, 63);
-            listView1.MultiSelect = false;
-            listView1.Name = "listView1";
-            listView1.Size = new Size(882, 270);
-            listView1.TabIndex = 13;
-            listView1.UseCompatibleStateImageBehavior = false;
-            listView1.View = View.Details;
-            // 
-            // columnHeader1
-            // 
-            columnHeader1.Text = "DNI";
-            columnHeader1.Width = 100;
-            // 
-            // columnHeader2
-            // 
-            columnHeader2.Text = "Nombre";
-            columnHeader2.Width = 100;
-            // 
-            // columnHeader3
-            // 
-            columnHeader3.Text = "Apellido";
-            columnHeader3.Width = 100;
-            // 
-            // columnHeader4
-            // 
-            columnHeader4.Text = "Celular";
-            columnHeader4.Width = 100;
-            // 
-            // columnHeader5
-            // 
-            columnHeader5.Text = "Correo";
-            columnHeader5.Width = 100;
-            // 
-            // columnHeader6
-            // 
-            columnHeader6.Text = "Fecha de Nacimiento";
-            columnHeader6.Width = 170;
-            // 
             // label11
             // 
             label11.AutoSize = true;
@@ -484,11 +443,59 @@
             label17.TabIndex = 19;
             label17.Text = "Elija la matricula del bus y confirme su acción *";
             // 
+            // listViewChoferes
+            // 
+            listViewChoferes.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5, columnHeader6 });
+            listViewChoferes.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            listViewChoferes.Location = new Point(21, 61);
+            listViewChoferes.MultiSelect = false;
+            listViewChoferes.Name = "listViewChoferes";
+            listViewChoferes.Size = new Size(882, 281);
+            listViewChoferes.TabIndex = 21;
+            listViewChoferes.UseCompatibleStateImageBehavior = false;
+            listViewChoferes.View = View.Details;
+            // 
+            // columnHeader1
+            // 
+            columnHeader1.Text = "DNI";
+            columnHeader1.Width = 120;
+            // 
+            // columnHeader2
+            // 
+            columnHeader2.Text = "Nombre";
+            columnHeader2.TextAlign = HorizontalAlignment.Center;
+            columnHeader2.Width = 120;
+            // 
+            // columnHeader3
+            // 
+            columnHeader3.Text = "Apellido";
+            columnHeader3.TextAlign = HorizontalAlignment.Center;
+            columnHeader3.Width = 120;
+            // 
+            // columnHeader4
+            // 
+            columnHeader4.Text = "Celular";
+            columnHeader4.TextAlign = HorizontalAlignment.Center;
+            columnHeader4.Width = 120;
+            // 
+            // columnHeader5
+            // 
+            columnHeader5.Text = "Correo";
+            columnHeader5.TextAlign = HorizontalAlignment.Center;
+            columnHeader5.Width = 180;
+            // 
+            // columnHeader6
+            // 
+            columnHeader6.Text = "Fecha de Nacimiento";
+            columnHeader6.TextAlign = HorizontalAlignment.Center;
+            columnHeader6.Width = 170;
+            // 
             // frmBus
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1400, 726);
+            Controls.Add(listViewChoferes);
             Controls.Add(button5);
             Controls.Add(label17);
             Controls.Add(label16);
@@ -497,7 +504,6 @@
             Controls.Add(label14);
             Controls.Add(label15);
             Controls.Add(panel1);
-            Controls.Add(listView1);
             Controls.Add(label11);
             Controls.Add(label10);
             Controls.Add(label1);
@@ -526,13 +532,6 @@
         private Label label5;
         private Label label4;
         private Label label3;
-        private ListView listView1;
-        private ColumnHeader columnHeader1;
-        private ColumnHeader columnHeader2;
-        private ColumnHeader columnHeader3;
-        private ColumnHeader columnHeader4;
-        private ColumnHeader columnHeader5;
-        private ColumnHeader columnHeader6;
         private Label label11;
         private Label label10;
         private Label label1;
@@ -560,5 +559,12 @@
         private Label label17;
         private ColumnHeader columnHeader13;
         private ColumnHeader columnHeader14;
+        private ListView listViewChoferes;
+        private ColumnHeader columnHeader1;
+        private ColumnHeader columnHeader2;
+        private ColumnHeader columnHeader3;
+        private ColumnHeader columnHeader4;
+        private ColumnHeader columnHeader5;
+        private ColumnHeader columnHeader6;
     }
 }
