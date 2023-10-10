@@ -6,5 +6,6 @@
         public String Dni { get; set; }
         public String NombreCompleto { get; set; }
         public int Edad { get; set; }
+        public DateTime FechaCita { get; set; }
     }
 }

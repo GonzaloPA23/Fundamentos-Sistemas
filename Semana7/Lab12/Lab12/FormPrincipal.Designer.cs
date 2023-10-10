@@ -34,32 +34,51 @@
             // 
             // btnVerDoctores
             // 
-            btnVerDoctores.Location = new Point(108, 54);
+            btnVerDoctores.BackColor = SystemColors.Desktop;
+            btnVerDoctores.FlatAppearance.BorderSize = 0;
+            btnVerDoctores.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 128, 128);
+            btnVerDoctores.FlatStyle = FlatStyle.Flat;
+            btnVerDoctores.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnVerDoctores.ForeColor = Color.Transparent;
+            btnVerDoctores.Location = new Point(69, 55);
+            btnVerDoctores.Margin = new Padding(3, 4, 3, 4);
             btnVerDoctores.Name = "btnVerDoctores";
-            btnVerDoctores.Size = new Size(98, 23);
+            btnVerDoctores.Size = new Size(225, 53);
             btnVerDoctores.TabIndex = 0;
             btnVerDoctores.Text = "Ver Doctores";
-            btnVerDoctores.UseVisualStyleBackColor = true;
+            btnVerDoctores.UseVisualStyleBackColor = false;
             btnVerDoctores.Click += btnVerDoctores_Click;
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(108, 97);
+            btnSalir.BackColor = SystemColors.Desktop;
+            btnSalir.FlatAppearance.BorderSize = 0;
+            btnSalir.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 128, 128);
+            btnSalir.FlatStyle = FlatStyle.Flat;
+            btnSalir.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSalir.ForeColor = Color.Transparent;
+            btnSalir.Location = new Point(69, 139);
+            btnSalir.Margin = new Padding(3, 4, 3, 4);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(98, 23);
+            btnSalir.Size = new Size(225, 53);
             btnSalir.TabIndex = 1;
             btnSalir.Text = "Salir";
-            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.UseVisualStyleBackColor = false;
             btnSalir.Click += btnSalir_Click;
             // 
             // FormPrincipal
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(317, 180);
+            BackColor = SystemColors.MenuHighlight;
+            ClientSize = new Size(362, 240);
             Controls.Add(btnSalir);
             Controls.Add(btnVerDoctores);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            Margin = new Padding(3, 4, 3, 4);
+            MaximizeBox = false;
             Name = "FormPrincipal";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FormPrincipal";
             ResumeLayout(false);
         }

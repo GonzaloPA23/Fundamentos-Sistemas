@@ -21,8 +21,17 @@ namespace Lab12
                 ListViewItem fila = new(doctor.NroColegiatura);
                 fila.SubItems.Add(doctor.NombreCompleto);
                 fila.SubItems.Add(doctor.Especialidad);
+                fila.SubItems.Add(doctor.AniosExperiencia.ToString());
                 listViewDoctores.Items.Add(fila);
             }
+        }
+
+        private void LimpiarCampos()
+        {
+            tbEspecialidad.Text = "";
+            tbNombreCompleto.Text = "";
+            tbNroColegiatura.Text = "";
+            nupAniosExperiencia.Value = 0;
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
@@ -34,12 +43,20 @@ namespace Lab12
                 return;
             }
 
+            // Validación que el tbNroColegiatura sea un número
+            if (!int.TryParse(tbNroColegiatura.Text, out _))
+            {
+                MessageBox.Show("Ingrese un Número de Colegiatura válido");
+                return;
+            }
+
             // Creación del objeto
             Doctor doctor = new()
             {
                 NroColegiatura = tbNroColegiatura.Text,
                 NombreCompleto = tbNombreCompleto.Text,
                 Especialidad = tbEspecialidad.Text,
+                AniosExperiencia = (int)nupAniosExperiencia.Value,
                 // ¡Importante!
                 Pacientes = new()
             };
@@ -54,6 +71,8 @@ namespace Lab12
 
             // Mostrar en el ListView
             MostrarDoctores(doctorService.ListarTodo());
+            // Limpiar campos
+            LimpiarCampos();
         }
 
         private void btnVerPacientes_Click(object sender, EventArgs e)
@@ -67,13 +86,13 @@ namespace Lab12
             String nroColegiatura = listViewDoctores.SelectedItems[0].Text;
 
             FormPaciente formPaciente = new(nroColegiatura);
-            formPaciente.Show();
+            formPaciente.ShowDialog();
         }
 
         private void btnReportes_Click(object sender, EventArgs e)
         {
             FormReporte formReporte = new();
-            formReporte.Show();
+            formReporte.ShowDialog();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

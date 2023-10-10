@@ -10,7 +10,7 @@
         private void btnVerDoctores_Click(object sender, EventArgs e)
         {
             FormDoctor formDoctor = new();
-            formDoctor.Show();
+            formDoctor.ShowDialog();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

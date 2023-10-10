@@ -6,6 +6,7 @@
         public String NroColegiatura {  get; set; }
         public String NombreCompleto { get; set; }
         public String Especialidad { get; set; }
+        public int AniosExperiencia { get; set; }
         public List<Paciente> Pacientes { get; set; }
     }
 }

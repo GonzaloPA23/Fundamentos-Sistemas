@@ -35,5 +35,15 @@ namespace Lab12.services
         {
             return doctorRepository.ListarDoctoresConMenosPacientes();
         }
+
+        public List<Doctor> ListarDoctoresConMenosAniosExperiencia(int aniosExperiencia)
+        {
+            return doctorRepository.ListarDoctoresConMenosAniosExperiencia(aniosExperiencia);
+        }
+
+        public List<Doctor> OrdenarDoctoresDescendentePorAniosExperiencia()
+        {
+            return doctorRepository.OrdenarDoctoresDescendentePorAniosExperiencia();
+        }
     }
 }

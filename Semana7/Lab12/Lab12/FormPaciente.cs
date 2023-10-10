@@ -23,6 +23,7 @@ namespace Lab12
                 ListViewItem fila = new(paciente.Dni);
                 fila.SubItems.Add(paciente.NombreCompleto);
                 fila.SubItems.Add(paciente.Edad.ToString());
+                fila.SubItems.Add(paciente.FechaCita.ToString("dd/MM/yyyy"));
                 listViewPacientes.Items.Add(fila);
             }
         }
@@ -41,7 +42,9 @@ namespace Lab12
             {
                 Dni = tbDni.Text,
                 NombreCompleto = tbNombreCompleto.Text,
+                FechaCita = dtpFechaCita.Value,
                 Edad = int.Parse(tbEdad.Text)
+
             };
 
             // Registro de paciente

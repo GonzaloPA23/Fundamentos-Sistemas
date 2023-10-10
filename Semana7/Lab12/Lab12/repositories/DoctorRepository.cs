@@ -63,5 +63,21 @@ namespace Lab12.repositories
             }
             return doctoresTemp;
         }
+
+        // 
+        public List<Doctor> ListarDoctoresConMenosAniosExperiencia(int aniosExperiencia)
+        {
+            List<Doctor> doctoresTemp = new();
+            doctoresTemp = doctores.FindAll(doctor => doctor.AniosExperiencia <= aniosExperiencia);
+            return doctoresTemp;
+        }
+
+        public List<Doctor> OrdenarDoctoresDescendentePorAniosExperiencia()
+        {
+            List<Doctor> doctoresTemp = new();
+            doctoresTemp = doctores.OrderBy(doctor => doctor.AniosExperiencia).ToList();
+            doctoresTemp.Reverse();
+            return doctoresTemp;
+        }
     }
 }

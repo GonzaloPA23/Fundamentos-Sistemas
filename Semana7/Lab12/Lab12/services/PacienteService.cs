@@ -31,5 +31,20 @@ namespace Lab12.services
         {
             return pacienteRepository.ListarPacientesPorEspecialidadDoctor(especialidad);
         }
+
+        public List<Paciente> ListarPacientesPorDni(String dni)
+        {
+            return pacienteRepository.ListarPacientesPorDni(dni);
+        }
+
+        public List<Paciente> ListarPacientesPorNombreCompleto(String nombreCompleto)
+        {
+            return pacienteRepository.ListarPacientesPorNombreCompleto(nombreCompleto);
+        } 
+
+        public List<Paciente> ListarPacientesPorMesFechaCita(String mes)
+        {
+            return pacienteRepository.ListarPacientesPorMesFechaCita(mes);
+        }
     }
 }

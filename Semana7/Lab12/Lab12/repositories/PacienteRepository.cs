@@ -60,5 +60,52 @@ namespace Lab12.repositories
             }
             return pacientesTemp;
         }
+
+        public List<Paciente> ListarPacientesPorDni(String dni)
+        {
+            List<Doctor> doctores = DoctorRepository.ListarTodo();
+            List<Paciente> pacientesTemp = new();
+
+            foreach(Doctor doctor in doctores)
+            {
+                // Buscar el paciente por el dni
+                Paciente? paciente = doctor.Pacientes.Find(paciente => paciente.Dni.Equals(dni));
+                if (paciente != null)
+                {
+                    pacientesTemp.Add(paciente);
+                }
+            }
+            return pacientesTemp;
+        }
+
+        public List<Paciente> ListarPacientesPorNombreCompleto(String nombreCompleto)
+        {
+            List<Doctor> doctores = DoctorRepository.ListarTodo();
+            List<Paciente> pacientesTemp = new();
+
+            foreach (Doctor doctor in doctores)
+            {
+                // Buscar el paciente por el nombre completo
+                List<Paciente> pacientes = doctor.Pacientes.FindAll(paciente => paciente.NombreCompleto.Contains(nombreCompleto));
+                pacientesTemp.AddRange(pacientes);
+            }
+            return pacientesTemp;
+        }
+
+        // Buscar por el mes de la fecha de cita del paciente en texto por ejemplo (agosto o Agosto)
+        public List<Paciente> ListarPacientesPorMesFechaCita(String mes)
+        {
+            List<Doctor> doctores = DoctorRepository.ListarTodo();
+            List<Paciente> pacientesTemp = new();
+
+            foreach (Doctor doctor in doctores)
+            {
+                // Buscar el paciente por el mes de la fecha de cita
+                List<Paciente> pacientes = doctor.Pacientes.FindAll(paciente => paciente.FechaCita.ToString("MMMM").Equals(mes));
+                pacientesTemp.AddRange(pacientes);
+            }
+            return pacientesTemp;
+        }
+        
     }
 }
