@@ -1,0 +1,9 @@
+D:\Fundamentos-Sistemas\TA\TA8\Datos\bin\Debug\Datos.dll
+D:\Fundamentos-Sistemas\TA\TA8\Datos\bin\Debug\Datos.pdb
+D:\Fundamentos-Sistemas\TA\TA8\Datos\bin\Debug\Entidades.dll
+D:\Fundamentos-Sistemas\TA\TA8\Datos\bin\Debug\Entidades.pdb
+D:\Fundamentos-Sistemas\TA\TA8\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+D:\Fundamentos-Sistemas\TA\TA8\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+D:\Fundamentos-Sistemas\TA\TA8\Datos\obj\Debug\Datos.csproj.CopyComplete
+D:\Fundamentos-Sistemas\TA\TA8\Datos\obj\Debug\Datos.dll
+D:\Fundamentos-Sistemas\TA\TA8\Datos\obj\Debug\Datos.pdb
