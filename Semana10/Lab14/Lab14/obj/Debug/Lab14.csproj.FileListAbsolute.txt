@@ -1,0 +1,10 @@
+D:\SI393-2023-2\Semana10\Lab14\Lab14\bin\Debug\Lab14.exe.config
+D:\SI393-2023-2\Semana10\Lab14\Lab14\bin\Debug\Lab14.exe
+D:\SI393-2023-2\Semana10\Lab14\Lab14\bin\Debug\Lab14.pdb
+D:\SI393-2023-2\Semana10\Lab14\Lab14\obj\Debug\Lab14.csproj.AssemblyReference.cache
+D:\SI393-2023-2\Semana10\Lab14\Lab14\obj\Debug\Lab14.presentación.FormEmpleado.resources
+D:\SI393-2023-2\Semana10\Lab14\Lab14\obj\Debug\Lab14.Properties.Resources.resources
+D:\SI393-2023-2\Semana10\Lab14\Lab14\obj\Debug\Lab14.csproj.GenerateResource.cache
+D:\SI393-2023-2\Semana10\Lab14\Lab14\obj\Debug\Lab14.csproj.CoreCompileInputs.cache
+D:\SI393-2023-2\Semana10\Lab14\Lab14\obj\Debug\Lab14.exe
+D:\SI393-2023-2\Semana10\Lab14\Lab14\obj\Debug\Lab14.pdb

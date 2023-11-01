@@ -1,0 +1,9 @@
+D:\SI393-2023-2\Semana10\Lab15\Datos\bin\Debug\Datos.dll
+D:\SI393-2023-2\Semana10\Lab15\Datos\bin\Debug\Datos.pdb
+D:\SI393-2023-2\Semana10\Lab15\Datos\bin\Debug\Entidades.dll
+D:\SI393-2023-2\Semana10\Lab15\Datos\bin\Debug\Entidades.pdb
+D:\SI393-2023-2\Semana10\Lab15\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+D:\SI393-2023-2\Semana10\Lab15\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+D:\SI393-2023-2\Semana10\Lab15\Datos\obj\Debug\Datos.csproj.CopyComplete
+D:\SI393-2023-2\Semana10\Lab15\Datos\obj\Debug\Datos.dll
+D:\SI393-2023-2\Semana10\Lab15\Datos\obj\Debug\Datos.pdb

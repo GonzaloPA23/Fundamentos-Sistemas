@@ -1,0 +1,11 @@
+D:\SI393-2023-2\Semana10\Lab15\Negocio\bin\Debug\Negocio.dll
+D:\SI393-2023-2\Semana10\Lab15\Negocio\bin\Debug\Negocio.pdb
+D:\SI393-2023-2\Semana10\Lab15\Negocio\bin\Debug\Datos.dll
+D:\SI393-2023-2\Semana10\Lab15\Negocio\bin\Debug\Entidades.dll
+D:\SI393-2023-2\Semana10\Lab15\Negocio\bin\Debug\Datos.pdb
+D:\SI393-2023-2\Semana10\Lab15\Negocio\bin\Debug\Entidades.pdb
+D:\SI393-2023-2\Semana10\Lab15\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+D:\SI393-2023-2\Semana10\Lab15\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+D:\SI393-2023-2\Semana10\Lab15\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+D:\SI393-2023-2\Semana10\Lab15\Negocio\obj\Debug\Negocio.dll
+D:\SI393-2023-2\Semana10\Lab15\Negocio\obj\Debug\Negocio.pdb
