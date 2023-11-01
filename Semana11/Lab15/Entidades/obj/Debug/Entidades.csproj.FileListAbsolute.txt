@@ -1,0 +1,6 @@
+D:\SI393-2023-2\Semana11\Lab15\Entidades\bin\Debug\Entidades.dll
+D:\SI393-2023-2\Semana11\Lab15\Entidades\bin\Debug\Entidades.pdb
+D:\SI393-2023-2\Semana11\Lab15\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+D:\SI393-2023-2\Semana11\Lab15\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+D:\SI393-2023-2\Semana11\Lab15\Entidades\obj\Debug\Entidades.dll
+D:\SI393-2023-2\Semana11\Lab15\Entidades\obj\Debug\Entidades.pdb
