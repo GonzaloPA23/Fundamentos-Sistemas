@@ -33,7 +33,7 @@ namespace CapaPresentacion
             List<Usuario> test = new UsuarioCapaNegocio().ListarUsuarios();
             Usuario? usuario = new UsuarioCapaNegocio().ListarUsuarios().Where(u => u.Dni == txtDni.Text && u.Clave == txtClave.Text).FirstOrDefault();
 
-           if (usuario != null)
+            if (usuario != null)
             {
                 frmInicio frmInicio = new frmInicio(usuario);
                 frmInicio.Show();
@@ -42,7 +42,7 @@ namespace CapaPresentacion
             }
             else
             {
-                MessageBox.Show("Credenciales incorrectas, Por favor, Ingrese los datos correctamente","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Credenciales incorrectas, Por favor, Ingrese los datos correctamente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }

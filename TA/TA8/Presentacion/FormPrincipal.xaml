@@ -33,5 +33,6 @@
         <Button x:Name="btnEditar" Content="Editar" HorizontalAlignment="Center" Margin="0,332,0,0" VerticalAlignment="Top" Height="22" Width="104" Background="#FFD8FFAF" Click="btnEditar_Click"/>
         <Button x:Name="btnSalir" Content="Salir" HorizontalAlignment="Center" Margin="0,373,0,0" VerticalAlignment="Top" Height="22" Width="104" Background="#FFD8FFAF" Click="btnSalir_Click"/>
         <DataGrid x:Name="dtgChoferes" Grid.Column="1" Margin="13,26,24,45" Grid.ColumnSpan="2" BorderBrush="#FFFDFEFF" SelectionChanged="dtgChoferes_SelectionChanged" />
+        <DatePicker x:Name="datepicker1" HorizontalAlignment="Center" Margin="0,420,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

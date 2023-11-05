@@ -51,7 +51,7 @@ namespace Presentacion
                 Dni = txtDni.Text,
                 NombreCompleto = txtNombreCompleto.Text,
                 Celular = txtCelular.Text,
-                Correo = txtCorreo.Text
+                Correo = txtCorreo.Text,               
             };
             int idchofergenerado = new NChofer().RegistrarChofer(eChofer,out mensaje);
             if (idchofergenerado != 0)
@@ -65,6 +65,7 @@ namespace Presentacion
 
         private void btnEliminar_Click(object sender, RoutedEventArgs e)
         {
+            //MessageBox.Show(datepicker1.SelectedDate.Value.ToString("dd/MM/yyyy"));
             // Validación de que se haya seleccionado un chofer
             if (choferSeleccionado == null)
             {

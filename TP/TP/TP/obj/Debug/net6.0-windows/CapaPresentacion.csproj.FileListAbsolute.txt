@@ -39,3 +39,5 @@ D:\Fundamentos-Sistemas\TP\TP\TP\obj\Debug\net6.0-windows\CapaPresentacion.frmEn
 D:\Fundamentos-Sistemas\TP\TP\TP\obj\Debug\net6.0-windows\CapaPresentacion.frmHistorialEncomienda.resources
 D:\Fundamentos-Sistemas\TP\TP\TP\obj\Debug\net6.0-windows\CapaPresentacion.frmHistorialPasaje.resources
 D:\Fundamentos-Sistemas\TP\TP\TP\obj\Debug\net6.0-windows\CapaPresentacion.frmPasaje.resources
+D:\Fundamentos-Sistemas\TP\TP\TP\bin\Debug\net6.0-windows\EntityFramework.SqlServer.dll
+D:\Fundamentos-Sistemas\TP\TP\TP\bin\Debug\net6.0-windows\EntityFramework.dll

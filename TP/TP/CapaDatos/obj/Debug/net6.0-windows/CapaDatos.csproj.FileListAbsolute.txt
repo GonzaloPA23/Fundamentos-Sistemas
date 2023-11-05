@@ -13,3 +13,5 @@ D:\Fundamentos-Sistemas\TP\TP\CapaDatos\obj\Debug\net6.0-windows\CapaDatos.dll
 D:\Fundamentos-Sistemas\TP\TP\CapaDatos\obj\Debug\net6.0-windows\refint\CapaDatos.dll
 D:\Fundamentos-Sistemas\TP\TP\CapaDatos\obj\Debug\net6.0-windows\CapaDatos.pdb
 D:\Fundamentos-Sistemas\TP\TP\CapaDatos\obj\Debug\net6.0-windows\ref\CapaDatos.dll
+D:\Fundamentos-Sistemas\TP\TP\CapaDatos\bin\Debug\net6.0-windows\CapaDatos.runtimeconfig.json
+D:\Fundamentos-Sistemas\TP\TP\CapaDatos\obj\Debug\net6.0-windows\CapaDatos.genruntimeconfig.cache
