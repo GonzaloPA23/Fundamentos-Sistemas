@@ -14,6 +14,13 @@ namespace CapaDatos
     
     public partial class Usuario
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Usuario()
+        {
+            this.Encomienda = new HashSet<Encomienda>();
+            this.Pasaje = new HashSet<Pasaje>();
+        }
+    
         public int Id { get; set; }
         public Nullable<int> RolId { get; set; }
         public string Dni { get; set; }
@@ -23,5 +30,9 @@ namespace CapaDatos
         public string Correo { get; set; }
     
         public virtual Rol Rol { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Encomienda> Encomienda { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Pasaje> Pasaje { get; set; }
     }
 }

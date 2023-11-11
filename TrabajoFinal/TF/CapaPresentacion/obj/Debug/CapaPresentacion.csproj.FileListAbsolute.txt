@@ -11,7 +11,6 @@ D:\Fundamentos-Sistemas\TrabajoFinal\TF\CapaPresentacion\obj\Debug\CapaPresentac
 D:\Fundamentos-Sistemas\TrabajoFinal\TF\CapaPresentacion\obj\Debug\CapaPresentacion.frmIniciarSesion.resources
 D:\Fundamentos-Sistemas\TrabajoFinal\TF\CapaPresentacion\obj\Debug\CapaPresentacion.frmRegistro.resources
 D:\Fundamentos-Sistemas\TrabajoFinal\TF\CapaPresentacion\bin\Debug\FontAwesome.Sharp.dll
-D:\Fundamentos-Sistemas\TrabajoFinal\TF\CapaPresentacion\obj\Debug\CapaPresentacion.frmInicio.resources
 D:\Fundamentos-Sistemas\TrabajoFinal\TF\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
 D:\Fundamentos-Sistemas\TrabajoFinal\TF\CapaPresentacion\obj\Debug\CapaPresentacion.frmBus.resources
 D:\Fundamentos-Sistemas\TrabajoFinal\TF\CapaPresentacion\obj\Debug\CapaPresentacion.frmChofer.resources
@@ -19,3 +18,13 @@ D:\Fundamentos-Sistemas\TrabajoFinal\TF\CapaPresentacion\obj\Debug\CapaPresentac
 D:\Fundamentos-Sistemas\TrabajoFinal\TF\CapaPresentacion\obj\Debug\CapaPresentacion.frmHistorialEncomienda.resources
 D:\Fundamentos-Sistemas\TrabajoFinal\TF\CapaPresentacion\obj\Debug\CapaPresentacion.frmHistorialPasaje.resources
 D:\Fundamentos-Sistemas\TrabajoFinal\TF\CapaPresentacion\obj\Debug\CapaPresentacion.frmPasaje.resources
+D:\Fundamentos-Sistemas\TrabajoFinal\TF\CapaPresentacion\bin\Debug\CapaDatos.dll
+D:\Fundamentos-Sistemas\TrabajoFinal\TF\CapaPresentacion\bin\Debug\CapaNegocio.dll
+D:\Fundamentos-Sistemas\TrabajoFinal\TF\CapaPresentacion\bin\Debug\EntityFramework.dll
+D:\Fundamentos-Sistemas\TrabajoFinal\TF\CapaPresentacion\bin\Debug\EntityFramework.SqlServer.dll
+D:\Fundamentos-Sistemas\TrabajoFinal\TF\CapaPresentacion\bin\Debug\CapaDatos.pdb
+D:\Fundamentos-Sistemas\TrabajoFinal\TF\CapaPresentacion\bin\Debug\CapaDatos.dll.config
+D:\Fundamentos-Sistemas\TrabajoFinal\TF\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+D:\Fundamentos-Sistemas\TrabajoFinal\TF\CapaPresentacion\bin\Debug\EntityFramework.xml
+D:\Fundamentos-Sistemas\TrabajoFinal\TF\CapaPresentacion\bin\Debug\EntityFramework.SqlServer.xml
+D:\Fundamentos-Sistemas\TrabajoFinal\TF\CapaPresentacion\obj\Debug\CapaPresentacion.frmInicio.resources

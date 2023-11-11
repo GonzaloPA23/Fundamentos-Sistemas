@@ -55,9 +55,9 @@ namespace CapaPresentacion
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(108)))), ((int)(((byte)(148)))));
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(38, 17);
+            this.label1.Location = new System.Drawing.Point(30, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(293, 41);
+            this.label1.Size = new System.Drawing.Size(558, 50);
             this.label1.TabIndex = 2;
             this.label1.Text = "La Perla Del Altomayo";
             // 
@@ -69,7 +69,7 @@ namespace CapaPresentacion
             this.menuTitulo.Location = new System.Drawing.Point(0, 0);
             this.menuTitulo.Name = "menuTitulo";
             this.menuTitulo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menuTitulo.Size = new System.Drawing.Size(1400, 70);
+            this.menuTitulo.Size = new System.Drawing.Size(1435, 81);
             this.menuTitulo.TabIndex = 3;
             this.menuTitulo.Text = "menuStrip1";
             // 
@@ -78,9 +78,9 @@ namespace CapaPresentacion
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(108)))), ((int)(((byte)(148)))));
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 12F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(876, 17);
+            this.label2.Location = new System.Drawing.Point(876, 25);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 25);
+            this.label2.Size = new System.Drawing.Size(107, 26);
             this.label2.TabIndex = 4;
             this.label2.Text = "Usuario:";
             // 
@@ -89,14 +89,15 @@ namespace CapaPresentacion
             this.lblNombreUsuarioIngresado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(108)))), ((int)(((byte)(148)))));
             this.lblNombreUsuarioIngresado.Font = new System.Drawing.Font("Comic Sans MS", 12F);
             this.lblNombreUsuarioIngresado.ForeColor = System.Drawing.Color.White;
-            this.lblNombreUsuarioIngresado.Location = new System.Drawing.Point(968, 17);
+            this.lblNombreUsuarioIngresado.Location = new System.Drawing.Point(968, 26);
             this.lblNombreUsuarioIngresado.Name = "lblNombreUsuarioIngresado";
-            this.lblNombreUsuarioIngresado.Size = new System.Drawing.Size(179, 25);
+            this.lblNombreUsuarioIngresado.Size = new System.Drawing.Size(179, 26);
             this.lblNombreUsuarioIngresado.TabIndex = 5;
             this.lblNombreUsuarioIngresado.Text = "Javier Mendoza";
             // 
             // menuStrip1
             // 
+            this.menuStrip1.AutoSize = false;
             this.menuStrip1.BackColor = System.Drawing.Color.White;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -105,9 +106,9 @@ namespace CapaPresentacion
             this.menupasajes,
             this.menuencomiendas,
             this.menureportes});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 70);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 81);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1400, 99);
+            this.menuStrip1.Size = new System.Drawing.Size(1435, 99);
             this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -124,6 +125,7 @@ namespace CapaPresentacion
             this.menuchoferes.Size = new System.Drawing.Size(120, 85);
             this.menuchoferes.Text = "Choferes";
             this.menuchoferes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuchoferes.Click += new System.EventHandler(this.menuchoferes_Click);
             // 
             // menubuses
             // 
@@ -136,6 +138,7 @@ namespace CapaPresentacion
             this.menubuses.Size = new System.Drawing.Size(120, 85);
             this.menubuses.Text = "Buses";
             this.menubuses.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menubuses.Click += new System.EventHandler(this.menubuses_Click);
             // 
             // menupasajes
             // 
@@ -148,6 +151,7 @@ namespace CapaPresentacion
             this.menupasajes.Size = new System.Drawing.Size(120, 85);
             this.menupasajes.Text = "Pasajes";
             this.menupasajes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menupasajes.Click += new System.EventHandler(this.menupasajes_Click);
             // 
             // menuencomiendas
             // 
@@ -161,6 +165,7 @@ namespace CapaPresentacion
             this.menuencomiendas.Size = new System.Drawing.Size(120, 85);
             this.menuencomiendas.Text = "Encomiendas";
             this.menuencomiendas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuencomiendas.Click += new System.EventHandler(this.menuencomiendas_Click);
             // 
             // menureportes
             // 
@@ -183,21 +188,23 @@ namespace CapaPresentacion
             this.subMenuHistorialPasajes.Name = "subMenuHistorialPasajes";
             this.subMenuHistorialPasajes.Size = new System.Drawing.Size(261, 26);
             this.subMenuHistorialPasajes.Text = "Historial de pasajes";
+            this.subMenuHistorialPasajes.Click += new System.EventHandler(this.subMenuHistorialPasajes_Click);
             // 
             // subMenuHistorialEncomiendas
             // 
             this.subMenuHistorialEncomiendas.Name = "subMenuHistorialEncomiendas";
             this.subMenuHistorialEncomiendas.Size = new System.Drawing.Size(261, 26);
             this.subMenuHistorialEncomiendas.Text = "Historial de encomiendas";
+            this.subMenuHistorialEncomiendas.Click += new System.EventHandler(this.subMenuHistorialEncomiendas_Click);
             // 
             // panelContenedor
             // 
             this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(233)))));
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(0, 169);
+            this.panelContenedor.Location = new System.Drawing.Point(0, 180);
             this.panelContenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1400, 721);
+            this.panelContenedor.Size = new System.Drawing.Size(1435, 730);
             this.panelContenedor.TabIndex = 7;
             // 
             // btnSalir
@@ -212,19 +219,20 @@ namespace CapaPresentacion
             this.btnSalir.IconColor = System.Drawing.Color.White;
             this.btnSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSalir.IconSize = 55;
-            this.btnSalir.Location = new System.Drawing.Point(1243, 6);
+            this.btnSalir.Location = new System.Drawing.Point(1228, 11);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(78, 52);
+            this.btnSalir.Size = new System.Drawing.Size(78, 60);
             this.btnSalir.TabIndex = 0;
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(233)))));
-            this.ClientSize = new System.Drawing.Size(1400, 890);
+            this.ClientSize = new System.Drawing.Size(1435, 910);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.lblNombreUsuarioIngresado);
@@ -238,10 +246,10 @@ namespace CapaPresentacion
             this.Name = "frmInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormInicio";
+            this.Load += new System.EventHandler(this.frmInicio_Load_1);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

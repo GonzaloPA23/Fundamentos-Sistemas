@@ -31,62 +31,16 @@ namespace CapaPresentacion
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnRegistrarseMP = new System.Windows.Forms.Button();
-            this.btnIniciarSesionMP = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnIniciarSesionMP = new System.Windows.Forms.Button();
+            this.btnRegistrarseMP = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnRegistrarseMP
-            // 
-            this.btnRegistrarseMP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRegistrarseMP.AutoEllipsis = true;
-            this.btnRegistrarseMP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(113)))), ((int)(((byte)(137)))));
-            this.btnRegistrarseMP.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegistrarseMP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnRegistrarseMP.FlatAppearance.BorderSize = 0;
-            this.btnRegistrarseMP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(100)))), ((int)(((byte)(122)))));
-            this.btnRegistrarseMP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistrarseMP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.btnRegistrarseMP.ForeColor = System.Drawing.Color.White;
-            this.btnRegistrarseMP.Location = new System.Drawing.Point(164, 709);
-            this.btnRegistrarseMP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnRegistrarseMP.Name = "btnRegistrarseMP";
-            this.btnRegistrarseMP.Size = new System.Drawing.Size(355, 60);
-            this.btnRegistrarseMP.TabIndex = 15;
-            this.btnRegistrarseMP.Text = "Registrarse";
-            this.btnRegistrarseMP.UseVisualStyleBackColor = false;
-            this.btnRegistrarseMP.Click += new System.EventHandler(this.btnRegistrarseMP_Click);
-            // 
-            // btnIniciarSesionMP
-            // 
-            this.btnIniciarSesionMP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnIniciarSesionMP.AutoEllipsis = true;
-            this.btnIniciarSesionMP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(108)))), ((int)(((byte)(148)))));
-            this.btnIniciarSesionMP.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnIniciarSesionMP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnIniciarSesionMP.FlatAppearance.BorderSize = 0;
-            this.btnIniciarSesionMP.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(113)))), ((int)(((byte)(142)))));
-            this.btnIniciarSesionMP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIniciarSesionMP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.btnIniciarSesionMP.ForeColor = System.Drawing.Color.White;
-            this.btnIniciarSesionMP.Location = new System.Drawing.Point(164, 630);
-            this.btnIniciarSesionMP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnIniciarSesionMP.Name = "btnIniciarSesionMP";
-            this.btnIniciarSesionMP.Size = new System.Drawing.Size(355, 60);
-            this.btnIniciarSesionMP.TabIndex = 16;
-            this.btnIniciarSesionMP.Text = "Iniciar sesión";
-            this.btnIniciarSesionMP.UseVisualStyleBackColor = false;
-            this.btnIniciarSesionMP.Click += new System.EventHandler(this.btnIniciarSesionMP_Click);
             // 
             // label3
             // 
@@ -145,6 +99,52 @@ namespace CapaPresentacion
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
+            // btnIniciarSesionMP
+            // 
+            this.btnIniciarSesionMP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnIniciarSesionMP.AutoEllipsis = true;
+            this.btnIniciarSesionMP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(108)))), ((int)(((byte)(148)))));
+            this.btnIniciarSesionMP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnIniciarSesionMP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnIniciarSesionMP.FlatAppearance.BorderSize = 0;
+            this.btnIniciarSesionMP.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(113)))), ((int)(((byte)(142)))));
+            this.btnIniciarSesionMP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIniciarSesionMP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnIniciarSesionMP.ForeColor = System.Drawing.Color.White;
+            this.btnIniciarSesionMP.Location = new System.Drawing.Point(164, 630);
+            this.btnIniciarSesionMP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnIniciarSesionMP.Name = "btnIniciarSesionMP";
+            this.btnIniciarSesionMP.Size = new System.Drawing.Size(355, 60);
+            this.btnIniciarSesionMP.TabIndex = 16;
+            this.btnIniciarSesionMP.Text = "Iniciar sesión";
+            this.btnIniciarSesionMP.UseVisualStyleBackColor = false;
+            this.btnIniciarSesionMP.Click += new System.EventHandler(this.btnIniciarSesionMP_Click);
+            // 
+            // btnRegistrarseMP
+            // 
+            this.btnRegistrarseMP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRegistrarseMP.AutoEllipsis = true;
+            this.btnRegistrarseMP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(113)))), ((int)(((byte)(137)))));
+            this.btnRegistrarseMP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegistrarseMP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnRegistrarseMP.FlatAppearance.BorderSize = 0;
+            this.btnRegistrarseMP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(100)))), ((int)(((byte)(122)))));
+            this.btnRegistrarseMP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistrarseMP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnRegistrarseMP.ForeColor = System.Drawing.Color.White;
+            this.btnRegistrarseMP.Location = new System.Drawing.Point(164, 709);
+            this.btnRegistrarseMP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRegistrarseMP.Name = "btnRegistrarseMP";
+            this.btnRegistrarseMP.Size = new System.Drawing.Size(355, 60);
+            this.btnRegistrarseMP.TabIndex = 15;
+            this.btnRegistrarseMP.Text = "Registrarse";
+            this.btnRegistrarseMP.UseVisualStyleBackColor = false;
+            this.btnRegistrarseMP.Click += new System.EventHandler(this.btnRegistrarseMP_Click);
+            // 
             // frmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -173,13 +173,12 @@ namespace CapaPresentacion
         }
 
         #endregion
-
-        private Button btnRegistrarseMP;
-        private Button btnIniciarSesionMP;
         private Label label3;
         private Label label2;
         private Label label1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
+        private Button btnIniciarSesionMP;
+        private Button btnRegistrarseMP;
     }
 }

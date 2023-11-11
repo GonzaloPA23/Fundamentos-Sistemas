@@ -31,464 +31,475 @@ namespace CapaPresentacion
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            cbBusqueda = new ComboBox();
-            listViewChoferes = new ListView();
-            columnHeader1 = new ColumnHeader();
-            columnHeader2 = new ColumnHeader();
-            columnHeader3 = new ColumnHeader();
-            columnHeader4 = new ColumnHeader();
-            columnHeader5 = new ColumnHeader();
-            columnHeader6 = new ColumnHeader();
-            panel1 = new Panel();
-            dtpFechaNacimiento = new DateTimePicker();
-            btnRegistrarChofer = new Button();
-            txtApellido = new TextBox();
-            btnCancelarChofer = new Button();
-            txtCelular = new TextBox();
-            txtCorreo = new TextBox();
-            txtNombre = new TextBox();
-            txtDni = new TextBox();
-            label9 = new Label();
-            label8 = new Label();
-            label7 = new Label();
-            label6 = new Label();
-            label5 = new Label();
-            label4 = new Label();
-            label3 = new Label();
-            txtBusqueda = new TextBox();
-            label2 = new Label();
-            btnLimpiar = new Button();
-            btnBuscar = new Button();
-            label10 = new Label();
-            lblTotalChoferes = new Label();
-            panel2 = new Panel();
-            txtActualizarCelular = new TextBox();
-            btnActualizar = new Button();
-            txtActualizarCorreo = new TextBox();
-            label13 = new Label();
-            label14 = new Label();
-            label12 = new Label();
-            label15 = new Label();
-            btnEliminarChofer = new Button();
-            label16 = new Label();
-            panel1.SuspendLayout();
-            panel2.SuspendLayout();
-            SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbBusqueda = new System.Windows.Forms.ComboBox();
+            this.listViewChoferes = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
+            this.btnRegistrarChofer = new System.Windows.Forms.Button();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.btnCancelarChofer = new System.Windows.Forms.Button();
+            this.txtCelular = new System.Windows.Forms.TextBox();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtDni = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtBusqueda = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.lblTotalChoferes = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.txtActualizarCelular = new System.Windows.Forms.TextBox();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.txtActualizarCorreo = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.btnEliminarChofer = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Comic Sans MS", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(26, 22);
-            label1.Name = "label1";
-            label1.Size = new Size(189, 28);
-            label1.TabIndex = 0;
-            label1.Text = "Lista de choferes: ";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.label1.Location = new System.Drawing.Point(26, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(189, 28);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Lista de choferes: ";
             // 
             // cbBusqueda
             // 
-            cbBusqueda.Cursor = Cursors.Hand;
-            cbBusqueda.DropDownStyle = ComboBoxStyle.DropDownList;
-            cbBusqueda.FormattingEnabled = true;
-            cbBusqueda.Items.AddRange(new object[] { "DNI", "Nombre", "Apellido", "Celular", "Correo" });
-            cbBusqueda.Location = new Point(158, 75);
-            cbBusqueda.Name = "cbBusqueda";
-            cbBusqueda.Size = new Size(195, 28);
-            cbBusqueda.TabIndex = 1;
-            cbBusqueda.SelectedIndex = 0;
+            this.cbBusqueda.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbBusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbBusqueda.FormattingEnabled = true;
+            this.cbBusqueda.Items.AddRange(new object[] {
+            "DNI",
+            "Nombre",
+            "Apellido",
+            "Celular",
+            "Correo"});
+            this.cbBusqueda.Location = new System.Drawing.Point(158, 75);
+            this.cbBusqueda.Name = "cbBusqueda";
+            this.cbBusqueda.Size = new System.Drawing.Size(195, 24);
+            this.cbBusqueda.TabIndex = 1;
             // 
             // listViewChoferes
             // 
-            listViewChoferes.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5, columnHeader6 });
-            listViewChoferes.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            listViewChoferes.Location = new Point(22, 116);
-            listViewChoferes.MultiSelect = false;
-            listViewChoferes.Name = "listViewChoferes";
-            listViewChoferes.Size = new Size(868, 590);
-            listViewChoferes.TabIndex = 2;
-            listViewChoferes.UseCompatibleStateImageBehavior = false;
-            listViewChoferes.View = View.Details;
+            this.listViewChoferes.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6});
+            this.listViewChoferes.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.listViewChoferes.HideSelection = false;
+            this.listViewChoferes.Location = new System.Drawing.Point(22, 116);
+            this.listViewChoferes.MultiSelect = false;
+            this.listViewChoferes.Name = "listViewChoferes";
+            this.listViewChoferes.Size = new System.Drawing.Size(868, 590);
+            this.listViewChoferes.TabIndex = 2;
+            this.listViewChoferes.UseCompatibleStateImageBehavior = false;
+            this.listViewChoferes.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
             // 
-            columnHeader1.Text = "DNI";
-            columnHeader1.Width = 120;
+            this.columnHeader1.Text = "DNI";
+            this.columnHeader1.Width = 120;
             // 
             // columnHeader2
             // 
-            columnHeader2.Text = "Nombre";
-            columnHeader2.TextAlign = HorizontalAlignment.Center;
-            columnHeader2.Width = 120;
+            this.columnHeader2.Text = "Nombre";
+            this.columnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader2.Width = 120;
             // 
             // columnHeader3
             // 
-            columnHeader3.Text = "Apellido";
-            columnHeader3.TextAlign = HorizontalAlignment.Center;
-            columnHeader3.Width = 120;
+            this.columnHeader3.Text = "Apellido";
+            this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader3.Width = 120;
             // 
             // columnHeader4
             // 
-            columnHeader4.Text = "Celular";
-            columnHeader4.TextAlign = HorizontalAlignment.Center;
-            columnHeader4.Width = 120;
+            this.columnHeader4.Text = "Celular";
+            this.columnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader4.Width = 120;
             // 
             // columnHeader5
             // 
-            columnHeader5.Text = "Correo";
-            columnHeader5.TextAlign = HorizontalAlignment.Center;
-            columnHeader5.Width = 180;
+            this.columnHeader5.Text = "Correo";
+            this.columnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader5.Width = 180;
             // 
             // columnHeader6
             // 
-            columnHeader6.Text = "Fecha de Nacimiento";
-            columnHeader6.TextAlign = HorizontalAlignment.Center;
-            columnHeader6.Width = 170;
+            this.columnHeader6.Text = "Fecha de Nacimiento";
+            this.columnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader6.Width = 170;
             // 
             // panel1
             // 
-            panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Controls.Add(dtpFechaNacimiento);
-            panel1.Controls.Add(btnRegistrarChofer);
-            panel1.Controls.Add(txtApellido);
-            panel1.Controls.Add(btnCancelarChofer);
-            panel1.Controls.Add(txtCelular);
-            panel1.Controls.Add(txtCorreo);
-            panel1.Controls.Add(txtNombre);
-            panel1.Controls.Add(txtDni);
-            panel1.Controls.Add(label9);
-            panel1.Controls.Add(label8);
-            panel1.Controls.Add(label7);
-            panel1.Controls.Add(label6);
-            panel1.Controls.Add(label5);
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(label3);
-            panel1.Location = new Point(935, 12);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(436, 435);
-            panel1.TabIndex = 3;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.dtpFechaNacimiento);
+            this.panel1.Controls.Add(this.btnRegistrarChofer);
+            this.panel1.Controls.Add(this.txtApellido);
+            this.panel1.Controls.Add(this.btnCancelarChofer);
+            this.panel1.Controls.Add(this.txtCelular);
+            this.panel1.Controls.Add(this.txtCorreo);
+            this.panel1.Controls.Add(this.txtNombre);
+            this.panel1.Controls.Add(this.txtDni);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Location = new System.Drawing.Point(935, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(475, 435);
+            this.panel1.TabIndex = 3;
             // 
             // dtpFechaNacimiento
             // 
-            dtpFechaNacimiento.CustomFormat = "dd/MM/yyyy";
-            dtpFechaNacimiento.Format = DateTimePickerFormat.Custom;
-            dtpFechaNacimiento.Location = new Point(137, 317);
-            dtpFechaNacimiento.Name = "dtpFechaNacimiento";
-            dtpFechaNacimiento.Size = new Size(251, 27);
-            dtpFechaNacimiento.TabIndex = 6;
+            this.dtpFechaNacimiento.CustomFormat = "dd/MM/yyyy";
+            this.dtpFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpFechaNacimiento.Location = new System.Drawing.Point(162, 312);
+            this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
+            this.dtpFechaNacimiento.Size = new System.Drawing.Size(251, 22);
+            this.dtpFechaNacimiento.TabIndex = 6;
             // 
             // btnRegistrarChofer
             // 
-            btnRegistrarChofer.BackColor = Color.FromArgb(222, 108, 148);
-            btnRegistrarChofer.FlatAppearance.BorderSize = 0;
-            btnRegistrarChofer.FlatStyle = FlatStyle.Flat;
-            btnRegistrarChofer.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            btnRegistrarChofer.ForeColor = Color.White;
-            btnRegistrarChofer.Location = new Point(218, 373);
-            btnRegistrarChofer.Name = "btnRegistrarChofer";
-            btnRegistrarChofer.Size = new Size(200, 37);
-            btnRegistrarChofer.TabIndex = 4;
-            btnRegistrarChofer.Text = "Registrar chofer";
-            btnRegistrarChofer.UseVisualStyleBackColor = false;
+            this.btnRegistrarChofer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(108)))), ((int)(((byte)(148)))));
+            this.btnRegistrarChofer.FlatAppearance.BorderSize = 0;
+            this.btnRegistrarChofer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistrarChofer.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.btnRegistrarChofer.ForeColor = System.Drawing.Color.White;
+            this.btnRegistrarChofer.Location = new System.Drawing.Point(243, 368);
+            this.btnRegistrarChofer.Name = "btnRegistrarChofer";
+            this.btnRegistrarChofer.Size = new System.Drawing.Size(200, 37);
+            this.btnRegistrarChofer.TabIndex = 4;
+            this.btnRegistrarChofer.Text = "Registrar chofer";
+            this.btnRegistrarChofer.UseVisualStyleBackColor = false;
             // 
             // txtApellido
             // 
-            txtApellido.Location = new Point(137, 175);
-            txtApellido.Name = "txtApellido";
-            txtApellido.Size = new Size(251, 27);
-            txtApellido.TabIndex = 5;
+            this.txtApellido.Location = new System.Drawing.Point(162, 170);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(251, 22);
+            this.txtApellido.TabIndex = 5;
             // 
             // btnCancelarChofer
             // 
-            btnCancelarChofer.BackColor = SystemColors.ControlDarkDark;
-            btnCancelarChofer.FlatAppearance.BorderSize = 0;
-            btnCancelarChofer.FlatStyle = FlatStyle.Flat;
-            btnCancelarChofer.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnCancelarChofer.ForeColor = Color.White;
-            btnCancelarChofer.Location = new Point(13, 374);
-            btnCancelarChofer.Name = "btnCancelarChofer";
-            btnCancelarChofer.Size = new Size(198, 37);
-            btnCancelarChofer.TabIndex = 4;
-            btnCancelarChofer.Text = "Cancelar chofer";
-            btnCancelarChofer.UseVisualStyleBackColor = false;
+            this.btnCancelarChofer.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnCancelarChofer.FlatAppearance.BorderSize = 0;
+            this.btnCancelarChofer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelarChofer.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
+            this.btnCancelarChofer.ForeColor = System.Drawing.Color.White;
+            this.btnCancelarChofer.Location = new System.Drawing.Point(38, 369);
+            this.btnCancelarChofer.Name = "btnCancelarChofer";
+            this.btnCancelarChofer.Size = new System.Drawing.Size(198, 37);
+            this.btnCancelarChofer.TabIndex = 4;
+            this.btnCancelarChofer.Text = "Cancelar chofer";
+            this.btnCancelarChofer.UseVisualStyleBackColor = false;
             // 
             // txtCelular
             // 
-            txtCelular.Location = new Point(137, 220);
-            txtCelular.Name = "txtCelular";
-            txtCelular.Size = new Size(251, 27);
-            txtCelular.TabIndex = 5;
+            this.txtCelular.Location = new System.Drawing.Point(162, 215);
+            this.txtCelular.Name = "txtCelular";
+            this.txtCelular.Size = new System.Drawing.Size(251, 22);
+            this.txtCelular.TabIndex = 5;
             // 
             // txtCorreo
             // 
-            txtCorreo.Location = new Point(137, 266);
-            txtCorreo.Name = "txtCorreo";
-            txtCorreo.Size = new Size(251, 27);
-            txtCorreo.TabIndex = 5;
+            this.txtCorreo.Location = new System.Drawing.Point(162, 261);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(251, 22);
+            this.txtCorreo.TabIndex = 5;
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(137, 127);
-            txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(251, 27);
-            txtNombre.TabIndex = 5;
+            this.txtNombre.Location = new System.Drawing.Point(162, 122);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(251, 22);
+            this.txtNombre.TabIndex = 5;
             // 
             // txtDni
             // 
-            txtDni.Location = new Point(137, 76);
-            txtDni.Name = "txtDni";
-            txtDni.Size = new Size(251, 27);
-            txtDni.TabIndex = 5;
+            this.txtDni.Location = new System.Drawing.Point(162, 71);
+            this.txtDni.Name = "txtDni";
+            this.txtDni.Size = new System.Drawing.Size(251, 22);
+            this.txtDni.TabIndex = 5;
             // 
             // label9
             // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.Location = new Point(26, 309);
-            label9.Name = "label9";
-            label9.Size = new Size(87, 40);
-            label9.TabIndex = 0;
-            label9.Text = "    Fecha de\r\nNacimiento";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label9.Location = new System.Drawing.Point(51, 304);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(87, 40);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "    Fecha de\r\nNacimiento";
             // 
             // label8
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(58, 267);
-            label8.Name = "label8";
-            label8.Size = new Size(56, 20);
-            label8.TabIndex = 0;
-            label8.Text = "Correo";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label8.Location = new System.Drawing.Point(83, 262);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(56, 20);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Correo";
             // 
             // label7
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(55, 223);
-            label7.Name = "label7";
-            label7.Size = new Size(57, 20);
-            label7.TabIndex = 0;
-            label7.Text = "Celular";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label7.Location = new System.Drawing.Point(80, 218);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(57, 20);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Celular";
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(46, 177);
-            label6.Name = "label6";
-            label6.Size = new Size(65, 20);
-            label6.TabIndex = 0;
-            label6.Text = "Apellido";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label6.Location = new System.Drawing.Point(71, 172);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(65, 20);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Apellido";
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(48, 127);
-            label5.Name = "label5";
-            label5.Size = new Size(64, 20);
-            label5.TabIndex = 0;
-            label5.Text = "Nombre";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label5.Location = new System.Drawing.Point(73, 122);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 20);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Nombre";
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(77, 76);
-            label4.Name = "label4";
-            label4.Size = new Size(40, 20);
-            label4.TabIndex = 0;
-            label4.Text = "DNI";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label4.Location = new System.Drawing.Point(102, 71);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 20);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "DNI";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Comic Sans MS", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(16, 24);
-            label3.Name = "label3";
-            label3.Size = new Size(175, 24);
-            label3.TabIndex = 0;
-            label3.Text = "Detalles del chofer:";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 10.8F);
+            this.label3.Location = new System.Drawing.Point(16, 24);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(175, 24);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Detalles del chofer:";
             // 
             // txtBusqueda
             // 
-            txtBusqueda.Location = new Point(373, 76);
-            txtBusqueda.Name = "txtBusqueda";
-            txtBusqueda.Size = new Size(256, 27);
-            txtBusqueda.TabIndex = 5;
+            this.txtBusqueda.Location = new System.Drawing.Point(373, 76);
+            this.txtBusqueda.Name = "txtBusqueda";
+            this.txtBusqueda.Size = new System.Drawing.Size(256, 22);
+            this.txtBusqueda.TabIndex = 5;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Comic Sans MS", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(50, 77);
-            label2.Name = "label2";
-            label2.Size = new Size(101, 24);
-            label2.TabIndex = 0;
-            label2.Text = "Buscar por:";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 10.2F);
+            this.label2.Location = new System.Drawing.Point(50, 77);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(101, 24);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Buscar por:";
             // 
             // btnLimpiar
             // 
-            btnLimpiar.BackColor = SystemColors.ControlDarkDark;
-            btnLimpiar.FlatAppearance.BorderSize = 0;
-            btnLimpiar.FlatStyle = FlatStyle.Flat;
-            btnLimpiar.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnLimpiar.ForeColor = Color.White;
-            btnLimpiar.Location = new Point(770, 76);
-            btnLimpiar.Name = "btnLimpiar";
-            btnLimpiar.Size = new Size(100, 30);
-            btnLimpiar.TabIndex = 4;
-            btnLimpiar.Text = "Limpiar";
-            btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnLimpiar.FlatAppearance.BorderSize = 0;
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiar.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
+            this.btnLimpiar.ForeColor = System.Drawing.Color.White;
+            this.btnLimpiar.Location = new System.Drawing.Point(770, 76);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(100, 30);
+            this.btnLimpiar.TabIndex = 4;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
             // 
             // btnBuscar
             // 
-            btnBuscar.BackColor = Color.FromArgb(222, 108, 148);
-            btnBuscar.FlatAppearance.BorderSize = 0;
-            btnBuscar.FlatStyle = FlatStyle.Flat;
-            btnBuscar.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnBuscar.ForeColor = Color.White;
-            btnBuscar.Location = new Point(657, 75);
-            btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new Size(100, 30);
-            btnBuscar.TabIndex = 4;
-            btnBuscar.Text = "Buscar";
-            btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(108)))), ((int)(((byte)(148)))));
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
+            this.btnBuscar.ForeColor = System.Drawing.Color.White;
+            this.btnBuscar.Location = new System.Drawing.Point(657, 75);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(100, 30);
+            this.btnBuscar.TabIndex = 4;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
             // 
             // label10
             // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.Location = new Point(697, 37);
-            label10.Name = "label10";
-            label10.Size = new Size(141, 20);
-            label10.TabIndex = 0;
-            label10.Text = "Total de choferes: ";
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label10.Location = new System.Drawing.Point(697, 37);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(141, 20);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Total de choferes: ";
             // 
             // lblTotalChoferes
             // 
-            lblTotalChoferes.AutoSize = true;
-            lblTotalChoferes.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            lblTotalChoferes.Location = new Point(833, 37);
-            lblTotalChoferes.Name = "lblTotalChoferes";
-            lblTotalChoferes.Size = new Size(18, 20);
-            lblTotalChoferes.TabIndex = 0;
-            lblTotalChoferes.Text = "0";
+            this.lblTotalChoferes.AutoSize = true;
+            this.lblTotalChoferes.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.lblTotalChoferes.Location = new System.Drawing.Point(833, 37);
+            this.lblTotalChoferes.Name = "lblTotalChoferes";
+            this.lblTotalChoferes.Size = new System.Drawing.Size(18, 20);
+            this.lblTotalChoferes.TabIndex = 0;
+            this.lblTotalChoferes.Text = "0";
             // 
             // panel2
             // 
-            panel2.BorderStyle = BorderStyle.FixedSingle;
-            panel2.Controls.Add(txtActualizarCelular);
-            panel2.Controls.Add(btnActualizar);
-            panel2.Controls.Add(txtActualizarCorreo);
-            panel2.Controls.Add(label13);
-            panel2.Controls.Add(label14);
-            panel2.Controls.Add(label12);
-            panel2.Controls.Add(label15);
-            panel2.Location = new Point(935, 459);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(436, 193);
-            panel2.TabIndex = 6;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.txtActualizarCelular);
+            this.panel2.Controls.Add(this.btnActualizar);
+            this.panel2.Controls.Add(this.txtActualizarCorreo);
+            this.panel2.Controls.Add(this.label13);
+            this.panel2.Controls.Add(this.label14);
+            this.panel2.Controls.Add(this.label12);
+            this.panel2.Controls.Add(this.label15);
+            this.panel2.Location = new System.Drawing.Point(935, 459);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(475, 193);
+            this.panel2.TabIndex = 6;
             // 
             // txtActualizarCelular
             // 
-            txtActualizarCelular.Location = new Point(134, 47);
-            txtActualizarCelular.Name = "txtActualizarCelular";
-            txtActualizarCelular.Size = new Size(251, 27);
-            txtActualizarCelular.TabIndex = 8;
+            this.txtActualizarCelular.Location = new System.Drawing.Point(158, 46);
+            this.txtActualizarCelular.Name = "txtActualizarCelular";
+            this.txtActualizarCelular.Size = new System.Drawing.Size(251, 22);
+            this.txtActualizarCelular.TabIndex = 8;
             // 
             // btnActualizar
             // 
-            btnActualizar.BackColor = Color.FromArgb(222, 108, 148);
-            btnActualizar.FlatAppearance.BorderSize = 0;
-            btnActualizar.FlatStyle = FlatStyle.Flat;
-            btnActualizar.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnActualizar.ForeColor = Color.White;
-            btnActualizar.Location = new Point(138, 142);
-            btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(200, 37);
-            btnActualizar.TabIndex = 4;
-            btnActualizar.Text = "Actualizar";
-            btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(108)))), ((int)(((byte)(148)))));
+            this.btnActualizar.FlatAppearance.BorderSize = 0;
+            this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizar.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
+            this.btnActualizar.ForeColor = System.Drawing.Color.White;
+            this.btnActualizar.Location = new System.Drawing.Point(162, 141);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(200, 37);
+            this.btnActualizar.TabIndex = 4;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = false;
             // 
             // txtActualizarCorreo
             // 
-            txtActualizarCorreo.Location = new Point(134, 93);
-            txtActualizarCorreo.Name = "txtActualizarCorreo";
-            txtActualizarCorreo.Size = new Size(251, 27);
-            txtActualizarCorreo.TabIndex = 9;
+            this.txtActualizarCorreo.Location = new System.Drawing.Point(158, 92);
+            this.txtActualizarCorreo.Name = "txtActualizarCorreo";
+            this.txtActualizarCorreo.Size = new System.Drawing.Size(251, 22);
+            this.txtActualizarCorreo.TabIndex = 9;
             // 
             // label13
             // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label13.Location = new Point(55, 94);
-            label13.Name = "label13";
-            label13.Size = new Size(56, 20);
-            label13.TabIndex = 6;
-            label13.Text = "Correo";
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label13.Location = new System.Drawing.Point(79, 93);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(56, 20);
+            this.label13.TabIndex = 6;
+            this.label13.Text = "Correo";
             // 
             // label14
             // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label14.Location = new Point(52, 50);
-            label14.Name = "label14";
-            label14.Size = new Size(57, 20);
-            label14.TabIndex = 7;
-            label14.Text = "Celular";
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label14.Location = new System.Drawing.Point(76, 49);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(57, 20);
+            this.label14.TabIndex = 7;
+            this.label14.Text = "Celular";
             // 
             // label12
             // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Comic Sans MS", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label12.Location = new Point(14, 9);
-            label12.Name = "label12";
-            label12.Size = new Size(252, 24);
-            label12.TabIndex = 0;
-            label12.Text = "Actualizar datos de contacto:";
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Comic Sans MS", 10.8F);
+            this.label12.Location = new System.Drawing.Point(14, 9);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(252, 24);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Actualizar datos de contacto:";
             // 
             // label15
             // 
-            label15.AutoSize = true;
-            label15.Font = new Font("Comic Sans MS", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label15.ForeColor = SystemColors.ButtonShadow;
-            label15.Location = new Point(284, 15);
-            label15.Name = "label15";
-            label15.Size = new Size(149, 18);
-            label15.TabIndex = 0;
-            label15.Text = "Elija el dni del chofer*";
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Comic Sans MS", 7.8F);
+            this.label15.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label15.Location = new System.Drawing.Point(321, 15);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(149, 18);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "Elija el dni del chofer*";
             // 
             // btnEliminarChofer
             // 
-            btnEliminarChofer.BackColor = Color.FromArgb(182, 113, 137);
-            btnEliminarChofer.FlatAppearance.BorderSize = 0;
-            btnEliminarChofer.FlatStyle = FlatStyle.Flat;
-            btnEliminarChofer.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnEliminarChofer.ForeColor = Color.White;
-            btnEliminarChofer.Location = new Point(962, 672);
-            btnEliminarChofer.Name = "btnEliminarChofer";
-            btnEliminarChofer.Size = new Size(200, 37);
-            btnEliminarChofer.TabIndex = 4;
-            btnEliminarChofer.Text = "Eliminar chofer";
-            btnEliminarChofer.UseVisualStyleBackColor = false;
+            this.btnEliminarChofer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(113)))), ((int)(((byte)(137)))));
+            this.btnEliminarChofer.FlatAppearance.BorderSize = 0;
+            this.btnEliminarChofer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarChofer.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
+            this.btnEliminarChofer.ForeColor = System.Drawing.Color.White;
+            this.btnEliminarChofer.Location = new System.Drawing.Point(962, 672);
+            this.btnEliminarChofer.Name = "btnEliminarChofer";
+            this.btnEliminarChofer.Size = new System.Drawing.Size(200, 37);
+            this.btnEliminarChofer.TabIndex = 4;
+            this.btnEliminarChofer.Text = "Eliminar chofer";
+            this.btnEliminarChofer.UseVisualStyleBackColor = false;
             // 
             // label16
             // 
-            label16.AutoSize = true;
-            label16.Font = new Font("Comic Sans MS", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label16.ForeColor = SystemColors.ButtonShadow;
-            label16.Location = new Point(1198, 673);
-            label16.Name = "label16";
-            label16.Size = new Size(157, 36);
-            label16.TabIndex = 0;
-            label16.Text = "Elija el dni del chofer y \r\nconfirme su acción *";
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Comic Sans MS", 7.8F);
+            this.label16.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label16.Location = new System.Drawing.Point(1198, 673);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(157, 36);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Elija el dni del chofer y \r\nconfirme su acción *";
             // 
             // frmChofer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1400, 726);
+            this.ClientSize = new System.Drawing.Size(1435, 726);
             this.Controls.Add(this.btnEliminarChofer);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.txtBusqueda);

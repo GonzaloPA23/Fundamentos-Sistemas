@@ -50,7 +50,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bus.cs">
+      <DependentUpon>ModelEF.tt</DependentUpon>
+    </Compile>
     <Compile Include="Chofer.cs">
+      <DependentUpon>ModelEF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DPermiso.cs" />
+    <Compile Include="DUsuario.cs" />
+    <Compile Include="Encomienda.cs">
       <DependentUpon>ModelEF.tt</DependentUpon>
     </Compile>
     <Compile Include="ModelEF.Context.cs">
@@ -67,6 +75,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ModelEF.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Pasaje.cs">
+      <DependentUpon>ModelEF.tt</DependentUpon>
     </Compile>
     <Compile Include="Permiso.cs">
       <DependentUpon>ModelEF.tt</DependentUpon>

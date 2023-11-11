@@ -29,5 +29,8 @@ namespace CapaDatos
         public virtual DbSet<Permiso> Permiso { get; set; }
         public virtual DbSet<Rol> Rol { get; set; }
         public virtual DbSet<Usuario> Usuario { get; set; }
+        public virtual DbSet<Bus> Bus { get; set; }
+        public virtual DbSet<Encomienda> Encomienda { get; set; }
+        public virtual DbSet<Pasaje> Pasaje { get; set; }
     }
 }

@@ -80,6 +80,7 @@ namespace CapaPresentacion
             this.label8.Size = new System.Drawing.Size(125, 29);
             this.label8.TabIndex = 32;
             this.label8.Text = "Registrarse";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
             // 
@@ -112,6 +113,7 @@ namespace CapaPresentacion
             this.btnIniciarSesion.TabIndex = 31;
             this.btnIniciarSesion.Text = "Iniciar sesión";
             this.btnIniciarSesion.UseVisualStyleBackColor = false;
+            this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
             // 
             // txtClave
             // 
