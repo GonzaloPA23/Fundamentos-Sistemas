@@ -36,7 +36,7 @@ namespace CapaDatos
                             chofer.Apellido = odr["apellido"].ToString();
                             chofer.FechaNacimiento = Convert.ToDateTime(odr["fecha_nacimiento"].ToString());
                             chofer.Celular = odr["celular"].ToString();
-                            chofer.Correo = odr["correo"].ToString();
+                            chof    er.Correo = odr["correo"].ToString();
                             choferes.Add(chofer);
                         }
                     }

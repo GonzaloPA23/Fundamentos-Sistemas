@@ -1,0 +1,38 @@
+GRID PROYECTO
+/////////////
+
+<Grid>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="23" Margin="222,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtFechaInicio" HorizontalAlignment="Left" Height="23" Margin="222,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtFechaFinalizacion" HorizontalAlignment="Left" Height="23" Margin="222,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="60,62,0,0" VerticalAlignment="Top"/>
+        <Label Content="Fecha Inicio" HorizontalAlignment="Left" Margin="60,103,0,0" VerticalAlignment="Top"/>
+        <Label Content="Fecha Finalizacion Estimada" HorizontalAlignment="Left" Margin="60,140,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="60,202,0,0" VerticalAlignment="Top" Width="240" Height="22"/>
+        <Button x:Name="btnModificar" Content="Modificar" HorizontalAlignment="Left" Margin="60,241,0,0" VerticalAlignment="Top" Width="240" Height="22"/>
+        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="60,279,0,0" VerticalAlignment="Top" Width="240" Height="24"/>
+        <Button x:Name="btnSalir" Content="Salir" HorizontalAlignment="Left" Margin="60,323,0,0" VerticalAlignment="Top" Width="240" Height="22"/>
+        <DataGrid x:Name="dgProyectos" HorizontalAlignment="Left" Height="333" Margin="373,42,0,0" VerticalAlignment="Top" Width="379"/>
+
+    </Grid>
+
+
+GRID PROGRAMADOR
+/////////////
+
+<Grid>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="23" Margin="180,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtEspecializacion" HorizontalAlignment="Left" Height="23" Margin="180,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtExperiencia" HorizontalAlignment="Left" Height="23" Margin="180,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="60,62,0,0" VerticalAlignment="Top"/>
+        <Label Content="Especializacion" HorizontalAlignment="Left" Margin="60,103,0,0" VerticalAlignment="Top"/>
+        <Label Content="Experiencia" HorizontalAlignment="Left" Margin="60,140,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="60,202,0,0" VerticalAlignment="Top" Width="240" Height="22"/>
+        <Button x:Name="btnModificar" Content="Modificar" HorizontalAlignment="Left" Margin="60,241,0,0" VerticalAlignment="Top" Width="240" Height="22"/>
+        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="60,279,0,0" VerticalAlignment="Top" Width="240" Height="24"/>
+        <Button x:Name="btnSalir" Content="Salir" HorizontalAlignment="Left" Margin="60,323,0,0" VerticalAlignment="Top" Width="240" Height="22"/>
+        <DataGrid x:Name="dgProgramador" HorizontalAlignment="Left" Height="333" Margin="373,42,0,0" VerticalAlignment="Top" Width="379"/>
+
+    </Grid>
+
+

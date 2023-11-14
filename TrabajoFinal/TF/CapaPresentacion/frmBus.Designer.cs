@@ -31,493 +31,651 @@ namespace CapaPresentacion
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
-            comboBox3 = new ComboBox();
-            comboBox2 = new ComboBox();
-            comboBox1 = new ComboBox();
-            numericUpDown2 = new NumericUpDown();
-            numericUpDown1 = new NumericUpDown();
-            dateTimePicker2 = new DateTimePicker();
-            dateTimePicker1 = new DateTimePicker();
-            textBox2 = new TextBox();
-            label7 = new Label();
-            label9 = new Label();
-            label6 = new Label();
-            label8 = new Label();
-            label5 = new Label();
-            label12 = new Label();
-            label2 = new Label();
-            label4 = new Label();
-            label3 = new Label();
-            button3 = new Button();
-            button1 = new Button();
-            label11 = new Label();
-            label10 = new Label();
-            label1 = new Label();
-            listView2 = new ListView();
-            columnHeader7 = new ColumnHeader();
-            columnHeader8 = new ColumnHeader();
-            columnHeader9 = new ColumnHeader();
-            columnHeader10 = new ColumnHeader();
-            columnHeader11 = new ColumnHeader();
-            columnHeader12 = new ColumnHeader();
-            columnHeader13 = new ColumnHeader();
-            columnHeader14 = new ColumnHeader();
-            label13 = new Label();
-            label14 = new Label();
-            label15 = new Label();
-            label16 = new Label();
-            button5 = new Button();
-            label17 = new Label();
-            listViewChoferes = new ListView();
-            columnHeader1 = new ColumnHeader();
-            columnHeader2 = new ColumnHeader();
-            columnHeader3 = new ColumnHeader();
-            columnHeader4 = new ColumnHeader();
-            columnHeader5 = new ColumnHeader();
-            columnHeader6 = new ColumnHeader();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
-            SuspendLayout();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.dtpFechaLlegada = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaSalida = new System.Windows.Forms.DateTimePicker();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lblTotalChoferes = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label17 = new System.Windows.Forms.Label();
+            this.dgChoferes = new System.Windows.Forms.DataGridView();
+            this.btnSeleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Dni = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Celular = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaNacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewButtonColumn1 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgChoferes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
             // 
             // panel1
             // 
-            panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Controls.Add(comboBox3);
-            panel1.Controls.Add(comboBox2);
-            panel1.Controls.Add(comboBox1);
-            panel1.Controls.Add(numericUpDown2);
-            panel1.Controls.Add(numericUpDown1);
-            panel1.Controls.Add(dateTimePicker2);
-            panel1.Controls.Add(dateTimePicker1);
-            panel1.Controls.Add(textBox2);
-            panel1.Controls.Add(label7);
-            panel1.Controls.Add(label9);
-            panel1.Controls.Add(label6);
-            panel1.Controls.Add(label8);
-            panel1.Controls.Add(label5);
-            panel1.Controls.Add(label12);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(label3);
-            panel1.Location = new Point(929, 27);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(436, 453);
-            panel1.TabIndex = 14;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.dtpFechaLlegada);
+            this.panel1.Controls.Add(this.dtpFechaSalida);
+            this.panel1.Controls.Add(this.comboBox3);
+            this.panel1.Controls.Add(this.comboBox2);
+            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.numericUpDown2);
+            this.panel1.Controls.Add(this.numericUpDown1);
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Location = new System.Drawing.Point(725, 66);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(328, 368);
+            this.panel1.TabIndex = 14;
+            // 
+            // dtpFechaLlegada
+            // 
+            this.dtpFechaLlegada.CustomFormat = "dd/MM/yyyy";
+            this.dtpFechaLlegada.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpFechaLlegada.Location = new System.Drawing.Point(116, 287);
+            this.dtpFechaLlegada.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpFechaLlegada.Name = "dtpFechaLlegada";
+            this.dtpFechaLlegada.Size = new System.Drawing.Size(189, 20);
+            this.dtpFechaLlegada.TabIndex = 9;
+            // 
+            // dtpFechaSalida
+            // 
+            this.dtpFechaSalida.CustomFormat = "dd/MM/yyyy";
+            this.dtpFechaSalida.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpFechaSalida.Location = new System.Drawing.Point(116, 173);
+            this.dtpFechaSalida.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpFechaSalida.Name = "dtpFechaSalida";
+            this.dtpFechaSalida.Size = new System.Drawing.Size(189, 20);
+            this.dtpFechaSalida.TabIndex = 9;
             // 
             // comboBox3
             // 
-            comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Items.AddRange(new object[] { "Chiclayo", "Tumbes", "Piura" });
-            comboBox3.Location = new Point(153, 306);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(251, 28);
-            comboBox3.TabIndex = 8;
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "Chiclayo",
+            "Tumbes",
+            "Piura"});
+            this.comboBox3.Location = new System.Drawing.Point(115, 249);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(189, 21);
+            this.comboBox3.TabIndex = 8;
             // 
             // comboBox2
             // 
-            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "Economico", "Vip", "Primera Clase", "Negocio" });
-            comboBox2.Location = new Point(153, 260);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(251, 28);
-            comboBox2.TabIndex = 8;
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Economico",
+            "Vip",
+            "Primera Clase",
+            "Negocio"});
+            this.comboBox2.Location = new System.Drawing.Point(115, 211);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(189, 21);
+            this.comboBox2.TabIndex = 8;
             // 
             // comboBox1
             // 
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Economico", "Vip", "Primera Clase", "Negocio" });
-            comboBox1.Location = new Point(153, 164);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(251, 28);
-            comboBox1.TabIndex = 8;
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Economico",
+            "Vip",
+            "Primera Clase",
+            "Negocio"});
+            this.comboBox1.Location = new System.Drawing.Point(115, 133);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(189, 21);
+            this.comboBox1.TabIndex = 8;
             // 
             // numericUpDown2
             // 
-            numericUpDown2.DecimalPlaces = 2;
-            numericUpDown2.Location = new Point(154, 396);
-            numericUpDown2.Maximum = new decimal(new int[] { 200, 0, 0, 0 });
-            numericUpDown2.Minimum = new decimal(new int[] { 10, 0, 0, 0 });
-            numericUpDown2.Name = "numericUpDown2";
-            numericUpDown2.Size = new Size(97, 27);
-            numericUpDown2.TabIndex = 7;
-            numericUpDown2.TextAlign = HorizontalAlignment.Center;
-            numericUpDown2.Value = new decimal(new int[] { 2250, 0, 0, 131072 });
+            this.numericUpDown2.DecimalPlaces = 2;
+            this.numericUpDown2.Location = new System.Drawing.Point(116, 322);
+            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown2.Maximum = new decimal(new int[] {
+            200,
+            0,
+            0,
+            0});
+            this.numericUpDown2.Minimum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(73, 20);
+            this.numericUpDown2.TabIndex = 7;
+            this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown2.Value = new decimal(new int[] {
+            2250,
+            0,
+            0,
+            131072});
             // 
             // numericUpDown1
             // 
-            numericUpDown1.Location = new Point(154, 114);
-            numericUpDown1.Maximum = new decimal(new int[] { 70, 0, 0, 0 });
-            numericUpDown1.Minimum = new decimal(new int[] { 50, 0, 0, 0 });
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(97, 27);
-            numericUpDown1.TabIndex = 7;
-            numericUpDown1.TextAlign = HorizontalAlignment.Center;
-            numericUpDown1.Value = new decimal(new int[] { 50, 0, 0, 0 });
-            // 
-            // dateTimePicker2
-            // 
-            dateTimePicker2.Location = new Point(154, 352);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(251, 27);
-            dateTimePicker2.TabIndex = 6;
-            // 
-            // dateTimePicker1
-            // 
-            dateTimePicker1.Location = new Point(153, 211);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(251, 27);
-            dateTimePicker1.TabIndex = 6;
+            this.numericUpDown1.Location = new System.Drawing.Point(116, 93);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            70,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Minimum = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(73, 20);
+            this.numericUpDown1.TabIndex = 7;
+            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(154, 67);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(251, 27);
-            textBox2.TabIndex = 5;
+            this.textBox2.Location = new System.Drawing.Point(116, 54);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(189, 20);
+            this.textBox2.TabIndex = 5;
             // 
             // label7
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(4, 354);
-            label7.Name = "label7";
-            label7.Size = new Size(138, 20);
-            label7.TabIndex = 0;
-            label7.Text = "    Fecha de llegada";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label7.Location = new System.Drawing.Point(-2, 288);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(113, 17);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "    Fecha de llegada";
             // 
             // label9
             // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.Location = new Point(13, 215);
-            label9.Name = "label9";
-            label9.Size = new Size(127, 20);
-            label9.TabIndex = 0;
-            label9.Text = "    Fecha de salida\r\n";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label9.Location = new System.Drawing.Point(4, 173);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(107, 17);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "    Fecha de salida\r\n";
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(51, 168);
-            label6.Name = "label6";
-            label6.Size = new Size(87, 20);
-            label6.TabIndex = 0;
-            label6.Text = "Tipo de bus";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label6.Location = new System.Drawing.Point(38, 136);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(70, 17);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Tipo de bus";
             // 
             // label8
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(88, 399);
-            label8.Name = "label8";
-            label8.Size = new Size(50, 20);
-            label8.TabIndex = 0;
-            label8.Text = "Precio";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label8.Location = new System.Drawing.Point(66, 324);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(42, 17);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Precio";
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(53, 105);
-            label5.Name = "label5";
-            label5.Size = new Size(85, 40);
-            label5.TabIndex = 0;
-            label5.Text = "     Asientos\r\ndisponibles";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label5.Location = new System.Drawing.Point(40, 85);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(68, 34);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "   Asientos\r\ndisponibles";
             // 
             // label12
             // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label12.Location = new Point(78, 309);
-            label12.Name = "label12";
-            label12.Size = new Size(60, 20);
-            label12.TabIndex = 0;
-            label12.Text = "Destino";
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label12.Location = new System.Drawing.Point(58, 251);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(51, 17);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Destino";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(29, 263);
-            label2.Name = "label2";
-            label2.Size = new Size(111, 20);
-            label2.TabIndex = 0;
-            label2.Text = "Punto de salida";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label2.Location = new System.Drawing.Point(22, 214);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(90, 17);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Punto de salida";
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(67, 67);
-            label4.Name = "label4";
-            label4.Size = new Size(71, 20);
-            label4.TabIndex = 0;
-            label4.Text = "Matricula";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label4.Location = new System.Drawing.Point(49, 54);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(62, 17);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Matricula";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Comic Sans MS", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(26, 14);
-            label3.Name = "label3";
-            label3.Size = new Size(141, 25);
-            label3.TabIndex = 0;
-            label3.Text = "Detalles del bus:";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 10.8F);
+            this.label3.Location = new System.Drawing.Point(20, 11);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(123, 20);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Detalles del bus:";
             // 
             // button3
             // 
-            button3.BackColor = Color.FromArgb(222, 108, 148);
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(1150, 534);
-            button3.Name = "button3";
-            button3.Size = new Size(200, 37);
-            button3.TabIndex = 4;
-            button3.Text = "Registrar bus";
-            button3.UseVisualStyleBackColor = false;
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(108)))), ((int)(((byte)(148)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(903, 486);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(150, 30);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "Registrar bus";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button1
             // 
-            button1.BackColor = SystemColors.ControlDarkDark;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(929, 534);
-            button1.Name = "button1";
-            button1.Size = new Size(198, 37);
-            button1.TabIndex = 4;
-            button1.Text = "Cancelar bus";
-            button1.UseVisualStyleBackColor = false;
+            this.button1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(725, 486);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(148, 30);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Cancelar bus";
+            this.button1.UseVisualStyleBackColor = false;
             // 
-            // label11
+            // lblTotalChoferes
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.Location = new Point(752, 27);
-            label11.Name = "label11";
-            label11.Size = new Size(17, 20);
-            label11.TabIndex = 8;
-            label11.Text = "0";
+            this.lblTotalChoferes.AutoSize = true;
+            this.lblTotalChoferes.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.lblTotalChoferes.Location = new System.Drawing.Point(628, 17);
+            this.lblTotalChoferes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTotalChoferes.Name = "lblTotalChoferes";
+            this.lblTotalChoferes.Size = new System.Drawing.Size(15, 17);
+            this.lblTotalChoferes.TabIndex = 8;
+            this.lblTotalChoferes.Text = "0";
             // 
             // label10
             // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.Location = new Point(616, 27);
-            label10.Name = "label10";
-            label10.Size = new Size(130, 20);
-            label10.TabIndex = 9;
-            label10.Text = "Total de choferes: ";
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label10.Location = new System.Drawing.Point(501, 19);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(114, 17);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "Total de choferes: ";
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Comic Sans MS", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(31, 15);
-            label1.Name = "label1";
-            label1.Size = new Size(165, 28);
-            label1.TabIndex = 11;
-            label1.Text = "Lista de choferes: ";
-            // 
-            // listView2
-            // 
-            listView2.Columns.AddRange(new ColumnHeader[] { columnHeader7, columnHeader8, columnHeader9, columnHeader10, columnHeader11, columnHeader12, columnHeader13, columnHeader14 });
-            listView2.Location = new Point(21, 391);
-            listView2.MultiSelect = false;
-            listView2.Name = "listView2";
-            listView2.Size = new Size(882, 313);
-            listView2.TabIndex = 18;
-            listView2.UseCompatibleStateImageBehavior = false;
-            listView2.View = View.Details;
-            // 
-            // columnHeader7
-            // 
-            columnHeader7.Text = "Matricula";
-            columnHeader7.Width = 90;
-            // 
-            // columnHeader8
-            // 
-            columnHeader8.Text = "Asientos disponibles";
-            columnHeader8.Width = 150;
-            // 
-            // columnHeader9
-            // 
-            columnHeader9.Text = "Tipo de bus";
-            columnHeader9.Width = 100;
-            // 
-            // columnHeader10
-            // 
-            columnHeader10.Text = "Fecha de salida";
-            columnHeader10.Width = 120;
-            // 
-            // columnHeader11
-            // 
-            columnHeader11.Text = "Punto de salida";
-            columnHeader11.Width = 120;
-            // 
-            // columnHeader12
-            // 
-            columnHeader12.Text = "Destino";
-            columnHeader12.Width = 90;
-            // 
-            // columnHeader13
-            // 
-            columnHeader13.Text = "Fecha de llegada";
-            columnHeader13.Width = 130;
-            // 
-            // columnHeader14
-            // 
-            columnHeader14.Text = "Precio";
-            columnHeader14.Width = 70;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.label1.Location = new System.Drawing.Point(23, 12);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(146, 23);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Lista de choferes: ";
             // 
             // label13
             // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label13.Location = new Point(752, 355);
-            label13.Name = "label13";
-            label13.Size = new Size(17, 20);
-            label13.TabIndex = 15;
-            label13.Text = "0";
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label13.Location = new System.Drawing.Point(628, 324);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(15, 17);
+            this.label13.TabIndex = 15;
+            this.label13.Text = "0";
             // 
             // label14
             // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label14.Location = new Point(631, 354);
-            label14.Name = "label14";
-            label14.Size = new Size(111, 20);
-            label14.TabIndex = 16;
-            label14.Text = "Total de buses: ";
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label14.Location = new System.Drawing.Point(501, 324);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(96, 17);
+            this.label14.TabIndex = 16;
+            this.label14.Text = "Total de buses: ";
             // 
             // label15
             // 
-            label15.AutoSize = true;
-            label15.Font = new Font("Comic Sans MS", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label15.Location = new Point(31, 345);
-            label15.Name = "label15";
-            label15.Size = new Size(141, 28);
-            label15.TabIndex = 17;
-            label15.Text = "Lista de buses: ";
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.label15.Location = new System.Drawing.Point(19, 320);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(123, 23);
+            this.label15.TabIndex = 17;
+            this.label15.Text = "Lista de buses: ";
             // 
             // label16
             // 
-            label16.AutoSize = true;
-            label16.Font = new Font("Comic Sans MS", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label16.ForeColor = SystemColors.ButtonShadow;
-            label16.Location = new Point(1072, 498);
-            label16.Name = "label16";
-            label16.Size = new Size(262, 17);
-            label16.TabIndex = 19;
-            label16.Text = "Elija el dni del chofer y confirme su acción *";
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Comic Sans MS", 7.8F);
+            this.label16.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label16.Location = new System.Drawing.Point(853, 453);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(200, 15);
+            this.label16.TabIndex = 19;
+            this.label16.Text = "Elija el chofer y confirme su acción *";
             // 
             // button5
             // 
-            button5.BackColor = Color.FromArgb(182, 113, 137);
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button5.ForeColor = Color.White;
-            button5.Location = new Point(1058, 639);
-            button5.Name = "button5";
-            button5.Size = new Size(200, 37);
-            button5.TabIndex = 20;
-            button5.Text = "Eliminar bus";
-            button5.UseVisualStyleBackColor = false;
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(113)))), ((int)(((byte)(137)))));
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(825, 569);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(150, 30);
+            this.button5.TabIndex = 20;
+            this.button5.Text = "Eliminar bus";
+            this.button5.UseVisualStyleBackColor = false;
             // 
             // label17
             // 
-            label17.AutoSize = true;
-            label17.Font = new Font("Comic Sans MS", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label17.ForeColor = SystemColors.ButtonShadow;
-            label17.Location = new Point(1070, 604);
-            label17.Name = "label17";
-            label17.Size = new Size(281, 17);
-            label17.TabIndex = 19;
-            label17.Text = "Elija la matricula del bus y confirme su acción *";
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Comic Sans MS", 7.8F);
+            this.label17.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label17.Location = new System.Drawing.Point(871, 535);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(182, 15);
+            this.label17.TabIndex = 19;
+            this.label17.Text = "Elija el bus y confirme su acción *";
             // 
-            // listViewChoferes
+            // dgChoferes
             // 
-            listViewChoferes.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5, columnHeader6 });
-            listViewChoferes.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            listViewChoferes.Location = new Point(21, 61);
-            listViewChoferes.MultiSelect = false;
-            listViewChoferes.Name = "listViewChoferes";
-            listViewChoferes.Size = new Size(882, 281);
-            listViewChoferes.TabIndex = 21;
-            listViewChoferes.UseCompatibleStateImageBehavior = false;
-            listViewChoferes.View = View.Details;
+            this.dgChoferes.AllowUserToAddRows = false;
+            this.dgChoferes.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgChoferes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgChoferes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgChoferes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.btnSeleccionar,
+            this.Id,
+            this.Dni,
+            this.Nombre,
+            this.Apellido,
+            this.Celular,
+            this.Correo,
+            this.FechaNacimiento});
+            this.dgChoferes.Location = new System.Drawing.Point(12, 45);
+            this.dgChoferes.MultiSelect = false;
+            this.dgChoferes.Name = "dgChoferes";
+            this.dgChoferes.ReadOnly = true;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgChoferes.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgChoferes.RowTemplate.Height = 28;
+            this.dgChoferes.Size = new System.Drawing.Size(688, 265);
+            this.dgChoferes.TabIndex = 21;
+            this.dgChoferes.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgChoferes_CellPainting);
             // 
-            // columnHeader1
+            // btnSeleccionar
             // 
-            columnHeader1.Text = "DNI";
-            columnHeader1.Width = 120;
+            this.btnSeleccionar.HeaderText = "";
+            this.btnSeleccionar.Name = "btnSeleccionar";
+            this.btnSeleccionar.ReadOnly = true;
+            this.btnSeleccionar.Width = 30;
             // 
-            // columnHeader2
+            // Id
             // 
-            columnHeader2.Text = "Nombre";
-            columnHeader2.TextAlign = HorizontalAlignment.Center;
-            columnHeader2.Width = 120;
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Visible = false;
             // 
-            // columnHeader3
+            // Dni
             // 
-            columnHeader3.Text = "Apellido";
-            columnHeader3.TextAlign = HorizontalAlignment.Center;
-            columnHeader3.Width = 120;
+            this.Dni.HeaderText = "DNI";
+            this.Dni.Name = "Dni";
+            this.Dni.ReadOnly = true;
+            this.Dni.Width = 70;
             // 
-            // columnHeader4
+            // Nombre
             // 
-            columnHeader4.Text = "Celular";
-            columnHeader4.TextAlign = HorizontalAlignment.Center;
-            columnHeader4.Width = 120;
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
+            this.Nombre.Width = 110;
             // 
-            // columnHeader5
+            // Apellido
             // 
-            columnHeader5.Text = "Correo";
-            columnHeader5.TextAlign = HorizontalAlignment.Center;
-            columnHeader5.Width = 180;
+            this.Apellido.HeaderText = "Apellido";
+            this.Apellido.Name = "Apellido";
+            this.Apellido.ReadOnly = true;
+            this.Apellido.Width = 110;
             // 
-            // columnHeader6
+            // Celular
             // 
-            columnHeader6.Text = "Fecha de Nacimiento";
-            columnHeader6.TextAlign = HorizontalAlignment.Center;
-            columnHeader6.Width = 170;
+            this.Celular.HeaderText = "Celular";
+            this.Celular.Name = "Celular";
+            this.Celular.ReadOnly = true;
+            this.Celular.Width = 70;
+            // 
+            // Correo
+            // 
+            this.Correo.HeaderText = "Correo";
+            this.Correo.Name = "Correo";
+            this.Correo.ReadOnly = true;
+            this.Correo.Width = 155;
+            // 
+            // FechaNacimiento
+            // 
+            this.FechaNacimiento.HeaderText = "Fecha de Nacimiento";
+            this.FechaNacimiento.Name = "FechaNacimiento";
+            this.FechaNacimiento.ReadOnly = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewButtonColumn1,
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7});
+            this.dataGridView1.Location = new System.Drawing.Point(12, 357);
+            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView1.RowTemplate.Height = 28;
+            this.dataGridView1.Size = new System.Drawing.Size(688, 280);
+            this.dataGridView1.TabIndex = 22;
+            // 
+            // dataGridViewButtonColumn1
+            // 
+            this.dataGridViewButtonColumn1.HeaderText = "";
+            this.dataGridViewButtonColumn1.Name = "dataGridViewButtonColumn1";
+            this.dataGridViewButtonColumn1.ReadOnly = true;
+            this.dataGridViewButtonColumn1.Width = 30;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "DNI";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 70;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Nombre";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 110;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "Apellido";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Width = 110;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.HeaderText = "Celular";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Width = 70;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.HeaderText = "Correo";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.Width = 155;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.HeaderText = "Fecha de Nacimiento";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
             // 
             // frmBus
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1400, 726);
-            this.Controls.Add(this.listViewChoferes);
+            this.ClientSize = new System.Drawing.Size(1076, 649);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgChoferes);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.listView2);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label11);
+            this.Controls.Add(this.lblTotalChoferes);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmBus";
             this.Text = "frmBus";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgChoferes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -527,7 +685,6 @@ namespace CapaPresentacion
 
         private Panel panel1;
         private NumericUpDown numericUpDown1;
-        private DateTimePicker dateTimePicker1;
         private Button button3;
         private Button button1;
         private TextBox textBox2;
@@ -536,7 +693,7 @@ namespace CapaPresentacion
         private Label label5;
         private Label label4;
         private Label label3;
-        private Label label11;
+        private Label lblTotalChoferes;
         private Label label10;
         private Label label1;
         private ComboBox comboBox1;
@@ -544,31 +701,34 @@ namespace CapaPresentacion
         private ComboBox comboBox3;
         private ComboBox comboBox2;
         private NumericUpDown numericUpDown2;
-        private DateTimePicker dateTimePicker2;
         private Label label7;
         private Label label8;
         private Label label12;
-        private ListView listView2;
-        private ColumnHeader columnHeader7;
-        private ColumnHeader columnHeader8;
-        private ColumnHeader columnHeader9;
-        private ColumnHeader columnHeader10;
-        private ColumnHeader columnHeader11;
-        private ColumnHeader columnHeader12;
         private Label label13;
         private Label label14;
         private Label label15;
         private Label label16;
         private Button button5;
         private Label label17;
-        private ColumnHeader columnHeader13;
-        private ColumnHeader columnHeader14;
-        private ListView listViewChoferes;
-        private ColumnHeader columnHeader1;
-        private ColumnHeader columnHeader2;
-        private ColumnHeader columnHeader3;
-        private ColumnHeader columnHeader4;
-        private ColumnHeader columnHeader5;
-        private ColumnHeader columnHeader6;
+        private DataGridView dgChoferes;
+        private DataGridViewButtonColumn btnSeleccionar;
+        private DataGridViewTextBoxColumn Id;
+        private DataGridViewTextBoxColumn Dni;
+        private DataGridViewTextBoxColumn Nombre;
+        private DataGridViewTextBoxColumn Apellido;
+        private DataGridViewTextBoxColumn Celular;
+        private DataGridViewTextBoxColumn Correo;
+        private DataGridViewTextBoxColumn FechaNacimiento;
+        private DateTimePicker dtpFechaLlegada;
+        private DateTimePicker dtpFechaSalida;
+        private DataGridView dataGridView1;
+        private DataGridViewButtonColumn dataGridViewButtonColumn1;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
     }
 }

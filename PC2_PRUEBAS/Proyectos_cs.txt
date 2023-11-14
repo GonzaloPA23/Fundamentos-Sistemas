@@ -1,0 +1,70 @@
+public String Registrar(Proyectos proyectos)
+        {
+            try
+            {
+                using (var context = new dbGestionProyectosEntities())
+                {
+                    context.Proyectos.Add(proyectos);
+                    context.SaveChanges();
+                }
+                return "Registrado exitosamente";
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+        }
+        public String Modificar(Proyectos proyectos)
+        {
+            try
+            {
+                using (var context = new dbGestionProyectosEntities())
+                {
+                    Proyectos proyectostmp = context.Proyectos.Find(proyectos.CodigoProyecto);
+                    proyectostmp.Nombre = proyectos.Nombre;
+                    proyectostmp.FechaInicio = proyectos.FechaInicio;
+                    proyectostmp.FechaFinalizacionEstimada = proyectos.FechaFinalizacionEstimada;
+                    context.SaveChanges();
+                }
+                return "Modificado exitosamente";
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+        }
+        public String Eliminar(int id)
+        {
+            try
+            {
+                using (var context = new dbGestionProyectosEntities())
+                {
+                    Proyectos proyectostmp = context.Proyectos.Find(id);
+                    context.Proyectos.Remove(proyectostmp);
+                    context.SaveChanges();
+                }
+                return "Eliminado exitosamente";
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+        }
+
+        public List<Proyectos> ListarTodo()
+        {
+            List<Proyectos> proyectoss = new List<Proyectos>();
+            try
+            {
+                using (var context = new dbGestionProyectosEntities())
+                {
+                    proyectoss = context.Proyectos.ToList();
+                    context.SaveChanges();
+                }
+                return proyectoss;
+            }
+            catch (Exception ex)
+            {
+                return proyectoss;
+            }
+        }

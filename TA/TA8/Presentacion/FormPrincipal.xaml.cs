@@ -122,6 +122,14 @@ namespace Presentacion
         private void dtgChoferes_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             choferSeleccionado = dtgChoferes.SelectedItem as EChofer;
+            // Llenar los campos con los datos del chofer seleccionado
+            if (choferSeleccionado != null)
+            {
+                txtDni.Text = choferSeleccionado.Dni;
+                txtNombreCompleto.Text = choferSeleccionado.NombreCompleto;
+                txtCelular.Text = choferSeleccionado.Celular;
+                txtCorreo.Text = choferSeleccionado.Correo;
+            }
         }
     }
 }

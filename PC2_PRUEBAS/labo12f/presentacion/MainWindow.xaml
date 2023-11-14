@@ -1,0 +1,32 @@
+﻿<Window x:Class="presentacion.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:presentacion"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="574" Width="792">
+    <Grid Margin="0,0,2,25">
+        <DataGrid Name="datagridDocentes" AutoGenerateColumns="True" HorizontalAlignment="Left" VerticalAlignment="Top" Width="480" Height="250" SelectionChanged="datagridDocentes_SelectionChanged" />
+        <TextBox Name="txtNombre" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="80,260,0,0" />
+        <TextBox Name="txtApellido" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="80,298,0,0" />
+        <ComboBox Name="cmbEscuela" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="80,331,0,0">
+            <ComboBoxItem Content="Escuela A" />
+            <ComboBoxItem Content="Escuela B" />
+            <ComboBoxItem Content="Escuela C" />
+        </ComboBox>
+        <Label Content="Nombre:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="19,260,0,0" />
+        <Label Content="Apellido:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="19,290,0,0" />
+        <Button Content="Insertar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="311,261,0,0" Click="BtnInsertar_Click" />
+        <Button Content="Actualizar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="311,286,0,0" Click="BtnActualizar_Click" />
+        <Button Content="Eliminar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="311,311,0,0" Click="BtnEliminar_Click" />
+        <Button Content="Limpiar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="311,336,0,0" Click="BtnLimpiar_Click" />
+        <ComboBox x:Name="cmbCurso" HorizontalAlignment="Left" Margin="504,44,0,0" VerticalAlignment="Top" Width="120" />
+        <TextBlock Text="Reporte de Docentes de una escuela" HorizontalAlignment="Left" Margin="504,10,0,479" Width="258" FontSize="14" />
+        <ListBox Name="listBoxReporte" HorizontalAlignment="Left" VerticalAlignment="Top" Width="258" Height="152" Margin="504,98,0,0"/>
+        <DataGrid Name="datagridDocentexCurso" AutoGenerateColumns="True" HorizontalAlignment="Left" VerticalAlignment="Top" Width="371" Height="112" Margin="19,383,0,0"/>
+        <DataGrid x:Name="datagridCursos" HorizontalAlignment="Left" VerticalAlignment="Top" Width="292" Height="114" Margin="411,383,0,0" AutoGenerateColumns="True" />
+        <Button Content="Generar Reporte" HorizontalAlignment="Left" VerticalAlignment="Top" Width="109" Margin="653,46,0,0" Click="BtnGenerarReporte_Click" />
+        <Label Content="Escuela:" HorizontalAlignment="Left" Margin="19,321,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

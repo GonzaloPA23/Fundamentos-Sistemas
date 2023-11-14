@@ -1,0 +1,12 @@
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Datos\bin\Debug\Datos.dll.config
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Datos\bin\Debug\Datos.dll
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Datos\bin\Debug\Datos.pdb
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Datos\bin\Debug\EntityFramework.dll
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Datos\bin\Debug\EntityFramework.SqlServer.dll
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Datos\bin\Debug\EntityFramework.xml
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Datos\bin\Debug\EntityFramework.SqlServer.xml
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Datos\obj\Debug\Datos.csproj.CopyComplete
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Datos\obj\Debug\Datos.dll
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Datos\obj\Debug\Datos.pdb

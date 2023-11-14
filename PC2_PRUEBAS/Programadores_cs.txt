@@ -1,0 +1,90 @@
+public String Registrar(Programadores programadores)
+        {
+            try
+            {
+                using (var context = new dbGestionProyectosEntities())
+                {
+                    context.Programadores.Add(programadores);
+                    context.SaveChanges();
+                }
+                return "Registrado exitosamente";
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+        }
+        public String Modificar(Programadores programadores)
+        {
+            try
+            {
+                using (var context = new dbGestionProyectosEntities())
+                {
+                    Programadores programadorestmp = context.Programadores.Find(programadores.CodigoProgramador);
+                    programadorestmp.Nombre = programadores.Nombre;
+                    programadorestmp.Especializacion = programadores.Especializacion;
+                    programadorestmp.ExperienciaEnAnios = programadores.ExperienciaEnAnios;
+                    context.SaveChanges();
+                }
+                return "Modificado exitosamente";
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+        }
+        public String Eliminar(int id)
+        {
+            try
+            {
+                using (var context = new dbGestionProyectosEntities())
+                {
+                    Programadores programadorestmp = context.Programadores.Find(id);
+                    context.Programadores.Remove(programadorestmp);
+                    context.SaveChanges();
+                }
+                return "Eliminado exitosamente";
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+        }
+
+        public List<Programadores> ListarTodo()
+        {
+            List<Programadores> programadoress = new List<Programadores>();
+            try
+            {
+                using (var context = new dbGestionProyectosEntities())
+                {
+                    programadoress = context.Programadores.ToList();
+                    context.SaveChanges();
+                }
+                return programadoress;
+            }
+            catch (Exception ex)
+            {
+                return programadoress;
+            }
+        }
+
+        /*
+        public List<Programadores> ListarTodoPorEscuela(String escuela)
+        {
+            List<Programadores> programadoress = new List<Programadores>();
+            try
+            {
+                using (var context = new dbGestionProyectosEntities())
+                {
+                    programadoress = context.Programadores.Where(d => d.Escuela.Contains(escuela)).ToList();
+                    context.SaveChanges();
+                }
+                return programadoress;
+            }
+            catch (Exception ex)
+            {
+                return programadoress;
+            }
+        }
+        */

@@ -1,0 +1,56 @@
+﻿<Window x:Class="Presentacion.PeliculaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Presentacion"
+        mc:Ignorable="d"
+        Title="PeliculaWindow" Height="450" Width="856.4" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Título:" HorizontalAlignment="Left" Margin="83,40,0,0" VerticalAlignment="Top"/>
+        <Label Content="Director:" HorizontalAlignment="Left" Margin="72,71,0,0" VerticalAlignment="Top"/>
+        <Label Content="Género:" HorizontalAlignment="Left" Margin="75,102,0,0" VerticalAlignment="Top"/>
+        <Label Content="Fecha de estreno:" HorizontalAlignment="Left" Margin="24,133,0,0" VerticalAlignment="Top" Height="26" Width="102"/>
+        <Label Content="País:" HorizontalAlignment="Left" Margin="92,167,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbGenero" HorizontalAlignment="Left" Margin="138,105,0,0" VerticalAlignment="Top" Width="144">
+            <ComboBoxItem Content="Accion"/>
+            <ComboBoxItem Content="Comedia"/>
+            <ComboBoxItem Content="Drama"/>
+            <ComboBoxItem Content="Terror"/>
+            <ComboBoxItem Content="Romance"/>
+        </ComboBox>
+        <TextBox x:Name="txtTitulo" HorizontalAlignment="Left" Height="23" Margin="138,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144"/>
+        <TextBox x:Name="txtDirector" HorizontalAlignment="Left" Height="23" Margin="138,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144"/>
+        <ComboBox x:Name="cbPais" HorizontalAlignment="Left" Margin="138,170,0,0" VerticalAlignment="Top" Width="144">
+            <ComboBoxItem Content="Estados Unidos"/>
+            <ComboBoxItem Content="Reino Unido"/>
+            <ComboBoxItem Content="Italia"/>
+            <ComboBoxItem Content="Brasil"/>
+            <ComboBoxItem Content="Peru"/>
+        </ComboBox>
+        <DatePicker x:Name="dateFechaEstreno" HorizontalAlignment="Left" Margin="138,136,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnRegistrar" Content="Registrar" HorizontalAlignment="Left" Margin="126,216,0,0" VerticalAlignment="Top" Width="113" Height="25" Click="btnRegistrar_Click"/>
+        <Button x:Name="btnActualizar" Content="Actualizar" HorizontalAlignment="Left" Margin="126,246,0,0" VerticalAlignment="Top" Width="113" Height="25" Click="btnActualizar_Click"/>
+        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="126,276,0,0" VerticalAlignment="Top" Width="113" Height="25" Click="btnEliminar_Click"/>
+        <Button x:Name="btnSalir" Content="Salir" HorizontalAlignment="Left" Margin="691,367,0,0" VerticalAlignment="Top" Width="113" Height="25" Click="btnSalir_Click"/>
+        <DataGrid x:Name="dgPelicula" HorizontalAlignment="Left" Height="231" Margin="301,115,0,0" VerticalAlignment="Top" Width="503" SelectionChanged="dgPelicula_SelectionChanged" AutoGeneratingColumn="dgPelicula_AutoGeneratingColumn"/>
+        <Label Content="Buscar por género:" HorizontalAlignment="Left" Margin="301,48,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbBuscarPorGenero" HorizontalAlignment="Left" Margin="433,51,0,0" VerticalAlignment="Top" Width="180">
+            <ComboBoxItem Content="Accion"/>
+            <ComboBoxItem Content="Comedia"/>
+            <ComboBoxItem Content="Drama"/>
+            <ComboBoxItem Content="Terror"/>
+            <ComboBoxItem Content="Romance"/>
+        </ComboBox>
+        <Button x:Name="btnBuscarPorGenero" Content="Buscar" HorizontalAlignment="Left" Margin="636,50,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="btnBuscarPorGenero_Click"/>
+        <Label Content="Ordenar por fecha de estreno:" HorizontalAlignment="Left" Margin="301,84,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbOrdenarPorFechaEstreno" HorizontalAlignment="Left" Margin="493,84,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Más recientes"></ComboBoxItem>
+            <ComboBoxItem Content="Más antiguos"></ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="btnOrdenarPorFechaEstreno" Content="Ordenar" HorizontalAlignment="Left" Margin="636,84,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="btnOrdenarPorFechaEstreno_Click"/>
+        <Button x:Name="btnLimpiar" Content="Limpiar" HorizontalAlignment="Left" Margin="729,67,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="btnLimpiar_Click"/>
+        <Label x:Name="lbModificarCampos" Content="Modifique los campos que desea actualizar" HorizontalAlignment="Left" Margin="87,11,0,0" VerticalAlignment="Top" FontStyle="Italic" FontSize="10" Visibility="Hidden" />
+
+    </Grid>
+</Window>

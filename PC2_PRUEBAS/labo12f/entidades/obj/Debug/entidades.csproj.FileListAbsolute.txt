@@ -1,0 +1,12 @@
+C:\Users\orestes.ramirez\source\repos\labo12f\entidades\bin\Debug\entidades.dll.config
+C:\Users\orestes.ramirez\source\repos\labo12f\entidades\bin\Debug\entidades.dll
+C:\Users\orestes.ramirez\source\repos\labo12f\entidades\bin\Debug\entidades.pdb
+C:\Users\orestes.ramirez\source\repos\labo12f\entidades\bin\Debug\EntityFramework.dll
+C:\Users\orestes.ramirez\source\repos\labo12f\entidades\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\orestes.ramirez\source\repos\labo12f\entidades\bin\Debug\EntityFramework.xml
+C:\Users\orestes.ramirez\source\repos\labo12f\entidades\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\orestes.ramirez\source\repos\labo12f\entidades\obj\Debug\entidades.csproj.AssemblyReference.cache
+C:\Users\orestes.ramirez\source\repos\labo12f\entidades\obj\Debug\entidades.csproj.CoreCompileInputs.cache
+C:\Users\orestes.ramirez\source\repos\labo12f\entidades\obj\Debug\entidades.csproj.CopyComplete
+C:\Users\orestes.ramirez\source\repos\labo12f\entidades\obj\Debug\entidades.dll
+C:\Users\orestes.ramirez\source\repos\labo12f\entidades\obj\Debug\entidades.pdb

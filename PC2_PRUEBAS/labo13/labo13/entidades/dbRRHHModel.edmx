@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="dbRRHHModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Empleados">
+          <Key>
+            <PropertyRef Name="CódigoEmpleado" />
+          </Key>
+          <Property Name="CódigoEmpleado" Type="int" Nullable="false" />
+          <Property Name="DNI" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="ApellidoPaterno" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="FechaDeNacimiento" Type="date" Nullable="false" />
+          <Property Name="FechaDeContratación" Type="date" Nullable="false" />
+          <Property Name="Salario" Type="money" Nullable="false" />
+          <Property Name="CódigoEmpleo" Type="int" />
+        </EntityType>
+        <EntityType Name="Empleos">
+          <Key>
+            <PropertyRef Name="Código" />
+          </Key>
+          <Property Name="Código" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NombreDelEmpleo" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="SalarioMínimo" Type="money" Nullable="false" />
+          <Property Name="SalarioMáximo" Type="money" Nullable="false" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'dbRRHH.dbo.HistorialEmpleos' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="HistorialEmpleos">
+          <Key>
+            <PropertyRef Name="FechaDeInicio" />
+          </Key>
+          <Property Name="CódigoEmpleado" Type="int" />
+          <Property Name="CódigoEmpleo" Type="int" />
+          <Property Name="FechaDeInicio" Type="datetime" Nullable="false" />
+          <Property Name="FechaDeFin" Type="datetime" />
+        </EntityType>
+        <Association Name="FK__Empleados__Códig__38996AB5">
+          <End Role="Empleos" Type="Self.Empleos" Multiplicity="0..1" />
+          <End Role="Empleados" Type="Self.Empleados" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empleos">
+              <PropertyRef Name="Código" />
+            </Principal>
+            <Dependent Role="Empleados">
+              <PropertyRef Name="CódigoEmpleo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Historial__Códig__3A81B327">
+          <End Role="Empleados" Type="Self.Empleados" Multiplicity="0..1" />
+          <End Role="HistorialEmpleos" Type="Self.HistorialEmpleos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empleados">
+              <PropertyRef Name="CódigoEmpleado" />
+            </Principal>
+            <Dependent Role="HistorialEmpleos">
+              <PropertyRef Name="CódigoEmpleado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Historial__Códig__3B75D760">
+          <End Role="Empleos" Type="Self.Empleos" Multiplicity="0..1" />
+          <End Role="HistorialEmpleos" Type="Self.HistorialEmpleos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empleos">
+              <PropertyRef Name="Código" />
+            </Principal>
+            <Dependent Role="HistorialEmpleos">
+              <PropertyRef Name="CódigoEmpleo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="dbRRHHModelStoreContainer">
+          <EntitySet Name="Empleados" EntityType="Self.Empleados" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Empleos" EntityType="Self.Empleos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HistorialEmpleos" EntityType="Self.HistorialEmpleos" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [HistorialEmpleos].[CódigoEmpleado] AS [CódigoEmpleado], 
+    [HistorialEmpleos].[CódigoEmpleo] AS [CódigoEmpleo], 
+    [HistorialEmpleos].[FechaDeInicio] AS [FechaDeInicio], 
+    [HistorialEmpleos].[FechaDeFin] AS [FechaDeFin]
+    FROM [dbo].[HistorialEmpleos] AS [HistorialEmpleos]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK__Empleados__Códig__38996AB5" Association="Self.FK__Empleados__Códig__38996AB5">
+            <End Role="Empleos" EntitySet="Empleos" />
+            <End Role="Empleados" EntitySet="Empleados" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Historial__Códig__3A81B327" Association="Self.FK__Historial__Códig__3A81B327">
+            <End Role="Empleados" EntitySet="Empleados" />
+            <End Role="HistorialEmpleos" EntitySet="HistorialEmpleos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Historial__Códig__3B75D760" Association="Self.FK__Historial__Códig__3B75D760">
+            <End Role="Empleos" EntitySet="Empleos" />
+            <End Role="HistorialEmpleos" EntitySet="HistorialEmpleos" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="dbRRHHModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Empleados">
+          <Key>
+            <PropertyRef Name="CódigoEmpleado" />
+          </Key>
+          <Property Name="CódigoEmpleado" Type="Int32" Nullable="false" />
+          <Property Name="DNI" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ApellidoPaterno" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FechaDeNacimiento" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="FechaDeContratación" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Salario" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="CódigoEmpleo" Type="Int32" />
+          <NavigationProperty Name="Empleos" Relationship="Self.FK__Empleados__Códig__267ABA7A" FromRole="Empleados" ToRole="Empleos" />
+          <NavigationProperty Name="HistorialEmpleos" Relationship="Self.FK__Historial__Códig__286302EC" FromRole="Empleados" ToRole="HistorialEmpleos" />
+        </EntityType>
+        <EntityType Name="Empleos">
+          <Key>
+            <PropertyRef Name="Código" />
+          </Key>
+          <Property Name="Código" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NombreDelEmpleo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SalarioMínimo" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="SalarioMáximo" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <NavigationProperty Name="Empleados" Relationship="Self.FK__Empleados__Códig__267ABA7A" FromRole="Empleos" ToRole="Empleados" />
+          <NavigationProperty Name="HistorialEmpleos" Relationship="Self.FK__Historial__Códig__29572725" FromRole="Empleos" ToRole="HistorialEmpleos" />
+        </EntityType>
+        <EntityType Name="HistorialEmpleos">
+          <Key>
+            <PropertyRef Name="FechaDeInicio" />
+          </Key>
+          <Property Name="CódigoEmpleado" Type="Int32" />
+          <Property Name="CódigoEmpleo" Type="Int32" />
+          <Property Name="FechaDeInicio" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FechaDeFin" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Empleados" Relationship="Self.FK__Historial__Códig__286302EC" FromRole="HistorialEmpleos" ToRole="Empleados" />
+          <NavigationProperty Name="Empleos" Relationship="Self.FK__Historial__Códig__29572725" FromRole="HistorialEmpleos" ToRole="Empleos" />
+        </EntityType>
+        <Association Name="FK__Empleados__Códig__267ABA7A">
+          <End Role="Empleos" Type="Self.Empleos" Multiplicity="0..1" />
+          <End Role="Empleados" Type="Self.Empleados" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empleos">
+              <PropertyRef Name="Código" />
+            </Principal>
+            <Dependent Role="Empleados">
+              <PropertyRef Name="CódigoEmpleo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Historial__Códig__286302EC">
+          <End Role="Empleados" Type="Self.Empleados" Multiplicity="0..1" />
+          <End Role="HistorialEmpleos" Type="Self.HistorialEmpleos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empleados">
+              <PropertyRef Name="CódigoEmpleado" />
+            </Principal>
+            <Dependent Role="HistorialEmpleos">
+              <PropertyRef Name="CódigoEmpleado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Historial__Códig__29572725">
+          <End Role="Empleos" Type="Self.Empleos" Multiplicity="0..1" />
+          <End Role="HistorialEmpleos" Type="Self.HistorialEmpleos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empleos">
+              <PropertyRef Name="Código" />
+            </Principal>
+            <Dependent Role="HistorialEmpleos">
+              <PropertyRef Name="CódigoEmpleo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="dbRRHHEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Empleados" EntityType="Self.Empleados" />
+          <EntitySet Name="Empleos" EntityType="Self.Empleos" />
+          <EntitySet Name="HistorialEmpleos" EntityType="Self.HistorialEmpleos" />
+          <AssociationSet Name="FK__Empleados__Códig__267ABA7A" Association="Self.FK__Empleados__Códig__267ABA7A">
+            <End Role="Empleos" EntitySet="Empleos" />
+            <End Role="Empleados" EntitySet="Empleados" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Historial__Códig__286302EC" Association="Self.FK__Historial__Códig__286302EC">
+            <End Role="Empleados" EntitySet="Empleados" />
+            <End Role="HistorialEmpleos" EntitySet="HistorialEmpleos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Historial__Códig__29572725" Association="Self.FK__Historial__Códig__29572725">
+            <End Role="Empleos" EntitySet="Empleos" />
+            <End Role="HistorialEmpleos" EntitySet="HistorialEmpleos" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="dbRRHHModelStoreContainer" CdmEntityContainer="dbRRHHEntities">
+          <EntitySetMapping Name="Empleados">
+            <EntityTypeMapping TypeName="dbRRHHModel.Empleados">
+              <MappingFragment StoreEntitySet="Empleados">
+                <ScalarProperty Name="CódigoEmpleado" ColumnName="CódigoEmpleado" />
+                <ScalarProperty Name="DNI" ColumnName="DNI" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+                <ScalarProperty Name="FechaDeNacimiento" ColumnName="FechaDeNacimiento" />
+                <ScalarProperty Name="FechaDeContratación" ColumnName="FechaDeContratación" />
+                <ScalarProperty Name="Salario" ColumnName="Salario" />
+                <ScalarProperty Name="CódigoEmpleo" ColumnName="CódigoEmpleo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Empleos">
+            <EntityTypeMapping TypeName="dbRRHHModel.Empleos">
+              <MappingFragment StoreEntitySet="Empleos">
+                <ScalarProperty Name="Código" ColumnName="Código" />
+                <ScalarProperty Name="NombreDelEmpleo" ColumnName="NombreDelEmpleo" />
+                <ScalarProperty Name="SalarioMínimo" ColumnName="SalarioMínimo" />
+                <ScalarProperty Name="SalarioMáximo" ColumnName="SalarioMáximo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HistorialEmpleos">
+            <EntityTypeMapping TypeName="dbRRHHModel.HistorialEmpleos">
+              <MappingFragment StoreEntitySet="HistorialEmpleos">
+                <ScalarProperty Name="CódigoEmpleado" ColumnName="CódigoEmpleado" />
+                <ScalarProperty Name="CódigoEmpleo" ColumnName="CódigoEmpleo" />
+                <ScalarProperty Name="FechaDeInicio" ColumnName="FechaDeInicio" />
+                <ScalarProperty Name="FechaDeFin" ColumnName="FechaDeFin" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="ProcessDependentTemplatesOnSave" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

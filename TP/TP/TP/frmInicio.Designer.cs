@@ -93,6 +93,7 @@
             // menuStrip1
             // 
             menuStrip1.BackColor = Color.White;
+            menuStrip1.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
             menuStrip1.ImageScalingSize = new Size(20, 20);
             menuStrip1.Items.AddRange(new ToolStripItem[] { menuchoferes, menubuses, menupasajes, menuencomiendas, menureportes });
             menuStrip1.Location = new Point(0, 70);
@@ -111,7 +112,7 @@
             menuchoferes.ImageScaling = ToolStripItemImageScaling.None;
             menuchoferes.Margin = new Padding(5);
             menuchoferes.Name = "menuchoferes";
-            menuchoferes.Size = new Size(120, 85);
+            menuchoferes.Size = new Size(152, 85);
             menuchoferes.Text = "Choferes";
             menuchoferes.TextImageRelation = TextImageRelation.ImageAboveText;
             menuchoferes.Click += menuchoferes_Click;

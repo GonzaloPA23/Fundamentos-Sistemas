@@ -1,0 +1,12 @@
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Negocio\bin\Debug\Negocio.dll
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Negocio\bin\Debug\Negocio.pdb
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Negocio\bin\Debug\Datos.dll
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Negocio\bin\Debug\EntityFramework.dll
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Negocio\bin\Debug\Datos.pdb
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Negocio\bin\Debug\Datos.dll.config
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Negocio\bin\Debug\EntityFramework.xml
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Negocio\obj\Debug\Negocio.dll
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Negocio\obj\Debug\Negocio.pdb

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CapaDatos;
+using CapaNegocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +21,26 @@ namespace CapaPresentacion
 
         private void btnRegistrarse_Click(object sender, EventArgs e)
         {
+            string mensaje = string.Empty; 
+
+            Usuario usuario = new Usuario()
+            {
+                Dni = txtDni.Text,
+                Nombre = txtNombre.Text,
+                Apellido = txtApellido.Text,
+                Clave = txtClave.Text,
+                Correo = txtCorreo.Text
+            };
+            int idUsuarioGenerado = new NUsuario().RegistrarUsuario(usuario, out mensaje);
+            if (idUsuarioGenerado != 0)
+            {
+                MessageBox.Show("Usuario registrado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LimpiarCampos();
+                frmIniciarSesion frmIniciarSesion = new frmIniciarSesion();
+                frmIniciarSesion.Show();
+                this.Hide();
+                frmIniciarSesion.FormClosing += Form_Closing;
+            }else MessageBox.Show(mensaje, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
         }
 

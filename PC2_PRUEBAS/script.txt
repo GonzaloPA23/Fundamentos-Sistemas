@@ -1,0 +1,24 @@
+-- Crear la tabla Proyectos
+CREATE TABLE Proyectos (
+    CodigoProyecto INT IDENTITY(1,1) PRIMARY KEY,
+    Nombre VARCHAR(255),
+    FechaInicio DATE,
+    FechaFinalizacionEstimada DATE
+);
+
+-- Crear la tabla Programadores
+CREATE TABLE Programadores (
+    CodigoProgramador INT IDENTITY(1,1) PRIMARY KEY,
+    Nombre VARCHAR(255),
+    Especializacion VARCHAR(50),
+    ExperienciaEnAnios INT
+);
+
+-- Crear la tabla intermedia AsignacionProyectosProgramadores
+CREATE TABLE AsignacionProyectosProgramadores (
+    CodigoAsignacion INT IDENTITY(1,1) PRIMARY KEY,
+    CodigoProyecto INT,
+    CodigoProgramador INT,
+    FOREIGN KEY (CodigoProyecto) REFERENCES Proyectos(CodigoProyecto),
+    FOREIGN KEY (CodigoProgramador) REFERENCES Programadores(CodigoProgramador)
+);

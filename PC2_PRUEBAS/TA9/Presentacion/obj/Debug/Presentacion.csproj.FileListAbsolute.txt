@@ -1,0 +1,54 @@
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Presentacion\bin\Debug\Presentacion.exe.config
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Presentacion\bin\Debug\Presentacion.exe
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Presentacion\bin\Debug\Presentacion.pdb
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Presentacion\bin\Debug\Datos.dll
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Presentacion\bin\Debug\Negocio.dll
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Presentacion\bin\Debug\EntityFramework.dll
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Presentacion\bin\Debug\Datos.pdb
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Presentacion\bin\Debug\Datos.dll.config
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Presentacion\bin\Debug\Negocio.pdb
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Presentacion\bin\Debug\EntityFramework.xml
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Presentacion\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Presentacion\obj\Debug\MainWindow.g.cs
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Presentacion\obj\Debug\PeliculaWindow.g.cs
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Presentacion\obj\Debug\App.g.cs
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Presentacion\obj\Debug\Presentacion_MarkupCompile.cache
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Presentacion\obj\Debug\Presentacion_MarkupCompile.lref
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Presentacion\obj\Debug\MainWindow.baml
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Presentacion\obj\Debug\PeliculaWindow.baml
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Presentacion\obj\Debug\Presentacion.g.resources
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Presentacion\obj\Debug\Presentacion.exe
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Presentacion\obj\Debug\Presentacion.pdb
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Presentacion\bin\Debug\EntityFramework.SqlServer.dll
+D:\UPC\2023 - 2\Fundamentos de Programación\Semana 12\TA9\Presentacion\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Acer\Downloads\TA9\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\Acer\Downloads\TA9\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\Acer\Downloads\TA9\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\Acer\Downloads\TA9\Presentacion\bin\Debug\Datos.dll
+C:\Users\Acer\Downloads\TA9\Presentacion\bin\Debug\EntityFramework.dll
+C:\Users\Acer\Downloads\TA9\Presentacion\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Acer\Downloads\TA9\Presentacion\bin\Debug\Negocio.dll
+C:\Users\Acer\Downloads\TA9\Presentacion\bin\Debug\Datos.pdb
+C:\Users\Acer\Downloads\TA9\Presentacion\bin\Debug\Datos.dll.config
+C:\Users\Acer\Downloads\TA9\Presentacion\bin\Debug\Negocio.pdb
+C:\Users\Acer\Downloads\TA9\Presentacion\bin\Debug\EntityFramework.xml
+C:\Users\Acer\Downloads\TA9\Presentacion\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Acer\Downloads\TA9\Presentacion\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+C:\Users\Acer\Downloads\TA9\Presentacion\obj\Debug\MainWindow.g.cs
+C:\Users\Acer\Downloads\TA9\Presentacion\obj\Debug\PeliculaWindow.g.cs
+C:\Users\Acer\Downloads\TA9\Presentacion\obj\Debug\App.g.cs
+C:\Users\Acer\Downloads\TA9\Presentacion\obj\Debug\Presentacion_MarkupCompile.cache
+C:\Users\Acer\Downloads\TA9\Presentacion\obj\Debug\Presentacion_MarkupCompile.lref
+C:\Users\Acer\Downloads\TA9\Presentacion\obj\Debug\MainWindow.baml
+C:\Users\Acer\Downloads\TA9\Presentacion\obj\Debug\PeliculaWindow.baml
+C:\Users\Acer\Downloads\TA9\Presentacion\obj\Debug\Presentacion.g.resources
+C:\Users\Acer\Downloads\TA9\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+C:\Users\Acer\Downloads\TA9\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\Users\Acer\Downloads\TA9\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\Acer\Downloads\TA9\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
+C:\Users\Acer\Downloads\TA9\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\Acer\Downloads\TA9\Presentacion\obj\Debug\Presentacion.pdb

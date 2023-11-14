@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="db0c772f43e54c27b9088600f9b140e7" Name="Diagram1" ZoomLevel="97">
+        <EntityTypeShape EntityType="dbGestionProyectosModel.Programadores" Width="1.5" PointX="4" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGestionProyectosModel.Proyectos" Width="1.5" PointX="1.125" PointY="1.75" IsExpanded="true" />
+        <AssociationConnector Association="dbGestionProyectosModel.AsignacionProyectosProgramadores" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

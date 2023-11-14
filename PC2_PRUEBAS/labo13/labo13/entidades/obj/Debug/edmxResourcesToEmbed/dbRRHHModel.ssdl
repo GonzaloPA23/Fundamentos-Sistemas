@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbRRHHModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Empleados">
+    <Key>
+      <PropertyRef Name="CódigoEmpleado" />
+    </Key>
+    <Property Name="CódigoEmpleado" Type="int" Nullable="false" />
+    <Property Name="DNI" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ApellidoPaterno" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FechaDeNacimiento" Type="date" Nullable="false" />
+    <Property Name="FechaDeContratación" Type="date" Nullable="false" />
+    <Property Name="Salario" Type="money" Nullable="false" />
+    <Property Name="CódigoEmpleo" Type="int" />
+  </EntityType>
+  <EntityType Name="Empleos">
+    <Key>
+      <PropertyRef Name="Código" />
+    </Key>
+    <Property Name="Código" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NombreDelEmpleo" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SalarioMínimo" Type="money" Nullable="false" />
+    <Property Name="SalarioMáximo" Type="money" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'dbRRHH.dbo.HistorialEmpleos' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="HistorialEmpleos">
+    <Key>
+      <PropertyRef Name="FechaDeInicio" />
+    </Key>
+    <Property Name="CódigoEmpleado" Type="int" />
+    <Property Name="CódigoEmpleo" Type="int" />
+    <Property Name="FechaDeInicio" Type="datetime" Nullable="false" />
+    <Property Name="FechaDeFin" Type="datetime" />
+  </EntityType>
+  <Association Name="FK__Empleados__Códig__38996AB5">
+    <End Role="Empleos" Type="Self.Empleos" Multiplicity="0..1" />
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleos">
+        <PropertyRef Name="Código" />
+      </Principal>
+      <Dependent Role="Empleados">
+        <PropertyRef Name="CódigoEmpleo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Historial__Códig__3A81B327">
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="0..1" />
+    <End Role="HistorialEmpleos" Type="Self.HistorialEmpleos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleados">
+        <PropertyRef Name="CódigoEmpleado" />
+      </Principal>
+      <Dependent Role="HistorialEmpleos">
+        <PropertyRef Name="CódigoEmpleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Historial__Códig__3B75D760">
+    <End Role="Empleos" Type="Self.Empleos" Multiplicity="0..1" />
+    <End Role="HistorialEmpleos" Type="Self.HistorialEmpleos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleos">
+        <PropertyRef Name="Código" />
+      </Principal>
+      <Dependent Role="HistorialEmpleos">
+        <PropertyRef Name="CódigoEmpleo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="dbRRHHModelStoreContainer">
+    <EntitySet Name="Empleados" EntityType="Self.Empleados" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Empleos" EntityType="Self.Empleos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HistorialEmpleos" EntityType="Self.HistorialEmpleos" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [HistorialEmpleos].[CódigoEmpleado] AS [CódigoEmpleado], 
+    [HistorialEmpleos].[CódigoEmpleo] AS [CódigoEmpleo], 
+    [HistorialEmpleos].[FechaDeInicio] AS [FechaDeInicio], 
+    [HistorialEmpleos].[FechaDeFin] AS [FechaDeFin]
+    FROM [dbo].[HistorialEmpleos] AS [HistorialEmpleos]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__Empleados__Códig__38996AB5" Association="Self.FK__Empleados__Códig__38996AB5">
+      <End Role="Empleos" EntitySet="Empleos" />
+      <End Role="Empleados" EntitySet="Empleados" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Historial__Códig__3A81B327" Association="Self.FK__Historial__Códig__3A81B327">
+      <End Role="Empleados" EntitySet="Empleados" />
+      <End Role="HistorialEmpleos" EntitySet="HistorialEmpleos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Historial__Códig__3B75D760" Association="Self.FK__Historial__Códig__3B75D760">
+      <End Role="Empleos" EntitySet="Empleos" />
+      <End Role="HistorialEmpleos" EntitySet="HistorialEmpleos" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

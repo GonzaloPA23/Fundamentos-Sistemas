@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbRRHHModelStoreContainer" CdmEntityContainer="dbRRHHEntities">
+    <EntitySetMapping Name="Empleados">
+      <EntityTypeMapping TypeName="dbRRHHModel.Empleados">
+        <MappingFragment StoreEntitySet="Empleados">
+          <ScalarProperty Name="CódigoEmpleado" ColumnName="CódigoEmpleado" />
+          <ScalarProperty Name="DNI" ColumnName="DNI" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+          <ScalarProperty Name="FechaDeNacimiento" ColumnName="FechaDeNacimiento" />
+          <ScalarProperty Name="FechaDeContratación" ColumnName="FechaDeContratación" />
+          <ScalarProperty Name="Salario" ColumnName="Salario" />
+          <ScalarProperty Name="CódigoEmpleo" ColumnName="CódigoEmpleo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empleos">
+      <EntityTypeMapping TypeName="dbRRHHModel.Empleos">
+        <MappingFragment StoreEntitySet="Empleos">
+          <ScalarProperty Name="Código" ColumnName="Código" />
+          <ScalarProperty Name="NombreDelEmpleo" ColumnName="NombreDelEmpleo" />
+          <ScalarProperty Name="SalarioMínimo" ColumnName="SalarioMínimo" />
+          <ScalarProperty Name="SalarioMáximo" ColumnName="SalarioMáximo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HistorialEmpleos">
+      <EntityTypeMapping TypeName="dbRRHHModel.HistorialEmpleos">
+        <MappingFragment StoreEntitySet="HistorialEmpleos">
+          <ScalarProperty Name="CódigoEmpleado" ColumnName="CódigoEmpleado" />
+          <ScalarProperty Name="CódigoEmpleo" ColumnName="CódigoEmpleo" />
+          <ScalarProperty Name="FechaDeInicio" ColumnName="FechaDeInicio" />
+          <ScalarProperty Name="FechaDeFin" ColumnName="FechaDeFin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

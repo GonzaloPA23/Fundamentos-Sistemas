@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbinstitutoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Curso">
+    <Key>
+      <PropertyRef Name="Id_curso" />
+    </Key>
+    <Property Name="Id_curso" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombrecurso" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Docente">
+    <Key>
+      <PropertyRef Name="Id_docente" />
+    </Key>
+    <Property Name="Id_docente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="Apellido" Type="varchar" MaxLength="50" />
+    <Property Name="Escuela" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DocentexCurso">
+    <Key>
+      <PropertyRef Name="Id_docente" />
+      <PropertyRef Name="Id_curso" />
+    </Key>
+    <Property Name="Id_docente" Type="int" Nullable="false" />
+    <Property Name="Id_curso" Type="int" Nullable="false" />
+    <Property Name="Semestre" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <Association Name="FK__DocentexC__Id_cu__29572725">
+    <End Role="Curso" Type="Self.Curso" Multiplicity="1" />
+    <End Role="DocentexCurso" Type="Self.DocentexCurso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Curso">
+        <PropertyRef Name="Id_curso" />
+      </Principal>
+      <Dependent Role="DocentexCurso">
+        <PropertyRef Name="Id_curso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DocentexC__Id_do__286302EC">
+    <End Role="Docente" Type="Self.Docente" Multiplicity="1" />
+    <End Role="DocentexCurso" Type="Self.DocentexCurso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Docente">
+        <PropertyRef Name="Id_docente" />
+      </Principal>
+      <Dependent Role="DocentexCurso">
+        <PropertyRef Name="Id_docente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="dbinstitutoModelStoreContainer">
+    <EntitySet Name="Curso" EntityType="Self.Curso" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Docente" EntityType="Self.Docente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DocentexCurso" EntityType="Self.DocentexCurso" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__DocentexC__Id_cu__29572725" Association="Self.FK__DocentexC__Id_cu__29572725">
+      <End Role="Curso" EntitySet="Curso" />
+      <End Role="DocentexCurso" EntitySet="DocentexCurso" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DocentexC__Id_do__286302EC" Association="Self.FK__DocentexC__Id_do__286302EC">
+      <End Role="Docente" EntitySet="Docente" />
+      <End Role="DocentexCurso" EntitySet="DocentexCurso" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

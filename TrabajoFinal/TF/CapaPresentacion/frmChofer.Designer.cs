@@ -31,16 +31,13 @@ namespace CapaPresentacion
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.cbBusqueda = new System.Windows.Forms.ComboBox();
-            this.listViewChoferes = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtIndice = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
             this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.btnRegistrarChofer = new System.Windows.Forms.Button();
             this.txtApellido = new System.Windows.Forms.TextBox();
@@ -72,93 +69,48 @@ namespace CapaPresentacion
             this.label15 = new System.Windows.Forms.Label();
             this.btnEliminarChofer = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
+            this.FechaNacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Celular = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Dni = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSeleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dgChoferes = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgChoferes)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.label1.Location = new System.Drawing.Point(26, 22);
+            this.label1.Location = new System.Drawing.Point(20, 18);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 28);
+            this.label1.Size = new System.Drawing.Size(146, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Lista de choferes: ";
             // 
             // cbBusqueda
             // 
             this.cbBusqueda.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbBusqueda.DisplayMember = "0";
             this.cbBusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbBusqueda.FormattingEnabled = true;
-            this.cbBusqueda.Items.AddRange(new object[] {
-            "DNI",
-            "Nombre",
-            "Apellido",
-            "Celular",
-            "Correo"});
-            this.cbBusqueda.Location = new System.Drawing.Point(158, 75);
+            this.cbBusqueda.Location = new System.Drawing.Point(118, 61);
+            this.cbBusqueda.Margin = new System.Windows.Forms.Padding(2);
             this.cbBusqueda.Name = "cbBusqueda";
-            this.cbBusqueda.Size = new System.Drawing.Size(195, 24);
+            this.cbBusqueda.Size = new System.Drawing.Size(147, 21);
             this.cbBusqueda.TabIndex = 1;
-            // 
-            // listViewChoferes
-            // 
-            this.listViewChoferes.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader5,
-            this.columnHeader6});
-            this.listViewChoferes.Font = new System.Drawing.Font("Comic Sans MS", 9F);
-            this.listViewChoferes.HideSelection = false;
-            this.listViewChoferes.Location = new System.Drawing.Point(22, 116);
-            this.listViewChoferes.MultiSelect = false;
-            this.listViewChoferes.Name = "listViewChoferes";
-            this.listViewChoferes.Size = new System.Drawing.Size(868, 590);
-            this.listViewChoferes.TabIndex = 2;
-            this.listViewChoferes.UseCompatibleStateImageBehavior = false;
-            this.listViewChoferes.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "DNI";
-            this.columnHeader1.Width = 120;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Nombre";
-            this.columnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader2.Width = 120;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Apellido";
-            this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader3.Width = 120;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Celular";
-            this.columnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader4.Width = 120;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Correo";
-            this.columnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader5.Width = 180;
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "Fecha de Nacimiento";
-            this.columnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader6.Width = 170;
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.txtIndice);
+            this.panel1.Controls.Add(this.txtId);
             this.panel1.Controls.Add(this.dtpFechaNacimiento);
             this.panel1.Controls.Add(this.btnRegistrarChofer);
             this.panel1.Controls.Add(this.txtApellido);
@@ -174,18 +126,36 @@ namespace CapaPresentacion
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(935, 12);
+            this.panel1.Location = new System.Drawing.Point(723, 42);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(475, 435);
+            this.panel1.Size = new System.Drawing.Size(342, 354);
             this.panel1.TabIndex = 3;
+            // 
+            // txtIndice
+            // 
+            this.txtIndice.Location = new System.Drawing.Point(253, 21);
+            this.txtIndice.Name = "txtIndice";
+            this.txtIndice.Size = new System.Drawing.Size(26, 20);
+            this.txtIndice.TabIndex = 7;
+            this.txtIndice.Text = "-1";
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(285, 21);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(26, 20);
+            this.txtId.TabIndex = 7;
+            this.txtId.Text = "0";
             // 
             // dtpFechaNacimiento
             // 
             this.dtpFechaNacimiento.CustomFormat = "dd/MM/yyyy";
             this.dtpFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFechaNacimiento.Location = new System.Drawing.Point(162, 312);
+            this.dtpFechaNacimiento.Location = new System.Drawing.Point(122, 254);
+            this.dtpFechaNacimiento.Margin = new System.Windows.Forms.Padding(2);
             this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
-            this.dtpFechaNacimiento.Size = new System.Drawing.Size(251, 22);
+            this.dtpFechaNacimiento.Size = new System.Drawing.Size(189, 20);
             this.dtpFechaNacimiento.TabIndex = 6;
             // 
             // btnRegistrarChofer
@@ -195,18 +165,21 @@ namespace CapaPresentacion
             this.btnRegistrarChofer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrarChofer.Font = new System.Drawing.Font("Comic Sans MS", 9F);
             this.btnRegistrarChofer.ForeColor = System.Drawing.Color.White;
-            this.btnRegistrarChofer.Location = new System.Drawing.Point(243, 368);
+            this.btnRegistrarChofer.Location = new System.Drawing.Point(182, 299);
+            this.btnRegistrarChofer.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegistrarChofer.Name = "btnRegistrarChofer";
-            this.btnRegistrarChofer.Size = new System.Drawing.Size(200, 37);
+            this.btnRegistrarChofer.Size = new System.Drawing.Size(150, 30);
             this.btnRegistrarChofer.TabIndex = 4;
             this.btnRegistrarChofer.Text = "Registrar chofer";
             this.btnRegistrarChofer.UseVisualStyleBackColor = false;
+            this.btnRegistrarChofer.Click += new System.EventHandler(this.btnRegistrarChofer_Click);
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(162, 170);
+            this.txtApellido.Location = new System.Drawing.Point(122, 138);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(2);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(251, 22);
+            this.txtApellido.Size = new System.Drawing.Size(189, 20);
             this.txtApellido.TabIndex = 5;
             // 
             // btnCancelarChofer
@@ -216,48 +189,55 @@ namespace CapaPresentacion
             this.btnCancelarChofer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelarChofer.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
             this.btnCancelarChofer.ForeColor = System.Drawing.Color.White;
-            this.btnCancelarChofer.Location = new System.Drawing.Point(38, 369);
+            this.btnCancelarChofer.Location = new System.Drawing.Point(28, 300);
+            this.btnCancelarChofer.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelarChofer.Name = "btnCancelarChofer";
-            this.btnCancelarChofer.Size = new System.Drawing.Size(198, 37);
+            this.btnCancelarChofer.Size = new System.Drawing.Size(148, 30);
             this.btnCancelarChofer.TabIndex = 4;
             this.btnCancelarChofer.Text = "Cancelar chofer";
             this.btnCancelarChofer.UseVisualStyleBackColor = false;
+            this.btnCancelarChofer.Click += new System.EventHandler(this.btnCancelarChofer_Click);
             // 
             // txtCelular
             // 
-            this.txtCelular.Location = new System.Drawing.Point(162, 215);
+            this.txtCelular.Location = new System.Drawing.Point(122, 175);
+            this.txtCelular.Margin = new System.Windows.Forms.Padding(2);
             this.txtCelular.Name = "txtCelular";
-            this.txtCelular.Size = new System.Drawing.Size(251, 22);
+            this.txtCelular.Size = new System.Drawing.Size(189, 20);
             this.txtCelular.TabIndex = 5;
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(162, 261);
+            this.txtCorreo.Location = new System.Drawing.Point(122, 212);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(251, 22);
+            this.txtCorreo.Size = new System.Drawing.Size(189, 20);
             this.txtCorreo.TabIndex = 5;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(162, 122);
+            this.txtNombre.Location = new System.Drawing.Point(122, 99);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(251, 22);
+            this.txtNombre.Size = new System.Drawing.Size(189, 20);
             this.txtNombre.TabIndex = 5;
             // 
             // txtDni
             // 
-            this.txtDni.Location = new System.Drawing.Point(162, 71);
+            this.txtDni.Location = new System.Drawing.Point(122, 58);
+            this.txtDni.Margin = new System.Windows.Forms.Padding(2);
             this.txtDni.Name = "txtDni";
-            this.txtDni.Size = new System.Drawing.Size(251, 22);
+            this.txtDni.Size = new System.Drawing.Size(189, 20);
             this.txtDni.TabIndex = 5;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Comic Sans MS", 9F);
-            this.label9.Location = new System.Drawing.Point(51, 304);
+            this.label9.Location = new System.Drawing.Point(38, 247);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(87, 40);
+            this.label9.Size = new System.Drawing.Size(71, 34);
             this.label9.TabIndex = 0;
             this.label9.Text = "    Fecha de\r\nNacimiento";
             // 
@@ -265,9 +245,10 @@ namespace CapaPresentacion
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Comic Sans MS", 9F);
-            this.label8.Location = new System.Drawing.Point(83, 262);
+            this.label8.Location = new System.Drawing.Point(62, 213);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(56, 20);
+            this.label8.Size = new System.Drawing.Size(45, 17);
             this.label8.TabIndex = 0;
             this.label8.Text = "Correo";
             // 
@@ -275,9 +256,10 @@ namespace CapaPresentacion
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Comic Sans MS", 9F);
-            this.label7.Location = new System.Drawing.Point(80, 218);
+            this.label7.Location = new System.Drawing.Point(60, 177);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(57, 20);
+            this.label7.Size = new System.Drawing.Size(47, 17);
             this.label7.TabIndex = 0;
             this.label7.Text = "Celular";
             // 
@@ -285,9 +267,10 @@ namespace CapaPresentacion
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Comic Sans MS", 9F);
-            this.label6.Location = new System.Drawing.Point(71, 172);
+            this.label6.Location = new System.Drawing.Point(53, 140);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 20);
+            this.label6.Size = new System.Drawing.Size(52, 17);
             this.label6.TabIndex = 0;
             this.label6.Text = "Apellido";
             // 
@@ -295,9 +278,10 @@ namespace CapaPresentacion
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Comic Sans MS", 9F);
-            this.label5.Location = new System.Drawing.Point(73, 122);
+            this.label5.Location = new System.Drawing.Point(55, 99);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 20);
+            this.label5.Size = new System.Drawing.Size(50, 17);
             this.label5.TabIndex = 0;
             this.label5.Text = "Nombre";
             // 
@@ -305,9 +289,10 @@ namespace CapaPresentacion
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 9F);
-            this.label4.Location = new System.Drawing.Point(102, 71);
+            this.label4.Location = new System.Drawing.Point(76, 58);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 20);
+            this.label4.Size = new System.Drawing.Size(34, 17);
             this.label4.TabIndex = 0;
             this.label4.Text = "DNI";
             // 
@@ -315,26 +300,29 @@ namespace CapaPresentacion
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 10.8F);
-            this.label3.Location = new System.Drawing.Point(16, 24);
+            this.label3.Location = new System.Drawing.Point(12, 20);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(175, 24);
+            this.label3.Size = new System.Drawing.Size(146, 20);
             this.label3.TabIndex = 0;
             this.label3.Text = "Detalles del chofer:";
             // 
             // txtBusqueda
             // 
-            this.txtBusqueda.Location = new System.Drawing.Point(373, 76);
+            this.txtBusqueda.Location = new System.Drawing.Point(280, 62);
+            this.txtBusqueda.Margin = new System.Windows.Forms.Padding(2);
             this.txtBusqueda.Name = "txtBusqueda";
-            this.txtBusqueda.Size = new System.Drawing.Size(256, 22);
+            this.txtBusqueda.Size = new System.Drawing.Size(193, 20);
             this.txtBusqueda.TabIndex = 5;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 10.2F);
-            this.label2.Location = new System.Drawing.Point(50, 77);
+            this.label2.Location = new System.Drawing.Point(38, 63);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 24);
+            this.label2.Size = new System.Drawing.Size(82, 19);
             this.label2.TabIndex = 0;
             this.label2.Text = "Buscar por:";
             // 
@@ -345,12 +333,14 @@ namespace CapaPresentacion
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
             this.btnLimpiar.ForeColor = System.Drawing.Color.White;
-            this.btnLimpiar.Location = new System.Drawing.Point(770, 76);
+            this.btnLimpiar.Location = new System.Drawing.Point(578, 62);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(100, 30);
+            this.btnLimpiar.Size = new System.Drawing.Size(75, 24);
             this.btnLimpiar.TabIndex = 4;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnBuscar
             // 
@@ -359,20 +349,23 @@ namespace CapaPresentacion
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Location = new System.Drawing.Point(657, 75);
+            this.btnBuscar.Location = new System.Drawing.Point(493, 61);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(100, 30);
+            this.btnBuscar.Size = new System.Drawing.Size(75, 24);
             this.btnBuscar.TabIndex = 4;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Comic Sans MS", 9F);
-            this.label10.Location = new System.Drawing.Point(697, 37);
+            this.label10.Location = new System.Drawing.Point(515, 30);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(141, 20);
+            this.label10.Size = new System.Drawing.Size(114, 17);
             this.label10.TabIndex = 0;
             this.label10.Text = "Total de choferes: ";
             // 
@@ -380,9 +373,10 @@ namespace CapaPresentacion
             // 
             this.lblTotalChoferes.AutoSize = true;
             this.lblTotalChoferes.Font = new System.Drawing.Font("Comic Sans MS", 9F);
-            this.lblTotalChoferes.Location = new System.Drawing.Point(833, 37);
+            this.lblTotalChoferes.Location = new System.Drawing.Point(632, 30);
+            this.lblTotalChoferes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTotalChoferes.Name = "lblTotalChoferes";
-            this.lblTotalChoferes.Size = new System.Drawing.Size(18, 20);
+            this.lblTotalChoferes.Size = new System.Drawing.Size(15, 17);
             this.lblTotalChoferes.TabIndex = 0;
             this.lblTotalChoferes.Text = "0";
             // 
@@ -396,16 +390,18 @@ namespace CapaPresentacion
             this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label15);
-            this.panel2.Location = new System.Drawing.Point(935, 459);
+            this.panel2.Location = new System.Drawing.Point(723, 405);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(475, 193);
+            this.panel2.Size = new System.Drawing.Size(342, 160);
             this.panel2.TabIndex = 6;
             // 
             // txtActualizarCelular
             // 
-            this.txtActualizarCelular.Location = new System.Drawing.Point(158, 46);
+            this.txtActualizarCelular.Location = new System.Drawing.Point(114, 56);
+            this.txtActualizarCelular.Margin = new System.Windows.Forms.Padding(2);
             this.txtActualizarCelular.Name = "txtActualizarCelular";
-            this.txtActualizarCelular.Size = new System.Drawing.Size(251, 22);
+            this.txtActualizarCelular.Size = new System.Drawing.Size(189, 20);
             this.txtActualizarCelular.TabIndex = 8;
             // 
             // btnActualizar
@@ -415,27 +411,30 @@ namespace CapaPresentacion
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActualizar.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
             this.btnActualizar.ForeColor = System.Drawing.Color.White;
-            this.btnActualizar.Location = new System.Drawing.Point(162, 141);
+            this.btnActualizar.Location = new System.Drawing.Point(114, 117);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(2);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(200, 37);
+            this.btnActualizar.Size = new System.Drawing.Size(150, 30);
             this.btnActualizar.TabIndex = 4;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = false;
             // 
             // txtActualizarCorreo
             // 
-            this.txtActualizarCorreo.Location = new System.Drawing.Point(158, 92);
+            this.txtActualizarCorreo.Location = new System.Drawing.Point(114, 89);
+            this.txtActualizarCorreo.Margin = new System.Windows.Forms.Padding(2);
             this.txtActualizarCorreo.Name = "txtActualizarCorreo";
-            this.txtActualizarCorreo.Size = new System.Drawing.Size(251, 22);
+            this.txtActualizarCorreo.Size = new System.Drawing.Size(189, 20);
             this.txtActualizarCorreo.TabIndex = 9;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Comic Sans MS", 9F);
-            this.label13.Location = new System.Drawing.Point(79, 93);
+            this.label13.Location = new System.Drawing.Point(55, 90);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(56, 20);
+            this.label13.Size = new System.Drawing.Size(45, 17);
             this.label13.TabIndex = 6;
             this.label13.Text = "Correo";
             // 
@@ -443,9 +442,10 @@ namespace CapaPresentacion
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Comic Sans MS", 9F);
-            this.label14.Location = new System.Drawing.Point(76, 49);
+            this.label14.Location = new System.Drawing.Point(53, 55);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(57, 20);
+            this.label14.Size = new System.Drawing.Size(47, 17);
             this.label14.TabIndex = 7;
             this.label14.Text = "Celular";
             // 
@@ -453,9 +453,10 @@ namespace CapaPresentacion
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Comic Sans MS", 10.8F);
-            this.label12.Location = new System.Drawing.Point(14, 9);
+            this.label12.Location = new System.Drawing.Point(10, 7);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(252, 24);
+            this.label12.Size = new System.Drawing.Size(216, 20);
             this.label12.TabIndex = 0;
             this.label12.Text = "Actualizar datos de contacto:";
             // 
@@ -464,11 +465,12 @@ namespace CapaPresentacion
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Comic Sans MS", 7.8F);
             this.label15.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label15.Location = new System.Drawing.Point(321, 15);
+            this.label15.Location = new System.Drawing.Point(214, 33);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(149, 18);
+            this.label15.Size = new System.Drawing.Size(87, 15);
             this.label15.TabIndex = 0;
-            this.label15.Text = "Elija el dni del chofer*";
+            this.label15.Text = "Elija al chofer*";
             // 
             // btnEliminarChofer
             // 
@@ -477,29 +479,123 @@ namespace CapaPresentacion
             this.btnEliminarChofer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarChofer.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
             this.btnEliminarChofer.ForeColor = System.Drawing.Color.White;
-            this.btnEliminarChofer.Location = new System.Drawing.Point(962, 672);
+            this.btnEliminarChofer.Location = new System.Drawing.Point(729, 578);
+            this.btnEliminarChofer.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminarChofer.Name = "btnEliminarChofer";
-            this.btnEliminarChofer.Size = new System.Drawing.Size(200, 37);
+            this.btnEliminarChofer.Size = new System.Drawing.Size(150, 30);
             this.btnEliminarChofer.TabIndex = 4;
             this.btnEliminarChofer.Text = "Eliminar chofer";
             this.btnEliminarChofer.UseVisualStyleBackColor = false;
+            this.btnEliminarChofer.Click += new System.EventHandler(this.btnEliminarChofer_Click);
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Comic Sans MS", 7.8F);
             this.label16.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label16.Location = new System.Drawing.Point(1198, 673);
+            this.label16.Location = new System.Drawing.Point(905, 579);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(157, 36);
+            this.label16.Size = new System.Drawing.Size(130, 30);
             this.label16.TabIndex = 0;
             this.label16.Text = "Elija el dni del chofer y \r\nconfirme su acción *";
             // 
+            // FechaNacimiento
+            // 
+            this.FechaNacimiento.HeaderText = "Fecha de Nacimiento";
+            this.FechaNacimiento.Name = "FechaNacimiento";
+            this.FechaNacimiento.ReadOnly = true;
+            // 
+            // Correo
+            // 
+            this.Correo.HeaderText = "Correo";
+            this.Correo.Name = "Correo";
+            this.Correo.ReadOnly = true;
+            this.Correo.Width = 155;
+            // 
+            // Celular
+            // 
+            this.Celular.HeaderText = "Celular";
+            this.Celular.Name = "Celular";
+            this.Celular.ReadOnly = true;
+            this.Celular.Width = 70;
+            // 
+            // Apellido
+            // 
+            this.Apellido.HeaderText = "Apellido";
+            this.Apellido.Name = "Apellido";
+            this.Apellido.ReadOnly = true;
+            this.Apellido.Width = 110;
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
+            this.Nombre.Width = 110;
+            // 
+            // Dni
+            // 
+            this.Dni.HeaderText = "DNI";
+            this.Dni.Name = "Dni";
+            this.Dni.ReadOnly = true;
+            this.Dni.Width = 70;
+            // 
+            // Id
+            // 
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Visible = false;
+            // 
+            // btnSeleccionar
+            // 
+            this.btnSeleccionar.HeaderText = "";
+            this.btnSeleccionar.Name = "btnSeleccionar";
+            this.btnSeleccionar.ReadOnly = true;
+            this.btnSeleccionar.Width = 30;
+            // 
+            // dgChoferes
+            // 
+            this.dgChoferes.AllowUserToAddRows = false;
+            this.dgChoferes.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgChoferes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgChoferes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgChoferes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.btnSeleccionar,
+            this.Id,
+            this.Dni,
+            this.Nombre,
+            this.Apellido,
+            this.Celular,
+            this.Correo,
+            this.FechaNacimiento});
+            this.dgChoferes.Location = new System.Drawing.Point(14, 92);
+            this.dgChoferes.MultiSelect = false;
+            this.dgChoferes.Name = "dgChoferes";
+            this.dgChoferes.ReadOnly = true;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgChoferes.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgChoferes.RowTemplate.Height = 28;
+            this.dgChoferes.Size = new System.Drawing.Size(688, 519);
+            this.dgChoferes.TabIndex = 7;
+            this.dgChoferes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgChoferes_CellContentClick);
+            this.dgChoferes.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgChoferes_CellPainting);
+            // 
             // frmChofer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1435, 726);
+            this.ClientSize = new System.Drawing.Size(1076, 649);
+            this.Controls.Add(this.dgChoferes);
             this.Controls.Add(this.btnEliminarChofer);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.txtBusqueda);
@@ -507,19 +603,20 @@ namespace CapaPresentacion
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.listViewChoferes);
             this.Controls.Add(this.cbBusqueda);
             this.Controls.Add(this.lblTotalChoferes);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmChofer";
             this.Text = "frmChofer";
+            this.Load += new System.EventHandler(this.frmChofer_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgChoferes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -529,7 +626,6 @@ namespace CapaPresentacion
 
         private Label label1;
         private ComboBox cbBusqueda;
-        private ListView listViewChoferes;
         private Panel panel1;
         private TextBox txtBusqueda;
         private Label label2;
@@ -547,12 +643,6 @@ namespace CapaPresentacion
         private Label label5;
         private Label label4;
         private Label label3;
-        private ColumnHeader columnHeader1;
-        private ColumnHeader columnHeader2;
-        private ColumnHeader columnHeader3;
-        private ColumnHeader columnHeader4;
-        private ColumnHeader columnHeader5;
-        private ColumnHeader columnHeader6;
         private Button btnCancelarChofer;
         private Button btnRegistrarChofer;
         private Button btnBuscar;
@@ -568,5 +658,16 @@ namespace CapaPresentacion
         private Label label12;
         private Label label15;
         private Label label16;
+        private TextBox txtIndice;
+        private TextBox txtId;
+        private DataGridViewTextBoxColumn FechaNacimiento;
+        private DataGridViewTextBoxColumn Correo;
+        private DataGridViewTextBoxColumn Celular;
+        private DataGridViewTextBoxColumn Apellido;
+        private DataGridViewTextBoxColumn Nombre;
+        private DataGridViewTextBoxColumn Dni;
+        private DataGridViewTextBoxColumn Id;
+        private DataGridViewButtonColumn btnSeleccionar;
+        private DataGridView dgChoferes;
     }
 }
