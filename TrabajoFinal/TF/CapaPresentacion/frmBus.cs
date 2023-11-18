@@ -10,36 +10,79 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaPresentacion.Utilidades;
-
+using CapaPresentacion.Modales;
 namespace CapaPresentacion
 {
     public partial class frmBus : Form
     {
         private NChofer nChofer = new NChofer();
+        private NBus nBus = new NBus();
         public frmBus()
         {
             InitializeComponent();
             MostrarChoferes(nChofer.ListarChoferes());
+            MostrarBuses(nBus.ListarBuses());
+            MostrarOpcionesCombo();
+        }
+
+        private void MostrarOpcionesCombo()
+        {
+            foreach (DataGridViewColumn columna in dgBuses.Columns)
+            {
+                if (columna.Visible == true && columna.Name != "btnSeleccionar")
+                {
+                    cbBusqueda.Items.Add(new OpcionCombo() { Valor = columna.Name, Texto = columna.HeaderText });
+                }
+            }
+            cbBusqueda.DisplayMember = "Texto"; // Lo que se muestra
+            cbBusqueda.ValueMember = "Valor"; // Lo que vale
+            cbBusqueda.SelectedIndex = 0;
         }
 
         private void MostrarChoferes(List<Chofer> choferes)
         {
-            dgChoferes.Rows.Clear();
-            foreach (Chofer chofer in choferes)
-            {
-                dgChoferes.Rows.Add(new object[] { "", chofer.Id, chofer.Dni, chofer.Nombre,
-                    chofer.Apellido, chofer.Celular, chofer.Correo,
-                    chofer.FechaNacimiento.ToString("yyyy-MM-dd") });
-            }
-            lblTotalChoferes.Text = choferes.Count.ToString();
+            cbDniChofer.DataSource = new List<Chofer>();
+            cbDniChofer.DataSource = choferes;
+            cbDniChofer.DisplayMember = "Dni";
+            cbDniChofer.ValueMember = "Id";
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void MostrarBuses(List<Bus> buses)
         {
-
+            dgBuses.Rows.Clear();
+            foreach (Bus bus in buses)
+            {
+                dgBuses.Rows.Add(new object[] { "", bus.Id, bus.ChoferId, bus.Matricula,bus.Tipo, bus.AsientosDisponibles, 
+                    bus.PuntoSalida, bus.Destino, bus.FechaSalida.ToString("yyyy-MM-dd HH:mm"), 
+                    bus.FechaLlegada.ToString("yyyy-MM-dd HH:mm"),"S/." + bus.PrecioAsiento});
+            }
+            lblTotalBuses.Text = buses.Count.ToString();
         }
 
-        private void dgChoferes_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
+        private void LimpiarCampos()
+        {
+            txtMatricula.Text = "";
+            nudAsientosDisponibles.Value = 56;
+            cbTipoBus.SelectedIndex = 0;
+            dtpFechaSalida.Value = DateTime.Now;
+            dtpFechaLlegada.Value = DateTime.Now;
+            cbDestino.SelectedIndex = 0;
+            cbPuntoSalida.SelectedIndex = 0;
+            cbDniChofer.SelectedIndex = 0;          
+        }
+
+        private void btnCancelarBus_Click(object sender, EventArgs e)
+        {
+            LimpiarCampos();
+        }
+
+        private void btnVerChoferes_Click(object sender, EventArgs e)
+        {
+            mdChofer mdChofer = new mdChofer();
+            mdChofer.Show();
+        }
+
+        private void dgBuses_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
         {
             if (e.RowIndex < 0) return; // cabezera del datagridview
             if (e.ColumnIndex == 0)
@@ -52,6 +95,81 @@ namespace CapaPresentacion
                 e.Graphics.DrawImage(Properties.Resources.check20, new Rectangle(x, y, w, h));
                 e.Handled = true;
             }
+        }
+
+        private void dgBuses_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgBuses.Columns[e.ColumnIndex].Name == "btnSeleccionar")
+            {
+                int indice = e.RowIndex;
+                if (indice >= 0)
+                {
+
+                    txtMatricula.Text = dgBuses.Rows[indice].Cells["Matricula"].Value.ToString();
+                    nudAsientosDisponibles.Value = Convert.ToInt32(dgBuses.Rows[indice].Cells["AsientosDisponibles"].Value);
+                    cbTipoBus.Text = dgBuses.Rows[indice].Cells["Tipo"].Value.ToString();
+                    cbPuntoSalida.Text = dgBuses.Rows[indice].Cells["PuntoSalida"].Value.ToString();
+                    cbDestino.Text = dgBuses.Rows[indice].Cells["Destino"].Value.ToString();
+                    dtpFechaSalida.Text = dgBuses.Rows[indice].Cells["FechaSalida"].Value.ToString();
+                    dtpFechaLlegada.Text = dgBuses.Rows[indice].Cells["FechaLlegada"].Value.ToString();
+                    cbDniChofer.SelectedValue = Convert.ToInt32(dgBuses.Rows[indice].Cells["ChoferId"].Value);
+                }
+            }
+        }
+
+        private void btnRegistrarBus_Click(object sender, EventArgs e)
+        {
+            string mensaje = string.Empty;
+
+            Bus bus = new Bus()
+            {
+                ChoferId = Convert.ToInt32(cbDniChofer.SelectedValue),
+                Matricula = txtMatricula.Text.Trim().ToUpper(),
+                Tipo = cbTipoBus.Text.Trim(),
+                AsientosDisponibles = Convert.ToInt32(nudAsientosDisponibles.Value),
+                PuntoSalida = cbPuntoSalida.Text.Trim(),
+                Destino = cbDestino.Text.Trim(),
+                FechaSalida = dtpFechaSalida.Value,
+                FechaLlegada = dtpFechaLlegada.Value,
+                PrecioAsiento = nudPrecio.Value,
+            };
+
+            int idbusgenerado = nBus.RegistrarBus(bus, out mensaje);
+            if (idbusgenerado > 0)
+            {
+                MessageBox.Show("Bus registrado correctamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LimpiarCampos();
+                MostrarBuses(nBus.ListarBuses());
+            }
+            else
+            {
+                MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            string filtro = ((OpcionCombo)cbBusqueda.SelectedItem).Valor.ToString();
+            if (dgBuses.Rows.Count > 0)
+            {
+                foreach (DataGridViewRow fila in dgBuses.Rows)
+                {
+                    if (fila.Cells[filtro].Value.ToString().Trim().ToUpper().Contains(txtBusqueda.Text.Trim().ToUpper()))
+                    {
+                        fila.Visible = true;
+                    }
+                    else fila.Visible = false;
+                }
+                lblTotalBuses.Text = dgBuses.Rows.Cast<DataGridViewRow>().Count(x => x.Visible).ToString();
+            }
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtBusqueda.Text = "";
+            cbBusqueda.SelectedIndex = 0;
+            LimpiarCampos();
+            MostrarBuses(nBus.ListarBuses());
         }
     }
 }

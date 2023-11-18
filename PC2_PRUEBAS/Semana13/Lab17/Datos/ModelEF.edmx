@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="ModelEF.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="ModelEF.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Curso">
           <Key>
             <PropertyRef Name="Id_curso" />
@@ -30,8 +30,27 @@
           <Property Name="Id_curso" Type="int" Nullable="false" />
           <Property Name="Semestre" Type="nvarchar" MaxLength="50" Nullable="false" />
         </EntityType>
-        <Association Name="FK__DocentexC__Id_cu__3C69FB99">
-          <End Role="Curso" Type="Self.Curso" Multiplicity="1" />
+        <EntityType Name="DocentexUniversidad">
+          <Key>
+            <PropertyRef Name="Id_docente" />
+            <PropertyRef Name="Id_universidad" />
+          </Key>
+          <Property Name="Id_docente" Type="int" Nullable="false" />
+          <Property Name="Id_universidad" Type="int" Nullable="false" />
+          <Property Name="Detalle" Type="nvarchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Universidad">
+          <Key>
+            <PropertyRef Name="Id_universidad" />
+          </Key>
+          <Property Name="Id_universidad" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Ruc" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__DocentexC__Id_cu__3B75D760">
+          <End Role="Curso" Type="Self.Curso" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="DocentexCurso" Type="Self.DocentexCurso" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Curso">
@@ -42,8 +61,10 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__DocentexC__Id_do__3B75D760">
-          <End Role="Docente" Type="Self.Docente" Multiplicity="1" />
+        <Association Name="FK__DocentexC__Id_do__3A81B327">
+          <End Role="Docente" Type="Self.Docente" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="DocentexCurso" Type="Self.DocentexCurso" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Docente">
@@ -54,21 +75,58 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK__DocentexU__Id_do__403A8C7D">
+          <End Role="Docente" Type="Self.Docente" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="DocentexUniversidad" Type="Self.DocentexUniversidad" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Docente">
+              <PropertyRef Name="Id_docente" />
+            </Principal>
+            <Dependent Role="DocentexUniversidad">
+              <PropertyRef Name="Id_docente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__DocentexU__Id_un__412EB0B6">
+          <End Role="Universidad" Type="Self.Universidad" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="DocentexUniversidad" Type="Self.DocentexUniversidad" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Universidad">
+              <PropertyRef Name="Id_universidad" />
+            </Principal>
+            <Dependent Role="DocentexUniversidad">
+              <PropertyRef Name="Id_universidad" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="ModelEFStoreContainer">
           <EntitySet Name="Curso" EntityType="Self.Curso" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Docente" EntityType="Self.Docente" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="DocentexCurso" EntityType="Self.DocentexCurso" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK__DocentexC__Id_cu__3C69FB99" Association="Self.FK__DocentexC__Id_cu__3C69FB99">
+          <EntitySet Name="DocentexUniversidad" EntityType="Self.DocentexUniversidad" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Universidad" EntityType="Self.Universidad" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__DocentexC__Id_cu__3B75D760" Association="Self.FK__DocentexC__Id_cu__3B75D760">
             <End Role="Curso" EntitySet="Curso" />
             <End Role="DocentexCurso" EntitySet="DocentexCurso" />
           </AssociationSet>
-          <AssociationSet Name="FK__DocentexC__Id_do__3B75D760" Association="Self.FK__DocentexC__Id_do__3B75D760">
+          <AssociationSet Name="FK__DocentexC__Id_do__3A81B327" Association="Self.FK__DocentexC__Id_do__3A81B327">
             <End Role="Docente" EntitySet="Docente" />
             <End Role="DocentexCurso" EntitySet="DocentexCurso" />
           </AssociationSet>
+          <AssociationSet Name="FK__DocentexU__Id_do__403A8C7D" Association="Self.FK__DocentexU__Id_do__403A8C7D">
+            <End Role="Docente" EntitySet="Docente" />
+            <End Role="DocentexUniversidad" EntitySet="DocentexUniversidad" />
+          </AssociationSet>
+          <AssociationSet Name="FK__DocentexU__Id_un__412EB0B6" Association="Self.FK__DocentexU__Id_un__412EB0B6">
+            <End Role="Universidad" EntitySet="Universidad" />
+            <End Role="DocentexUniversidad" EntitySet="DocentexUniversidad" />
+          </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="ModelEF" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -89,6 +147,7 @@
           <Property Name="Apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Escuela" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="DocentexCurso" Relationship="Self.FK__DocentexC__Id_do__3B75D760" FromRole="Docente" ToRole="DocentexCurso" />
+          <NavigationProperty Name="DocentexUniversidad" Relationship="ModelEF.FK__DocentexU__Id_do__403A8C7D" FromRole="Docente" ToRole="DocentexUniversidad" />
         </EntityType>
         <EntityType Name="DocentexCurso">
           <Key>
@@ -137,7 +196,65 @@
             <End Role="Docente" EntitySet="Docente" />
             <End Role="DocentexCurso" EntitySet="DocentexCurso" />
           </AssociationSet>
+          <EntitySet Name="DocentexUniversidad" EntityType="ModelEF.DocentexUniversidad" />
+          <EntitySet Name="Universidad" EntityType="ModelEF.Universidad" />
+          <AssociationSet Name="FK__DocentexU__Id_do__403A8C7D" Association="ModelEF.FK__DocentexU__Id_do__403A8C7D">
+            <End Role="Docente" EntitySet="Docente" />
+            <End Role="DocentexUniversidad" EntitySet="DocentexUniversidad" />
+          </AssociationSet>
+          <AssociationSet Name="FK__DocentexU__Id_un__412EB0B6" Association="ModelEF.FK__DocentexU__Id_un__412EB0B6">
+            <End Role="Universidad" EntitySet="Universidad" />
+            <End Role="DocentexUniversidad" EntitySet="DocentexUniversidad" />
+          </AssociationSet>
         </EntityContainer>
+        <EntityType Name="DocentexUniversidad">
+          <Key>
+            <PropertyRef Name="Id_docente" />
+            <PropertyRef Name="Id_universidad" />
+          </Key>
+          <Property Name="Id_docente" Type="Int32" Nullable="false" />
+          <Property Name="Id_universidad" Type="Int32" Nullable="false" />
+          <Property Name="Detalle" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Docente" Relationship="ModelEF.FK__DocentexU__Id_do__403A8C7D" FromRole="DocentexUniversidad" ToRole="Docente" />
+          <NavigationProperty Name="Universidad" Relationship="ModelEF.FK__DocentexU__Id_un__412EB0B6" FromRole="DocentexUniversidad" ToRole="Universidad" />
+        </EntityType>
+        <EntityType Name="Universidad">
+          <Key>
+            <PropertyRef Name="Id_universidad" />
+          </Key>
+          <Property Name="Id_universidad" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Ruc" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="DocentexUniversidad" Relationship="ModelEF.FK__DocentexU__Id_un__412EB0B6" FromRole="Universidad" ToRole="DocentexUniversidad" />
+        </EntityType>
+        <Association Name="FK__DocentexU__Id_do__403A8C7D">
+          <End Type="ModelEF.Docente" Role="Docente" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="ModelEF.DocentexUniversidad" Role="DocentexUniversidad" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Docente">
+              <PropertyRef Name="Id_docente" />
+            </Principal>
+            <Dependent Role="DocentexUniversidad">
+              <PropertyRef Name="Id_docente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__DocentexU__Id_un__412EB0B6">
+          <End Type="ModelEF.Universidad" Role="Universidad" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="ModelEF.DocentexUniversidad" Role="DocentexUniversidad" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Universidad">
+              <PropertyRef Name="Id_universidad" />
+            </Principal>
+            <Dependent Role="DocentexUniversidad">
+              <PropertyRef Name="Id_universidad" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -168,6 +285,24 @@
                 <ScalarProperty Name="Id_docente" ColumnName="Id_docente" />
                 <ScalarProperty Name="Id_curso" ColumnName="Id_curso" />
                 <ScalarProperty Name="Semestre" ColumnName="Semestre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DocentexUniversidad">
+            <EntityTypeMapping TypeName="ModelEF.DocentexUniversidad">
+              <MappingFragment StoreEntitySet="DocentexUniversidad">
+                <ScalarProperty Name="Detalle" ColumnName="Detalle" />
+                <ScalarProperty Name="Id_universidad" ColumnName="Id_universidad" />
+                <ScalarProperty Name="Id_docente" ColumnName="Id_docente" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Universidad">
+            <EntityTypeMapping TypeName="ModelEF.Universidad">
+              <MappingFragment StoreEntitySet="Universidad">
+                <ScalarProperty Name="Ruc" ColumnName="Ruc" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Id_universidad" ColumnName="Id_universidad" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -129,10 +129,7 @@ namespace CapaPresentacion
             txtBusqueda.Text = "";
             cbBusqueda.SelectedIndex = 0;
             LimpiarCampos();
-            foreach(DataGridViewRow fila in dgChoferes.Rows)
-            {
-                fila.Visible = true;
-            }
+            MostrarChoferes(nChofer.ListarChoferes());
         }
         private void btnBuscar_Click(object sender, EventArgs e)
         {
@@ -147,6 +144,7 @@ namespace CapaPresentacion
                     }
                     else fila.Visible = false;
                 }
+                lblTotalChoferes.Text = dgChoferes.Rows.Cast<DataGridViewRow>().Count(x => x.Visible).ToString();
             }
         }
 
@@ -163,6 +161,31 @@ namespace CapaPresentacion
                 }
             }
             else MessageBox.Show("Debe seleccionar un chofer", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            string mensaje = string.Empty;
+
+            Chofer chofer = new Chofer()
+            {
+                Id = Convert.ToInt32(txtId.Text),
+                Dni = txtDni.Text,
+                Nombre = txtNombre.Text,
+                Apellido = txtApellido.Text,
+                FechaNacimiento = dtpFechaNacimiento.Value,
+                Celular = txtActualizarCelular.Text,
+                Correo = txtActualizarCorreo.Text
+            };
+
+            bool resultado = nChofer.EditarChofer(chofer, out mensaje);
+         
+            if (resultado)
+            {
+                MessageBox.Show("Chofer actualizado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LimpiarCampos();
+                MostrarChoferes(nChofer.ListarChoferes());
+            } else MessageBox.Show(mensaje, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }

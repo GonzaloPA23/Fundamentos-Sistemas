@@ -76,5 +76,36 @@ namespace CapaDatos
                 }
             }
         }
+        // Metodo para editar un chofer mediante stored procedure
+        public bool EditarChofer(Chofer chofer, out string mensaje)
+        {
+            bool respuesta = false;
+            mensaje = string.Empty;
+
+            try
+            {
+                using(var context = new DB_PerlaAltomayoEntities())
+                {
+                    SqlParameter[] parameters = new SqlParameter[]
+                    {
+                        new SqlParameter("@Id", chofer.Id),
+                        new SqlParameter("@Correo", chofer.Correo),
+                        new SqlParameter("@Celular", chofer.Celular),
+                        new SqlParameter("@Respuesta", System.Data.SqlDbType.Bit) { Direction = System.Data.ParameterDirection.Output },
+                        new SqlParameter("@Mensaje", System.Data.SqlDbType.VarChar, 200) { Direction = System.Data.ParameterDirection.Output }
+                    };
+                    context.Database.ExecuteSqlCommand("EXEC SP_EditarChofer @Id, @Correo, @Celular, @Respuesta OUTPUT, @Mensaje OUTPUT", parameters);
+                    respuesta = Convert.ToBoolean(parameters.Single(p => p.ParameterName == "@Respuesta").Value);
+                    mensaje = parameters.Single(p => p.ParameterName == "@Mensaje").Value.ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                respuesta = false;
+                mensaje = ex.Message;
+            }
+
+            return respuesta;
+        }
     }
 }

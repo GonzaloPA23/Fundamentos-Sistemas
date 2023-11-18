@@ -28,5 +28,7 @@ namespace Datos
         public virtual DbSet<Curso> Curso { get; set; }
         public virtual DbSet<Docente> Docente { get; set; }
         public virtual DbSet<DocentexCurso> DocentexCurso { get; set; }
+        public virtual DbSet<DocentexUniversidad> DocentexUniversidad { get; set; }
+        public virtual DbSet<Universidad> Universidad { get; set; }
     }
 }

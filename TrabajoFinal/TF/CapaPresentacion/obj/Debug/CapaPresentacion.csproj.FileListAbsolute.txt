@@ -28,3 +28,4 @@ D:\Fundamentos-Sistemas\TrabajoFinal\TF\CapaPresentacion\bin\Debug\CapaNegocio.p
 D:\Fundamentos-Sistemas\TrabajoFinal\TF\CapaPresentacion\bin\Debug\EntityFramework.xml
 D:\Fundamentos-Sistemas\TrabajoFinal\TF\CapaPresentacion\bin\Debug\EntityFramework.SqlServer.xml
 D:\Fundamentos-Sistemas\TrabajoFinal\TF\CapaPresentacion\obj\Debug\CapaPresentacion.frmInicio.resources
+D:\Fundamentos-Sistemas\TrabajoFinal\TF\CapaPresentacion\obj\Debug\CapaPresentacion.Modales.mdChofer.resources

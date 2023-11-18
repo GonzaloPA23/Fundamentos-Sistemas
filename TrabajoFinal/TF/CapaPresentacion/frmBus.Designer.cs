@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace CapaPresentacion
@@ -31,19 +32,24 @@ namespace CapaPresentacion
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.cbDniChofer = new System.Windows.Forms.ComboBox();
+            this.btnVerChoferes = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnEliminarBus = new System.Windows.Forms.Button();
             this.dtpFechaLlegada = new System.Windows.Forms.DateTimePicker();
             this.dtpFechaSalida = new System.Windows.Forms.DateTimePicker();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.cbDestino = new System.Windows.Forms.ComboBox();
+            this.cbPuntoSalida = new System.Windows.Forms.ComboBox();
+            this.cbTipoBus = new System.Windows.Forms.ComboBox();
+            this.nudPrecio = new System.Windows.Forms.NumericUpDown();
+            this.btnRegistrarBus = new System.Windows.Forms.Button();
+            this.nudAsientosDisponibles = new System.Windows.Forms.NumericUpDown();
+            this.btnCancelarBus = new System.Windows.Forms.Button();
+            this.txtMatricula = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -53,53 +59,50 @@ namespace CapaPresentacion
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.lblTotalChoferes = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lblTotalBuses = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label17 = new System.Windows.Forms.Label();
-            this.dgChoferes = new System.Windows.Forms.DataGridView();
+            this.dgBuses = new System.Windows.Forms.DataGridView();
             this.btnSeleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Dni = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Celular = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaNacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewButtonColumn1 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ChoferId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Matricula = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AsientosDisponibles = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PuntoSalida = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Destino = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaSalida = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaLlegada = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PrecioAsiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtBusqueda = new System.Windows.Forms.TextBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.cbBusqueda = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgChoferes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPrecio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAsientosDisponibles)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgBuses)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.cbDniChofer);
+            this.panel1.Controls.Add(this.btnVerChoferes);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.btnEliminarBus);
             this.panel1.Controls.Add(this.dtpFechaLlegada);
             this.panel1.Controls.Add(this.dtpFechaSalida);
-            this.panel1.Controls.Add(this.comboBox3);
-            this.panel1.Controls.Add(this.comboBox2);
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.numericUpDown2);
-            this.panel1.Controls.Add(this.numericUpDown1);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.cbDestino);
+            this.panel1.Controls.Add(this.cbPuntoSalida);
+            this.panel1.Controls.Add(this.cbTipoBus);
+            this.panel1.Controls.Add(this.nudPrecio);
+            this.panel1.Controls.Add(this.btnRegistrarBus);
+            this.panel1.Controls.Add(this.nudAsientosDisponibles);
+            this.panel1.Controls.Add(this.btnCancelarBus);
+            this.panel1.Controls.Add(this.txtMatricula);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label6);
@@ -109,132 +112,257 @@ namespace CapaPresentacion
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(725, 66);
+            this.panel1.Location = new System.Drawing.Point(829, 47);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(328, 368);
+            this.panel1.Size = new System.Drawing.Size(343, 590);
             this.panel1.TabIndex = 14;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label10.ForeColor = System.Drawing.Color.Gray;
+            this.label10.Location = new System.Drawing.Point(79, 409);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(207, 17);
+            this.label10.TabIndex = 23;
+            this.label10.Text = "Importante elegir el dni del chofer*";
+            // 
+            // cbDniChofer
+            // 
+            this.cbDniChofer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbDniChofer.FormattingEnabled = true;
+            this.cbDniChofer.Items.AddRange(new object[] {
+            "Economico",
+            "Vip",
+            "Primera Clase",
+            "Negocio"});
+            this.cbDniChofer.Location = new System.Drawing.Point(115, 365);
+            this.cbDniChofer.Margin = new System.Windows.Forms.Padding(2);
+            this.cbDniChofer.Name = "cbDniChofer";
+            this.cbDniChofer.Size = new System.Drawing.Size(133, 21);
+            this.cbDniChofer.TabIndex = 22;
+            // 
+            // btnVerChoferes
+            // 
+            this.btnVerChoferes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(108)))), ((int)(((byte)(148)))));
+            this.btnVerChoferes.FlatAppearance.BorderSize = 0;
+            this.btnVerChoferes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVerChoferes.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
+            this.btnVerChoferes.ForeColor = System.Drawing.Color.White;
+            this.btnVerChoferes.Location = new System.Drawing.Point(258, 347);
+            this.btnVerChoferes.Margin = new System.Windows.Forms.Padding(2);
+            this.btnVerChoferes.Name = "btnVerChoferes";
+            this.btnVerChoferes.Size = new System.Drawing.Size(74, 54);
+            this.btnVerChoferes.TabIndex = 21;
+            this.btnVerChoferes.Text = "Ver Choferes";
+            this.btnVerChoferes.UseVisualStyleBackColor = false;
+            this.btnVerChoferes.Click += new System.EventHandler(this.btnVerChoferes_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label1.Location = new System.Drawing.Point(20, 365);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(88, 17);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Dni del Chofer";
+            // 
+            // btnEliminarBus
+            // 
+            this.btnEliminarBus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(113)))), ((int)(((byte)(137)))));
+            this.btnEliminarBus.FlatAppearance.BorderSize = 0;
+            this.btnEliminarBus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarBus.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
+            this.btnEliminarBus.ForeColor = System.Drawing.Color.White;
+            this.btnEliminarBus.Location = new System.Drawing.Point(100, 538);
+            this.btnEliminarBus.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEliminarBus.Name = "btnEliminarBus";
+            this.btnEliminarBus.Size = new System.Drawing.Size(150, 30);
+            this.btnEliminarBus.TabIndex = 20;
+            this.btnEliminarBus.Text = "Eliminar bus";
+            this.btnEliminarBus.UseVisualStyleBackColor = false;
             // 
             // dtpFechaLlegada
             // 
-            this.dtpFechaLlegada.CustomFormat = "dd/MM/yyyy";
+            this.dtpFechaLlegada.CustomFormat = "dd/MM/yyyy HH:mm";
             this.dtpFechaLlegada.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFechaLlegada.Location = new System.Drawing.Point(116, 287);
             this.dtpFechaLlegada.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpFechaLlegada.MinDate = new System.DateTime(2023, 11, 18, 12, 13, 29, 221);
             this.dtpFechaLlegada.Name = "dtpFechaLlegada";
             this.dtpFechaLlegada.Size = new System.Drawing.Size(189, 20);
             this.dtpFechaLlegada.TabIndex = 9;
+            this.dtpFechaLlegada.Value = new System.DateTime(2023, 11, 18, 12, 13, 29, 221);
             // 
             // dtpFechaSalida
             // 
-            this.dtpFechaSalida.CustomFormat = "dd/MM/yyyy";
+            this.dtpFechaSalida.CustomFormat = "dd/MM/yyyy HH:mm";
             this.dtpFechaSalida.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFechaSalida.Location = new System.Drawing.Point(116, 173);
             this.dtpFechaSalida.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpFechaSalida.MinDate = new System.DateTime(2023, 11, 18, 12, 13, 29, 223);
             this.dtpFechaSalida.Name = "dtpFechaSalida";
             this.dtpFechaSalida.Size = new System.Drawing.Size(189, 20);
             this.dtpFechaSalida.TabIndex = 9;
+            this.dtpFechaSalida.Value = new System.DateTime(2023, 11, 18, 12, 13, 29, 223);
             // 
-            // comboBox3
+            // cbDestino
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.cbDestino.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbDestino.FormattingEnabled = true;
+            this.cbDestino.Items.AddRange(new object[] {
+            "Ica",
+            "Arequipa",
+            "Moquegua",
+            "Tacna",
+            "Chimbote",
+            "Huaraz",
+            "Trujillo",
             "Chiclayo",
+            "Piura",
             "Tumbes",
-            "Piura"});
-            this.comboBox3.Location = new System.Drawing.Point(115, 249);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(189, 21);
-            this.comboBox3.TabIndex = 8;
+            "Lima"});
+            this.cbDestino.Location = new System.Drawing.Point(115, 249);
+            this.cbDestino.Margin = new System.Windows.Forms.Padding(2);
+            this.cbDestino.Name = "cbDestino";
+            this.cbDestino.Size = new System.Drawing.Size(189, 21);
+            this.cbDestino.TabIndex = 8;
             // 
-            // comboBox2
+            // cbPuntoSalida
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cbPuntoSalida.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbPuntoSalida.FormattingEnabled = true;
+            this.cbPuntoSalida.Items.AddRange(new object[] {
+            "Ica",
+            "Arequipa",
+            "Moquegua",
+            "Tacna",
+            "Chimbote",
+            "Huaraz",
+            "Trujillo",
+            "Chiclayo",
+            "Piura",
+            "Tumbes",
+            "Lima"});
+            this.cbPuntoSalida.Location = new System.Drawing.Point(115, 211);
+            this.cbPuntoSalida.Margin = new System.Windows.Forms.Padding(2);
+            this.cbPuntoSalida.Name = "cbPuntoSalida";
+            this.cbPuntoSalida.Size = new System.Drawing.Size(189, 21);
+            this.cbPuntoSalida.TabIndex = 8;
+            // 
+            // cbTipoBus
+            // 
+            this.cbTipoBus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTipoBus.FormattingEnabled = true;
+            this.cbTipoBus.Items.AddRange(new object[] {
             "Economico",
             "Vip",
             "Primera Clase",
             "Negocio"});
-            this.comboBox2.Location = new System.Drawing.Point(115, 211);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(189, 21);
-            this.comboBox2.TabIndex = 8;
+            this.cbTipoBus.Location = new System.Drawing.Point(115, 133);
+            this.cbTipoBus.Margin = new System.Windows.Forms.Padding(2);
+            this.cbTipoBus.Name = "cbTipoBus";
+            this.cbTipoBus.Size = new System.Drawing.Size(189, 21);
+            this.cbTipoBus.TabIndex = 8;
             // 
-            // comboBox1
+            // nudPrecio
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Economico",
-            "Vip",
-            "Primera Clase",
-            "Negocio"});
-            this.comboBox1.Location = new System.Drawing.Point(115, 133);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(189, 21);
-            this.comboBox1.TabIndex = 8;
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.DecimalPlaces = 2;
-            this.numericUpDown2.Location = new System.Drawing.Point(116, 322);
-            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(2);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.nudPrecio.DecimalPlaces = 2;
+            this.nudPrecio.Location = new System.Drawing.Point(116, 322);
+            this.nudPrecio.Margin = new System.Windows.Forms.Padding(2);
+            this.nudPrecio.Maximum = new decimal(new int[] {
             200,
             0,
             0,
             0});
-            this.numericUpDown2.Minimum = new decimal(new int[] {
+            this.nudPrecio.Minimum = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(73, 20);
-            this.numericUpDown2.TabIndex = 7;
-            this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown2.Value = new decimal(new int[] {
+            this.nudPrecio.Name = "nudPrecio";
+            this.nudPrecio.Size = new System.Drawing.Size(73, 20);
+            this.nudPrecio.TabIndex = 7;
+            this.nudPrecio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nudPrecio.Value = new decimal(new int[] {
             2250,
             0,
             0,
             131072});
             // 
-            // numericUpDown1
+            // btnRegistrarBus
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(116, 93);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(2);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            70,
+            this.btnRegistrarBus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(108)))), ((int)(((byte)(148)))));
+            this.btnRegistrarBus.FlatAppearance.BorderSize = 0;
+            this.btnRegistrarBus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistrarBus.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
+            this.btnRegistrarBus.ForeColor = System.Drawing.Color.White;
+            this.btnRegistrarBus.Location = new System.Drawing.Point(100, 492);
+            this.btnRegistrarBus.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRegistrarBus.Name = "btnRegistrarBus";
+            this.btnRegistrarBus.Size = new System.Drawing.Size(150, 30);
+            this.btnRegistrarBus.TabIndex = 4;
+            this.btnRegistrarBus.Text = "Registrar bus";
+            this.btnRegistrarBus.UseVisualStyleBackColor = false;
+            this.btnRegistrarBus.Click += new System.EventHandler(this.btnRegistrarBus_Click);
+            // 
+            // nudAsientosDisponibles
+            // 
+            this.nudAsientosDisponibles.Increment = new decimal(new int[] {
+            8,
             0,
             0,
             0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
-            50,
+            this.nudAsientosDisponibles.Location = new System.Drawing.Point(116, 93);
+            this.nudAsientosDisponibles.Margin = new System.Windows.Forms.Padding(2);
+            this.nudAsientosDisponibles.Maximum = new decimal(new int[] {
+            72,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(73, 20);
-            this.numericUpDown1.TabIndex = 7;
-            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown1.Value = new decimal(new int[] {
-            50,
+            this.nudAsientosDisponibles.Minimum = new decimal(new int[] {
+            56,
+            0,
+            0,
+            0});
+            this.nudAsientosDisponibles.Name = "nudAsientosDisponibles";
+            this.nudAsientosDisponibles.Size = new System.Drawing.Size(73, 20);
+            this.nudAsientosDisponibles.TabIndex = 7;
+            this.nudAsientosDisponibles.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nudAsientosDisponibles.Value = new decimal(new int[] {
+            56,
             0,
             0,
             0});
             // 
-            // textBox2
+            // btnCancelarBus
             // 
-            this.textBox2.Location = new System.Drawing.Point(116, 54);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(189, 20);
-            this.textBox2.TabIndex = 5;
+            this.btnCancelarBus.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnCancelarBus.FlatAppearance.BorderSize = 0;
+            this.btnCancelarBus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelarBus.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
+            this.btnCancelarBus.ForeColor = System.Drawing.Color.White;
+            this.btnCancelarBus.Location = new System.Drawing.Point(100, 448);
+            this.btnCancelarBus.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCancelarBus.Name = "btnCancelarBus";
+            this.btnCancelarBus.Size = new System.Drawing.Size(148, 30);
+            this.btnCancelarBus.TabIndex = 4;
+            this.btnCancelarBus.Text = "Cancelar bus";
+            this.btnCancelarBus.UseVisualStyleBackColor = false;
+            this.btnCancelarBus.Click += new System.EventHandler(this.btnCancelarBus_Click);
+            // 
+            // txtMatricula
+            // 
+            this.txtMatricula.Location = new System.Drawing.Point(116, 54);
+            this.txtMatricula.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMatricula.Name = "txtMatricula";
+            this.txtMatricula.Size = new System.Drawing.Size(189, 20);
+            this.txtMatricula.TabIndex = 5;
             // 
             // label7
             // 
@@ -335,86 +463,22 @@ namespace CapaPresentacion
             this.label3.TabIndex = 0;
             this.label3.Text = "Detalles del bus:";
             // 
-            // button3
+            // lblTotalBuses
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(108)))), ((int)(((byte)(148)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(903, 486);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(150, 30);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Registrar bus";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(725, 486);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 30);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Cancelar bus";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // lblTotalChoferes
-            // 
-            this.lblTotalChoferes.AutoSize = true;
-            this.lblTotalChoferes.Font = new System.Drawing.Font("Comic Sans MS", 9F);
-            this.lblTotalChoferes.Location = new System.Drawing.Point(628, 17);
-            this.lblTotalChoferes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTotalChoferes.Name = "lblTotalChoferes";
-            this.lblTotalChoferes.Size = new System.Drawing.Size(15, 17);
-            this.lblTotalChoferes.TabIndex = 8;
-            this.lblTotalChoferes.Text = "0";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Comic Sans MS", 9F);
-            this.label10.Location = new System.Drawing.Point(501, 19);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(114, 17);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Total de choferes: ";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.label1.Location = new System.Drawing.Point(23, 12);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 23);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Lista de choferes: ";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Comic Sans MS", 9F);
-            this.label13.Location = new System.Drawing.Point(628, 324);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(15, 17);
-            this.label13.TabIndex = 15;
-            this.label13.Text = "0";
+            this.lblTotalBuses.AutoSize = true;
+            this.lblTotalBuses.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.lblTotalBuses.Location = new System.Drawing.Point(662, 15);
+            this.lblTotalBuses.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTotalBuses.Name = "lblTotalBuses";
+            this.lblTotalBuses.Size = new System.Drawing.Size(15, 17);
+            this.lblTotalBuses.TabIndex = 15;
+            this.lblTotalBuses.Text = "0";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Comic Sans MS", 9F);
-            this.label14.Location = new System.Drawing.Point(501, 324);
+            this.label14.Location = new System.Drawing.Point(555, 15);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(96, 17);
@@ -425,85 +489,50 @@ namespace CapaPresentacion
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.label15.Location = new System.Drawing.Point(19, 320);
+            this.label15.Location = new System.Drawing.Point(11, 9);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(123, 23);
             this.label15.TabIndex = 17;
             this.label15.Text = "Lista de buses: ";
             // 
-            // label16
+            // dgBuses
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Comic Sans MS", 7.8F);
-            this.label16.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label16.Location = new System.Drawing.Point(853, 453);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(200, 15);
-            this.label16.TabIndex = 19;
-            this.label16.Text = "Elija el chofer y confirme su acción *";
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(113)))), ((int)(((byte)(137)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(825, 569);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(150, 30);
-            this.button5.TabIndex = 20;
-            this.button5.Text = "Eliminar bus";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Comic Sans MS", 7.8F);
-            this.label17.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label17.Location = new System.Drawing.Point(871, 535);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(182, 15);
-            this.label17.TabIndex = 19;
-            this.label17.Text = "Elija el bus y confirme su acción *";
-            // 
-            // dgChoferes
-            // 
-            this.dgChoferes.AllowUserToAddRows = false;
-            this.dgChoferes.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgChoferes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgChoferes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgChoferes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgBuses.AllowUserToAddRows = false;
+            this.dgBuses.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgBuses.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.dgBuses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgBuses.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnSeleccionar,
             this.Id,
-            this.Dni,
-            this.Nombre,
-            this.Apellido,
-            this.Celular,
-            this.Correo,
-            this.FechaNacimiento});
-            this.dgChoferes.Location = new System.Drawing.Point(12, 45);
-            this.dgChoferes.MultiSelect = false;
-            this.dgChoferes.Name = "dgChoferes";
-            this.dgChoferes.ReadOnly = true;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgChoferes.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgChoferes.RowTemplate.Height = 28;
-            this.dgChoferes.Size = new System.Drawing.Size(688, 265);
-            this.dgChoferes.TabIndex = 21;
-            this.dgChoferes.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgChoferes_CellPainting);
+            this.ChoferId,
+            this.Matricula,
+            this.Tipo,
+            this.AsientosDisponibles,
+            this.PuntoSalida,
+            this.Destino,
+            this.FechaSalida,
+            this.FechaLlegada,
+            this.PrecioAsiento});
+            this.dgBuses.Location = new System.Drawing.Point(10, 75);
+            this.dgBuses.MultiSelect = false;
+            this.dgBuses.Name = "dgBuses";
+            this.dgBuses.ReadOnly = true;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgBuses.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            this.dgBuses.RowTemplate.Height = 28;
+            this.dgBuses.Size = new System.Drawing.Size(811, 562);
+            this.dgBuses.TabIndex = 22;
+            this.dgBuses.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgBuses_CellContentClick);
+            this.dgBuses.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgBuses_CellPainting);
             // 
             // btnSeleccionar
             // 
@@ -519,163 +548,153 @@ namespace CapaPresentacion
             this.Id.ReadOnly = true;
             this.Id.Visible = false;
             // 
-            // Dni
+            // ChoferId
             // 
-            this.Dni.HeaderText = "DNI";
-            this.Dni.Name = "Dni";
-            this.Dni.ReadOnly = true;
-            this.Dni.Width = 70;
+            this.ChoferId.HeaderText = "ChoferId";
+            this.ChoferId.Name = "ChoferId";
+            this.ChoferId.ReadOnly = true;
+            this.ChoferId.Width = 70;
             // 
-            // Nombre
+            // Matricula
             // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
-            this.Nombre.Width = 110;
+            this.Matricula.HeaderText = "Matricula";
+            this.Matricula.Name = "Matricula";
+            this.Matricula.ReadOnly = true;
+            this.Matricula.Width = 70;
             // 
-            // Apellido
+            // Tipo
             // 
-            this.Apellido.HeaderText = "Apellido";
-            this.Apellido.Name = "Apellido";
-            this.Apellido.ReadOnly = true;
-            this.Apellido.Width = 110;
+            this.Tipo.HeaderText = "Tipo de Bus";
+            this.Tipo.Name = "Tipo";
+            this.Tipo.ReadOnly = true;
+            this.Tipo.Width = 80;
             // 
-            // Celular
+            // AsientosDisponibles
             // 
-            this.Celular.HeaderText = "Celular";
-            this.Celular.Name = "Celular";
-            this.Celular.ReadOnly = true;
-            this.Celular.Width = 70;
+            this.AsientosDisponibles.HeaderText = "Asientos Disponibles";
+            this.AsientosDisponibles.Name = "AsientosDisponibles";
+            this.AsientosDisponibles.ReadOnly = true;
+            this.AsientosDisponibles.Width = 80;
             // 
-            // Correo
+            // PuntoSalida
             // 
-            this.Correo.HeaderText = "Correo";
-            this.Correo.Name = "Correo";
-            this.Correo.ReadOnly = true;
-            this.Correo.Width = 155;
+            this.PuntoSalida.HeaderText = "Punto de Salida";
+            this.PuntoSalida.Name = "PuntoSalida";
+            this.PuntoSalida.ReadOnly = true;
+            this.PuntoSalida.Width = 90;
             // 
-            // FechaNacimiento
+            // Destino
             // 
-            this.FechaNacimiento.HeaderText = "Fecha de Nacimiento";
-            this.FechaNacimiento.Name = "FechaNacimiento";
-            this.FechaNacimiento.ReadOnly = true;
+            this.Destino.HeaderText = "Destino";
+            this.Destino.Name = "Destino";
+            this.Destino.ReadOnly = true;
+            this.Destino.Width = 75;
             // 
-            // dataGridView1
+            // FechaSalida
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewButtonColumn1,
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 357);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(688, 280);
-            this.dataGridView1.TabIndex = 22;
+            this.FechaSalida.HeaderText = "Fecha de Salida";
+            this.FechaSalida.Name = "FechaSalida";
+            this.FechaSalida.ReadOnly = true;
             // 
-            // dataGridViewButtonColumn1
+            // FechaLlegada
             // 
-            this.dataGridViewButtonColumn1.HeaderText = "";
-            this.dataGridViewButtonColumn1.Name = "dataGridViewButtonColumn1";
-            this.dataGridViewButtonColumn1.ReadOnly = true;
-            this.dataGridViewButtonColumn1.Width = 30;
+            this.FechaLlegada.HeaderText = "Fecha de Llegada";
+            this.FechaLlegada.Name = "FechaLlegada";
+            this.FechaLlegada.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn1
+            // PrecioAsiento
             // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Visible = false;
+            this.PrecioAsiento.HeaderText = "Precio";
+            this.PrecioAsiento.Name = "PrecioAsiento";
+            this.PrecioAsiento.ReadOnly = true;
+            this.PrecioAsiento.Width = 70;
             // 
-            // dataGridViewTextBoxColumn2
+            // txtBusqueda
             // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "DNI";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 70;
+            this.txtBusqueda.Location = new System.Drawing.Point(343, 44);
+            this.txtBusqueda.Margin = new System.Windows.Forms.Padding(2);
+            this.txtBusqueda.Name = "txtBusqueda";
+            this.txtBusqueda.Size = new System.Drawing.Size(193, 20);
+            this.txtBusqueda.TabIndex = 27;
             // 
-            // dataGridViewTextBoxColumn3
+            // btnBuscar
             // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Nombre";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 110;
+            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(108)))), ((int)(((byte)(148)))));
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
+            this.btnBuscar.ForeColor = System.Drawing.Color.White;
+            this.btnBuscar.Location = new System.Drawing.Point(558, 42);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 24);
+            this.btnBuscar.TabIndex = 25;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // dataGridViewTextBoxColumn4
+            // btnLimpiar
             // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Apellido";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 110;
+            this.btnLimpiar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnLimpiar.FlatAppearance.BorderSize = 0;
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiar.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
+            this.btnLimpiar.ForeColor = System.Drawing.Color.White;
+            this.btnLimpiar.Location = new System.Drawing.Point(643, 43);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(75, 24);
+            this.btnLimpiar.TabIndex = 26;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
-            // dataGridViewTextBoxColumn5
+            // cbBusqueda
             // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "Celular";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 70;
+            this.cbBusqueda.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbBusqueda.DisplayMember = "0";
+            this.cbBusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbBusqueda.FormattingEnabled = true;
+            this.cbBusqueda.Location = new System.Drawing.Point(162, 42);
+            this.cbBusqueda.Margin = new System.Windows.Forms.Padding(2);
+            this.cbBusqueda.Name = "cbBusqueda";
+            this.cbBusqueda.Size = new System.Drawing.Size(158, 21);
+            this.cbBusqueda.TabIndex = 24;
             // 
-            // dataGridViewTextBoxColumn6
+            // label11
             // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "Correo";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.Width = 155;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.HeaderText = "Fecha de Nacimiento";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Comic Sans MS", 10.2F);
+            this.label11.Location = new System.Drawing.Point(72, 44);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(82, 19);
+            this.label11.TabIndex = 23;
+            this.label11.Text = "Buscar por:";
             // 
             // frmBus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1076, 649);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.dgChoferes);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label13);
+            this.ClientSize = new System.Drawing.Size(1183, 649);
+            this.Controls.Add(this.txtBusqueda);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.cbBusqueda);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.dgBuses);
+            this.Controls.Add(this.lblTotalBuses);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.lblTotalChoferes);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmBus";
             this.Text = "frmBus";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgChoferes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPrecio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAsientosDisponibles)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgBuses)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -684,51 +703,49 @@ namespace CapaPresentacion
         #endregion
 
         private Panel panel1;
-        private NumericUpDown numericUpDown1;
-        private Button button3;
-        private Button button1;
-        private TextBox textBox2;
+        private NumericUpDown nudAsientosDisponibles;
+        private Button btnRegistrarBus;
+        private Button btnCancelarBus;
+        private TextBox txtMatricula;
         private Label label9;
         private Label label6;
         private Label label5;
         private Label label4;
         private Label label3;
-        private Label lblTotalChoferes;
-        private Label label10;
-        private Label label1;
-        private ComboBox comboBox1;
+        private ComboBox cbTipoBus;
         private Label label2;
-        private ComboBox comboBox3;
-        private ComboBox comboBox2;
-        private NumericUpDown numericUpDown2;
+        private ComboBox cbDestino;
+        private ComboBox cbPuntoSalida;
+        private NumericUpDown nudPrecio;
         private Label label7;
         private Label label8;
         private Label label12;
-        private Label label13;
+        private Label lblTotalBuses;
         private Label label14;
         private Label label15;
-        private Label label16;
-        private Button button5;
-        private Label label17;
-        private DataGridView dgChoferes;
-        private DataGridViewButtonColumn btnSeleccionar;
-        private DataGridViewTextBoxColumn Id;
-        private DataGridViewTextBoxColumn Dni;
-        private DataGridViewTextBoxColumn Nombre;
-        private DataGridViewTextBoxColumn Apellido;
-        private DataGridViewTextBoxColumn Celular;
-        private DataGridViewTextBoxColumn Correo;
-        private DataGridViewTextBoxColumn FechaNacimiento;
+        private Button btnEliminarBus;
         private DateTimePicker dtpFechaLlegada;
         private DateTimePicker dtpFechaSalida;
-        private DataGridView dataGridView1;
-        private DataGridViewButtonColumn dataGridViewButtonColumn1;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private DataGridView dgBuses;
+        private ComboBox cbDniChofer;
+        private Button btnVerChoferes;
+        private Label label1;
+        private Label label10;
+        private DataGridViewButtonColumn btnSeleccionar;
+        private DataGridViewTextBoxColumn Id;
+        private DataGridViewTextBoxColumn ChoferId;
+        private DataGridViewTextBoxColumn Matricula;
+        private DataGridViewTextBoxColumn Tipo;
+        private DataGridViewTextBoxColumn AsientosDisponibles;
+        private DataGridViewTextBoxColumn PuntoSalida;
+        private DataGridViewTextBoxColumn Destino;
+        private DataGridViewTextBoxColumn FechaSalida;
+        private DataGridViewTextBoxColumn FechaLlegada;
+        private DataGridViewTextBoxColumn PrecioAsiento;
+        private TextBox txtBusqueda;
+        private Button btnBuscar;
+        private Button btnLimpiar;
+        private ComboBox cbBusqueda;
+        private Label label11;
     }
 }

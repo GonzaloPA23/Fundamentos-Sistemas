@@ -1,0 +1,12 @@
+D:\Fundamentos-Sistemas\PC2_PRUEBAS\Semana13\Lab17\Negocio\bin\Debug\Negocio.dll
+D:\Fundamentos-Sistemas\PC2_PRUEBAS\Semana13\Lab17\Negocio\bin\Debug\Negocio.pdb
+D:\Fundamentos-Sistemas\PC2_PRUEBAS\Semana13\Lab17\Negocio\bin\Debug\Datos.dll
+D:\Fundamentos-Sistemas\PC2_PRUEBAS\Semana13\Lab17\Negocio\bin\Debug\EntityFramework.dll
+D:\Fundamentos-Sistemas\PC2_PRUEBAS\Semana13\Lab17\Negocio\bin\Debug\Datos.pdb
+D:\Fundamentos-Sistemas\PC2_PRUEBAS\Semana13\Lab17\Negocio\bin\Debug\Datos.dll.config
+D:\Fundamentos-Sistemas\PC2_PRUEBAS\Semana13\Lab17\Negocio\bin\Debug\EntityFramework.xml
+D:\Fundamentos-Sistemas\PC2_PRUEBAS\Semana13\Lab17\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+D:\Fundamentos-Sistemas\PC2_PRUEBAS\Semana13\Lab17\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+D:\Fundamentos-Sistemas\PC2_PRUEBAS\Semana13\Lab17\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+D:\Fundamentos-Sistemas\PC2_PRUEBAS\Semana13\Lab17\Negocio\obj\Debug\Negocio.dll
+D:\Fundamentos-Sistemas\PC2_PRUEBAS\Semana13\Lab17\Negocio\obj\Debug\Negocio.pdb

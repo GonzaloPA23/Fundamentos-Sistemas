@@ -18,6 +18,7 @@ namespace Datos
         public Docente()
         {
             this.DocentexCurso = new HashSet<DocentexCurso>();
+            this.DocentexUniversidad = new HashSet<DocentexUniversidad>();
         }
     
         public int Id_docente { get; set; }
@@ -27,5 +28,7 @@ namespace Datos
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DocentexCurso> DocentexCurso { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<DocentexUniversidad> DocentexUniversidad { get; set; }
     }
 }

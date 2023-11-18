@@ -31,8 +31,8 @@ namespace CapaPresentacion
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.cbBusqueda = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -69,15 +69,15 @@ namespace CapaPresentacion
             this.label15 = new System.Windows.Forms.Label();
             this.btnEliminarChofer = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
-            this.FechaNacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Celular = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Dni = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnSeleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.dgChoferes = new System.Windows.Forms.DataGridView();
+            this.btnSeleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Dni = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Celular = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaNacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgChoferes)).BeginInit();
@@ -87,7 +87,7 @@ namespace CapaPresentacion
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.label1.Location = new System.Drawing.Point(20, 18);
+            this.label1.Location = new System.Drawing.Point(42, 28);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(146, 23);
@@ -100,7 +100,7 @@ namespace CapaPresentacion
             this.cbBusqueda.DisplayMember = "0";
             this.cbBusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbBusqueda.FormattingEnabled = true;
-            this.cbBusqueda.Location = new System.Drawing.Point(118, 61);
+            this.cbBusqueda.Location = new System.Drawing.Point(161, 71);
             this.cbBusqueda.Margin = new System.Windows.Forms.Padding(2);
             this.cbBusqueda.Name = "cbBusqueda";
             this.cbBusqueda.Size = new System.Drawing.Size(147, 21);
@@ -126,7 +126,7 @@ namespace CapaPresentacion
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(723, 42);
+            this.panel1.Location = new System.Drawing.Point(795, 54);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(342, 354);
@@ -139,6 +139,7 @@ namespace CapaPresentacion
             this.txtIndice.Size = new System.Drawing.Size(26, 20);
             this.txtIndice.TabIndex = 7;
             this.txtIndice.Text = "-1";
+            this.txtIndice.Visible = false;
             // 
             // txtId
             // 
@@ -147,6 +148,7 @@ namespace CapaPresentacion
             this.txtId.Size = new System.Drawing.Size(26, 20);
             this.txtId.TabIndex = 7;
             this.txtId.Text = "0";
+            this.txtId.Visible = false;
             // 
             // dtpFechaNacimiento
             // 
@@ -309,7 +311,7 @@ namespace CapaPresentacion
             // 
             // txtBusqueda
             // 
-            this.txtBusqueda.Location = new System.Drawing.Point(280, 62);
+            this.txtBusqueda.Location = new System.Drawing.Point(323, 72);
             this.txtBusqueda.Margin = new System.Windows.Forms.Padding(2);
             this.txtBusqueda.Name = "txtBusqueda";
             this.txtBusqueda.Size = new System.Drawing.Size(193, 20);
@@ -319,7 +321,7 @@ namespace CapaPresentacion
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 10.2F);
-            this.label2.Location = new System.Drawing.Point(38, 63);
+            this.label2.Location = new System.Drawing.Point(76, 72);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 19);
@@ -333,7 +335,7 @@ namespace CapaPresentacion
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
             this.btnLimpiar.ForeColor = System.Drawing.Color.White;
-            this.btnLimpiar.Location = new System.Drawing.Point(578, 62);
+            this.btnLimpiar.Location = new System.Drawing.Point(621, 72);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(75, 24);
@@ -349,7 +351,7 @@ namespace CapaPresentacion
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Location = new System.Drawing.Point(493, 61);
+            this.btnBuscar.Location = new System.Drawing.Point(536, 71);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 24);
@@ -362,7 +364,7 @@ namespace CapaPresentacion
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Comic Sans MS", 9F);
-            this.label10.Location = new System.Drawing.Point(515, 30);
+            this.label10.Location = new System.Drawing.Point(558, 40);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(114, 17);
@@ -373,7 +375,7 @@ namespace CapaPresentacion
             // 
             this.lblTotalChoferes.AutoSize = true;
             this.lblTotalChoferes.Font = new System.Drawing.Font("Comic Sans MS", 9F);
-            this.lblTotalChoferes.Location = new System.Drawing.Point(632, 30);
+            this.lblTotalChoferes.Location = new System.Drawing.Point(675, 40);
             this.lblTotalChoferes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTotalChoferes.Name = "lblTotalChoferes";
             this.lblTotalChoferes.Size = new System.Drawing.Size(15, 17);
@@ -390,7 +392,7 @@ namespace CapaPresentacion
             this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label15);
-            this.panel2.Location = new System.Drawing.Point(723, 405);
+            this.panel2.Location = new System.Drawing.Point(795, 417);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(342, 160);
@@ -418,6 +420,7 @@ namespace CapaPresentacion
             this.btnActualizar.TabIndex = 4;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // txtActualizarCorreo
             // 
@@ -479,7 +482,7 @@ namespace CapaPresentacion
             this.btnEliminarChofer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarChofer.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
             this.btnEliminarChofer.ForeColor = System.Drawing.Color.White;
-            this.btnEliminarChofer.Location = new System.Drawing.Point(729, 578);
+            this.btnEliminarChofer.Location = new System.Drawing.Point(801, 590);
             this.btnEliminarChofer.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminarChofer.Name = "btnEliminarChofer";
             this.btnEliminarChofer.Size = new System.Drawing.Size(150, 30);
@@ -493,80 +496,25 @@ namespace CapaPresentacion
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Comic Sans MS", 7.8F);
             this.label16.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label16.Location = new System.Drawing.Point(905, 579);
+            this.label16.Location = new System.Drawing.Point(977, 591);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(130, 30);
             this.label16.TabIndex = 0;
             this.label16.Text = "Elija el dni del chofer y \r\nconfirme su acción *";
             // 
-            // FechaNacimiento
-            // 
-            this.FechaNacimiento.HeaderText = "Fecha de Nacimiento";
-            this.FechaNacimiento.Name = "FechaNacimiento";
-            this.FechaNacimiento.ReadOnly = true;
-            // 
-            // Correo
-            // 
-            this.Correo.HeaderText = "Correo";
-            this.Correo.Name = "Correo";
-            this.Correo.ReadOnly = true;
-            this.Correo.Width = 155;
-            // 
-            // Celular
-            // 
-            this.Celular.HeaderText = "Celular";
-            this.Celular.Name = "Celular";
-            this.Celular.ReadOnly = true;
-            this.Celular.Width = 70;
-            // 
-            // Apellido
-            // 
-            this.Apellido.HeaderText = "Apellido";
-            this.Apellido.Name = "Apellido";
-            this.Apellido.ReadOnly = true;
-            this.Apellido.Width = 110;
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
-            this.Nombre.Width = 110;
-            // 
-            // Dni
-            // 
-            this.Dni.HeaderText = "DNI";
-            this.Dni.Name = "Dni";
-            this.Dni.ReadOnly = true;
-            this.Dni.Width = 70;
-            // 
-            // Id
-            // 
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            this.Id.Visible = false;
-            // 
-            // btnSeleccionar
-            // 
-            this.btnSeleccionar.HeaderText = "";
-            this.btnSeleccionar.Name = "btnSeleccionar";
-            this.btnSeleccionar.ReadOnly = true;
-            this.btnSeleccionar.Width = 30;
-            // 
             // dgChoferes
             // 
             this.dgChoferes.AllowUserToAddRows = false;
             this.dgChoferes.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgChoferes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgChoferes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgChoferes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgChoferes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnSeleccionar,
@@ -577,24 +525,79 @@ namespace CapaPresentacion
             this.Celular,
             this.Correo,
             this.FechaNacimiento});
-            this.dgChoferes.Location = new System.Drawing.Point(14, 92);
+            this.dgChoferes.Location = new System.Drawing.Point(34, 106);
             this.dgChoferes.MultiSelect = false;
             this.dgChoferes.Name = "dgChoferes";
             this.dgChoferes.ReadOnly = true;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgChoferes.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgChoferes.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgChoferes.RowTemplate.Height = 28;
-            this.dgChoferes.Size = new System.Drawing.Size(688, 519);
+            this.dgChoferes.Size = new System.Drawing.Size(724, 519);
             this.dgChoferes.TabIndex = 7;
             this.dgChoferes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgChoferes_CellContentClick);
             this.dgChoferes.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgChoferes_CellPainting);
+            // 
+            // btnSeleccionar
+            // 
+            this.btnSeleccionar.HeaderText = "";
+            this.btnSeleccionar.Name = "btnSeleccionar";
+            this.btnSeleccionar.ReadOnly = true;
+            this.btnSeleccionar.Width = 30;
+            // 
+            // Id
+            // 
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Visible = false;
+            // 
+            // Dni
+            // 
+            this.Dni.HeaderText = "DNI";
+            this.Dni.Name = "Dni";
+            this.Dni.ReadOnly = true;
+            this.Dni.Width = 80;
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
+            this.Nombre.Width = 110;
+            // 
+            // Apellido
+            // 
+            this.Apellido.HeaderText = "Apellido";
+            this.Apellido.Name = "Apellido";
+            this.Apellido.ReadOnly = true;
+            this.Apellido.Width = 110;
+            // 
+            // Celular
+            // 
+            this.Celular.HeaderText = "Celular";
+            this.Celular.Name = "Celular";
+            this.Celular.ReadOnly = true;
+            this.Celular.Width = 90;
+            // 
+            // Correo
+            // 
+            this.Correo.HeaderText = "Correo";
+            this.Correo.Name = "Correo";
+            this.Correo.ReadOnly = true;
+            this.Correo.Width = 155;
+            // 
+            // FechaNacimiento
+            // 
+            this.FechaNacimiento.HeaderText = "Fecha de Nacimiento";
+            this.FechaNacimiento.Name = "FechaNacimiento";
+            this.FechaNacimiento.ReadOnly = true;
             // 
             // frmChofer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1076, 649);
+            this.ClientSize = new System.Drawing.Size(1183, 649);
             this.Controls.Add(this.dgChoferes);
             this.Controls.Add(this.btnEliminarChofer);
             this.Controls.Add(this.panel2);
@@ -658,16 +661,16 @@ namespace CapaPresentacion
         private Label label12;
         private Label label15;
         private Label label16;
+        private DataGridView dgChoferes;
         private TextBox txtIndice;
         private TextBox txtId;
-        private DataGridViewTextBoxColumn FechaNacimiento;
-        private DataGridViewTextBoxColumn Correo;
-        private DataGridViewTextBoxColumn Celular;
-        private DataGridViewTextBoxColumn Apellido;
-        private DataGridViewTextBoxColumn Nombre;
-        private DataGridViewTextBoxColumn Dni;
-        private DataGridViewTextBoxColumn Id;
         private DataGridViewButtonColumn btnSeleccionar;
-        private DataGridView dgChoferes;
+        private DataGridViewTextBoxColumn Id;
+        private DataGridViewTextBoxColumn Dni;
+        private DataGridViewTextBoxColumn Nombre;
+        private DataGridViewTextBoxColumn Apellido;
+        private DataGridViewTextBoxColumn Celular;
+        private DataGridViewTextBoxColumn Correo;
+        private DataGridViewTextBoxColumn FechaNacimiento;
     }
 }

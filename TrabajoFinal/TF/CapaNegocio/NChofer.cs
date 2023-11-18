@@ -48,5 +48,29 @@ namespace CapaNegocio
         {
             dChofer.EliminarChofer(idChofer);
         }
+        public bool EditarChofer(Chofer chofer, out string mensaje)
+        {
+            mensaje = string.Empty;
+            // Validacion de que no haya seleccionado un chofer
+            if (chofer.Id == 0)
+            {
+                mensaje = "Debe seleccionar un chofer";
+                return false;
+            }
+            // Validacion que el correo sea un correo válido
+            if (!chofer.Correo.Contains("@") || !chofer.Correo.Contains("."))
+            {
+                mensaje = "El correo debe ser un correo válido";
+                return false;
+            }  
+            // Validacion de que el celular sea un número y tenga 9 dígitos
+            if (!int.TryParse(chofer.Celular, out int celular) || chofer.Celular.Length != 9)
+            {
+                mensaje = "El celular debe ser un número de 9 dígitos";
+                return false;
+            }
+            if (mensaje != string.Empty) return false;
+            else return dChofer.EditarChofer(chofer, out mensaje);
+        }
     }
 }

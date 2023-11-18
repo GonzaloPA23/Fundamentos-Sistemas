@@ -1,0 +1,12 @@
+D:\Fundamentos-Sistemas\PC2_PRUEBAS\Semana13\Lab17\Datos\bin\Debug\Datos.dll.config
+D:\Fundamentos-Sistemas\PC2_PRUEBAS\Semana13\Lab17\Datos\bin\Debug\Datos.dll
+D:\Fundamentos-Sistemas\PC2_PRUEBAS\Semana13\Lab17\Datos\bin\Debug\Datos.pdb
+D:\Fundamentos-Sistemas\PC2_PRUEBAS\Semana13\Lab17\Datos\bin\Debug\EntityFramework.dll
+D:\Fundamentos-Sistemas\PC2_PRUEBAS\Semana13\Lab17\Datos\bin\Debug\EntityFramework.SqlServer.dll
+D:\Fundamentos-Sistemas\PC2_PRUEBAS\Semana13\Lab17\Datos\bin\Debug\EntityFramework.xml
+D:\Fundamentos-Sistemas\PC2_PRUEBAS\Semana13\Lab17\Datos\bin\Debug\EntityFramework.SqlServer.xml
+D:\Fundamentos-Sistemas\PC2_PRUEBAS\Semana13\Lab17\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+D:\Fundamentos-Sistemas\PC2_PRUEBAS\Semana13\Lab17\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+D:\Fundamentos-Sistemas\PC2_PRUEBAS\Semana13\Lab17\Datos\obj\Debug\Datos.csproj.CopyComplete
+D:\Fundamentos-Sistemas\PC2_PRUEBAS\Semana13\Lab17\Datos\obj\Debug\Datos.dll
+D:\Fundamentos-Sistemas\PC2_PRUEBAS\Semana13\Lab17\Datos\obj\Debug\Datos.pdb

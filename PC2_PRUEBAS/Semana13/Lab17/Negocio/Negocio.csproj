@@ -44,6 +44,8 @@
     <Compile Include="NCurso.cs" />
     <Compile Include="NDocente.cs" />
     <Compile Include="NDocenteXCurso.cs" />
+    <Compile Include="NDocentexUniversidad.cs" />
+    <Compile Include="NUniversidad.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

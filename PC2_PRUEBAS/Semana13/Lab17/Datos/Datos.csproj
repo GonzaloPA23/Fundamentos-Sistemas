@@ -56,12 +56,17 @@
     <Compile Include="DCurso.cs" />
     <Compile Include="DDocente.cs" />
     <Compile Include="DDocenteXCurso.cs" />
+    <Compile Include="DDocentexUniversidad.cs" />
     <Compile Include="Docente.cs">
       <DependentUpon>ModelEF.tt</DependentUpon>
     </Compile>
     <Compile Include="DocentexCurso.cs">
       <DependentUpon>ModelEF.tt</DependentUpon>
     </Compile>
+    <Compile Include="DocentexUniversidad.cs">
+      <DependentUpon>ModelEF.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DUniversidad.cs" />
     <Compile Include="ModelEF.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -78,6 +83,9 @@
       <DependentUpon>ModelEF.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Universidad.cs">
+      <DependentUpon>ModelEF.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="ModelEF.edmx">
