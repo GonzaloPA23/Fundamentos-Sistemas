@@ -42,6 +42,7 @@
     <Property Name="Largo" Type="real" Nullable="false" />
     <Property Name="Alto" Type="real" Nullable="false" />
     <Property Name="Ancho" Type="real" Nullable="false" />
+    <Property Name="Precio" Type="money" Nullable="false" />
     <Property Name="FechaPedido" Type="datetime" />
   </EntityType>
   <EntityType Name="Pasaje">

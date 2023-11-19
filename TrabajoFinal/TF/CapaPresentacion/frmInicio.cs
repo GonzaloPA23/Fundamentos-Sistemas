@@ -84,7 +84,7 @@ namespace CapaPresentacion
 
         private void menuencomiendas_Click(object sender, EventArgs e)
         {
-            AbrirFormularioHijo((IconMenuItem)sender, new frmEncomienda());
+            AbrirFormularioHijo((IconMenuItem)sender, new frmEncomienda(usuarioActual));
         }
 
         private void subMenuHistorialPasajes_Click(object sender, EventArgs e)
@@ -94,7 +94,7 @@ namespace CapaPresentacion
 
         private void subMenuHistorialEncomiendas_Click(object sender, EventArgs e)
         {
-            AbrirFormularioHijo(menureportes, new frmHistorialEncomienda());
+            AbrirFormularioHijo(menureportes, new frmHistorialEncomienda(usuarioActual));
         }    
     }
 }

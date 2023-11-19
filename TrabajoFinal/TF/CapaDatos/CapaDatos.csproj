@@ -58,6 +58,7 @@
     </Compile>
     <Compile Include="DBus.cs" />
     <Compile Include="DChofer.cs" />
+    <Compile Include="DEncomienda.cs" />
     <Compile Include="DPermiso.cs" />
     <Compile Include="DUsuario.cs" />
     <Compile Include="Encomienda.cs">

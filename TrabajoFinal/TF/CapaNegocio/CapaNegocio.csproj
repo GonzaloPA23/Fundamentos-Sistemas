@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="NBus.cs" />
     <Compile Include="NChofer.cs" />
+    <Compile Include="NEncomienda.cs" />
     <Compile Include="NPermiso.cs" />
     <Compile Include="NUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -31,7 +31,7 @@ namespace CapaDatos
         {
             int idbusgenerado = 0;
             mensaje = string.Empty;
-
+                
             try
             {
                 using(var context = new DB_PerlaAltomayoEntities())

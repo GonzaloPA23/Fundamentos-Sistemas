@@ -26,6 +26,7 @@ namespace CapaDatos
         public float Alto { get; set; }
         public float Ancho { get; set; }
         public Nullable<System.DateTime> FechaPedido { get; set; }
+        public decimal Precio { get; set; }
     
         public virtual Usuario Usuario { get; set; }
     }

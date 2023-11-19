@@ -63,6 +63,7 @@
     <EntitySetMapping Name="Encomienda">
       <EntityTypeMapping TypeName="ModelEF.Encomienda">
         <MappingFragment StoreEntitySet="Encomienda">
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
           <ScalarProperty Name="FechaPedido" ColumnName="FechaPedido" />
           <ScalarProperty Name="Ancho" ColumnName="Ancho" />
           <ScalarProperty Name="Alto" ColumnName="Alto" />

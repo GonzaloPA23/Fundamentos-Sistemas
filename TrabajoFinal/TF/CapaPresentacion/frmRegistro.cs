@@ -28,7 +28,8 @@ namespace CapaPresentacion
                 Dni = txtDni.Text,
                 Nombre = txtNombre.Text,
                 Apellido = txtApellido.Text,
-                Clave = txtClave.Text,
+                Clave = Utilidades.Encrypt.EncriptarClave(txtClave.Text),
+                //Clave = txtClave.Text,
                 Correo = txtCorreo.Text
             };
             int idUsuarioGenerado = new NUsuario().RegistrarUsuario(usuario, out mensaje);

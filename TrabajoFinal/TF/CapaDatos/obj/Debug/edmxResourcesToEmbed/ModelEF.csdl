@@ -137,6 +137,7 @@
     <Property Name="Ancho" Type="Single" Nullable="false" />
     <Property Name="FechaPedido" Type="DateTime" Precision="3" />
     <NavigationProperty Name="Usuario" Relationship="ModelEF.EUFk" FromRole="Encomienda" ToRole="Usuario" />
+    <Property Name="Precio" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
   </EntityType>
   <EntityType Name="Pasaje">
     <Key>

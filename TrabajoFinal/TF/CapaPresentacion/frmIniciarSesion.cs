@@ -29,7 +29,8 @@ namespace CapaPresentacion
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
-            Usuario usuario = new NUsuario().ListarUsuarios().Where(u => u.Dni == txtDni.Text && u.Clave == txtClave.Text).FirstOrDefault();
+            string claveEncriptada = Utilidades.Encrypt.EncriptarClave(txtClave.Text);
+            Usuario usuario = new NUsuario().ListarUsuarios().Where(u => u.Dni == txtDni.Text && u.Clave == claveEncriptada).FirstOrDefault();
             if (usuario != null)
             {
                 frmInicio frmInicio = new frmInicio(usuario);

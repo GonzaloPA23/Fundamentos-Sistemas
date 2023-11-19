@@ -47,6 +47,7 @@
           <Property Name="Largo" Type="real" Nullable="false" />
           <Property Name="Alto" Type="real" Nullable="false" />
           <Property Name="Ancho" Type="real" Nullable="false" />
+          <Property Name="Precio" Type="money" Nullable="false" />
           <Property Name="FechaPedido" Type="datetime" />
         </EntityType>
         <EntityType Name="Pasaje">
@@ -338,6 +339,7 @@
           <Property Name="Ancho" Type="Single" Nullable="false" />
           <Property Name="FechaPedido" Type="DateTime" Precision="3" />
           <NavigationProperty Name="Usuario" Relationship="ModelEF.EUFk" FromRole="Encomienda" ToRole="Usuario" />
+          <Property Name="Precio" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
         </EntityType>
         <EntityType Name="Pasaje">
           <Key>
@@ -473,6 +475,7 @@
           <EntitySetMapping Name="Encomienda">
             <EntityTypeMapping TypeName="ModelEF.Encomienda">
               <MappingFragment StoreEntitySet="Encomienda">
+                <ScalarProperty Name="Precio" ColumnName="Precio" />
                 <ScalarProperty Name="FechaPedido" ColumnName="FechaPedido" />
                 <ScalarProperty Name="Ancho" ColumnName="Ancho" />
                 <ScalarProperty Name="Alto" ColumnName="Alto" />
