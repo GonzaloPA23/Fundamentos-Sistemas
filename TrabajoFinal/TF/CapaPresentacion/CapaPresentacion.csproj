@@ -126,6 +126,12 @@
     <Compile Include="Modales\mdChofer.Designer.cs">
       <DependentUpon>mdChofer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modales\mdPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modales\mdPerfil.Designer.cs">
+      <DependentUpon>mdPerfil.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilidades\Encrypt.cs" />
@@ -162,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modales\mdChofer.resx">
       <DependentUpon>mdChofer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modales\mdPerfil.resx">
+      <DependentUpon>mdPerfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

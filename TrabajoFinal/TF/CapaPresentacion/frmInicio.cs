@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using FontAwesome.Sharp;
 using CapaDatos;
 using CapaNegocio;
-
+using CapaPresentacion.Modales;
 
 namespace CapaPresentacion
 {
@@ -95,6 +95,12 @@ namespace CapaPresentacion
         private void subMenuHistorialEncomiendas_Click(object sender, EventArgs e)
         {
             AbrirFormularioHijo(menureportes, new frmHistorialEncomienda(usuarioActual));
-        }    
+        }
+
+        private void pbPerfil_Click(object sender, EventArgs e)
+        {
+            mdPerfil perfil = new mdPerfil(usuarioActual);
+            perfil.Show();
+        }
     }
 }
