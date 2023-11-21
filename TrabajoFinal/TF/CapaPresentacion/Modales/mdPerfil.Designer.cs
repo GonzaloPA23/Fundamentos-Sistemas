@@ -28,18 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mdPerfil));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pbFotoPerfil = new System.Windows.Forms.PictureBox();
-            this.btnSubirFoto = new FontAwesome.Sharp.IconButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tbNombre = new System.Windows.Forms.TextBox();
-            this.tbApellido = new System.Windows.Forms.TextBox();
-            this.tbDNI = new System.Windows.Forms.TextBox();
             this.tbCorreo = new System.Windows.Forms.TextBox();
+            this.tbDNI = new System.Windows.Forms.TextBox();
+            this.tbApellido = new System.Windows.Forms.TextBox();
+            this.tbNombre = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnSubirFoto = new FontAwesome.Sharp.IconButton();
+            this.pbFotoPerfil = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbFotoPerfil)).BeginInit();
             this.SuspendLayout();
@@ -62,15 +61,77 @@
             this.panel1.Size = new System.Drawing.Size(679, 395);
             this.panel1.TabIndex = 1;
             // 
-            // pbFotoPerfil
+            // tbCorreo
             // 
-            this.pbFotoPerfil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbFotoPerfil.BackgroundImage")));
-            this.pbFotoPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbFotoPerfil.Location = new System.Drawing.Point(36, 37);
-            this.pbFotoPerfil.Name = "pbFotoPerfil";
-            this.pbFotoPerfil.Size = new System.Drawing.Size(256, 268);
-            this.pbFotoPerfil.TabIndex = 0;
-            this.pbFotoPerfil.TabStop = false;
+            this.tbCorreo.Location = new System.Drawing.Point(387, 283);
+            this.tbCorreo.Name = "tbCorreo";
+            this.tbCorreo.ReadOnly = true;
+            this.tbCorreo.Size = new System.Drawing.Size(231, 20);
+            this.tbCorreo.TabIndex = 3;
+            // 
+            // tbDNI
+            // 
+            this.tbDNI.Location = new System.Drawing.Point(387, 211);
+            this.tbDNI.Name = "tbDNI";
+            this.tbDNI.ReadOnly = true;
+            this.tbDNI.Size = new System.Drawing.Size(231, 20);
+            this.tbDNI.TabIndex = 3;
+            // 
+            // tbApellido
+            // 
+            this.tbApellido.Location = new System.Drawing.Point(387, 149);
+            this.tbApellido.Name = "tbApellido";
+            this.tbApellido.ReadOnly = true;
+            this.tbApellido.Size = new System.Drawing.Size(231, 20);
+            this.tbApellido.TabIndex = 3;
+            // 
+            // tbNombre
+            // 
+            this.tbNombre.Location = new System.Drawing.Point(387, 78);
+            this.tbNombre.Name = "tbNombre";
+            this.tbNombre.ReadOnly = true;
+            this.tbNombre.Size = new System.Drawing.Size(231, 20);
+            this.tbNombre.TabIndex = 3;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(339, 176);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(49, 23);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "DNI:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(341, 244);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(65, 23);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Correo:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(339, 110);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 23);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Apellido:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(342, 42);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 23);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Nombre:";
             // 
             // btnSubirFoto
             // 
@@ -95,78 +156,16 @@
             this.btnSubirFoto.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSubirFoto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSubirFoto.UseVisualStyleBackColor = true;
+            this.btnSubirFoto.Click += new System.EventHandler(this.btnSubirFoto_Click);
             // 
-            // label1
+            // pbFotoPerfil
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(342, 42);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 23);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Nombre:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(339, 110);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 23);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Apellido:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(341, 244);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 23);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Correo:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(339, 176);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 23);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "DNI:";
-            // 
-            // tbNombre
-            // 
-            this.tbNombre.Location = new System.Drawing.Point(387, 78);
-            this.tbNombre.Name = "tbNombre";
-            this.tbNombre.ReadOnly = true;
-            this.tbNombre.Size = new System.Drawing.Size(231, 20);
-            this.tbNombre.TabIndex = 3;
-            // 
-            // tbApellido
-            // 
-            this.tbApellido.Location = new System.Drawing.Point(387, 149);
-            this.tbApellido.Name = "tbApellido";
-            this.tbApellido.ReadOnly = true;
-            this.tbApellido.Size = new System.Drawing.Size(231, 20);
-            this.tbApellido.TabIndex = 3;
-            // 
-            // tbDNI
-            // 
-            this.tbDNI.Location = new System.Drawing.Point(387, 211);
-            this.tbDNI.Name = "tbDNI";
-            this.tbDNI.ReadOnly = true;
-            this.tbDNI.Size = new System.Drawing.Size(231, 20);
-            this.tbDNI.TabIndex = 3;
-            // 
-            // tbCorreo
-            // 
-            this.tbCorreo.Location = new System.Drawing.Point(387, 283);
-            this.tbCorreo.Name = "tbCorreo";
-            this.tbCorreo.ReadOnly = true;
-            this.tbCorreo.Size = new System.Drawing.Size(231, 20);
-            this.tbCorreo.TabIndex = 3;
+            this.pbFotoPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbFotoPerfil.Location = new System.Drawing.Point(36, 37);
+            this.pbFotoPerfil.Name = "pbFotoPerfil";
+            this.pbFotoPerfil.Size = new System.Drawing.Size(256, 268);
+            this.pbFotoPerfil.TabIndex = 0;
+            this.pbFotoPerfil.TabStop = false;
             // 
             // mdPerfil
             // 

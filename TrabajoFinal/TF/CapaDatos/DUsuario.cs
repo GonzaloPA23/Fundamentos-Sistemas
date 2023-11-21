@@ -60,6 +60,47 @@ namespace CapaDatos
             }
             return idusuariogenerado;
         }
+        // Metodo para obtener la Foto
+        public byte[] ObtenerFoto(out bool obtenido, int idUsuario)
+        {
+            obtenido = true;
+            byte[] FotoBytes = new byte[0];
+            try
+            {
+                using (var context = new DB_PerlaAltomayoEntities())
+                {
+                    FotoBytes = context.Usuario.Where(user => user.Id == idUsuario).Select(user => user.Foto).FirstOrDefault();
+                }
+            }
+            catch (Exception ex)
+            {
+                obtenido = false;
+                FotoBytes = new byte[0];
+            }
 
+            return FotoBytes;
+        }
+        // Actualizar la Foto del Usuario
+        public bool ActualizarFoto(int idUsuario, byte[] bytes, out string mensaje)
+        {
+            mensaje = string.Empty;
+            bool actualizado = true;
+            try
+            {
+                using (var context = new DB_PerlaAltomayoEntities())
+                {
+                    var usuario = context.Usuario.Where(user => user.Id == idUsuario).FirstOrDefault();
+                    usuario.Foto = bytes;
+                    context.Entry(usuario).State = EntityState.Modified;
+                    context.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                actualizado = false;
+                mensaje = ex.Message;
+            }
+            return actualizado;
+        }
     }
 }

@@ -132,7 +132,7 @@ namespace CapaPresentacion
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label13.Location = new System.Drawing.Point(849, 31);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(18, 20);
@@ -142,7 +142,7 @@ namespace CapaPresentacion
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label14.Location = new System.Drawing.Point(728, 30);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(118, 20);
@@ -152,7 +152,7 @@ namespace CapaPresentacion
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label15.Location = new System.Drawing.Point(22, 23);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(123, 28);
@@ -162,7 +162,7 @@ namespace CapaPresentacion
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Comic Sans MS", 7.8F);
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.label17.ForeColor = System.Drawing.SystemColors.ButtonShadow;
             this.label17.Location = new System.Drawing.Point(422, 32);
             this.label17.Name = "label17";
@@ -238,7 +238,7 @@ namespace CapaPresentacion
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label9.Location = new System.Drawing.Point(18, 181);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(131, 20);
@@ -248,7 +248,7 @@ namespace CapaPresentacion
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label6.Location = new System.Drawing.Point(56, 134);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(88, 20);
@@ -258,7 +258,7 @@ namespace CapaPresentacion
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label12.Location = new System.Drawing.Point(83, 90);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(62, 20);
@@ -268,7 +268,7 @@ namespace CapaPresentacion
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label2.Location = new System.Drawing.Point(34, 44);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(113, 20);
@@ -278,7 +278,7 @@ namespace CapaPresentacion
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 10.8F);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label3.Location = new System.Drawing.Point(14, 7);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(174, 24);
@@ -290,7 +290,7 @@ namespace CapaPresentacion
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(108)))), ((int)(((byte)(148)))));
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(1172, 654);
             this.button3.Name = "button3";
@@ -304,7 +304,7 @@ namespace CapaPresentacion
             this.button1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(936, 654);
             this.button1.Name = "button1";
@@ -331,7 +331,7 @@ namespace CapaPresentacion
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(337, 345);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 21);
@@ -341,7 +341,7 @@ namespace CapaPresentacion
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.label4.Location = new System.Drawing.Point(314, 344);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(28, 21);
@@ -351,7 +351,7 @@ namespace CapaPresentacion
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label7.Location = new System.Drawing.Point(255, 344);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 20);
@@ -392,7 +392,7 @@ namespace CapaPresentacion
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label5.Location = new System.Drawing.Point(18, 48);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 20);
@@ -402,7 +402,7 @@ namespace CapaPresentacion
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Comic Sans MS", 10.8F);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.label8.Location = new System.Drawing.Point(14, 7);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(158, 24);

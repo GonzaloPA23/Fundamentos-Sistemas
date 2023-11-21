@@ -46,5 +46,13 @@ namespace CapaNegocio
             else return dUsuario.RegistrarUsuario(usuario, out mensaje);
 
         }   
+        public byte[] ObtenerFoto(out bool obtenido, int idUsuario)
+        {
+            return dUsuario.ObtenerFoto(out obtenido, idUsuario);
+        }
+        public bool ActualizarFoto(int idUsuario, byte[] foto, out string mensaje)
+        {
+            return dUsuario.ActualizarFoto(idUsuario, foto, out mensaje);
+        }
     }
 }

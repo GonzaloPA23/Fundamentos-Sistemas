@@ -66,7 +66,7 @@ namespace CapaPresentacion
             this.btnFiltrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(108)))), ((int)(((byte)(148)))));
             this.btnFiltrar.FlatAppearance.BorderSize = 0;
             this.btnFiltrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFiltrar.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
+            this.btnFiltrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.btnFiltrar.ForeColor = System.Drawing.Color.White;
             this.btnFiltrar.Location = new System.Drawing.Point(830, 63);
             this.btnFiltrar.Margin = new System.Windows.Forms.Padding(2);
@@ -82,7 +82,7 @@ namespace CapaPresentacion
             this.btnLimpiar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnLimpiar.FlatAppearance.BorderSize = 0;
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimpiar.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold);
+            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.btnLimpiar.ForeColor = System.Drawing.Color.White;
             this.btnLimpiar.Location = new System.Drawing.Point(937, 63);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2);
@@ -96,7 +96,7 @@ namespace CapaPresentacion
             // lblTotalEncomiendas
             // 
             this.lblTotalEncomiendas.AutoSize = true;
-            this.lblTotalEncomiendas.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.lblTotalEncomiendas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lblTotalEncomiendas.Location = new System.Drawing.Point(1014, 28);
             this.lblTotalEncomiendas.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTotalEncomiendas.Name = "lblTotalEncomiendas";
@@ -107,7 +107,7 @@ namespace CapaPresentacion
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Comic Sans MS", 9F);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label10.Location = new System.Drawing.Point(873, 27);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
@@ -118,7 +118,7 @@ namespace CapaPresentacion
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 10.2F);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.label2.Location = new System.Drawing.Point(84, 64);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
@@ -129,7 +129,7 @@ namespace CapaPresentacion
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label1.Location = new System.Drawing.Point(41, 18);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
@@ -153,7 +153,7 @@ namespace CapaPresentacion
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 10.2F);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.label3.Location = new System.Drawing.Point(441, 62);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
@@ -164,7 +164,7 @@ namespace CapaPresentacion
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 10.2F);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
             this.label4.Location = new System.Drawing.Point(445, 35);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";

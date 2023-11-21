@@ -64,7 +64,7 @@ namespace CapaPresentacion
             button4.BackColor = Color.FromArgb(222, 108, 148);
             button4.FlatAppearance.BorderSize = 0;
             button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button4.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button4.ForeColor = Color.White;
             button4.Location = new Point(748, 82);
             button4.Name = "button4";
@@ -78,7 +78,7 @@ namespace CapaPresentacion
             button2.BackColor = SystemColors.ControlDarkDark;
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = Color.White;
             button2.Location = new Point(890, 82);
             button2.Name = "button2";
@@ -90,7 +90,7 @@ namespace CapaPresentacion
             // label16
             // 
             label16.AutoSize = true;
-            label16.Font = new Font("Comic Sans MS", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label16.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
             label16.ForeColor = SystemColors.ButtonShadow;
             label16.Location = new Point(1202, 676);
             label16.Name = "label16";
@@ -140,7 +140,7 @@ namespace CapaPresentacion
             // label11
             // 
             label11.AutoSize = true;
-            label11.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label11.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label11.Location = new Point(973, 41);
             label11.Name = "label11";
             label11.Size = new Size(17, 20);
@@ -150,7 +150,7 @@ namespace CapaPresentacion
             // label10
             // 
             label10.AutoSize = true;
-            label10.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label10.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label10.Location = new Point(834, 41);
             label10.Name = "label10";
             label10.Size = new Size(119, 20);
@@ -160,7 +160,7 @@ namespace CapaPresentacion
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Comic Sans MS", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             label2.Location = new Point(90, 80);
             label2.Name = "label2";
             label2.Size = new Size(95, 23);
@@ -170,7 +170,7 @@ namespace CapaPresentacion
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Comic Sans MS", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label1.Location = new Point(30, 25);
             label1.Name = "label1";
             label1.Size = new Size(219, 28);
@@ -200,7 +200,7 @@ namespace CapaPresentacion
             // label12
             // 
             label12.AutoSize = true;
-            label12.Font = new Font("Comic Sans MS", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label12.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             label12.Location = new Point(14, 9);
             label12.Name = "label12";
             label12.Size = new Size(93, 25);
@@ -212,7 +212,7 @@ namespace CapaPresentacion
             button6.BackColor = Color.FromArgb(222, 108, 148);
             button6.FlatAppearance.BorderSize = 0;
             button6.FlatStyle = FlatStyle.Flat;
-            button6.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button6.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button6.ForeColor = Color.White;
             button6.Location = new Point(102, 130);
             button6.Name = "button6";
@@ -243,7 +243,7 @@ namespace CapaPresentacion
             // label9
             // 
             label9.AutoSize = true;
-            label9.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label9.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label9.Location = new Point(14, 47);
             label9.Name = "label9";
             label9.Size = new Size(127, 20);

@@ -92,9 +92,12 @@
           <Property Name="Apellido" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Clave" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Correo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Foto" Type="varbinary(max)" />
         </EntityType>
         <Association Name="BChFk">
-          <End Role="Chofer" Type="Self.Chofer" Multiplicity="1" />
+          <End Role="Chofer" Type="Self.Chofer" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Bus" Type="Self.Bus" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Chofer">
@@ -247,6 +250,7 @@
           <NavigationProperty Name="Rol" Relationship="Self.URolFk" FromRole="Usuario" ToRole="Rol" />
           <NavigationProperty Name="Encomienda" Relationship="ModelEF.EUFk" FromRole="Usuario" ToRole="Encomienda" />
           <NavigationProperty Name="Pasaje" Relationship="ModelEF.PUFk" FromRole="Usuario" ToRole="Pasaje" />
+          <Property Name="Foto" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
         <Association Name="PRolFk">
           <End Role="Rol" Type="Self.Rol" Multiplicity="1" />
@@ -446,6 +450,7 @@
           <EntitySetMapping Name="Usuario">
             <EntityTypeMapping TypeName="ModelEF.Usuario">
               <MappingFragment StoreEntitySet="Usuario">
+                <ScalarProperty Name="Foto" ColumnName="Foto" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="RolId" ColumnName="RolId" />
                 <ScalarProperty Name="Dni" ColumnName="Dni" />

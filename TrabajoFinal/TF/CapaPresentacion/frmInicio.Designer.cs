@@ -33,7 +33,6 @@ namespace CapaPresentacion
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicio));
             this.label1 = new System.Windows.Forms.Label();
             this.menuTitulo = new System.Windows.Forms.MenuStrip();
             this.label2 = new System.Windows.Forms.Label();
@@ -56,9 +55,9 @@ namespace CapaPresentacion
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(108)))), ((int)(((byte)(148)))));
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(46, 25);
+            this.label1.Location = new System.Drawing.Point(46, 26);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(418, 38);
@@ -81,7 +80,7 @@ namespace CapaPresentacion
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(108)))), ((int)(((byte)(148)))));
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(708, 30);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -93,7 +92,7 @@ namespace CapaPresentacion
             // lblNombreUsuarioIngresado
             // 
             this.lblNombreUsuarioIngresado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(108)))), ((int)(((byte)(148)))));
-            this.lblNombreUsuarioIngresado.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreUsuarioIngresado.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreUsuarioIngresado.ForeColor = System.Drawing.Color.White;
             this.lblNombreUsuarioIngresado.Location = new System.Drawing.Point(798, 30);
             this.lblNombreUsuarioIngresado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -237,7 +236,8 @@ namespace CapaPresentacion
             // 
             // pbPerfil
             // 
-            this.pbPerfil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbPerfil.BackgroundImage")));
+            this.pbPerfil.BackColor = System.Drawing.Color.White;
+            this.pbPerfil.BackgroundImage = global::CapaPresentacion.Properties.Resources.logo_perla_del_altomayo;
             this.pbPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbPerfil.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pbPerfil.Cursor = System.Windows.Forms.Cursors.Hand;

@@ -45,6 +45,7 @@
     <NavigationProperty Name="Rol" Relationship="Self.URolFk" FromRole="Usuario" ToRole="Rol" />
     <NavigationProperty Name="Encomienda" Relationship="ModelEF.EUFk" FromRole="Usuario" ToRole="Encomienda" />
     <NavigationProperty Name="Pasaje" Relationship="ModelEF.PUFk" FromRole="Usuario" ToRole="Pasaje" />
+    <Property Name="Foto" Type="Binary" MaxLength="Max" FixedLength="false" />
   </EntityType>
   <Association Name="PRolFk">
     <End Role="Rol" Type="Self.Rol" Multiplicity="1" />

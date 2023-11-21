@@ -11,6 +11,7 @@ using FontAwesome.Sharp;
 using CapaDatos;
 using CapaNegocio;
 using CapaPresentacion.Modales;
+using System.IO;
 
 namespace CapaPresentacion
 {
@@ -35,6 +36,21 @@ namespace CapaPresentacion
                 if (!encontrado) { iconMenu.Visible = false; }
             }
             lblNombreUsuarioIngresado.Text = usuarioActual.Nombre + " " + usuarioActual.Apellido;
+            if(usuarioActual.Foto != null)
+            {
+                pbPerfil.Image = ByteToImage(usuarioActual.Foto);
+                pbPerfil.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            }
+        }
+
+        private Image ByteToImage(byte[] imageBytes)
+        {
+            MemoryStream ms = new MemoryStream();
+            ms.Write(imageBytes, 0, imageBytes.Length);
+            Image image = new Bitmap(ms);
+
+            return image;
         }
 
         private void AbrirFormularioHijo(IconMenuItem iconMenuItem, Form form)

@@ -87,9 +87,12 @@
     <Property Name="Apellido" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Clave" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Correo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Foto" Type="varbinary(max)" />
   </EntityType>
   <Association Name="BChFk">
-    <End Role="Chofer" Type="Self.Chofer" Multiplicity="1" />
+    <End Role="Chofer" Type="Self.Chofer" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
     <End Role="Bus" Type="Self.Bus" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Chofer">
