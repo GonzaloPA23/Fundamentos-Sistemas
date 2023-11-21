@@ -24,12 +24,13 @@ namespace CapaDatos
         public int ChoferId { get; set; }
         public string Matricula { get; set; }
         public string Tipo { get; set; }
-        public int AsientosDisponibles { get; set; }
+        public Nullable<int> AsientosDisponibles { get; set; }
         public string PuntoSalida { get; set; }
         public string Destino { get; set; }
         public System.DateTime FechaSalida { get; set; }
         public System.DateTime FechaLlegada { get; set; }
         public decimal PrecioAsiento { get; set; }
+        public int CantidadAsiento { get; set; }
     
         public virtual Chofer Chofer { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

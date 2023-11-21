@@ -202,6 +202,8 @@
     <Content Include="imagenes\encomienda-fondo.png" />
     <Content Include="imagenes\logo_perla-del-altomayo.png" />
     <Content Include="imagenes\palmeras-inicio-sesion.png" />
+    <Content Include="imagenes\asientos-columnas8.png" />
+    <Content Include="imagenes\asientos-columnas9.png" />
     <None Include="Resources\delete32.png" />
     <None Include="Resources\check20.png" />
   </ItemGroup>

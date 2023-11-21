@@ -102,5 +102,28 @@ namespace CapaDatos
             }
             return actualizado;
         }
+        // Metodo para actualizar un usuario
+        public String ActualizarUsuario(Usuario usuario)
+        {   
+            string mensake = string.Empty;
+            try
+            {
+                using (var context = new DB_PerlaAltomayoEntities())
+                {
+                    var user = context.Usuario.Where(u => u.Id == usuario.Id).FirstOrDefault();
+                    user.Dni = usuario.Dni;
+                    user.Nombre = usuario.Nombre;
+                    user.Apellido = usuario.Apellido;
+                    user.Correo = usuario.Correo;
+                    context.Entry(user).State = EntityState.Modified;
+                    context.SaveChanges();
+                    return mensake = "Usuario actualizado correctamente";
+                }
+            }
+            catch (Exception ex)
+            {
+                return mensake = ex.Message;
+            }
+        }
     }
 }

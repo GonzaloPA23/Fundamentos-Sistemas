@@ -32,8 +32,8 @@ namespace CapaPresentacion
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.cbDniChofer = new System.Windows.Forms.ComboBox();
@@ -47,7 +47,6 @@ namespace CapaPresentacion
             this.cbTipoBus = new System.Windows.Forms.ComboBox();
             this.nudPrecio = new System.Windows.Forms.NumericUpDown();
             this.btnRegistrarBus = new System.Windows.Forms.Button();
-            this.nudAsientosDisponibles = new System.Windows.Forms.NumericUpDown();
             this.btnCancelarBus = new System.Windows.Forms.Button();
             this.txtMatricula = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -68,6 +67,7 @@ namespace CapaPresentacion
             this.ChoferId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Matricula = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CantidadAsiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AsientosDisponibles = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PuntoSalida = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Destino = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -79,15 +79,17 @@ namespace CapaPresentacion
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.cbBusqueda = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.nudCantidadAsientos = new System.Windows.Forms.NumericUpDown();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecio)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudAsientosDisponibles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgBuses)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantidadAsientos)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.nudCantidadAsientos);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.cbDniChofer);
             this.panel1.Controls.Add(this.btnVerChoferes);
@@ -100,7 +102,6 @@ namespace CapaPresentacion
             this.panel1.Controls.Add(this.cbTipoBus);
             this.panel1.Controls.Add(this.nudPrecio);
             this.panel1.Controls.Add(this.btnRegistrarBus);
-            this.panel1.Controls.Add(this.nudAsientosDisponibles);
             this.panel1.Controls.Add(this.btnCancelarBus);
             this.panel1.Controls.Add(this.txtMatricula);
             this.panel1.Controls.Add(this.label7);
@@ -112,10 +113,10 @@ namespace CapaPresentacion
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(829, 47);
+            this.panel1.Location = new System.Drawing.Point(835, 47);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(343, 590);
+            this.panel1.Size = new System.Drawing.Size(341, 590);
             this.panel1.TabIndex = 14;
             // 
             // label10
@@ -126,7 +127,7 @@ namespace CapaPresentacion
             this.label10.Location = new System.Drawing.Point(79, 409);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(207, 17);
+            this.label10.Size = new System.Drawing.Size(195, 15);
             this.label10.TabIndex = 23;
             this.label10.Text = "Importante elegir el dni del chofer*";
             // 
@@ -150,12 +151,12 @@ namespace CapaPresentacion
             this.btnVerChoferes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(108)))), ((int)(((byte)(148)))));
             this.btnVerChoferes.FlatAppearance.BorderSize = 0;
             this.btnVerChoferes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVerChoferes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.btnVerChoferes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVerChoferes.ForeColor = System.Drawing.Color.White;
-            this.btnVerChoferes.Location = new System.Drawing.Point(258, 347);
+            this.btnVerChoferes.Location = new System.Drawing.Point(252, 360);
             this.btnVerChoferes.Margin = new System.Windows.Forms.Padding(2);
             this.btnVerChoferes.Name = "btnVerChoferes";
-            this.btnVerChoferes.Size = new System.Drawing.Size(74, 54);
+            this.btnVerChoferes.Size = new System.Drawing.Size(79, 28);
             this.btnVerChoferes.TabIndex = 21;
             this.btnVerChoferes.Text = "Ver Choferes";
             this.btnVerChoferes.UseVisualStyleBackColor = false;
@@ -168,7 +169,7 @@ namespace CapaPresentacion
             this.label1.Location = new System.Drawing.Point(20, 365);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 17);
+            this.label1.Size = new System.Drawing.Size(85, 15);
             this.label1.TabIndex = 10;
             this.label1.Text = "Dni del Chofer";
             // 
@@ -186,6 +187,7 @@ namespace CapaPresentacion
             this.btnEliminarBus.TabIndex = 20;
             this.btnEliminarBus.Text = "Eliminar bus";
             this.btnEliminarBus.UseVisualStyleBackColor = false;
+            this.btnEliminarBus.Click += new System.EventHandler(this.btnEliminarBus_Click);
             // 
             // dtpFechaLlegada
             // 
@@ -311,35 +313,6 @@ namespace CapaPresentacion
             this.btnRegistrarBus.UseVisualStyleBackColor = false;
             this.btnRegistrarBus.Click += new System.EventHandler(this.btnRegistrarBus_Click);
             // 
-            // nudAsientosDisponibles
-            // 
-            this.nudAsientosDisponibles.Increment = new decimal(new int[] {
-            8,
-            0,
-            0,
-            0});
-            this.nudAsientosDisponibles.Location = new System.Drawing.Point(116, 93);
-            this.nudAsientosDisponibles.Margin = new System.Windows.Forms.Padding(2);
-            this.nudAsientosDisponibles.Maximum = new decimal(new int[] {
-            72,
-            0,
-            0,
-            0});
-            this.nudAsientosDisponibles.Minimum = new decimal(new int[] {
-            56,
-            0,
-            0,
-            0});
-            this.nudAsientosDisponibles.Name = "nudAsientosDisponibles";
-            this.nudAsientosDisponibles.Size = new System.Drawing.Size(73, 20);
-            this.nudAsientosDisponibles.TabIndex = 7;
-            this.nudAsientosDisponibles.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.nudAsientosDisponibles.Value = new decimal(new int[] {
-            56,
-            0,
-            0,
-            0});
-            // 
             // btnCancelarBus
             // 
             this.btnCancelarBus.BackColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -371,7 +344,7 @@ namespace CapaPresentacion
             this.label7.Location = new System.Drawing.Point(-2, 288);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(113, 17);
+            this.label7.Size = new System.Drawing.Size(114, 15);
             this.label7.TabIndex = 0;
             this.label7.Text = "    Fecha de llegada";
             // 
@@ -382,7 +355,7 @@ namespace CapaPresentacion
             this.label9.Location = new System.Drawing.Point(4, 173);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(107, 17);
+            this.label9.Size = new System.Drawing.Size(106, 15);
             this.label9.TabIndex = 0;
             this.label9.Text = "    Fecha de salida\r\n";
             // 
@@ -393,7 +366,7 @@ namespace CapaPresentacion
             this.label6.Location = new System.Drawing.Point(38, 136);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 17);
+            this.label6.Size = new System.Drawing.Size(71, 15);
             this.label6.TabIndex = 0;
             this.label6.Text = "Tipo de bus";
             // 
@@ -404,7 +377,7 @@ namespace CapaPresentacion
             this.label8.Location = new System.Drawing.Point(66, 324);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(42, 17);
+            this.label8.Size = new System.Drawing.Size(42, 15);
             this.label8.TabIndex = 0;
             this.label8.Text = "Precio";
             // 
@@ -412,12 +385,12 @@ namespace CapaPresentacion
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.label5.Location = new System.Drawing.Point(40, 85);
+            this.label5.Location = new System.Drawing.Point(37, 86);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 34);
+            this.label5.Size = new System.Drawing.Size(73, 30);
             this.label5.TabIndex = 0;
-            this.label5.Text = "   Asientos\r\ndisponibles";
+            this.label5.Text = "Cantidad de\r\n      Asientos";
             // 
             // label12
             // 
@@ -426,7 +399,7 @@ namespace CapaPresentacion
             this.label12.Location = new System.Drawing.Point(58, 251);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(51, 17);
+            this.label12.Size = new System.Drawing.Size(49, 15);
             this.label12.TabIndex = 0;
             this.label12.Text = "Destino";
             // 
@@ -437,7 +410,7 @@ namespace CapaPresentacion
             this.label2.Location = new System.Drawing.Point(22, 214);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 17);
+            this.label2.Size = new System.Drawing.Size(92, 15);
             this.label2.TabIndex = 0;
             this.label2.Text = "Punto de salida";
             // 
@@ -448,7 +421,7 @@ namespace CapaPresentacion
             this.label4.Location = new System.Drawing.Point(49, 54);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 17);
+            this.label4.Size = new System.Drawing.Size(58, 15);
             this.label4.TabIndex = 0;
             this.label4.Text = "Matricula";
             // 
@@ -459,7 +432,7 @@ namespace CapaPresentacion
             this.label3.Location = new System.Drawing.Point(20, 11);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 20);
+            this.label3.Size = new System.Drawing.Size(116, 18);
             this.label3.TabIndex = 0;
             this.label3.Text = "Detalles del bus:";
             // 
@@ -470,7 +443,7 @@ namespace CapaPresentacion
             this.lblTotalBuses.Location = new System.Drawing.Point(662, 15);
             this.lblTotalBuses.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTotalBuses.Name = "lblTotalBuses";
-            this.lblTotalBuses.Size = new System.Drawing.Size(15, 17);
+            this.lblTotalBuses.Size = new System.Drawing.Size(14, 15);
             this.lblTotalBuses.TabIndex = 15;
             this.lblTotalBuses.Text = "0";
             // 
@@ -481,7 +454,7 @@ namespace CapaPresentacion
             this.label14.Location = new System.Drawing.Point(555, 15);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(96, 17);
+            this.label14.Size = new System.Drawing.Size(93, 15);
             this.label14.TabIndex = 16;
             this.label14.Text = "Total de buses: ";
             // 
@@ -492,7 +465,7 @@ namespace CapaPresentacion
             this.label15.Location = new System.Drawing.Point(11, 9);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(123, 23);
+            this.label15.Size = new System.Drawing.Size(120, 20);
             this.label15.TabIndex = 17;
             this.label15.Text = "Lista de buses: ";
             // 
@@ -500,14 +473,14 @@ namespace CapaPresentacion
             // 
             this.dgBuses.AllowUserToAddRows = false;
             this.dgBuses.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgBuses.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgBuses.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgBuses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgBuses.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnSeleccionar,
@@ -515,21 +488,22 @@ namespace CapaPresentacion
             this.ChoferId,
             this.Matricula,
             this.Tipo,
+            this.CantidadAsiento,
             this.AsientosDisponibles,
             this.PuntoSalida,
             this.Destino,
             this.FechaSalida,
             this.FechaLlegada,
             this.PrecioAsiento});
-            this.dgBuses.Location = new System.Drawing.Point(10, 75);
+            this.dgBuses.Location = new System.Drawing.Point(1, 75);
             this.dgBuses.MultiSelect = false;
             this.dgBuses.Name = "dgBuses";
             this.dgBuses.ReadOnly = true;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgBuses.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgBuses.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgBuses.RowTemplate.Height = 28;
-            this.dgBuses.Size = new System.Drawing.Size(811, 562);
+            this.dgBuses.Size = new System.Drawing.Size(830, 562);
             this.dgBuses.TabIndex = 22;
             this.dgBuses.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgBuses_CellContentClick);
             this.dgBuses.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgBuses_CellPainting);
@@ -553,7 +527,7 @@ namespace CapaPresentacion
             this.ChoferId.HeaderText = "ChoferId";
             this.ChoferId.Name = "ChoferId";
             this.ChoferId.ReadOnly = true;
-            this.ChoferId.Width = 70;
+            this.ChoferId.Width = 60;
             // 
             // Matricula
             // 
@@ -567,21 +541,28 @@ namespace CapaPresentacion
             this.Tipo.HeaderText = "Tipo de Bus";
             this.Tipo.Name = "Tipo";
             this.Tipo.ReadOnly = true;
-            this.Tipo.Width = 80;
+            this.Tipo.Width = 75;
+            // 
+            // CantidadAsiento
+            // 
+            this.CantidadAsiento.HeaderText = "Cantidad de Asientos";
+            this.CantidadAsiento.Name = "CantidadAsiento";
+            this.CantidadAsiento.ReadOnly = true;
+            this.CantidadAsiento.Width = 60;
             // 
             // AsientosDisponibles
             // 
             this.AsientosDisponibles.HeaderText = "Asientos Disponibles";
             this.AsientosDisponibles.Name = "AsientosDisponibles";
             this.AsientosDisponibles.ReadOnly = true;
-            this.AsientosDisponibles.Width = 80;
+            this.AsientosDisponibles.Width = 75;
             // 
             // PuntoSalida
             // 
             this.PuntoSalida.HeaderText = "Punto de Salida";
             this.PuntoSalida.Name = "PuntoSalida";
             this.PuntoSalida.ReadOnly = true;
-            this.PuntoSalida.Width = 90;
+            this.PuntoSalida.Width = 80;
             // 
             // Destino
             // 
@@ -595,12 +576,14 @@ namespace CapaPresentacion
             this.FechaSalida.HeaderText = "Fecha de Salida";
             this.FechaSalida.Name = "FechaSalida";
             this.FechaSalida.ReadOnly = true;
+            this.FechaSalida.Width = 95;
             // 
             // FechaLlegada
             // 
             this.FechaLlegada.HeaderText = "Fecha de Llegada";
             this.FechaLlegada.Name = "FechaLlegada";
             this.FechaLlegada.ReadOnly = true;
+            this.FechaLlegada.Width = 95;
             // 
             // PrecioAsiento
             // 
@@ -668,9 +651,36 @@ namespace CapaPresentacion
             this.label11.Location = new System.Drawing.Point(72, 44);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(82, 19);
+            this.label11.Size = new System.Drawing.Size(81, 17);
             this.label11.TabIndex = 23;
             this.label11.Text = "Buscar por:";
+            // 
+            // nudCantidadAsientos
+            // 
+            this.nudCantidadAsientos.Increment = new decimal(new int[] {
+            8,
+            0,
+            0,
+            0});
+            this.nudCantidadAsientos.Location = new System.Drawing.Point(116, 93);
+            this.nudCantidadAsientos.Maximum = new decimal(new int[] {
+            72,
+            0,
+            0,
+            0});
+            this.nudCantidadAsientos.Minimum = new decimal(new int[] {
+            64,
+            0,
+            0,
+            0});
+            this.nudCantidadAsientos.Name = "nudCantidadAsientos";
+            this.nudCantidadAsientos.Size = new System.Drawing.Size(46, 20);
+            this.nudCantidadAsientos.TabIndex = 24;
+            this.nudCantidadAsientos.Value = new decimal(new int[] {
+            64,
+            0,
+            0,
+            0});
             // 
             // frmBus
             // 
@@ -693,8 +703,8 @@ namespace CapaPresentacion
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecio)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudAsientosDisponibles)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgBuses)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantidadAsientos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -703,7 +713,6 @@ namespace CapaPresentacion
         #endregion
 
         private Panel panel1;
-        private NumericUpDown nudAsientosDisponibles;
         private Button btnRegistrarBus;
         private Button btnCancelarBus;
         private TextBox txtMatricula;
@@ -731,21 +740,23 @@ namespace CapaPresentacion
         private Button btnVerChoferes;
         private Label label1;
         private Label label10;
+        private TextBox txtBusqueda;
+        private Button btnBuscar;
+        private Button btnLimpiar;
+        private ComboBox cbBusqueda;
+        private Label label11;
         private DataGridViewButtonColumn btnSeleccionar;
         private DataGridViewTextBoxColumn Id;
         private DataGridViewTextBoxColumn ChoferId;
         private DataGridViewTextBoxColumn Matricula;
         private DataGridViewTextBoxColumn Tipo;
+        private DataGridViewTextBoxColumn CantidadAsiento;
         private DataGridViewTextBoxColumn AsientosDisponibles;
         private DataGridViewTextBoxColumn PuntoSalida;
         private DataGridViewTextBoxColumn Destino;
         private DataGridViewTextBoxColumn FechaSalida;
         private DataGridViewTextBoxColumn FechaLlegada;
         private DataGridViewTextBoxColumn PrecioAsiento;
-        private TextBox txtBusqueda;
-        private Button btnBuscar;
-        private Button btnLimpiar;
-        private ComboBox cbBusqueda;
-        private Label label11;
+        private NumericUpDown nudCantidadAsientos;
     }
 }

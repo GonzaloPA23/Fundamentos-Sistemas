@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mdPerfil));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnGuardarCambios = new System.Windows.Forms.Button();
             this.tbCorreo = new System.Windows.Forms.TextBox();
             this.tbDNI = new System.Windows.Forms.TextBox();
             this.tbApellido = new System.Windows.Forms.TextBox();
@@ -45,7 +47,9 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btnGuardarCambios);
             this.panel1.Controls.Add(this.tbCorreo);
             this.panel1.Controls.Add(this.tbDNI);
             this.panel1.Controls.Add(this.tbApellido);
@@ -56,10 +60,34 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnSubirFoto);
             this.panel1.Controls.Add(this.pbFotoPerfil);
-            this.panel1.Location = new System.Drawing.Point(27, 30);
+            this.panel1.Location = new System.Drawing.Point(26, 30);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(679, 395);
             this.panel1.TabIndex = 1;
+            // 
+            // btnGuardarCambios
+            // 
+            this.btnGuardarCambios.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGuardarCambios.AutoEllipsis = true;
+            this.btnGuardarCambios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(108)))), ((int)(((byte)(148)))));
+            this.btnGuardarCambios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGuardarCambios.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnGuardarCambios.FlatAppearance.BorderSize = 0;
+            this.btnGuardarCambios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(113)))), ((int)(((byte)(142)))));
+            this.btnGuardarCambios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarCambios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarCambios.ForeColor = System.Drawing.Color.White;
+            this.btnGuardarCambios.Location = new System.Drawing.Point(387, 321);
+            this.btnGuardarCambios.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGuardarCambios.Name = "btnGuardarCambios";
+            this.btnGuardarCambios.Size = new System.Drawing.Size(214, 39);
+            this.btnGuardarCambios.TabIndex = 34;
+            this.btnGuardarCambios.Text = "Guardar Cambios";
+            this.btnGuardarCambios.UseVisualStyleBackColor = false;
+            this.btnGuardarCambios.Visible = false;
+            this.btnGuardarCambios.Click += new System.EventHandler(this.btnGuardarCambios_Click);
             // 
             // tbCorreo
             // 
@@ -160,7 +188,9 @@
             // 
             // pbFotoPerfil
             // 
+            this.pbFotoPerfil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbFotoPerfil.BackgroundImage")));
             this.pbFotoPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbFotoPerfil.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pbFotoPerfil.Location = new System.Drawing.Point(36, 37);
             this.pbFotoPerfil.Name = "pbFotoPerfil";
             this.pbFotoPerfil.Size = new System.Drawing.Size(256, 268);
@@ -198,5 +228,6 @@
         private System.Windows.Forms.TextBox tbDNI;
         private System.Windows.Forms.TextBox tbApellido;
         private System.Windows.Forms.TextBox tbNombre;
+        private System.Windows.Forms.Button btnGuardarCambios;
     }
 }

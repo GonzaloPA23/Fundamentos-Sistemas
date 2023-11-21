@@ -36,11 +36,20 @@ namespace CapaPresentacion
                 if (!encontrado) { iconMenu.Visible = false; }
             }
             lblNombreUsuarioIngresado.Text = usuarioActual.Nombre + " " + usuarioActual.Apellido;
-            if(usuarioActual.Foto != null)
-            {
-                pbPerfil.Image = ByteToImage(usuarioActual.Foto);
-                pbPerfil.SizeMode = PictureBoxSizeMode.StretchImage;
+            ActualizarFotoPerfil();
+        }
 
+        public void ActualizarFotoPerfil()
+        {      
+            if (usuarioActual.Foto != null)
+            {
+                bool obtenido = true;
+                byte[] foto = new NUsuario().ObtenerFoto(out obtenido, usuarioActual.Id);
+                if (obtenido)
+                {
+                    pbPerfil.Image = ByteToImage(foto);
+                    pbPerfil.SizeMode = PictureBoxSizeMode.StretchImage;
+                }
             }
         }
 
@@ -95,7 +104,7 @@ namespace CapaPresentacion
 
         private void menupasajes_Click(object sender, EventArgs e)
         {
-            AbrirFormularioHijo((IconMenuItem)sender, new frmPasaje());
+            AbrirFormularioHijo((IconMenuItem)sender, new frmPasaje(usuarioActual));
         }
 
         private void menuencomiendas_Click(object sender, EventArgs e)
@@ -105,7 +114,7 @@ namespace CapaPresentacion
 
         private void subMenuHistorialPasajes_Click(object sender, EventArgs e)
         {
-            AbrirFormularioHijo(menureportes, new frmHistorialPasaje());
+            AbrirFormularioHijo(menureportes, new frmHistorialPasaje(usuarioActual));
         }
 
         private void subMenuHistorialEncomiendas_Click(object sender, EventArgs e)
@@ -115,8 +124,16 @@ namespace CapaPresentacion
 
         private void pbPerfil_Click(object sender, EventArgs e)
         {
-            mdPerfil perfil = new mdPerfil(usuarioActual);
+            mdPerfil perfil = new mdPerfil(usuarioActual,this);
             perfil.Show();
+            this.Hide();
+            perfil.FormClosing += FrmClosing;
+        }
+
+        private void FrmClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Show();
+            ActualizarFotoPerfil();
         }
     }
 }

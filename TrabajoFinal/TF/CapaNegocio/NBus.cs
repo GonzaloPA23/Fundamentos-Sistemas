@@ -49,5 +49,34 @@ namespace CapaNegocio
             if(mensaje != string.Empty) return 0;
             else return dBus.RegistrarBus(bus, out mensaje);
         }
+        public void EliminarBus(int idBus)
+        {           
+            dBus.EliminarBus(idBus);
+        }
+        public List<Bus> ListarBusesPorPuntoSalida(string puntoSalida)
+        {
+            return dBus.ListarBusesPorPuntoSalida(puntoSalida);
+        }
+        // Metodo para listar los buses por destino
+        public List<Bus> ListarBusesPorDestino(string destino)
+        {
+            return dBus.ListarBusesPorDestino(destino);
+        }
+        // Metodo para listar los buses por fecha de salida
+        public List<Bus> ListarBusesPorFechaSalida(DateTime fechaSalida)
+        {
+            return dBus.ListarBusesPorFechaSalida(fechaSalida);
+        }
+        // Metodo para listar por el tipo de bus
+        public List<Bus> ListarBusesPorTipo(string tipo)
+        {
+            return dBus.ListarBusesPorTipo(tipo);
+        }
+        // Metodo para actualizar los asientos disponibles
+        public void ActualizarBus(int idBus)
+        {
+            dBus.ActualizarBus(idBus);
+        }
+
     }
 }

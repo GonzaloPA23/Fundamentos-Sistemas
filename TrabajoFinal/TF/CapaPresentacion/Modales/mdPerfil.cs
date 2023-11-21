@@ -17,9 +17,12 @@ namespace CapaPresentacion.Modales
     {
         private Usuario usuario;
         private NUsuario nUsuario = new NUsuario();
-        public mdPerfil(Usuario usuario)
+        private frmInicio frmInicio;
+
+        public mdPerfil(Usuario usuario, frmInicio inicio)
         {
             this.usuario = usuario;
+            this.frmInicio = inicio;
             InitializeComponent();
         }
 
@@ -34,17 +37,18 @@ namespace CapaPresentacion.Modales
 
         private void mdPerfil_Load(object sender, EventArgs e)
         {
-           
             if (usuario.Foto != null)
             {
-                pbFotoPerfil.Image = ByteToImage(usuario.Foto);
-                pbFotoPerfil.SizeMode = PictureBoxSizeMode.StretchImage;
-                pbFotoPerfil.Visible = true;
+                bool obtenido = true;
+                byte[] foto = nUsuario.ObtenerFoto(out obtenido, usuario.Id);
+
+                if (obtenido)
+                {
+                    pbFotoPerfil.Image = ByteToImage(foto);
+                    pbFotoPerfil.SizeMode = PictureBoxSizeMode.StretchImage;
+                }                 
             }
-            else
-            {
-                pbFotoPerfil.Visible = false;
-            }
+           
             tbNombre.Text = usuario.Nombre;
             tbApellido.Text = usuario.Apellido;
             tbCorreo.Text = usuario.Correo;
@@ -70,6 +74,26 @@ namespace CapaPresentacion.Modales
                     MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
             }
+        }
+
+        private void Form_Closing(object sender, FormClosingEventArgs e)
+        {
+            this.frmInicio.ActualizarFotoPerfil();
+            this.frmInicio.Show();
+        }
+
+        private void btnGuardarCambios_Click(object sender, EventArgs e)
+        {
+            nUsuario.ActualizarUsuario(new Usuario()
+            {
+                Id = usuario.Id,
+                Dni = tbDNI.Text.Trim(),
+                Nombre = tbNombre.Text.Trim(),
+                Apellido = tbApellido.Text.Trim(),
+                Correo = tbCorreo.Text.Trim()
+            });
+
+            MessageBox.Show("Usuario actualizado correctamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

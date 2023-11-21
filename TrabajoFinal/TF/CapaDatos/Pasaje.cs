@@ -17,14 +17,9 @@ namespace CapaDatos
         public int Id { get; set; }
         public int UsuarioId { get; set; }
         public int BusId { get; set; }
-        public string PuntoSalida { get; set; }
-        public string Destino { get; set; }
-        public string TipoBus { get; set; }
-        public System.DateTime FechaSalida { get; set; }
         public string Asiento { get; set; }
         public int Piso { get; set; }
         public Nullable<System.DateTime> FechaCompra { get; set; }
-        public decimal Precio { get; set; }
     
         public virtual Bus Bus { get; set; }
         public virtual Usuario Usuario { get; set; }

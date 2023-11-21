@@ -52,7 +52,7 @@ namespace CapaPresentacion
             dgBuses.Rows.Clear();
             foreach (Bus bus in buses)
             {
-                dgBuses.Rows.Add(new object[] { "", bus.Id, bus.ChoferId, bus.Matricula,bus.Tipo, bus.AsientosDisponibles, 
+                dgBuses.Rows.Add(new object[] { "", bus.Id, bus.ChoferId, bus.Matricula,bus.Tipo,bus.CantidadAsiento, bus.AsientosDisponibles, 
                     bus.PuntoSalida, bus.Destino, bus.FechaSalida.ToString("yyyy-MM-dd HH:mm"), 
                     bus.FechaLlegada.ToString("yyyy-MM-dd HH:mm"),"S/." + bus.PrecioAsiento});
             }
@@ -62,7 +62,7 @@ namespace CapaPresentacion
         private void LimpiarCampos()
         {
             txtMatricula.Text = "";
-            nudAsientosDisponibles.Value = 56;
+            nudCantidadAsientos.Value = nudCantidadAsientos.Minimum;
             cbTipoBus.SelectedIndex = 0;
             dtpFechaSalida.Value = DateTime.Now;
             dtpFechaLlegada.Value = DateTime.Now;
@@ -104,9 +104,8 @@ namespace CapaPresentacion
                 int indice = e.RowIndex;
                 if (indice >= 0)
                 {
-
                     txtMatricula.Text = dgBuses.Rows[indice].Cells["Matricula"].Value.ToString();
-                    nudAsientosDisponibles.Value = Convert.ToInt32(dgBuses.Rows[indice].Cells["AsientosDisponibles"].Value);
+                    nudCantidadAsientos.Value = Convert.ToInt32(dgBuses.Rows[indice].Cells["CantidadAsiento"].Value);
                     cbTipoBus.Text = dgBuses.Rows[indice].Cells["Tipo"].Value.ToString();
                     cbPuntoSalida.Text = dgBuses.Rows[indice].Cells["PuntoSalida"].Value.ToString();
                     cbDestino.Text = dgBuses.Rows[indice].Cells["Destino"].Value.ToString();
@@ -126,12 +125,13 @@ namespace CapaPresentacion
                 ChoferId = Convert.ToInt32(cbDniChofer.SelectedValue),
                 Matricula = txtMatricula.Text.Trim().ToUpper(),
                 Tipo = cbTipoBus.Text.Trim(),
-                AsientosDisponibles = Convert.ToInt32(nudAsientosDisponibles.Value),
+                CantidadAsiento = Convert.ToInt32(nudCantidadAsientos.Value),
                 PuntoSalida = cbPuntoSalida.Text.Trim(),
                 Destino = cbDestino.Text.Trim(),
                 FechaSalida = dtpFechaSalida.Value,
                 FechaLlegada = dtpFechaLlegada.Value,
                 PrecioAsiento = nudPrecio.Value,
+                AsientosDisponibles = Convert.ToInt32(nudCantidadAsientos.Value)             
             };
 
             int idbusgenerado = nBus.RegistrarBus(bus, out mensaje);
@@ -170,6 +170,23 @@ namespace CapaPresentacion
             cbBusqueda.SelectedIndex = 0;
             LimpiarCampos();
             MostrarBuses(nBus.ListarBuses());
+        }
+
+        private void btnEliminarBus_Click(object sender, EventArgs e)
+        {
+            // si ha seleccionado el boton de la columna llamado btnSeleccionar, entonces elimina el bus
+            if (dgBuses.Columns[dgBuses.CurrentCell.ColumnIndex].Name == "btnSeleccionar")
+            {
+                int indice = dgBuses.CurrentCell.RowIndex;
+                if (indice >= 0)
+                {
+                    int idBus = Convert.ToInt32(dgBuses.Rows[indice].Cells["Id"].Value);
+                    nBus.EliminarBus(idBus);
+                    MessageBox.Show("Bus eliminado correctamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LimpiarCampos();
+                    MostrarBuses(nBus.ListarBuses());
+                }
+            }
         }
     }
 }

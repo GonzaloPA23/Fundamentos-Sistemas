@@ -112,7 +112,7 @@
     <Property Name="ChoferId" Type="Int32" Nullable="false" />
     <Property Name="Matricula" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="Tipo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="AsientosDisponibles" Type="Int32" Nullable="false" />
+    <Property Name="AsientosDisponibles" Type="Int32" />
     <Property Name="PuntoSalida" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="Destino" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="FechaSalida" Type="DateTime" Nullable="false" Precision="3" />
@@ -120,6 +120,7 @@
     <Property Name="PrecioAsiento" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
     <NavigationProperty Name="Chofer" Relationship="ModelEF.BChFk" FromRole="Bus" ToRole="Chofer" />
     <NavigationProperty Name="Pasaje" Relationship="ModelEF.PBFk" FromRole="Bus" ToRole="Pasaje" />
+    <Property Name="CantidadAsiento" Type="Int32" Nullable="false" />
   </EntityType>
   <EntityType Name="Encomienda">
     <Key>
@@ -147,14 +148,9 @@
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="UsuarioId" Type="Int32" Nullable="false" />
     <Property Name="BusId" Type="Int32" Nullable="false" />
-    <Property Name="PuntoSalida" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="Destino" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="TipoBus" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="FechaSalida" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="Asiento" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="Piso" Type="Int32" Nullable="false" />
     <Property Name="FechaCompra" Type="DateTime" Precision="3" />
-    <Property Name="Precio" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
     <NavigationProperty Name="Bus" Relationship="ModelEF.PBFk" FromRole="Pasaje" ToRole="Bus" />
     <NavigationProperty Name="Usuario" Relationship="ModelEF.PUFk" FromRole="Pasaje" ToRole="Usuario" />
   </EntityType>

@@ -33,6 +33,7 @@ namespace CapaPresentacion
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicio));
             this.label1 = new System.Windows.Forms.Label();
             this.menuTitulo = new System.Windows.Forms.MenuStrip();
             this.label2 = new System.Windows.Forms.Label();
@@ -237,7 +238,7 @@ namespace CapaPresentacion
             // pbPerfil
             // 
             this.pbPerfil.BackColor = System.Drawing.Color.White;
-            this.pbPerfil.BackgroundImage = global::CapaPresentacion.Properties.Resources.logo_perla_del_altomayo;
+            this.pbPerfil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbPerfil.BackgroundImage")));
             this.pbPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbPerfil.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pbPerfil.Cursor = System.Windows.Forms.Cursors.Hand;

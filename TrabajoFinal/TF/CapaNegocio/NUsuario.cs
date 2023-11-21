@@ -36,12 +36,6 @@ namespace CapaNegocio
                 mensaje = "El correo debe ser un correo válido";
                 return 0;
             }
-            // Validación que la clave tenga al menos 8 caracteres, una mayuscula y un numero
-            if (usuario.Clave.Length < 8 || !usuario.Clave.Any(char.IsUpper) || !usuario.Clave.Any(char.IsDigit))
-            {
-                mensaje = "La clave debe tener al menos 8 caracteres, una mayuscula y un numero";
-                return 0;
-            }        
             if (mensaje != string.Empty) return 0;
             else return dUsuario.RegistrarUsuario(usuario, out mensaje);
 
@@ -53,6 +47,10 @@ namespace CapaNegocio
         public bool ActualizarFoto(int idUsuario, byte[] foto, out string mensaje)
         {
             return dUsuario.ActualizarFoto(idUsuario, foto, out mensaje);
+        }
+        public String ActualizarUsuario(Usuario usuario)
+        {
+            return dUsuario.ActualizarUsuario(usuario);
         }
     }
 }

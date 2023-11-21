@@ -105,7 +105,7 @@ namespace CapaPresentacion
             "No Fragil",
             "Ropa",
             "Muebles"});
-            this.cbTipoEncomienda.Location = new System.Drawing.Point(128, 169);
+            this.cbTipoEncomienda.Location = new System.Drawing.Point(151, 171);
             this.cbTipoEncomienda.Margin = new System.Windows.Forms.Padding(2);
             this.cbTipoEncomienda.Name = "cbTipoEncomienda";
             this.cbTipoEncomienda.Size = new System.Drawing.Size(189, 21);
@@ -116,7 +116,7 @@ namespace CapaPresentacion
             // 
             this.dtpFechaEnvio.CustomFormat = "dd/MM/yyyy HH:mm";
             this.dtpFechaEnvio.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFechaEnvio.Location = new System.Drawing.Point(128, 130);
+            this.dtpFechaEnvio.Location = new System.Drawing.Point(151, 130);
             this.dtpFechaEnvio.Margin = new System.Windows.Forms.Padding(2);
             this.dtpFechaEnvio.MinDate = new System.DateTime(2023, 11, 18, 12, 13, 29, 223);
             this.dtpFechaEnvio.Name = "dtpFechaEnvio";
@@ -140,7 +140,7 @@ namespace CapaPresentacion
             "Piura",
             "Tumbes",
             "Lima"});
-            this.cbDestino.Location = new System.Drawing.Point(128, 91);
+            this.cbDestino.Location = new System.Drawing.Point(151, 91);
             this.cbDestino.Margin = new System.Windows.Forms.Padding(2);
             this.cbDestino.Name = "cbDestino";
             this.cbDestino.Size = new System.Drawing.Size(189, 21);
@@ -162,7 +162,7 @@ namespace CapaPresentacion
             "Piura",
             "Tumbes",
             "Lima"});
-            this.cbPuntoSalida.Location = new System.Drawing.Point(129, 51);
+            this.cbPuntoSalida.Location = new System.Drawing.Point(151, 54);
             this.cbPuntoSalida.Margin = new System.Windows.Forms.Padding(2);
             this.cbPuntoSalida.Name = "cbPuntoSalida";
             this.cbPuntoSalida.Size = new System.Drawing.Size(189, 21);
@@ -175,13 +175,13 @@ namespace CapaPresentacion
             this.lblPrecioCalculado.Location = new System.Drawing.Point(191, 355);
             this.lblPrecioCalculado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPrecioCalculado.Name = "lblPrecioCalculado";
-            this.lblPrecioCalculado.Size = new System.Drawing.Size(57, 16);
+            this.lblPrecioCalculado.Size = new System.Drawing.Size(56, 15);
             this.lblPrecioCalculado.TabIndex = 13;
             this.lblPrecioCalculado.Text = "S/. 0.00";
             // 
             // nudAlto
             // 
-            this.nudAlto.Location = new System.Drawing.Point(131, 275);
+            this.nudAlto.Location = new System.Drawing.Point(151, 277);
             this.nudAlto.Margin = new System.Windows.Forms.Padding(2);
             this.nudAlto.Maximum = new decimal(new int[] {
             180,
@@ -210,13 +210,13 @@ namespace CapaPresentacion
             this.label11.Location = new System.Drawing.Point(58, 277);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(66, 17);
+            this.label11.Size = new System.Drawing.Size(64, 15);
             this.label11.TabIndex = 11;
             this.label11.Text = "Alto en cm";
             // 
             // nudLargo
             // 
-            this.nudLargo.Location = new System.Drawing.Point(130, 241);
+            this.nudLargo.Location = new System.Drawing.Point(151, 244);
             this.nudLargo.Margin = new System.Windows.Forms.Padding(2);
             this.nudLargo.Maximum = new decimal(new int[] {
             200,
@@ -240,7 +240,7 @@ namespace CapaPresentacion
             // 
             // nudAncho
             // 
-            this.nudAncho.Location = new System.Drawing.Point(131, 310);
+            this.nudAncho.Location = new System.Drawing.Point(151, 308);
             this.nudAncho.Margin = new System.Windows.Forms.Padding(2);
             this.nudAncho.Maximum = new decimal(new int[] {
             150,
@@ -264,7 +264,7 @@ namespace CapaPresentacion
             // 
             // nudPeso
             // 
-            this.nudPeso.Location = new System.Drawing.Point(130, 207);
+            this.nudPeso.Location = new System.Drawing.Point(152, 207);
             this.nudPeso.Margin = new System.Windows.Forms.Padding(2);
             this.nudPeso.Maximum = new decimal(new int[] {
             70,
@@ -294,7 +294,7 @@ namespace CapaPresentacion
             this.label9.Location = new System.Drawing.Point(89, 355);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(98, 17);
+            this.label9.Size = new System.Drawing.Size(99, 15);
             this.label9.TabIndex = 0;
             this.label9.Text = "Precio estimado:";
             // 
@@ -305,7 +305,7 @@ namespace CapaPresentacion
             this.label10.Location = new System.Drawing.Point(48, 244);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(73, 17);
+            this.label10.Size = new System.Drawing.Size(76, 15);
             this.label10.TabIndex = 9;
             this.label10.Text = "Largo en cm";
             // 
@@ -316,7 +316,7 @@ namespace CapaPresentacion
             this.label1.Location = new System.Drawing.Point(47, 313);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 17);
+            this.label1.Size = new System.Drawing.Size(78, 15);
             this.label1.TabIndex = 9;
             this.label1.Text = "Ancho en cm";
             // 
@@ -327,7 +327,7 @@ namespace CapaPresentacion
             this.label5.Location = new System.Drawing.Point(58, 208);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 17);
+            this.label5.Size = new System.Drawing.Size(68, 15);
             this.label5.TabIndex = 9;
             this.label5.Text = "Peso en kg";
             // 
@@ -338,7 +338,7 @@ namespace CapaPresentacion
             this.label3.Location = new System.Drawing.Point(11, 12);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(191, 20);
+            this.label3.Size = new System.Drawing.Size(185, 18);
             this.label3.TabIndex = 0;
             this.label3.Text = "Detalles de la encomienda:\r\n";
             // 
@@ -349,7 +349,7 @@ namespace CapaPresentacion
             this.label2.Location = new System.Drawing.Point(36, 55);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 17);
+            this.label2.Size = new System.Drawing.Size(92, 15);
             this.label2.TabIndex = 0;
             this.label2.Text = "Punto de salida";
             // 
@@ -360,7 +360,7 @@ namespace CapaPresentacion
             this.label12.Location = new System.Drawing.Point(73, 91);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(51, 17);
+            this.label12.Size = new System.Drawing.Size(49, 15);
             this.label12.TabIndex = 0;
             this.label12.Text = "Destino";
             // 
@@ -371,7 +371,7 @@ namespace CapaPresentacion
             this.label7.Location = new System.Drawing.Point(21, 130);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(103, 17);
+            this.label7.Size = new System.Drawing.Size(102, 15);
             this.label7.TabIndex = 0;
             this.label7.Text = "    Fecha de envío";
             // 
@@ -382,7 +382,7 @@ namespace CapaPresentacion
             this.label6.Location = new System.Drawing.Point(22, 171);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(100, 17);
+            this.label6.Size = new System.Drawing.Size(99, 15);
             this.label6.TabIndex = 0;
             this.label6.Text = "Tipo de producto";
             // 
@@ -395,7 +395,7 @@ namespace CapaPresentacion
             this.checkbAutorizacion1.Location = new System.Drawing.Point(75, 468);
             this.checkbAutorizacion1.Margin = new System.Windows.Forms.Padding(2);
             this.checkbAutorizacion1.Name = "checkbAutorizacion1";
-            this.checkbAutorizacion1.Size = new System.Drawing.Size(378, 34);
+            this.checkbAutorizacion1.Size = new System.Drawing.Size(341, 30);
             this.checkbAutorizacion1.TabIndex = 16;
             this.checkbAutorizacion1.Text = "Autorizo el material de mediciones de la plataforma para especificar \r\nlas dimens" +
     "iones de mi encomienda";
@@ -410,7 +410,7 @@ namespace CapaPresentacion
             this.checkbAutorizacion2.Location = new System.Drawing.Point(75, 510);
             this.checkbAutorizacion2.Margin = new System.Windows.Forms.Padding(2);
             this.checkbAutorizacion2.Name = "checkbAutorizacion2";
-            this.checkbAutorizacion2.Size = new System.Drawing.Size(356, 49);
+            this.checkbAutorizacion2.Size = new System.Drawing.Size(331, 43);
             this.checkbAutorizacion2.TabIndex = 16;
             this.checkbAutorizacion2.Text = "Autorizo el cambio de tarifas según los datos brindados cuando la\r\nencomienda lle" +
     "gue a las instalaciones para acordar el precio\r\nrespectivo.";
@@ -456,7 +456,7 @@ namespace CapaPresentacion
             this.label8.Location = new System.Drawing.Point(31, 561);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(467, 15);
+            this.label8.Size = new System.Drawing.Size(443, 13);
             this.label8.TabIndex = 0;
             this.label8.Text = "Todas las encomiendas se entregarán con un plazo de 7 días a partir de la fecha d" +
     "e envío.*";
@@ -467,7 +467,7 @@ namespace CapaPresentacion
             | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox2.BackgroundImage = global::CapaPresentacion.Properties.Resources.logo_perla_del_altomayo;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(708, 22);
+            this.pictureBox2.Location = new System.Drawing.Point(708, 18);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(188, 232);
@@ -483,7 +483,7 @@ namespace CapaPresentacion
             this.label14.Location = new System.Drawing.Point(642, 177);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(381, 52);
+            this.label14.Size = new System.Drawing.Size(357, 48);
             this.label14.TabIndex = 21;
             this.label14.Text = "¡Confíe en nuestra plataforma para enviar \r\nencomiendas!";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

@@ -61,8 +61,8 @@ namespace CapaPresentacion
             this.btnRegistrarse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrarse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrarse.ForeColor = System.Drawing.Color.White;
-            this.btnRegistrarse.Location = new System.Drawing.Point(151, 489);
-            this.btnRegistrarse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegistrarse.Location = new System.Drawing.Point(138, 486);
+            this.btnRegistrarse.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegistrarse.Name = "btnRegistrarse";
             this.btnRegistrarse.Size = new System.Drawing.Size(230, 49);
             this.btnRegistrarse.TabIndex = 33;
@@ -74,12 +74,11 @@ namespace CapaPresentacion
             // 
             this.txtClave.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtClave.Location = new System.Drawing.Point(79, 430);
-            this.txtClave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtClave.Margin = new System.Windows.Forms.Padding(2);
             this.txtClave.Name = "txtClave";
             this.txtClave.PasswordChar = '*';
             this.txtClave.Size = new System.Drawing.Size(350, 20);
             this.txtClave.TabIndex = 32;
-            this.txtClave.Text = "holaquehace";
             this.txtClave.UseSystemPasswordChar = true;
             // 
             // label8
@@ -87,7 +86,7 @@ namespace CapaPresentacion
             this.label8.AutoSize = true;
             this.label8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label8.Location = new System.Drawing.Point(207, 590);
+            this.label8.Location = new System.Drawing.Point(197, 593);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(115, 20);
@@ -99,7 +98,7 @@ namespace CapaPresentacion
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.label7.Location = new System.Drawing.Point(214, 557);
+            this.label7.Location = new System.Drawing.Point(202, 560);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(109, 15);
@@ -121,11 +120,10 @@ namespace CapaPresentacion
             // 
             this.txtCorreo.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCorreo.Location = new System.Drawing.Point(79, 356);
-            this.txtCorreo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(350, 20);
             this.txtCorreo.TabIndex = 28;
-            this.txtCorreo.Text = "myke23t@gmail.com";
             // 
             // label5
             // 
@@ -142,11 +140,10 @@ namespace CapaPresentacion
             // 
             this.txtDni.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDni.Location = new System.Drawing.Point(79, 287);
-            this.txtDni.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDni.Margin = new System.Windows.Forms.Padding(2);
             this.txtDni.Name = "txtDni";
             this.txtDni.Size = new System.Drawing.Size(350, 20);
             this.txtDni.TabIndex = 26;
-            this.txtDni.Text = "73837288";
             // 
             // label4
             // 
@@ -163,11 +160,10 @@ namespace CapaPresentacion
             // 
             this.txtApellido.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtApellido.Location = new System.Drawing.Point(79, 217);
-            this.txtApellido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(2);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(350, 20);
             this.txtApellido.TabIndex = 24;
-            this.txtApellido.Text = "Towers";
             // 
             // label3
             // 
@@ -184,12 +180,11 @@ namespace CapaPresentacion
             // 
             this.txtNombre.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNombre.Location = new System.Drawing.Point(79, 149);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(350, 20);
             this.txtNombre.TabIndex = 22;
             this.txtNombre.Tag = "";
-            this.txtNombre.Text = "Myke";
             // 
             // label2
             // 
@@ -234,7 +229,7 @@ namespace CapaPresentacion
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "frmRegistro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

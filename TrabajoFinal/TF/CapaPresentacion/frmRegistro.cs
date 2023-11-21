@@ -22,7 +22,14 @@ namespace CapaPresentacion
         private void btnRegistrarse_Click(object sender, EventArgs e)
         {
             string mensaje = string.Empty; 
-
+            
+            // Validación del textbox clave que tenga al menos 8 caracteres, una mayuscula y un numero
+            if (txtClave.Text.Length < 8 || !txtClave.Text.Any(char.IsUpper) || !txtClave.Text.Any(char.IsDigit))
+            {
+                MessageBox.Show("La clave debe tener al menos 8 caracteres, una mayuscula y un numero", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            // Creacion del objeto usuario
             Usuario usuario = new Usuario()
             {
                 Dni = txtDni.Text,

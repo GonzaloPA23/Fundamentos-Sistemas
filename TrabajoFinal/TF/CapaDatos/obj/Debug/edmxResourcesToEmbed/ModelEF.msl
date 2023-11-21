@@ -48,6 +48,7 @@
     <EntitySetMapping Name="Bus">
       <EntityTypeMapping TypeName="ModelEF.Bus">
         <MappingFragment StoreEntitySet="Bus">
+          <ScalarProperty Name="CantidadAsiento" ColumnName="CantidadAsiento" />
           <ScalarProperty Name="PrecioAsiento" ColumnName="PrecioAsiento" />
           <ScalarProperty Name="FechaLlegada" ColumnName="FechaLlegada" />
           <ScalarProperty Name="FechaSalida" ColumnName="FechaSalida" />
@@ -83,14 +84,9 @@
     <EntitySetMapping Name="Pasaje">
       <EntityTypeMapping TypeName="ModelEF.Pasaje">
         <MappingFragment StoreEntitySet="Pasaje">
-          <ScalarProperty Name="Precio" ColumnName="Precio" />
           <ScalarProperty Name="FechaCompra" ColumnName="FechaCompra" />
           <ScalarProperty Name="Piso" ColumnName="Piso" />
           <ScalarProperty Name="Asiento" ColumnName="Asiento" />
-          <ScalarProperty Name="FechaSalida" ColumnName="FechaSalida" />
-          <ScalarProperty Name="TipoBus" ColumnName="TipoBus" />
-          <ScalarProperty Name="Destino" ColumnName="Destino" />
-          <ScalarProperty Name="PuntoSalida" ColumnName="PuntoSalida" />
           <ScalarProperty Name="BusId" ColumnName="BusId" />
           <ScalarProperty Name="UsuarioId" ColumnName="UsuarioId" />
           <ScalarProperty Name="Id" ColumnName="Id" />
