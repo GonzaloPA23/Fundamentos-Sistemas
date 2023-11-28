@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbCasaEmpenioModelStoreContainer" CdmEntityContainer="dbCasaEmpenioEntities">
+    <EntitySetMapping Name="ARTICULO">
+      <EntityTypeMapping TypeName="dbCasaEmpenioModel.ARTICULO">
+        <MappingFragment StoreEntitySet="ARTICULO">
+          <ScalarProperty Name="codarticulo" ColumnName="codarticulo" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="pais" ColumnName="pais" />
+          <ScalarProperty Name="fecharegistro" ColumnName="fecharegistro" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="paraofrecer" ColumnName="paraofrecer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLIENTE">
+      <EntityTypeMapping TypeName="dbCasaEmpenioModel.CLIENTE">
+        <MappingFragment StoreEntitySet="CLIENTE">
+          <ScalarProperty Name="dni" ColumnName="dni" />
+          <ScalarProperty Name="nombrecompleto" ColumnName="nombrecompleto" />
+          <ScalarProperty Name="sexo" ColumnName="sexo" />
+          <ScalarProperty Name="ncelular" ColumnName="ncelular" />
+          <ScalarProperty Name="distrito" ColumnName="distrito" />
+          <ScalarProperty Name="financiamiento" ColumnName="financiamiento" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLIENTEXARTICULO">
+      <EntityTypeMapping TypeName="dbCasaEmpenioModel.CLIENTEXARTICULO">
+        <MappingFragment StoreEntitySet="CLIENTEXARTICULO">
+          <ScalarProperty Name="dni" ColumnName="dni" />
+          <ScalarProperty Name="codarticulo" ColumnName="codarticulo" />
+          <ScalarProperty Name="fventa" ColumnName="fventa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

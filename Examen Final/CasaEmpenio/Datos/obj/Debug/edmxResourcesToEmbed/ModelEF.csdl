@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbCasaEmpenioModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ARTICULO">
+    <Key>
+      <PropertyRef Name="codarticulo" />
+    </Key>
+    <Property Name="codarticulo" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="pais" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fecharegistro" Type="DateTime" Precision="0" />
+    <Property Name="precio" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="paraofrecer" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="CLIENTEXARTICULO" Relationship="Self.FK__CLIENTEXA__codar__412EB0B6" FromRole="ARTICULO" ToRole="CLIENTEXARTICULO" />
+  </EntityType>
+  <EntityType Name="CLIENTE">
+    <Key>
+      <PropertyRef Name="dni" />
+    </Key>
+    <Property Name="dni" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="nombrecompleto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="sexo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ncelular" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="distrito" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="financiamiento" Type="DateTime" Precision="0" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="CLIENTEXARTICULO" Relationship="Self.FK__CLIENTEXART__dni__403A8C7D" FromRole="CLIENTE" ToRole="CLIENTEXARTICULO" />
+  </EntityType>
+  <EntityType Name="CLIENTEXARTICULO">
+    <Key>
+      <PropertyRef Name="dni" />
+      <PropertyRef Name="codarticulo" />
+    </Key>
+    <Property Name="dni" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="codarticulo" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="fventa" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="ARTICULO" Relationship="Self.FK__CLIENTEXA__codar__412EB0B6" FromRole="CLIENTEXARTICULO" ToRole="ARTICULO" />
+    <NavigationProperty Name="CLIENTE" Relationship="Self.FK__CLIENTEXART__dni__403A8C7D" FromRole="CLIENTEXARTICULO" ToRole="CLIENTE" />
+  </EntityType>
+  <Association Name="FK__CLIENTEXA__codar__412EB0B6">
+    <End Role="ARTICULO" Type="Self.ARTICULO" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CLIENTEXARTICULO" Type="Self.CLIENTEXARTICULO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ARTICULO">
+        <PropertyRef Name="codarticulo" />
+      </Principal>
+      <Dependent Role="CLIENTEXARTICULO">
+        <PropertyRef Name="codarticulo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CLIENTEXART__dni__403A8C7D">
+    <End Role="CLIENTE" Type="Self.CLIENTE" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CLIENTEXARTICULO" Type="Self.CLIENTEXARTICULO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLIENTE">
+        <PropertyRef Name="dni" />
+      </Principal>
+      <Dependent Role="CLIENTEXARTICULO">
+        <PropertyRef Name="dni" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="dbCasaEmpenioEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ARTICULO" EntityType="Self.ARTICULO" />
+    <EntitySet Name="CLIENTE" EntityType="Self.CLIENTE" />
+    <EntitySet Name="CLIENTEXARTICULO" EntityType="Self.CLIENTEXARTICULO" />
+    <AssociationSet Name="FK__CLIENTEXA__codar__412EB0B6" Association="Self.FK__CLIENTEXA__codar__412EB0B6">
+      <End Role="ARTICULO" EntitySet="ARTICULO" />
+      <End Role="CLIENTEXARTICULO" EntitySet="CLIENTEXARTICULO" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CLIENTEXART__dni__403A8C7D" Association="Self.FK__CLIENTEXART__dni__403A8C7D">
+      <End Role="CLIENTE" EntitySet="CLIENTE" />
+      <End Role="CLIENTEXARTICULO" EntitySet="CLIENTEXARTICULO" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,14 @@
+﻿<Window x:Class="Presentacion.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Presentacion"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Salir" HorizontalAlignment="Left" Margin="314,247,0,0" VerticalAlignment="Top" Height="52" Width="197" Click="Button_Click"/>
+        <Button x:Name="btnVerArticulos" Content="Ver Articulos" HorizontalAlignment="Left" Margin="314,95,0,0" VerticalAlignment="Top" Height="49" Width="197" Click="btnVerArticulos_Click"/>
+        <Button x:Name="btnVerReportes" Content="Ver Reportes" HorizontalAlignment="Left" Margin="314,167,0,0" VerticalAlignment="Top" Height="50" Width="197" Click="btnVerReportes_Click"/>
+    </Grid>
+</Window>

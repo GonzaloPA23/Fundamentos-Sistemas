@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="863830a3cad54e37a5c5aedf9c08f9c2" Name="Diagram1" ZoomLevel="86">
+        <EntityTypeShape EntityType="ModelEF.Curso" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModelEF.Docente" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModelEF.DocentexCurso" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="ModelEF.FK__DocentexC__Id_cu__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="ModelEF.FK__DocentexC__Id_do__3B75D760" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ModelEF.DocentexUniversidad" Width="1.5" PointX="3" PointY="4" />
+        <EntityTypeShape EntityType="ModelEF.Universidad" Width="1.5" PointX="5.375" PointY="0.875" />
+        <AssociationConnector Association="ModelEF.FK__DocentexU__Id_do__412EB0B6" />
+        <AssociationConnector Association="ModelEF.FK__DocentexU__Id_un__4222D4EF" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -69,7 +69,10 @@ namespace CapaPresentacion.Modales
                 bool respuesta = nUsuario.ActualizarFoto(usuario.Id,byteimage, out mensaje);
 
                 if (respuesta)
+                {
                     pbFotoPerfil.Image = ByteToImage(byteimage);
+                    pbFotoPerfil.SizeMode = PictureBoxSizeMode.StretchImage;
+                }
                 else
                     MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 

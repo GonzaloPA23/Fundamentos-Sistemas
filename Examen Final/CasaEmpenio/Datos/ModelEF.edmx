@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="dbCasaEmpenioModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ARTICULO">
+          <Key>
+            <PropertyRef Name="codarticulo" />
+          </Key>
+          <Property Name="codarticulo" Type="char" MaxLength="7" Nullable="false" />
+          <Property Name="descripcion" Type="varchar" MaxLength="50" />
+          <Property Name="pais" Type="varchar" MaxLength="50" />
+          <Property Name="fecharegistro" Type="date" />
+          <Property Name="precio" Type="money" />
+          <Property Name="tipo" Type="varchar" MaxLength="50" />
+          <Property Name="paraofrecer" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="CLIENTE">
+          <Key>
+            <PropertyRef Name="dni" />
+          </Key>
+          <Property Name="dni" Type="char" MaxLength="8" Nullable="false" />
+          <Property Name="nombrecompleto" Type="varchar" MaxLength="50" />
+          <Property Name="sexo" Type="varchar" MaxLength="10" />
+          <Property Name="ncelular" Type="varchar" MaxLength="15" />
+          <Property Name="distrito" Type="varchar" MaxLength="30" />
+          <Property Name="financiamiento" Type="date" />
+          <Property Name="email" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="CLIENTEXARTICULO">
+          <Key>
+            <PropertyRef Name="dni" />
+            <PropertyRef Name="codarticulo" />
+          </Key>
+          <Property Name="dni" Type="char" MaxLength="8" Nullable="false" />
+          <Property Name="codarticulo" Type="char" MaxLength="7" Nullable="false" />
+          <Property Name="fventa" Type="date" />
+        </EntityType>
+        <Association Name="FK__CLIENTEXA__codar__412EB0B6">
+          <End Role="ARTICULO" Type="Self.ARTICULO" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="CLIENTEXARTICULO" Type="Self.CLIENTEXARTICULO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ARTICULO">
+              <PropertyRef Name="codarticulo" />
+            </Principal>
+            <Dependent Role="CLIENTEXARTICULO">
+              <PropertyRef Name="codarticulo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__CLIENTEXART__dni__403A8C7D">
+          <End Role="CLIENTE" Type="Self.CLIENTE" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="CLIENTEXARTICULO" Type="Self.CLIENTEXARTICULO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CLIENTE">
+              <PropertyRef Name="dni" />
+            </Principal>
+            <Dependent Role="CLIENTEXARTICULO">
+              <PropertyRef Name="dni" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="dbCasaEmpenioModelStoreContainer">
+          <EntitySet Name="ARTICULO" EntityType="Self.ARTICULO" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CLIENTE" EntityType="Self.CLIENTE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CLIENTEXARTICULO" EntityType="Self.CLIENTEXARTICULO" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__CLIENTEXA__codar__412EB0B6" Association="Self.FK__CLIENTEXA__codar__412EB0B6">
+            <End Role="ARTICULO" EntitySet="ARTICULO" />
+            <End Role="CLIENTEXARTICULO" EntitySet="CLIENTEXARTICULO" />
+          </AssociationSet>
+          <AssociationSet Name="FK__CLIENTEXART__dni__403A8C7D" Association="Self.FK__CLIENTEXART__dni__403A8C7D">
+            <End Role="CLIENTE" EntitySet="CLIENTE" />
+            <End Role="CLIENTEXARTICULO" EntitySet="CLIENTEXARTICULO" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="dbCasaEmpenioModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ARTICULO">
+          <Key>
+            <PropertyRef Name="codarticulo" />
+          </Key>
+          <Property Name="codarticulo" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="pais" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="fecharegistro" Type="DateTime" Precision="0" />
+          <Property Name="precio" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="paraofrecer" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="CLIENTEXARTICULO" Relationship="Self.FK__CLIENTEXA__codar__412EB0B6" FromRole="ARTICULO" ToRole="CLIENTEXARTICULO" />
+        </EntityType>
+        <EntityType Name="CLIENTE">
+          <Key>
+            <PropertyRef Name="dni" />
+          </Key>
+          <Property Name="dni" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="nombrecompleto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="sexo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ncelular" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="distrito" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="financiamiento" Type="DateTime" Precision="0" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="CLIENTEXARTICULO" Relationship="Self.FK__CLIENTEXART__dni__403A8C7D" FromRole="CLIENTE" ToRole="CLIENTEXARTICULO" />
+        </EntityType>
+        <EntityType Name="CLIENTEXARTICULO">
+          <Key>
+            <PropertyRef Name="dni" />
+            <PropertyRef Name="codarticulo" />
+          </Key>
+          <Property Name="dni" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="codarticulo" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="fventa" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="ARTICULO" Relationship="Self.FK__CLIENTEXA__codar__412EB0B6" FromRole="CLIENTEXARTICULO" ToRole="ARTICULO" />
+          <NavigationProperty Name="CLIENTE" Relationship="Self.FK__CLIENTEXART__dni__403A8C7D" FromRole="CLIENTEXARTICULO" ToRole="CLIENTE" />
+        </EntityType>
+        <Association Name="FK__CLIENTEXA__codar__412EB0B6">
+          <End Role="ARTICULO" Type="Self.ARTICULO" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="CLIENTEXARTICULO" Type="Self.CLIENTEXARTICULO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ARTICULO">
+              <PropertyRef Name="codarticulo" />
+            </Principal>
+            <Dependent Role="CLIENTEXARTICULO">
+              <PropertyRef Name="codarticulo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__CLIENTEXART__dni__403A8C7D">
+          <End Role="CLIENTE" Type="Self.CLIENTE" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="CLIENTEXARTICULO" Type="Self.CLIENTEXARTICULO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CLIENTE">
+              <PropertyRef Name="dni" />
+            </Principal>
+            <Dependent Role="CLIENTEXARTICULO">
+              <PropertyRef Name="dni" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="dbCasaEmpenioEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ARTICULO" EntityType="Self.ARTICULO" />
+          <EntitySet Name="CLIENTE" EntityType="Self.CLIENTE" />
+          <EntitySet Name="CLIENTEXARTICULO" EntityType="Self.CLIENTEXARTICULO" />
+          <AssociationSet Name="FK__CLIENTEXA__codar__412EB0B6" Association="Self.FK__CLIENTEXA__codar__412EB0B6">
+            <End Role="ARTICULO" EntitySet="ARTICULO" />
+            <End Role="CLIENTEXARTICULO" EntitySet="CLIENTEXARTICULO" />
+          </AssociationSet>
+          <AssociationSet Name="FK__CLIENTEXART__dni__403A8C7D" Association="Self.FK__CLIENTEXART__dni__403A8C7D">
+            <End Role="CLIENTE" EntitySet="CLIENTE" />
+            <End Role="CLIENTEXARTICULO" EntitySet="CLIENTEXARTICULO" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="dbCasaEmpenioModelStoreContainer" CdmEntityContainer="dbCasaEmpenioEntities">
+          <EntitySetMapping Name="ARTICULO">
+            <EntityTypeMapping TypeName="dbCasaEmpenioModel.ARTICULO">
+              <MappingFragment StoreEntitySet="ARTICULO">
+                <ScalarProperty Name="codarticulo" ColumnName="codarticulo" />
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+                <ScalarProperty Name="pais" ColumnName="pais" />
+                <ScalarProperty Name="fecharegistro" ColumnName="fecharegistro" />
+                <ScalarProperty Name="precio" ColumnName="precio" />
+                <ScalarProperty Name="tipo" ColumnName="tipo" />
+                <ScalarProperty Name="paraofrecer" ColumnName="paraofrecer" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CLIENTE">
+            <EntityTypeMapping TypeName="dbCasaEmpenioModel.CLIENTE">
+              <MappingFragment StoreEntitySet="CLIENTE">
+                <ScalarProperty Name="dni" ColumnName="dni" />
+                <ScalarProperty Name="nombrecompleto" ColumnName="nombrecompleto" />
+                <ScalarProperty Name="sexo" ColumnName="sexo" />
+                <ScalarProperty Name="ncelular" ColumnName="ncelular" />
+                <ScalarProperty Name="distrito" ColumnName="distrito" />
+                <ScalarProperty Name="financiamiento" ColumnName="financiamiento" />
+                <ScalarProperty Name="email" ColumnName="email" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CLIENTEXARTICULO">
+            <EntityTypeMapping TypeName="dbCasaEmpenioModel.CLIENTEXARTICULO">
+              <MappingFragment StoreEntitySet="CLIENTEXARTICULO">
+                <ScalarProperty Name="dni" ColumnName="dni" />
+                <ScalarProperty Name="codarticulo" ColumnName="codarticulo" />
+                <ScalarProperty Name="fventa" ColumnName="fventa" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

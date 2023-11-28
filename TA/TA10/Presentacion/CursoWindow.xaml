@@ -1,0 +1,32 @@
+﻿<Window x:Class="Presentacion.CursoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Presentacion"
+        mc:Ignorable="d"
+        Title="Gestión de Cursos" Height="450" Width="800">
+    <Grid>
+        <Border Background="#FF2C3E50" CornerRadius="8" Margin="10">
+            <StackPanel>
+                <Label Content="Gestión de Cursos" HorizontalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="16" Margin="0,10,0,20"/>
+
+                <StackPanel Margin="20">
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                        <Label Content="Nombre:" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+                        <TextBox x:Name="tbNombre" HorizontalAlignment="Left" VerticalAlignment="Center" Width="150"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                        <Button x:Name="btnRegistrar" Content="Registrar" Width="100" Background="#FF2ECC71" Foreground="White" Click="btnRegistrar_Click"/>
+                        <Button x:Name="btnModificar" Content="Modificar" Width="100" Margin="10,0,0,0" Background="#FFE74C3C" Foreground="White" Click="btnModificar_Click"/>
+                        <Button x:Name="btnEliminar" Content="Eliminar" Width="100" Margin="10,0,0,0" Background="#FFBDC3C7" Foreground="White" Click="btnEliminar_Click"/>
+                        <Button x:Name="btnSalir" Content="Salir" Width="100" Margin="10,0,0,0" Background="#FF9B59B6" Foreground="White" Click="btnSalir_Click"/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+        <DataGrid x:Name="dgCursos" Margin="52,172,61,51" SelectionChanged="dgCursos_SelectionChanged"/>
+    </Grid>
+</Window>

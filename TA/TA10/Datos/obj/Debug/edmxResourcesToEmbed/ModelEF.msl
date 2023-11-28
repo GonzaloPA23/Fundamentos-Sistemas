@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelEFStoreContainer" CdmEntityContainer="BDEFEntities">
+    <EntitySetMapping Name="Curso">
+      <EntityTypeMapping TypeName="ModelEF.Curso">
+        <MappingFragment StoreEntitySet="Curso">
+          <ScalarProperty Name="Id_curso" ColumnName="Id_curso" />
+          <ScalarProperty Name="Nombrecurso" ColumnName="Nombrecurso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Docente">
+      <EntityTypeMapping TypeName="ModelEF.Docente">
+        <MappingFragment StoreEntitySet="Docente">
+          <ScalarProperty Name="Id_docente" ColumnName="Id_docente" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Escuela" ColumnName="Escuela" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DocentexCurso">
+      <EntityTypeMapping TypeName="ModelEF.DocentexCurso">
+        <MappingFragment StoreEntitySet="DocentexCurso">
+          <ScalarProperty Name="Id_docente" ColumnName="Id_docente" />
+          <ScalarProperty Name="Id_curso" ColumnName="Id_curso" />
+          <ScalarProperty Name="Semestre" ColumnName="Semestre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DocentexUniversidad">
+      <EntityTypeMapping TypeName="ModelEF.DocentexUniversidad">
+        <MappingFragment StoreEntitySet="DocentexUniversidad">
+          <ScalarProperty Name="Detalle" ColumnName="Detalle" />
+          <ScalarProperty Name="Id_universidad" ColumnName="Id_universidad" />
+          <ScalarProperty Name="Id_docente" ColumnName="Id_docente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Universidad">
+      <EntityTypeMapping TypeName="ModelEF.Universidad">
+        <MappingFragment StoreEntitySet="Universidad">
+          <ScalarProperty Name="Ruc" ColumnName="Ruc" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Id_universidad" ColumnName="Id_universidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
