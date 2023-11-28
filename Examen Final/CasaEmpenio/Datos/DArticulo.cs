@@ -140,5 +140,27 @@ namespace Datos
                 return promedios;
             }
         }
+
+        // Listar los articulos que tengan la fecha de registro desde el 4 de enero del 2023 hasta el 31 de diciembre del 2023
+        public List<ARTICULO> ListarArticulosXFechaRegistro()
+        {
+            List<ARTICULO> articulos = new List<ARTICULO>();
+            try
+            {
+                using (var context = new dbCasaEmpenioEntities())
+                {
+                    articulos = context.ARTICULO
+                        .Where(a => a.fecharegistro >= new DateTime(2023, 1, 4) && a.fecharegistro <= new DateTime(2023, 12, 31))
+                        .ToList();
+                }
+                return articulos;
+            }
+            catch (Exception ex)
+            {
+                // Manejo de excepciones
+                return articulos;
+            }
+
+        }
     }
 }
